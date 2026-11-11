@@ -395,6 +395,14 @@ Redis database).
 
 ## Licence readers compared (experimental, non-voting)
 
+Three tools are compared in two pairs, because they read different inputs.
+A declared licence *string* is read by `license-expression` and by LicenseID
+`resolve()` (this section). A licence *text* is read by SPDX License Matcher
+and by the LicenseID text detector (previous section). A text matcher gives
+no answer for a string such as `Apache 2.0`, and an expression parser gives
+none for a licence text, so one table for all three would compare different
+tasks.
+
 For each of the 596 root subjects with a scored licence, the first declared
 licence string (platform first, a `license:` hub prefix removed) was read in
 three ways, and the reading compared with the expected expression
