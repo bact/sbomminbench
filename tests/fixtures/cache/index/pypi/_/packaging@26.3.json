@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "declared_digest": "sha256:94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79",
+    "fetched": true,
+    "filename": "packaging-26.3.tar.gz",
+    "kind": "sdist",
+    "sha256": "94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79",
+    "size_bytes": 313412,
+    "skip_reason": null,
+    "url": "https://files.pythonhosted.org/packages/7d/fa/3944b40b07da9ce895c0e6303a5ab7d53da063554f534556b134a54d6093/packaging-26.3.tar.gz"
+  },
+  "ecosystem": "pypi",
+  "fetched_at": "2026-11-08T22:48:08Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "PKG-INFO": "packaging-26.3/PKG-INFO",
+    "pyproject.toml": "packaging-26.3/pyproject.toml"
+  },
+  "members_dir": "members/94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79",
+  "model_members": [],
+  "name": "packaging",
+  "purl": "pkg:pypi/packaging@26.3",
+  "rank": null,
+  "responses": {
+    "platform": "https://pypi.org/pypi/packaging/26.3/json"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "26.3"
+}

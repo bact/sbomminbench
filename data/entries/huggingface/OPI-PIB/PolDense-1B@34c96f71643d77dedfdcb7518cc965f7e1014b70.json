@@ -1,0 +1,200 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/OPI-PIB/PolDense-1B@34c96f71643d77dedfdcb7518cc965f7e1014b70",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/OPI-PIB/PolDense-1B/tree/34c96f71643d77dedfdcb7518cc965f7e1014b70"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/OPI-PIB/PolDense-1B",
+    "name": "OPI-PIB/PolDense-1B",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "OPI-PIB",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "OPI-PIB/PolDense-1B",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[10]",
+        "format_validity": "unknown_id",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:gemma",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "1801bfa078b9276d9e10d2c00ff1cb00772593a96a1c00eb36992a36c58d9532",
+    "retrieved_at": "2026-11-09T08:55:09Z",
+    "source_url": "https://huggingface.co/api/models/OPI-PIB/PolDense-1B/revision/34c96f71643d77dedfdcb7518cc965f7e1014b70",
+    "version": "34c96f71643d77dedfdcb7518cc965f7e1014b70"
+  },
+  "rank": 9455,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_ref_needed",
+        "license_spdx_invalid",
+        "license_unresolved_value"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "gemma",
+              "key": "hf_api:tags[10]",
+              "reason": "not found: gemma",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "gemma",
+              "key": "hf_card:cardData.license",
+              "reason": "not found: gemma",
+              "trust": "none"
+            }
+          ],
+          "note": "'gemma': unresolved (not found: gemma)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "PolDense-1B",
+              "OPI-PIB/PolDense-1B"
+            ],
+            "canonical_key": "opi-pib/poldense-1b",
+            "name": "PolDense-1B"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "OPI-PIB",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "model.safetensors"
+      ],
+      "files_count": 1,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "unknown_id",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "gemma",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": "safetensors",
+      "size_bytes": null
+    }
+  ]
+}

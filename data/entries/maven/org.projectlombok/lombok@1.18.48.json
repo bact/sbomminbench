@@ -1,0 +1,241 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.projectlombok/lombok@1.18.48",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "lombok-1.18.48.pom",
+        "kind": "pom",
+        "sha256": "ad8b7ba44cf724c9c434b210cf27b6b110394548cab3303637f6cb502bbc134a",
+        "size_bytes": 1484,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/projectlombok/lombok/1.18.48/lombok-1.18.48.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.projectlombok/lombok/1.18.48",
+    "name": "org.projectlombok:lombok",
+    "observations": [],
+    "response_sha256": "ad8b7ba44cf724c9c434b210cf27b6b110394548cab3303637f6cb502bbc134a",
+    "retrieved_at": "2026-11-09T08:55:11Z",
+    "source_url": "https://repo1.maven.org/maven2/org/projectlombok/lombok/1.18.48/lombok-1.18.48.pom",
+    "version": "1.18.48"
+  },
+  "rank": 11,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_prose"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:licenses.license[0].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "prose_form",
+              "expression": "MIT",
+              "input": "The MIT License",
+              "key": "pom.xml:licenses.license[0].name",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "https://projectlombok.org/LICENSE",
+              "key": "pom.xml:licenses.license[0].url",
+              "reason": "not found: https://projectlombok.org/LICENSE",
+              "trust": "none"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "lombok",
+              "org.projectlombok:lombok"
+            ],
+            "canonical_key": "org.projectlombok:lombok",
+            "name": "lombok"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:developers.developer[0].name",
+            "pom.xml:developers.developer[1].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Reinier Zwitserloot",
+                "role": "author"
+              },
+              {
+                "name": "Roel Spilker",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "lombok-1.18.48.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "lombok",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Reinier Zwitserloot",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "developers.developer[1].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Roel Spilker",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "The MIT License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://projectlombok.org/LICENSE",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Project Lombok",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

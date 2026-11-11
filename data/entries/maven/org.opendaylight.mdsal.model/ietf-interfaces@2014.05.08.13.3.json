@@ -1,0 +1,174 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.opendaylight.mdsal.model/ietf-interfaces@2014.05.08.13.3",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "ietf-interfaces-2014.05.08.13.3.pom",
+        "kind": "pom",
+        "sha256": "a7318ff8d4524cfac7cf5d3a7a85d856a2615f98b6fcc7b3d230cc28645ae05f",
+        "size_bytes": 1346,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/opendaylight/mdsal/model/ietf-interfaces/2014.05.08.13.3/ietf-interfaces-2014.05.08.13.3.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.opendaylight.mdsal.model/ietf-interfaces/2014.05.08.13.3",
+    "name": "org.opendaylight.mdsal.model:ietf-interfaces",
+    "observations": [],
+    "response_sha256": "a7318ff8d4524cfac7cf5d3a7a85d856a2615f98b6fcc7b3d230cc28645ae05f",
+    "retrieved_at": "2026-11-09T08:55:15Z",
+    "source_url": "https://repo1.maven.org/maven2/org/opendaylight/mdsal/model/ietf-interfaces/2014.05.08.13.3/ietf-interfaces-2014.05.08.13.3.pom",
+    "version": "2014.05.08.13.3"
+  },
+  "rank": 6610,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_absent",
+        "maven_property_ref"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "ietf-interfaces",
+              "org.opendaylight.mdsal.model:ietf-interfaces"
+            ],
+            "canonical_key": "org.opendaylight.mdsal.model:ietf-interfaces",
+            "name": "ietf-interfaces"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "binding-parent-0.13.3.pom",
+        "bundle-parent-3.1.7.pom",
+        "dom-parent-0.13.3.pom",
+        "ietf-interfaces-2014.05.08.13.3.pom",
+        "odlparent-3.1.7.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "ietf-interfaces",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "developers.developer",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "${project.artifactId}",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

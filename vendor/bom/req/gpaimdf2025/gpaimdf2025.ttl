@@ -1,0 +1,759 @@
+# SPDX-FileContributor: Arthit Suriyawongkul
+# SPDX-FileCopyrightText: 2026-present Arthit Suriyawongkul
+# SPDX-FileType: SOURCE
+# SPDX-License-Identifier: CC0-1.0
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dpv:     <https://w3id.org/dpv#> .
+@prefix dpv-euaiact: <https://w3id.org/dpv/legal/eu/aiact#> .
+
+@prefix bom:     <https://w3id.org/bom/> .
+@prefix gpaimdf2025: <https://w3id.org/bom/req/gpaimdf2025/> .
+
+# EU AI Act -- General-Purpose AI Code of Practice, Transparency Chapter,
+# Measure 1.1: Model Documentation Form (MDF).
+# The Form compiles the information providers of general-purpose AI models must
+# document under Article 53(1), points (a) and (b), and Annexes XI and XII of
+# Regulation (EU) 2024/1689. Each item is marked for its intended recipients:
+# the AI Office (AIO), national competent authorities (NCAs) and downstream
+# providers (DPs). Information for the AIO/NCAs is provided on request;
+# information for DPs is provided proactively.
+# Source: Code of Practice for General-Purpose AI Models, Transparency Chapter
+# (European Commission, 2025-07-10) and the fillable Model Documentation Form.
+
+<https://w3id.org/bom/req/gpaimdf2025/>
+    a owl:Ontology ;
+    owl:imports <https://w3id.org/bom/> ;
+    dcterms:title "GPAI Code of Practice: Model Documentation Form (Art. 53(1)(a)-(b), Annex XI/XII)"@en ;
+    dcterms:description """SKOS concept scheme for the 41 information items of the
+Model Documentation Form from the Transparency Chapter (Measure 1.1) of the EU
+Code of Practice for General-Purpose AI Models. Each item records its intended
+recipients (AI Office, national competent authorities, downstream providers)
+via dcterms:audience and the Annex XI / Annex XII provision it implements."""@en ;
+    dcterms:source <https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai> ;
+    dcterms:issued "2025-07-10"^^xsd:date ;
+    dcterms:creator <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:created "2026-10-12"^^xsd:date ;
+    owl:versionInfo "0.1.0" ;
+    rdfs:seeAlso <https://artificialintelligenceact.eu/article/53/> ;
+    rdfs:seeAlso <https://artificialintelligenceact.eu/annex/11/> ;
+    rdfs:seeAlso <https://artificialintelligenceact.eu/annex/12/> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/art_53/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    dcterms:publisher <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:rights "Copyright 2026-present Arthit Suriyawongkul. Dedicated to the public domain under CC0 1.0 Universal."@en ;
+    dcterms:bibliographicCitation "Suriyawongkul, A. (2026). GPAI Code of Practice: Model Documentation Form (Art. 53(1)(a)-(b), Annex XI/XII). https://w3id.org/bom/req/gpaimdf2025/"@en ;
+    dcterms:conformsTo <http://www.w3.org/2004/02/skos/core> ;
+    vann:preferredNamespacePrefix "gpaimdf2025" ;
+    vann:preferredNamespaceUri "https://w3id.org/bom/req/gpaimdf2025/"^^xsd:anyURI ;
+    dcterms:modified "2026-10-27"^^xsd:date .
+
+gpaimdf2025:scheme
+    a skos:ConceptScheme, bom:InfoRequirementSpec ;
+    skos:prefLabel "EU 2025 GPAI Model Documentation Form"@en ;
+    dcterms:description """Information items of the Model Documentation Form (Transparency
+Chapter, Measure 1.1, Code of Practice for General-Purpose AI Models), implementing
+Art. 53(1)(a)-(b) and Annexes XI and XII of Regulation (EU) 2024/1689."""@en ;
+    skos:hasTopConcept gpaimdf2025:model-documentation-form .
+
+# -- Intended recipients (audience) -------------------------------------------
+
+gpaimdf2025:scheme-audience
+    a skos:ConceptScheme ;
+    skos:prefLabel "Model Documentation Form -- intended recipients"@en ;
+    skos:hasTopConcept gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp .
+
+gpaimdf2025:audience-aio
+    a skos:Concept ;
+    skos:inScheme gpaimdf2025:scheme-audience ;
+    skos:topConceptOf gpaimdf2025:scheme-audience ;
+    skos:prefLabel "AI Office (AIO)"@en ;
+    skos:notation "AIO"^^bom:ElementCode ;
+    skos:definition "Information to be made available to the AI Office upon request (Art. 53(1)(a), Annex XI)."@en ;
+    skos:closeMatch dpv-euaiact:AIOffice .
+
+gpaimdf2025:audience-nca
+    a skos:Concept ;
+    skos:inScheme gpaimdf2025:scheme-audience ;
+    skos:topConceptOf gpaimdf2025:scheme-audience ;
+    skos:prefLabel "National competent authorities (NCAs)"@en ;
+    skos:notation "NCA"^^bom:ElementCode ;
+    skos:definition "Information to be made available to national competent authorities upon request made through the AI Office (Art. 53(1)(a), Annex XI)."@en ;
+    skos:closeMatch dpv-euaiact:NationalCompetentAuthority .
+
+gpaimdf2025:audience-dp
+    a skos:Concept ;
+    skos:inScheme gpaimdf2025:scheme-audience ;
+    skos:topConceptOf gpaimdf2025:scheme-audience ;
+    skos:prefLabel "Downstream providers (DPs)"@en ;
+    skos:notation "DP"^^bom:ElementCode ;
+    skos:definition "Information to be made available proactively to providers of AI systems who intend to integrate the general-purpose AI model into their AI systems (Art. 53(1)(b), Annex XII)."@en ;
+    skos:closeMatch dpv-euaiact:DownstreamAIProvider .
+
+# -- Top concept and sections --------------------------------------------------
+
+gpaimdf2025:model-documentation-form
+    a skos:Concept ;
+    skos:topConceptOf gpaimdf2025:scheme ;
+    skos:inScheme gpaimdf2025:scheme ;
+    skos:prefLabel "Model Documentation Form (Measure 1.1)"@en ;
+    skos:definition """Information to be documented by providers of general-purpose AI
+models as part of Measure 1.1 of the Transparency Chapter of the Code of Practice,
+and kept up to date, covering Annex XI (for the AI Office and national competent
+authorities) and Annex XII (for downstream providers)."""@en ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/art_53/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#art_53> ;
+    skos:narrower
+        gpaimdf2025:form ,
+        gpaimdf2025:general ,
+        gpaimdf2025:model-properties ,
+        gpaimdf2025:distribution-licence ,
+        gpaimdf2025:use ,
+        gpaimdf2025:training-process ,
+        gpaimdf2025:data ,
+        gpaimdf2025:compute ,
+        gpaimdf2025:energy .
+
+gpaimdf2025:form
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-documentation-form ;
+    skos:prefLabel "Form metadata"@en ;
+    skos:definition "Metadata about the Model Documentation itself."@en ;
+    skos:narrower gpaimdf2025:doc-updated , gpaimdf2025:doc-version .
+
+gpaimdf2025:general
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-documentation-form ;
+    skos:prefLabel "General information"@en ;
+    skos:definition "Identity and provenance of the model and its provider."@en ;
+    skos:narrower
+        gpaimdf2025:provider-legal-name , gpaimdf2025:model-name ,
+        gpaimdf2025:model-authenticity , gpaimdf2025:release-date ,
+        gpaimdf2025:union-market-release-date , gpaimdf2025:model-dependencies .
+
+gpaimdf2025:model-properties
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-documentation-form ;
+    skos:prefLabel "Model properties"@en ;
+    skos:definition "Architecture, design, input/output modalities and size of the model (Annex XI 1(d)-(e); Annex XII 1(d), 2(b))."@en ;
+    skos:narrower
+        gpaimdf2025:model-architecture , gpaimdf2025:model-design-specifications ,
+        gpaimdf2025:input-modalities , gpaimdf2025:output-modalities ,
+        gpaimdf2025:total-model-size .
+
+gpaimdf2025:distribution-licence
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-documentation-form ;
+    skos:prefLabel "Methods of distribution and licenses"@en ;
+    skos:definition "How the model is made available and under which licence (Annex XI 1(c), 1(f); Annex XII 1(c), 1(f))."@en ;
+    skos:narrower
+        gpaimdf2025:distribution-channels-union , gpaimdf2025:distribution-channels-downstream ,
+        gpaimdf2025:licence-link , gpaimdf2025:licence-category , gpaimdf2025:additional-assets .
+
+gpaimdf2025:use
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-documentation-form ;
+    skos:prefLabel "Use"@en ;
+    skos:definition "Intended uses, acceptable use, integration into AI systems and required infrastructure (Annex XI 1(a)-(b), 2(a); Annex XII 1(a)-(b), 2(a))."@en ;
+    skos:narrower
+        gpaimdf2025:acceptable-use-policy , gpaimdf2025:intended-uses ,
+        gpaimdf2025:integrable-ai-systems , gpaimdf2025:technical-means-integration ,
+        gpaimdf2025:required-hardware , gpaimdf2025:required-software .
+
+gpaimdf2025:training-process
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-documentation-form ;
+    skos:prefLabel "Training process"@en ;
+    skos:definition "Design specifications and rationale of the training process (Annex XI 2(b))."@en ;
+    skos:narrower gpaimdf2025:training-design-specifications , gpaimdf2025:training-decision-rationale .
+
+gpaimdf2025:data
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-documentation-form ;
+    skos:prefLabel "Information on the data used for training, testing, and validation"@en ;
+    skos:definition "Type, provenance, acquisition, size, scope, curation and safeguards of the data (Annex XI 2(c); Annex XII 2(c))."@en ;
+    skos:narrower
+        gpaimdf2025:data-modality , gpaimdf2025:data-provenance-category ,
+        gpaimdf2025:data-acquisition , gpaimdf2025:data-points , gpaimdf2025:data-scope ,
+        gpaimdf2025:data-curation , gpaimdf2025:data-unsuitability-measures ,
+        gpaimdf2025:data-bias-measures .
+
+gpaimdf2025:compute
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-documentation-form ;
+    skos:prefLabel "Computational resources (during training)"@en ;
+    skos:definition "Training time, amount of computation used for training and measurement methodology (Annex XI 2(d))."@en ;
+    skos:narrower gpaimdf2025:training-time , gpaimdf2025:training-compute , gpaimdf2025:training-compute-methodology .
+
+gpaimdf2025:energy
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-documentation-form ;
+    skos:prefLabel "Energy consumption (during training and inference)"@en ;
+    skos:definition "Energy used for training, benchmarked inference compute and measurement methodologies (Annex XI 2(e))."@en ;
+    skos:narrower
+        gpaimdf2025:training-energy , gpaimdf2025:training-energy-methodology ,
+        gpaimdf2025:inference-compute , gpaimdf2025:inference-compute-methodology .
+
+
+# ============================================================================
+# LEAF CONCEPTS
+# ============================================================================
+
+# -- Form metadata --------------------------------------------------------------
+
+gpaimdf2025:doc-updated
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:form ;
+    skos:notation "MDF-001"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-001"^^bom:SarifRuleId ;
+    skos:prefLabel "Date this document was last updated"@en ;
+    skos:definition "The date on which the Model Documentation was last updated. Measure 1.1 requires the documentation to be kept up to date."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/art_53/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#art_53> ;
+    skos:exactMatch bom:doc-timestamp .
+
+gpaimdf2025:doc-version
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:form ;
+    skos:notation "MDF-002"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-002"^^bom:SarifRuleId ;
+    skos:prefLabel "Document version number"@en ;
+    skos:definition "The version number of the Model Documentation."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/art_53/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#art_53> ;
+    skos:exactMatch bom:doc-version .
+
+# -- General information --------------------------------------------------------
+
+gpaimdf2025:provider-legal-name
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:general ;
+    skos:notation "MDF-003"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-003"^^bom:SarifRuleId ;
+    skos:prefLabel "Legal name for the model provider"@en ;
+    skos:definition "The legal name of the provider of the general-purpose AI model."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:component-producer ;
+    skos:closeMatch dpv-euaiact:AIProvider ;
+    skos:relatedMatch dpv-euaiact:GPAIModel ;
+    dpv:hasDataSubject dpv:Organisation .
+
+gpaimdf2025:model-name
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:general ;
+    skos:notation "MDF-004"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-004"^^bom:SarifRuleId ;
+    skos:prefLabel "Model name"@en ;
+    skos:definition "The unique identifier for the model (e.g. Llama 3.1-405B), including the identifier for the collection of models where applicable, and a list of the names of the publicly available versions of the concerned model covered by the Model Documentation."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:component-name ;
+    skos:closeMatch bom:component-identifier ;
+    skos:closeMatch bom:component-version .
+
+gpaimdf2025:model-authenticity
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:general ;
+    skos:notation "MDF-005"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-005"^^bom:SarifRuleId ;
+    skos:prefLabel "Model authenticity"@en ;
+    skos:definition "Evidence that establishes the provenance and authenticity of the model (e.g. a secure hash if binaries are distributed, or the URL endpoint in the case of a service), where available."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:component-hash ;
+    skos:closeMatch bom:component-identifier .
+
+gpaimdf2025:release-date
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:general ;
+    skos:notation "MDF-006"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-006"^^bom:SarifRuleId ;
+    skos:prefLabel "Release date"@en ;
+    skos:definition "Date when the model was first released through any distribution channel. (Annex XI 1(c); Annex XII 1(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:component-timestamp .
+
+gpaimdf2025:union-market-release-date
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:general ;
+    skos:notation "MDF-007"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-007"^^bom:SarifRuleId ;
+    skos:prefLabel "Union market release date"@en ;
+    skos:definition "Date when the model was placed on the Union market."@en ;
+    skos:scopeNote "Jurisdiction-specific placing-on-the-market date; relevant to the Art. 111(3) transitional deadlines for models placed on the market before 2 August 2025."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:component-timestamp .
+
+gpaimdf2025:model-dependencies
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:general ;
+    skos:notation "MDF-008"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-008"^^bom:SarifRuleId ;
+    skos:prefLabel "Model dependencies"@en ;
+    skos:definition "If the model is the result of a modification or fine-tuning of one or more general-purpose AI models previously placed on the market, the model name(s) (and relevant version(s)) of those model(s); otherwise 'N/A'."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:rel-derived-from ;
+    skos:closeMatch bom:MetadataRelationship .
+
+# -- Model properties -----------------------------------------------------------
+
+gpaimdf2025:model-architecture
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-properties ;
+    skos:notation "MDF-009"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-009"^^bom:SarifRuleId ;
+    skos:prefLabel "Model architecture"@en ;
+    skos:definition "A general description of the model architecture, e.g. a transformer architecture. (Annex XI 1(d); Annex XII 1(d))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:ai-model-architecture .
+
+gpaimdf2025:model-design-specifications
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-properties ;
+    skos:notation "MDF-010"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-010"^^bom:SarifRuleId ;
+    skos:prefLabel "Design specifications of the model"@en ;
+    skos:definition "A general description of the key design specifications of the model, including rationale and assumptions made, to provide basic insight into how the model was designed. (Annex XI 2(b))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:ai-model-prop ;
+    skos:closeMatch bom:component-description ;
+    skos:closeMatch bom:ai-model-architecture .
+
+gpaimdf2025:input-modalities
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-properties ;
+    skos:notation "MDF-011"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-011"^^bom:SarifRuleId ;
+    skos:prefLabel "Input modalities"@en ;
+    skos:definition "The input modalities of the model (text, images, audio, video, other) and, for each selected modality, the maximum input size or 'N/A' if not defined. (Annex XI 1(e); Annex XII 2(b))"@en ;
+    skos:scopeNote "Modalities are intended for all recipients; the maximum input size is intended for the AI Office and downstream providers."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:ai-input-modality .
+
+gpaimdf2025:output-modalities
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-properties ;
+    skos:notation "MDF-012"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-012"^^bom:SarifRuleId ;
+    skos:prefLabel "Output modalities"@en ;
+    skos:definition "The output modalities of the model (text, images, audio, video, other) and, for each selected modality, the maximum output size or 'N/A' if not defined. (Annex XI 1(e); Annex XII 2(b))"@en ;
+    skos:scopeNote "Modalities are intended for all recipients; the maximum output size is intended for downstream providers."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:ai-output-modality .
+
+gpaimdf2025:total-model-size
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:model-properties ;
+    skos:notation "MDF-013"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-013"^^bom:SarifRuleId ;
+    skos:prefLabel "Total model size"@en ;
+    skos:definition "The total number of parameters of the model, recorded with at least two significant figures (e.g. 7.3*10^10 parameters), or the range within which the total number of parameters falls (1-500M, 500M-5B, 5B-15B, 15B-50B, 50B-100B, 100B-500B, 500B-1T, >1T). (Annex XI 1(d); Annex XII 1(d))"@en ;
+    skos:scopeNote "The exact count is intended for the AI Office; the range is intended for national competent authorities and downstream providers."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:ai-model-size .
+
+# -- Methods of distribution and licenses ---------------------------------------
+
+gpaimdf2025:distribution-channels-union
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:distribution-licence ;
+    skos:notation "MDF-014"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-014"^^bom:SarifRuleId ;
+    skos:prefLabel "Distribution channels (Union market)"@en ;
+    skos:definition "A list of the methods of distribution (e.g. enterprise or subscription-based access through software suites; public or subscription-based API access; access through IDEs, device-specific applications or firmware; open-source repositories) through which the model has been made available in the Union market, with, for each, a link to information about how the model can be accessed and the level of model access (e.g. weights-level access, black-box access). (Annex XI 1(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:component-distribution .
+
+gpaimdf2025:distribution-channels-downstream
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:distribution-licence ;
+    skos:notation "MDF-015"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-015"^^bom:SarifRuleId ;
+    skos:prefLabel "Distribution channels (downstream providers)"@en ;
+    skos:definition "A list of the methods of distribution through which the model can be made available to downstream providers. (Annex XII 1(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XII> ;
+    skos:exactMatch bom:component-distribution .
+
+gpaimdf2025:licence-link
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:distribution-licence ;
+    skos:notation "MDF-016"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-016"^^bom:SarifRuleId ;
+    skos:prefLabel "License"@en ;
+    skos:definition "A link to model license(s) (otherwise a copy of the license(s) upon request from the AI Office pursuant to Article 91) or an indication that no model license exists. (Annex XI 1(f))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:component-license .
+
+gpaimdf2025:licence-category
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:distribution-licence ;
+    skos:notation "MDF-017"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-017"^^bom:SarifRuleId ;
+    skos:prefLabel "License type or category (downstream providers)"@en ;
+    skos:definition "The type or category of licence(s) under which the model can be made available to downstream providers: free and open source licences; less permissive licences imposing use restrictions; or proprietary licences restricting access, usage, distribution and modification. In the absence of a license, how access is provided (e.g. terms of service). (Annex XII 1(f))"@en ;
+    dcterms:audience gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XII> ;
+    skos:closeMatch bom:component-license ;
+    skos:closeMatch bom:component-usage-restriction ;
+    skos:closeMatch bom:ai-openness-category .
+
+gpaimdf2025:additional-assets
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:distribution-licence ;
+    skos:notation "MDF-018"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-018"^^bom:SarifRuleId ;
+    skos:prefLabel "Additional assets made available"@en ;
+    skos:definition "A list of additional assets (e.g. training data, data processing code, model training code, model inference code, model evaluation code), if any, that are made available, with a description of how each can be accessed and what licenses, if any, relate to their use."@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:component-source-code ;
+    skos:closeMatch bom:rel-contains ;
+    skos:closeMatch bom:component-distribution .
+
+# -- Use ------------------------------------------------------------------------
+
+gpaimdf2025:acceptable-use-policy
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:use ;
+    skos:notation "MDF-019"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-019"^^bom:SarifRuleId ;
+    skos:prefLabel "Acceptable Use Policy"@en ;
+    skos:definition "A link to the acceptable use policy applicable (or an attached copy), or an indication that none exists. (Annex XI 1(b); Annex XII 1(b))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:component-usage-restriction .
+
+gpaimdf2025:intended-uses
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:use ;
+    skos:notation "MDF-020"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-020"^^bom:SarifRuleId ;
+    skos:prefLabel "Intended uses"@en ;
+    skos:definition "A description of either (i) the uses intended by the provider (e.g. productivity enhancement, translation, creative content generation, data analysis, programming assistance, customer support) or (ii) the uses restricted and/or prohibited by the provider beyond those prohibited by law, as specified in instructions for use, terms and conditions, promotional materials and technical documentation; 'N/A' if incompatible with the licence. (Annex XI 1(a); Annex XII 1(a))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:ai-intended-use ;
+    skos:closeMatch bom:ai-out-of-scope-usage ;
+    skos:relatedMatch bom:ai-application-domain .
+
+gpaimdf2025:integrable-ai-systems
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:use ;
+    skos:notation "MDF-021"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-021"^^bom:SarifRuleId ;
+    skos:prefLabel "Type and nature of AI systems in which the general-purpose AI model can be integrated"@en ;
+    skos:definition "A list or description of either (i) the type and nature of AI systems into which the model can be integrated or (ii) those into which it should not be integrated (e.g. autonomous systems, conversational assistants, decision support systems, creative AI systems, predictive systems, cybersecurity, surveillance, human-AI collaboration). (Annex XI 1(a); Annex XII 1(a))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:ai-intended-use ;
+    skos:closeMatch bom:ai-application-domain ;
+    skos:closeMatch bom:ai-out-of-scope-usage .
+
+gpaimdf2025:technical-means-integration
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:use ;
+    skos:notation "MDF-022"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-022"^^bom:SarifRuleId ;
+    skos:prefLabel "Technical means for model integration"@en ;
+    skos:definition "A general description of the technical means (e.g. instructions for use, infrastructure, tools) required for the general-purpose AI model to be integrated into AI systems. (Annex XII 2(a))"@en ;
+    dcterms:audience gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XII> ;
+    skos:closeMatch bom:component-instruction-for-use ;
+    skos:closeMatch bom:component-documentation .
+
+gpaimdf2025:required-hardware
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:use ;
+    skos:notation "MDF-023"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-023"^^bom:SarifRuleId ;
+    skos:prefLabel "Required hardware"@en ;
+    skos:definition "A description of any hardware, including the version, required to use the model, where applicable; 'N/A' if not applicable (e.g. model offered via an API). (Annex XII 2(a))"@en ;
+    dcterms:audience gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XII> ;
+    skos:exactMatch bom:infra-hardware .
+
+gpaimdf2025:required-software
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:use ;
+    skos:notation "MDF-024"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-024"^^bom:SarifRuleId ;
+    skos:prefLabel "Required software"@en ;
+    skos:definition "A description of any software, including the version, required to use the model, where applicable; 'N/A' if not applicable. (Annex XII 2(a))"@en ;
+    dcterms:audience gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XII> ;
+    skos:exactMatch bom:infra-software .
+
+# -- Training process -----------------------------------------------------------
+
+gpaimdf2025:training-design-specifications
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:training-process ;
+    skos:notation "MDF-025"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-025"^^bom:SarifRuleId ;
+    skos:prefLabel "Design specifications of the training process"@en ;
+    skos:definition "A general description of the main steps or stages involved in the training process, including training methodologies and techniques, the key design choices, assumptions made and what the model is designed to optimise for, and the relevance of different parameters, as applicable. (Annex XI 2(b))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:ai-training-prop .
+
+gpaimdf2025:training-decision-rationale
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:training-process ;
+    skos:notation "MDF-026"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-026"^^bom:SarifRuleId ;
+    skos:prefLabel "Decision rationale"@en ;
+    skos:definition "A description of how and why key design choices were made in model training. (Annex XI 2(b))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:ai-training-prop .
+
+# -- Data -----------------------------------------------------------------------
+
+gpaimdf2025:data-modality
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:data ;
+    skos:notation "MDF-027"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-027"^^bom:SarifRuleId ;
+    skos:prefLabel "Data type/modality"@en ;
+    skos:definition "The type or modality of the training, testing and validation data: text, images, audio, video, other (select all that apply). (Annex XI 2(c); Annex XII 2(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:dataset-modality .
+
+gpaimdf2025:data-provenance-category
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:data ;
+    skos:notation "MDF-028"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-028"^^bom:SarifRuleId ;
+    skos:prefLabel "Data provenance"@en ;
+    skos:definition "The provenance categories of the data (select all that apply): web crawling; private non-publicly available datasets obtained from third parties; user data; publicly available datasets; data collected through other means; synthetic data that is not publicly accessible; other. Categories are defined in the Template for the Public Summary of Training Content. (Annex XI 2(c); Annex XII 2(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:dataset-source ;
+    skos:closeMatch bom:dataset-collection-method .
+
+gpaimdf2025:data-acquisition
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:data ;
+    skos:notation "MDF-029"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-029"^^bom:SarifRuleId ;
+    skos:prefLabel "How data was obtained and selected"@en ;
+    skos:definition "A description of the methods used to obtain and select training, testing and validation data, including methods and resources used to annotate data, and models and methods used to generate synthetic data where applicable; for data obtained from third parties, how the provider obtained the rights to the data if not already disclosed in the public summary (Art. 53(1)(d)). (Annex XI 2(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:dataset-collection-method ;
+    skos:closeMatch bom:dataset-source .
+
+gpaimdf2025:data-points
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:data ;
+    skos:notation "MDF-030"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-030"^^bom:SarifRuleId ;
+    skos:prefLabel "Number of data points"@en ;
+    skos:definition "The size (in number of data points) of the training, testing and validation data respectively, together with the definition of the unit of data points (e.g. tokens, documents, images, hours of video, frames), recorded with at least one significant figure (national competent authorities) or two significant figures (AI Office). (Annex XI 2(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:dataset-statistical-prop .
+
+gpaimdf2025:data-scope
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:data ;
+    skos:notation "MDF-031"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-031"^^bom:SarifRuleId ;
+    skos:prefLabel "Scope and main characteristics"@en ;
+    skos:definition "A general description of the scope and main characteristics of the training, testing and validation data, such as domain (e.g. healthcare, science, law), geography (e.g. global, regional), language, modality coverage, where applicable. (Annex XI 2(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:dataset-domain ;
+    skos:closeMatch bom:component-description ;
+    skos:closeMatch bom:dataset-modality .
+
+gpaimdf2025:data-curation
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:data ;
+    skos:notation "MDF-032"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-032"^^bom:SarifRuleId ;
+    skos:prefLabel "Data curation methodologies"@en ;
+    skos:definition "A general description of the data processing involved in transforming the acquired data into training, testing and validation data, such as cleaning (e.g. filtering out advertisements), normalisation (e.g. tokenizing), augmentation (e.g. back-translation). (Annex XI 2(c); Annex XII 2(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca , gpaimdf2025:audience-dp ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_12/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:exactMatch bom:dataset-preprocessing .
+
+gpaimdf2025:data-unsuitability-measures
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:data ;
+    skos:notation "MDF-033"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-033"^^bom:SarifRuleId ;
+    skos:prefLabel "Measures to detect unsuitability of data sources"@en ;
+    skos:definition "A description of any methods implemented in data acquisition or processing to detect the presence of unsuitable data sources considering the model's intended uses, including illegal content, child sexual abuse material (CSAM), non-consensual intimate imagery (NCII), and personal data leading to its unlawful processing. (Annex XI 2(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:dataset-provenance ;
+    skos:closeMatch bom:dataset-sensitivity .
+
+gpaimdf2025:data-bias-measures
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:data ;
+    skos:notation "MDF-034"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-034"^^bom:SarifRuleId ;
+    skos:prefLabel "Measures to detect identifiable biases"@en ;
+    skos:definition "A description of any methods implemented in data acquisition or processing to address the prevalence of identifiable biases in the training data. (Annex XI 2(c))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:dataset-statistical-prop .
+
+# -- Computational resources ----------------------------------------------------
+
+gpaimdf2025:training-time
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:compute ;
+    skos:notation "MDF-035"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-035"^^bom:SarifRuleId ;
+    skos:prefLabel "Training time"@en ;
+    skos:definition "A description of what period is being measured along with its duration: as a range (less than 1 month, 1-3 months, 3-6 months, more than 6 months) for national competent authorities; in wall-clock days and in hardware days (e.g. Nvidia A100 days) with at least one significant figure for the AI Office. (Annex XI 2(d))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:ai-compute .
+
+gpaimdf2025:training-compute
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:compute ;
+    skos:notation "MDF-036"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-036"^^bom:SarifRuleId ;
+    skos:prefLabel "Amount of computation used for training"@en ;
+    skos:definition "Measured or estimated amount of computation used for training, reported in floating point operations: recorded up to its order of magnitude (e.g. 10^24 FLOP) for national competent authorities; with at least two significant figures (e.g. 2.4x10^25 FLOP) for the AI Office. (Annex XI 2(d))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:ai-compute .
+
+gpaimdf2025:training-compute-methodology
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:compute ;
+    skos:notation "MDF-037"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-037"^^bom:SarifRuleId ;
+    skos:prefLabel "Measurement methodology (training compute)"@en ;
+    skos:definition "In the absence of a delegated act under Article 53(5), a description of the methodology used to measure or estimate the amount of computation used for training. (Annex XI 2(d))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:ai-compute .
+
+# -- Energy consumption ---------------------------------------------------------
+
+gpaimdf2025:training-energy
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:energy ;
+    skos:notation "MDF-038"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-038"^^bom:SarifRuleId ;
+    skos:prefLabel "Amount of energy used for training"@en ;
+    skos:definition "Measured or estimated amount of energy used for training, reported in megawatt-hours with at least two significant figures (e.g. 1.0x10^2 MWh); 'N/A' if it cannot be estimated due to lack of critical information from a compute or hardware provider. (Annex XI 2(e))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:component-environmental-impact .
+
+gpaimdf2025:training-energy-methodology
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:energy ;
+    skos:notation "MDF-039"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-039"^^bom:SarifRuleId ;
+    skos:prefLabel "Measurement methodology (training energy)"@en ;
+    skos:definition "In the absence of a delegated act under Article 53(5), a description of the methodology used to measure or estimate the energy used for training; where unknown, energy may be estimated from computational resources used; where it cannot be estimated, the type of information lacking must be disclosed. (Annex XI 2(e))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:component-environmental-impact .
+
+gpaimdf2025:inference-compute
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:energy ;
+    skos:notation "MDF-040"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-040"^^bom:SarifRuleId ;
+    skos:prefLabel "Benchmarked amount of computation used for inference"@en ;
+    skos:definition "Benchmarked amount of computation used for inference, reported in floating point operations with at least two significant figures (e.g. 5.1x10^17 FLOP). (Annex XI 2(e))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:ai-compute .
+
+gpaimdf2025:inference-compute-methodology
+    a skos:Concept ; skos:inScheme gpaimdf2025:scheme ; skos:broader gpaimdf2025:energy ;
+    skos:notation "MDF-041"^^bom:ElementCode ;
+    skos:notation "BOM-GPAIMDF2025-041"^^bom:SarifRuleId ;
+    skos:prefLabel "Measurement methodology (inference compute)"@en ;
+    skos:definition "In the absence of a delegated act under Article 53(5), a description of a computational task (e.g. generating 100000 tokens) and the hardware (e.g. 64 Nvidia A100s) used to measure or estimate the amount of computation used for inference. (Annex XI 2(e))"@en ;
+    dcterms:audience gpaimdf2025:audience-aio , gpaimdf2025:audience-nca ;
+    rdfs:seeAlso <http://data.europa.eu/eli/reg/2024/1689/anx_11/oj> ;
+    rdfs:seeAlso <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689#anx_XI> ;
+    skos:closeMatch bom:ai-compute .
+
+
+# ============================================================================
+# OBLIGATION ASSERTIONS
+# ============================================================================
+# All items are obligations imposed by Regulation (EU) 2024/1689 (Art. 53(1)(a)-(b),
+# Annexes XI and XII) as operationalised by the Code of Practice; recorded as
+# bom:ExternalConstraint per the convention for regulatory specs.
+
+gpaimdf2025:doc-updated                         bom:provisionType bom:Requirement .
+gpaimdf2025:doc-version                         bom:provisionType bom:Requirement .
+gpaimdf2025:provider-legal-name                 bom:provisionType bom:Requirement .
+gpaimdf2025:model-name                          bom:provisionType bom:Requirement .
+gpaimdf2025:model-authenticity                  bom:provisionType bom:Requirement .
+gpaimdf2025:release-date                        bom:provisionType bom:Requirement .
+gpaimdf2025:union-market-release-date           bom:provisionType bom:Requirement .
+gpaimdf2025:model-dependencies                  bom:provisionType bom:Requirement .
+gpaimdf2025:model-architecture                  bom:provisionType bom:Requirement .
+gpaimdf2025:model-design-specifications         bom:provisionType bom:Requirement .
+gpaimdf2025:input-modalities                    bom:provisionType bom:Requirement .
+gpaimdf2025:output-modalities                   bom:provisionType bom:Requirement .
+gpaimdf2025:total-model-size                    bom:provisionType bom:Requirement .
+gpaimdf2025:distribution-channels-union         bom:provisionType bom:Requirement .
+gpaimdf2025:distribution-channels-downstream    bom:provisionType bom:Requirement .
+gpaimdf2025:licence-link                        bom:provisionType bom:Requirement .
+gpaimdf2025:licence-category                    bom:provisionType bom:Requirement .
+gpaimdf2025:additional-assets                   bom:provisionType bom:Requirement .
+gpaimdf2025:acceptable-use-policy               bom:provisionType bom:Requirement .
+gpaimdf2025:intended-uses                       bom:provisionType bom:Requirement .
+gpaimdf2025:integrable-ai-systems               bom:provisionType bom:Requirement .
+gpaimdf2025:technical-means-integration         bom:provisionType bom:Requirement .
+gpaimdf2025:required-hardware                   bom:provisionType bom:Requirement .
+gpaimdf2025:required-software                   bom:provisionType bom:Requirement .
+gpaimdf2025:training-design-specifications      bom:provisionType bom:Requirement .
+gpaimdf2025:training-decision-rationale         bom:provisionType bom:Requirement .
+gpaimdf2025:data-modality                       bom:provisionType bom:Requirement .
+gpaimdf2025:data-provenance-category            bom:provisionType bom:Requirement .
+gpaimdf2025:data-acquisition                    bom:provisionType bom:Requirement .
+gpaimdf2025:data-points                         bom:provisionType bom:Requirement .
+gpaimdf2025:data-scope                          bom:provisionType bom:Requirement .
+gpaimdf2025:data-curation                       bom:provisionType bom:Requirement .
+gpaimdf2025:data-unsuitability-measures         bom:provisionType bom:Requirement .
+gpaimdf2025:data-bias-measures                  bom:provisionType bom:Requirement .
+gpaimdf2025:training-time                       bom:provisionType bom:Requirement .
+gpaimdf2025:training-compute                    bom:provisionType bom:Requirement .
+gpaimdf2025:training-compute-methodology        bom:provisionType bom:Requirement .
+gpaimdf2025:training-energy                     bom:provisionType bom:Requirement .
+gpaimdf2025:training-energy-methodology         bom:provisionType bom:Requirement .
+gpaimdf2025:inference-compute                   bom:provisionType bom:Requirement .
+gpaimdf2025:inference-compute-methodology       bom:provisionType bom:Requirement .

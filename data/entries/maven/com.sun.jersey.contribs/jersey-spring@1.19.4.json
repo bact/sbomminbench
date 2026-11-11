@@ -1,0 +1,279 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/com.sun.jersey.contribs/jersey-spring@1.19.4",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "jersey-spring-1.19.4.pom",
+        "kind": "pom",
+        "sha256": "eb507c82498308b95da4c8fd13a806789168b470877055195b52669cb25295fe",
+        "size_bytes": 24765,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/com/sun/jersey/contribs/jersey-spring/1.19.4/jersey-spring-1.19.4.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/com.sun.jersey.contribs/jersey-spring/1.19.4",
+    "name": "com.sun.jersey.contribs:jersey-spring",
+    "observations": [],
+    "response_sha256": "eb507c82498308b95da4c8fd13a806789168b470877055195b52669cb25295fe",
+    "retrieved_at": "2026-11-11T08:15:02Z",
+    "source_url": "https://repo1.maven.org/maven2/com/sun/jersey/contribs/jersey-spring/1.19.4/jersey-spring-1.19.4.pom",
+    "version": "1.19.4"
+  },
+  "rank": 3041,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_multiple_values",
+        "license_prose",
+        "license_unresolved_value",
+        "maven_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[2].licenses.license[0].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "separator",
+              "expression": "CDDL-1.1",
+              "input": "CDDL 1.1",
+              "key": "pom.xml:parent[2].licenses.license[0].name",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://glassfish.java.net/public/CDDL+GPL_1_1.html",
+              "key": "pom.xml:parent[2].licenses.license[0].url",
+              "reason": "url names several licences: CDDL-1.1, GPL-2.0-with-classpath-exception",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "GPL2 w/ CPE",
+              "key": "pom.xml:parent[2].licenses.license[1].name",
+              "reason": "not found: GPL2 w/ CPE",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://glassfish.java.net/public/CDDL+GPL_1_1.html",
+              "key": "pom.xml:parent[2].licenses.license[1].url",
+              "reason": "url names several licences: CDDL-1.1, GPL-2.0-with-classpath-exception",
+              "trust": "none"
+            }
+          ],
+          "note": "'GPL2 w/ CPE': unresolved (not found: GPL2 w/ CPE)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "jersey-spring",
+              "com.sun.jersey.contribs:jersey-spring"
+            ],
+            "canonical_key": "com.sun.jersey.contribs:jersey-spring",
+            "name": "jersey-spring"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "jersey-contribs-1.19.4.pom",
+        "jersey-project-1.19.4.pom",
+        "jersey-spring-1.19.4.pom",
+        "jvnet-parent-4.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "jersey-spring",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "developers.developer",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "jersey-spring",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[0].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": "pkg:maven/com.sun.jersey/jersey-project@1.19.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "CDDL 1.1",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/com.sun.jersey/jersey-project@1.19.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "http://glassfish.java.net/public/CDDL+GPL_1_1.html",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[1].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": "pkg:maven/com.sun.jersey/jersey-project@1.19.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "GPL2 w/ CPE",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[1].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/com.sun.jersey/jersey-project@1.19.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "http://glassfish.java.net/public/CDDL+GPL_1_1.html",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "parent[2].organization.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/com.sun.jersey/jersey-project@1.19.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "Oracle Corporation",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/mradermacher/Athena-v4-i1-GGUF@d6dca4e05c0df44cd4428f788850fa574ec62b13",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/mradermacher/Athena-v4-i1-GGUF/tree/d6dca4e05c0df44cd4428f788850fa574ec62b13"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/mradermacher/Athena-v4-i1-GGUF",
+    "name": "mradermacher/Athena-v4-i1-GGUF",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "mradermacher",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "mradermacher/Athena-v4-i1-GGUF",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[5]",
+        "format_validity": "noncanonical",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:cc-by-nc-4.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "5a1849d0a775bc942a11ef3a1a8ea901e2e657ae07252c31b8e2b5a783be91d7",
+    "retrieved_at": "2026-11-09T08:55:09Z",
+    "source_url": "https://huggingface.co/api/models/mradermacher/Athena-v4-i1-GGUF/revision/d6dca4e05c0df44cd4428f788850fa574ec62b13",
+    "version": "d6dca4e05c0df44cd4428f788850fa574ec62b13"
+  },
+  "rank": 9478,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_spdx_noncanonical"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:tags[5]",
+            "hf_card:cardData.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "CC-BY-NC-4.0",
+              "input": "cc-by-nc-4.0",
+              "key": "hf_api:tags[5]",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "CC-BY-NC-4.0",
+              "input": "cc-by-nc-4.0",
+              "key": "hf_card:cardData.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "CC-BY-NC-4.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "Athena-v4-i1-GGUF",
+              "mradermacher/Athena-v4-i1-GGUF"
+            ],
+            "canonical_key": "mradermacher/athena-v4-i1-gguf",
+            "name": "Athena-v4-i1-GGUF"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "mradermacher",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "Athena-v4.i1-IQ1_M.gguf",
+        "Athena-v4.i1-IQ1_S.gguf",
+        "Athena-v4.i1-IQ2_M.gguf",
+        "Athena-v4.i1-IQ2_S.gguf",
+        "Athena-v4.i1-IQ2_XS.gguf",
+        "Athena-v4.i1-IQ2_XXS.gguf",
+        "Athena-v4.i1-IQ3_M.gguf",
+        "Athena-v4.i1-IQ3_S.gguf",
+        "Athena-v4.i1-IQ3_XS.gguf",
+        "Athena-v4.i1-IQ3_XXS.gguf",
+        "Athena-v4.i1-IQ4_XS.gguf",
+        "Athena-v4.i1-Q2_K.gguf",
+        "Athena-v4.i1-Q3_K_L.gguf",
+        "Athena-v4.i1-Q3_K_M.gguf",
+        "Athena-v4.i1-Q3_K_S.gguf",
+        "Athena-v4.i1-Q4_0.gguf",
+        "Athena-v4.i1-Q4_K_M.gguf",
+        "Athena-v4.i1-Q4_K_S.gguf",
+        "Athena-v4.i1-Q5_K_M.gguf",
+        "Athena-v4.i1-Q5_K_S.gguf"
+      ],
+      "files_count": 21,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "noncanonical",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "cc-by-nc-4.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

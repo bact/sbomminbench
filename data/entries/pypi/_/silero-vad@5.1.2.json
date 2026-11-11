@@ -1,0 +1,557 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "pypi",
+  "id": "pkg:pypi/silero-vad@5.1.2",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:c442971160026d2d7aa0ad83f0c7ee86c89797a65289fe625c8ea59fc6fb828d",
+        "fetched": true,
+        "filename": "silero_vad-5.1.2.tar.gz",
+        "kind": "sdist",
+        "sha256": "c442971160026d2d7aa0ad83f0c7ee86c89797a65289fe625c8ea59fc6fb828d",
+        "size_bytes": 5098526,
+        "skip_reason": null,
+        "url": "https://files.pythonhosted.org/packages/b1/b4/d0311b2e6220a11f8f4699f4a278cb088131573286cdfe804c87c7eb5123/silero_vad-5.1.2.tar.gz"
+      }
+    ],
+    "ecosystem": "pypi",
+    "html_url": "https://pypi.org/project/silero-vad/5.1.2/",
+    "name": "silero-vad",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author_email",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Silero Team <email.redacted@example.com>",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.classifiers[3]",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "License :: OSI Approved :: MIT License",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "trove_classifier",
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license_expression",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer_email",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "info.name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "silero-vad",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      }
+    ],
+    "response_sha256": "045de3806faba1fc80ffbc6219d9e93fbba261fdd8bdbdb17a9814ac3630bb3e",
+    "retrieved_at": "2026-11-09T08:55:53Z",
+    "source_url": "https://pypi.org/pypi/silero-vad/5.1.2/json",
+    "version": "5.1.2"
+  },
+  "rank": null,
+  "schema_version": "0.1",
+  "stratum": "edge",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_contains_collective",
+        "author_object_form",
+        "embedded_models",
+        "license_trove_only"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Classifier[3]",
+            "pypi_json:info.classifiers[3]",
+            "pyproject.toml:project.classifiers[1]"
+          ],
+          "candidates": [],
+          "independent_origins": 2,
+          "licenseid": [
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "PKG-INFO:Classifier[3]",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "pypi_json:info.classifiers[3]",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "pyproject.toml:project.classifiers[1]",
+              "reason": null,
+              "trust": "list_data"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Name",
+            "pypi_json:info.name",
+            "pyproject.toml:project.name"
+          ],
+          "candidates": [],
+          "independent_origins": 2,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "silero-vad"
+            ],
+            "canonical_key": "silero-vad",
+            "name": "silero-vad"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Author-email",
+            "pypi_json:info.author_email",
+            "pyproject.toml:project.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 2,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Silero Team",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "PKG-INFO",
+        "pyproject.toml"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author-email",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Silero Team <email.redacted@example.com>",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "Classifier[3]",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "License :: OSI Approved :: MIT License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "trove_classifier",
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License-Expression",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "Name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "silero-vad",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "project.authors",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "list_of_objects",
+          "present": true,
+          "raw": [
+            {
+              "email": "email.redacted@example.com",
+              "name": "Silero Team"
+            }
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pyproject.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "project.classifiers[1]",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "License :: OSI Approved :: MIT License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "trove_classifier",
+          "source": "pyproject.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "project.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pyproject.toml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "project.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "silero-vad",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pyproject.toml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    },
+    {
+      "challenge_tags": [],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "not_assessed",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "not_assessed",
+          "value": null
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "not_assessed",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "model:1",
+      "kind": "model",
+      "locator": "silero_vad-5.1.2/src/silero_vad/data/silero_vad.onnx",
+      "manifest_files": [],
+      "manifest_observations": [],
+      "model_format": "onnx",
+      "size_bytes": 2327524
+    },
+    {
+      "challenge_tags": [],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "not_assessed",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "not_assessed",
+          "value": null
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "not_assessed",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "model:2",
+      "kind": "model",
+      "locator": "silero_vad-5.1.2/src/silero_vad/data/silero_vad_half.onnx",
+      "manifest_files": [],
+      "manifest_observations": [],
+      "model_format": "onnx",
+      "size_bytes": 1280395
+    }
+  ]
+}

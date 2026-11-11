@@ -1,0 +1,276 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/react-is@19.3.1",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-RRieF6IyxQBkcK6pP8xOHprLTPW6QjRkbGdImtqNme+/hYVwCZkLQLdlZGOhUqXwkS9IEynaGvPJtv6XB/cz0Q==",
+        "fetched": true,
+        "filename": "react-is-19.3.1.tgz",
+        "kind": "npm_tarball",
+        "sha256": "2702e6e208fe9d1c34c59f4fba851dd664b39b24acaed7784846460a4e52d76f",
+        "size_bytes": 3176,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/react-is/-/react-is-19.3.1.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/react-is/v/19.3.1",
+    "name": "react-is",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "GitHub Actions",
+          "trustedPublisher": {
+            "id": "github",
+            "oidcConfigId": "cbf6e476-d8fc-438d-8573-d441b42a7262"
+          }
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "absent",
+        "present": false,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "fb"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "react-bot"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "react-is",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "cd2243166b45b2806c5f3ff774f4fa26b349eb9ce1b95d7bf09d6a0aa6453eea",
+    "retrieved_at": "2026-11-09T08:55:20Z",
+    "source_url": "https://registry.npmjs.org/react-is/19.3.1",
+    "version": "19.3.1"
+  },
+  "rank": 26,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_absent_maintainer_only"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:license",
+            "package.json:license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "npm_registry:license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "package.json:license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "react-is"
+            ],
+            "canonical_key": "react-is",
+            "name": "react-is"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "package/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "react-is",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

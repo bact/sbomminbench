@@ -1,0 +1,1236 @@
+# SPDX-FileContributor: Arthit Suriyawongkul
+# SPDX-FileCopyrightText: 2026-present Arthit Suriyawongkul
+# SPDX-FileType: SOURCE
+# SPDX-License-Identifier: CC0-1.0
+# G7 2026 SBOM for AI - Minimum Elements
+# G7 Cybersecurity Working Group (BSI, ACN, ANSSI, CSE, CISA, NCSC-UK, NCO Japan),
+# in collaboration with the European Commission. Published by BSI, 2026-05-12.
+# Source: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf
+#
+# Note: the Metadata cluster (SBOM author, SBOM version, data format name/version,
+# author signature, tool name/version, generation context, timestamp) is shared
+# verbatim with the CISA 2026 Minimum Elements (2026-07-29), which several of the
+# same organizations co-authored. See docs/req/cisa2026/cisa2026.ttl.
+
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix g7ai2026:   <https://w3id.org/bom/req/g7ai2026/> .
+@prefix bom:    <https://w3id.org/bom/> .
+
+# G7AI sub-vocabulary; imports the SBOM bridge ontology
+<https://w3id.org/bom/req/g7ai2026/>
+    a owl:Ontology ;
+    owl:imports <https://w3id.org/bom/> ;
+    owl:versionInfo "0.3.0" ;
+    dcterms:created "2026-06-15"^^xsd:date ;
+    dcterms:modified "2026-10-27"^^xsd:date ;
+    dcterms:creator <https://orcid.org/0000-0002-9698-1899> ;
+    rdfs:seeAlso <https://w3id.org/bom/req/cisa2026/> ;
+    dcterms:title "G7 2026 SBOM for AI - Minimum Elements Concept Scheme"@en ;
+    dcterms:description """Concepts derived from 'Software Bill of Materials (SBOM) for Artificial
+Intelligence - Minimum Elements', written by the G7 Cybersecurity Working Group and
+published by BSI (Federal Office for Information Security, Germany) on 2026-05-12.
+Seven clusters: Metadata (MD), System Level Properties (SLP), Models (MDL),
+Dataset Properties (DP), Infrastructure (INF), Security Properties (SP),
+Key Performance Indicators (KPI); 50 elements in total. The minimum elements
+are in addition to the general SBOM minimum elements (CISA 2026) and are
+explicitly not mandatory: they do not create requirements, standards or legislation.
+Ten elements that bundle several kinds of information (SLP-008, MDL-006, MDL-009,
+MDL-010, MDL-011, MDL-012, DP-002, DP-003, DP-006, DP-008) are additionally broken down
+into 31 atomic sub-elements (notation G7AI-XX-NNN.M) linked by skos:narrower from
+the original element. Nine of them carry bom:aggregation bom:AnyOf (the element
+is satisfied when at least one sub-element is present); MDL-012 carries
+bom:aggregation bom:SelfOnly (its own licence match, one refining sub-element)."""@en ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:source <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4> ;
+    dcterms:issued "2026-05-12"^^xsd:date ;
+    dcterms:publisher <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:rights "Copyright 2026-present Arthit Suriyawongkul. Dedicated to the public domain under CC0 1.0 Universal."@en ;
+    dcterms:bibliographicCitation "Suriyawongkul, A. (2026). G7 2026 SBOM for AI - Minimum Elements Concept Scheme. https://w3id.org/bom/req/g7ai2026/"@en ;
+    dcterms:conformsTo <http://www.w3.org/2004/02/skos/core> ;
+    vann:preferredNamespacePrefix "g7ai2026" ;
+    vann:preferredNamespaceUri "https://w3id.org/bom/req/g7ai2026/"^^xsd:anyURI .
+
+
+# ============================================================================
+# CONCEPT SCHEME AND DEFINITIONS
+# ============================================================================
+
+g7ai2026:scheme
+    a skos:ConceptScheme, bom:InfoRequirementSpec ;
+    skos:prefLabel "G7 2026 SBOM for AI Minimum Elements"@en ;
+    dcterms:title "G7 2026 SBOM for AI - Minimum Elements Concept Scheme" ;
+    dcterms:description """Concepts derived from 'Software Bill of Materials (SBOM) for Artificial
+Intelligence - Minimum Elements', written by the G7 Cybersecurity Working Group and
+published by BSI (Federal Office for Information Security, Germany) on 2026-05-12.
+Seven clusters: Metadata (MD), System Level Properties (SLP), Models (MDL),
+Dataset Properties (DP), Infrastructure (INF), Security Properties (SP),
+Key Performance Indicators (KPI); 50 elements in total. The minimum elements
+are in addition to the general SBOM minimum elements (CISA 2026) and are
+explicitly not mandatory: they do not create requirements, standards or legislation.
+Ten elements that bundle several kinds of information (SLP-008, MDL-006, MDL-009,
+MDL-010, MDL-011, MDL-012, DP-002, DP-003, DP-006, DP-008) are additionally broken down
+into 31 atomic sub-elements (notation G7AI-XX-NNN.M) linked by skos:narrower from
+the original element. Nine of them carry bom:aggregation bom:AnyOf (the element
+is satisfied when at least one sub-element is present); MDL-012 carries
+bom:aggregation bom:SelfOnly (its own licence match, one refining sub-element)."""@en ;
+    dcterms:creator "G7 Cybersecurity Working Group" ;
+    dcterms:publisher "Federal Office for Information Security (BSI)" ;
+    dcterms:issued "2026-05-12"^^xsd:date ;
+    dcterms:source <https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/SBOM-for-AI_minimum-elements.pdf?__blob=publicationFile&v=4> ;
+    skos:hasTopConcept
+        g7ai2026:metadata ,
+        g7ai2026:system-level-prop ,
+        g7ai2026:models ,
+        g7ai2026:dataset-prop ,
+        g7ai2026:infrastructure ,
+        g7ai2026:security-prop ,
+        g7ai2026:key-perf-indicators .
+
+# -- G7AI top-level cluster concepts -------------------------------------------
+
+g7ai2026:metadata
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:topConceptOf g7ai2026:scheme ;
+    skos:prefLabel "Metadata"@en ;
+    skos:notation "G7AI-MD"^^bom:ElementCode ;
+    skos:definition "Cluster representing information related to the SBOM for AI itself, not the individual components. Identical to the SBOM Metadata data fields of the CISA 2026 Minimum Elements, plus SBOM dependency relationship."@en .
+
+g7ai2026:system-level-prop
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:topConceptOf g7ai2026:scheme ;
+    skos:prefLabel "System Level Properties"@en ;
+    skos:notation "G7AI-SLP"^^bom:ElementCode ;
+    skos:definition "Cluster of elements referring to the AI system as a whole, including system-level inner workings relevant to systems composed of multiple AI elements (classifiers, LLMs, AI agents), software dependencies and frameworks used, and how components interact and process user data."@en .
+
+g7ai2026:models
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:topConceptOf g7ai2026:scheme ;
+    skos:prefLabel "Models"@en ;
+    skos:notation "G7AI-MDL"^^bom:ElementCode ;
+    skos:definition "Cluster of basic information for identifying the models used by the AI system, describing for each model how its weights were produced, and outlining their properties and limitations."@en .
+
+g7ai2026:dataset-prop
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:topConceptOf g7ai2026:scheme ;
+    skos:prefLabel "Dataset Properties"@en ;
+    skos:notation "G7AI-DP"^^bom:ElementCode ;
+    skos:definition "Cluster providing information on datasets used during the whole life cycle of the model, including basic information documenting the identity and provenance of data."@en .
+
+g7ai2026:infrastructure
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:topConceptOf g7ai2026:scheme ;
+    skos:prefLabel "Infrastructure"@en ;
+    skos:notation "G7AI-INF"^^bom:ElementCode ;
+    skos:definition "Cluster of physical and virtual infrastructure critical to proper operation and support of the AI system, including a link to a Hardware Bill of Materials (HBOM) where one exists."@en .
+
+g7ai2026:security-prop
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:topConceptOf g7ai2026:scheme ;
+    skos:prefLabel "Security Properties"@en ;
+    skos:notation "G7AI-SP"^^bom:ElementCode ;
+    skos:definition "Cluster focusing on the cybersecurity measures that apply to AI models and systems."@en .
+
+g7ai2026:key-perf-indicators
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:topConceptOf g7ai2026:scheme ;
+    skos:prefLabel "Key Performance Indicators"@en ;
+    skos:notation "G7AI-KPI"^^bom:ElementCode ;
+    skos:definition "Cluster of elements referring to the AI system's KPIs and those of its components (including integrated AI models), focusing on their lifecycle phases."@en .
+
+# -- G7AI Metadata elements (MD-001 ... MD-010) -----------------------------------
+
+g7ai2026:sbom-author
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM author"@en ;
+    skos:notation "G7AI-MD-001"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-001"^^bom:SarifRuleId ;
+    skos:definition "The name of the entity that creates the SBOM data for the target component."@en ;
+    skos:scopeNote "Captures the entity operating the tool to generate the SBOM, not the tool itself. Full names, not acronyms. Distinct from the Producer element; the two may be identical when the same entity created the target component and generated the SBOM."@en ;
+    skos:exactMatch bom:doc-author .
+
+g7ai2026:sbom-version
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM version"@en ;
+    skos:notation "G7AI-MD-002"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-002"^^bom:SarifRuleId ;
+    skos:definition "Identifier designated by the SBOM author to specify a change in the SBOM document from a previously identified version or to indicate that it is the first version."@en ;
+    skos:scopeNote "Tracks the SBOM component data for a component-name/component-version pair. Semantic Versioning may be used (major version 1 for SBOMs following these minimum elements); serial numbers should conform to relevant standards (e.g. RFC 9562)."@en ;
+    skos:exactMatch bom:doc-version .
+
+g7ai2026:sbom-data-format-name
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM data format name"@en ;
+    skos:notation "G7AI-MD-003"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-003"^^bom:SarifRuleId ;
+    skos:definition "The name of the data format used to represent the SBOM data."@en ;
+    skos:scopeNote "Identifies the (machine-processable) data format that the SBOM is in."@en ;
+    skos:closeMatch bom:doc-spec-version .
+
+g7ai2026:sbom-data-format-version
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM data format version"@en ;
+    skos:notation "G7AI-MD-004"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-004"^^bom:SarifRuleId ;
+    skos:definition "Identifier designated by the SBOM data format to specify the version of the data format."@en ;
+    skos:scopeNote "Identifies the version of the data format indicated in SBOM data format name. Versions declared deprecated by the format maintainers should not be used."@en ;
+    skos:exactMatch bom:doc-spec-version .
+
+g7ai2026:sbom-author-signature
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM author signature"@en ;
+    skos:notation "G7AI-MD-005"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-005"^^bom:SarifRuleId ;
+    skos:definition "A digital signature attributable to the SBOM author."@en ;
+    skos:scopeNote "Provides assurance that the claimed signatory signed the information and that it was not modified after signature generation. Signature algorithms should be approved for secure use (NIST DSS, ISO/IEC 14888-4:2024, ENISA Agreed Cryptographic Mechanisms)."@en ;
+    skos:exactMatch bom:doc-integrity .
+
+g7ai2026:sbom-tool-name
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM tool name"@en ;
+    skos:notation "G7AI-MD-006"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-006"^^bom:SarifRuleId ;
+    skos:definition "The name of the tool used by the SBOM author to generate or amend the SBOM."@en ;
+    skos:exactMatch bom:doc-tool-name .
+
+g7ai2026:sbom-tool-version
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM tool version"@en ;
+    skos:notation "G7AI-MD-007"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-007"^^bom:SarifRuleId ;
+    skos:definition "Identifier for the version of the tool identified in the SBOM tool name element."@en ;
+    skos:scopeNote "If no version identifier is available, the SBOM author should indicate that the information is unknown."@en ;
+    skos:exactMatch bom:doc-tool-version .
+
+g7ai2026:sbom-generation-context
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM generation context"@en ;
+    skos:altLabel "SBOM type"@en ;
+    skos:notation "G7AI-MD-008"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-008"^^bom:SarifRuleId ;
+    skos:definition "The relative software lifecycle phase and data available at the time the SBOM author generated the SBOM."@en ;
+    skos:scopeNote "General lifecycle references such as 'before build', 'build' and 'after build', as well as more specific identifiers, can satisfy this element."@en ;
+    skos:exactMatch bom:doc-lifecycle-stage .
+
+g7ai2026:sbom-timestamp
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM timestamp"@en ;
+    skos:notation "G7AI-MD-009"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-009"^^bom:SarifRuleId ;
+    skos:definition "Record of the date and time of the most recent update to the SBOM data."@en ;
+    skos:scopeNote "Each version of an SBOM reflects a new timestamp. Content should adhere to RFC 9557."@en ;
+    skos:exactMatch bom:doc-timestamp .
+
+g7ai2026:sbom-dependency-relationship
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:metadata ;
+    skos:prefLabel "SBOM dependency relationship"@en ;
+    skos:notation "G7AI-MD-010"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MD-010"^^bom:SarifRuleId ;
+    skos:definition "The relationship between two software components, specifically noting that Software X includes Component Y or that Component A is largely derived from Component B."@en ;
+    skos:scopeNote "The inclusion relationship ('includes' / 'included in') supports building a dependency graph. In addition, the relationship should reflect how a component may be largely derived from, or be a descendant of, another piece of software, so that backported or forked software is explicitly documented."@en ;
+    skos:closeMatch bom:MetadataRelationship ;
+    skos:exactMatch bom:rel-depends-on ;
+    skos:closeMatch bom:rel-contains ;
+    skos:closeMatch bom:rel-derived-from .
+
+# -- G7AI System Level Properties elements (SLP-001 ... SLP-009) -----------------
+
+g7ai2026:system-name
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-level-prop ;
+    skos:prefLabel "System name"@en ;
+    skos:notation "G7AI-SLP-001"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-001"^^bom:SarifRuleId ;
+    skos:definition "The name assigned by the System producer to an AI system."@en ;
+    skos:scopeNote "Human-readable; data formats should allow multiple entries to capture alternate names (full names, not acronyms)."@en ;
+    skos:exactMatch bom:component-name .
+
+g7ai2026:system-components
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-level-prop ;
+    skos:prefLabel "System components"@en ;
+    skos:notation "G7AI-SLP-002"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-002"^^bom:SarifRuleId ;
+    skos:definition "The components that are included in the AI system."@en ;
+    skos:example "AI models included in the system; databases; other software tools and components."@en ;
+    skos:closeMatch bom:rel-contains ;
+    skos:closeMatch bom:doc-primary-component .
+
+g7ai2026:system-producer
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-level-prop ;
+    skos:prefLabel "System producer"@en ;
+    skos:notation "G7AI-SLP-003"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-003"^^bom:SarifRuleId ;
+    skos:definition "Identifier used for the name of the entity that creates, defines, and identifies an AI system."@en ;
+    skos:exactMatch bom:component-producer ;
+    skos:closeMatch bom:component-supplier .
+
+g7ai2026:system-version
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-level-prop ;
+    skos:prefLabel "System version"@en ;
+    skos:notation "G7AI-SLP-004"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-004"^^bom:SarifRuleId ;
+    skos:definition "Identifier used by the System producer to specify a change in a software component from a previously identified version or to indicate that it is the first version."@en ;
+    skos:scopeNote "If the System producer does not provide a version, the SBOM author should indicate that the information is unknown."@en ;
+    skos:exactMatch bom:component-version .
+
+g7ai2026:system-timestamp
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-level-prop ;
+    skos:prefLabel "System timestamp"@en ;
+    skos:notation "G7AI-SLP-005"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-005"^^bom:SarifRuleId ;
+    skos:definition "Record of the date and time of the most recent update to the AI system."@en ;
+    skos:scopeNote "Updates can include model updates or software updates of other components that make up the system."@en ;
+    skos:closeMatch bom:component-timestamp .
+
+g7ai2026:system-data-flow
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-level-prop ;
+    skos:prefLabel "System data flow"@en ;
+    skos:notation "G7AI-SLP-006"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-006"^^bom:SarifRuleId ;
+    skos:definition "The data flow (link, reference, or description) between the different components of an AI system."@en ;
+    skos:example "Input/output endpoints; description of the data information flow (source to destination); APIs of external services the AI system uses; multi-agent communication protocols; bidirectional data flow towards external services (web grounding)."@en ;
+    skos:exactMatch bom:ai-data-flow .
+
+g7ai2026:system-data-usage
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-level-prop ;
+    skos:prefLabel "System data usage"@en ;
+    skos:notation "G7AI-SLP-007"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-007"^^bom:SarifRuleId ;
+    skos:definition "How data in the AI system is processed and consumed."@en ;
+    skos:example "Link/URL to technical documentation covering whether data is used for improving model performance, data logging from the APIs used to invoke the system, and whether metadata is derived from user input data."@en ;
+    skos:exactMatch bom:ai-data-usage .
+
+g7ai2026:system-input-output-prop
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-level-prop ;
+    skos:prefLabel "System input/output properties"@en ;
+    skos:notation "G7AI-SLP-008"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-008"^^bom:SarifRuleId ;
+    skos:definition "The properties of the input and the output of the AI system."@en ;
+    skos:example "Type of input and output data handled, specifying differences between input and output data types and characteristics; the modality (text, audio, image, video); input preprocessing (such as the tokenizer used for LLMs); link to documentation describing impacts on system decision making."@en ;
+    skos:exactMatch bom:ai-io-prop ;
+    skos:narrower g7ai2026:system-input-modality , g7ai2026:system-output-modality , g7ai2026:system-input-preprocessing ;
+    bom:aggregation bom:AnyOf ;
+    skos:narrowMatch bom:ai-input-modality , bom:ai-output-modality , bom:ai-input-preprocessing .
+
+g7ai2026:system-input-modality
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-input-output-prop ;
+    skos:prefLabel "System input modality"@en ;
+    skos:notation "G7AI-SLP-008.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-008.1"^^bom:SarifRuleId ;
+    skos:definition "The modality or modalities and data types the AI system accepts as input, including differences from the output side."@en ;
+    skos:example "Text, audio, image, video; structured data; input size limits."@en ;
+    skos:exactMatch bom:ai-input-modality .
+
+g7ai2026:system-output-modality
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-input-output-prop ;
+    skos:prefLabel "System output modality"@en ;
+    skos:notation "G7AI-SLP-008.2"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-008.2"^^bom:SarifRuleId ;
+    skos:definition "The modality or modalities and data types the AI system produces as output."@en ;
+    skos:example "Text, audio, image, video; structured data; output size limits."@en ;
+    skos:exactMatch bom:ai-output-modality .
+
+g7ai2026:system-input-preprocessing
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-input-output-prop ;
+    skos:prefLabel "System input preprocessing"@en ;
+    skos:notation "G7AI-SLP-008.3"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-008.3"^^bom:SarifRuleId ;
+    skos:definition "The pre-processing applied to input data before it reaches the AI components of the system."@en ;
+    skos:example "The tokenizer used for LLMs; normalisation; feature extraction; link to documentation describing impacts on system decision making."@en ;
+    skos:exactMatch bom:ai-input-preprocessing .
+
+g7ai2026:system-intended-application-area
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:system-level-prop ;
+    skos:prefLabel "Intended application area"@en ;
+    skos:notation "G7AI-SLP-009"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SLP-009"^^bom:SarifRuleId ;
+    skos:definition "The type of application the AI system is deployed in."@en ;
+    skos:example "Real time or near real time application; cybersecurity, medical/healthcare, finance, etc."@en ;
+    skos:exactMatch bom:ai-application-domain .
+
+# -- G7AI Model elements (MDL-001 ... MDL-013) ------------------------------------
+
+g7ai2026:model-name
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model name"@en ;
+    skos:notation "G7AI-MDL-001"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-001"^^bom:SarifRuleId ;
+    skos:definition "The name assigned by the Model producer to a software component."@en ;
+    skos:scopeNote "Human-readable; distinct from the Model identifier element. Data formats should allow multiple entries to capture alternate names. Full names, not acronyms."@en ;
+    skos:exactMatch bom:component-name .
+
+g7ai2026:model-identifier
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model identifier"@en ;
+    skos:notation "G7AI-MDL-002"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-002"^^bom:SarifRuleId ;
+    skos:definition "Identifier(s) used to identify a component or serve as a look-up key for relevant databases."@en ;
+    skos:scopeNote "At least one software identifier; common identifiers such as CPE and PURL (ECMA-427); may also include UUIDs, organization-specific identifiers, commit hashes and intrinsic identifiers such as OmniBOR and SWHID. If there are multiple identifiers, include all of them."@en ;
+    skos:exactMatch bom:component-identifier .
+
+g7ai2026:model-version
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model version"@en ;
+    skos:notation "G7AI-MDL-003"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-003"^^bom:SarifRuleId ;
+    skos:definition "Identifier used by the AI model producer to specify a change in a software component from a previously identified version or to indicate that it is the first version."@en ;
+    skos:scopeNote "If the AI model producer does not provide a version, the SBOM author should indicate that the information is unknown."@en ;
+    skos:exactMatch bom:component-version .
+
+g7ai2026:model-timestamp
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model timestamp"@en ;
+    skos:notation "G7AI-MDL-004"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-004"^^bom:SarifRuleId ;
+    skos:definition "Record of the date and time of the most recent update to the AI model."@en ;
+    skos:example "The official production release date of the AI model."@en ;
+    skos:closeMatch bom:component-timestamp .
+
+g7ai2026:model-producer
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model producer"@en ;
+    skos:notation "G7AI-MDL-005"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-005"^^bom:SarifRuleId ;
+    skos:definition "Identifier used for the name of the entity that creates, defines, and identifies an AI model."@en ;
+    skos:scopeNote "A human-readable string identifying the originator or manufacturer of the model; can identify a point of contact for security concerns. Should allow multiple entries."@en ;
+    skos:example "Companies involved in the pre-training, post-training, or fine tuning of the model."@en ;
+    skos:exactMatch bom:component-producer ;
+    skos:closeMatch bom:component-supplier .
+
+g7ai2026:model-description
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model description"@en ;
+    skos:notation "G7AI-MDL-006"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-006"^^bom:SarifRuleId ;
+    skos:definition "The model's capabilities, known limitations, and lineage."@en ;
+    skos:example "Intended application area the model was designed for and known weaknesses and limitations; lineage such as the predecessor model used for fine tuning or distillation and known derivative models; model dependencies such as internal or third-party packages, libraries, modules or development frameworks."@en ;
+    skos:exactMatch bom:component-description ;
+    skos:closeMatch bom:ai-model-prop ;
+    skos:scopeNote "The 'model dependencies' named in the G7 example (packages, libraries, frameworks) are the dependency relationship of MD-010 / INF-001 applied to the model and are not a separate sub-element here."@en ;
+    skos:closeMatch bom:rel-depends-on ;
+    skos:narrower g7ai2026:model-capability , g7ai2026:model-limitation , g7ai2026:model-lineage , g7ai2026:model-intended-use ;
+    bom:aggregation bom:AnyOf ;
+    skos:narrowMatch bom:ai-capability , bom:ai-limitation , bom:rel-derived-from , bom:ai-intended-use .
+
+g7ai2026:model-capability
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-description ;
+    skos:prefLabel "Model capability"@en ;
+    skos:notation "G7AI-MDL-006.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-006.1"^^bom:SarifRuleId ;
+    skos:definition "The capabilities of the model: the tasks it is able to perform."@en ;
+    skos:example "Text generation, image classification, speech recognition, code completion."@en ;
+    skos:exactMatch bom:ai-capability .
+
+g7ai2026:model-limitation
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-description ;
+    skos:prefLabel "Model limitation"@en ;
+    skos:notation "G7AI-MDL-006.2"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-006.2"^^bom:SarifRuleId ;
+    skos:definition "The known weaknesses and limitations of the model."@en ;
+    skos:example "Conditions under which the model should not be relied upon; known failure modes; out-of-scope uses."@en ;
+    skos:exactMatch bom:ai-limitation .
+
+g7ai2026:model-lineage
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-description ;
+    skos:prefLabel "Model lineage"@en ;
+    skos:notation "G7AI-MDL-006.3"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-006.3"^^bom:SarifRuleId ;
+    skos:definition "The lineage of the model: the predecessor model(s) it was derived from and its known derivative models."@en ;
+    skos:example "The predecessor model used for fine tuning or distillation; known derivative models."@en ;
+    skos:exactMatch bom:rel-derived-from .
+
+g7ai2026:model-intended-use
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-description ;
+    skos:prefLabel "Model intended use"@en ;
+    skos:altLabel "Intended application area"@en ;
+    skos:notation "G7AI-MDL-006.4"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-006.4"^^bom:SarifRuleId ;
+    skos:definition "The intended application area and uses the model was designed for, as stated by the model producer."@en ;
+    skos:example "Intended application area the model was designed for."@en ;
+    skos:scopeNote "Model-level counterpart of SLP-009 'Intended application area' (system level, sector) but in the provider-declared intended-use sense of EU AI Act Art. 3(12); see docs/disambiguation.html."@en ;
+    skos:exactMatch bom:ai-intended-use .
+
+
+g7ai2026:model-hash-value
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model hash value"@en ;
+    skos:notation "G7AI-MDL-007"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-007"^^bom:SarifRuleId ;
+    skos:definition "The output generated from applying a cryptographic hash algorithm to an executable component artifact."@en ;
+    skos:scopeNote "An ASCII-formatted value computed over the artifact; if the SBOM author has no access to the artifact, indicate the value is unknown."@en ;
+    skos:example "The hash of the weights or model file or other model related artifacts."@en ;
+    skos:closeMatch bom:component-hash .
+
+g7ai2026:model-hash-algorithm
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model hash algorithm"@en ;
+    skos:notation "G7AI-MDL-008"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-008"^^bom:SarifRuleId ;
+    skos:definition "The cryptographic algorithm used to compute the Model hash value of the software component."@en ;
+    skos:scopeNote "Identify the algorithm using IANA Hash Function Textual Names; the algorithm should be approved by a relevant authority such as NIST."@en ;
+    skos:closeMatch bom:component-hash .
+
+g7ai2026:model-prop
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model properties"@en ;
+    skos:notation "G7AI-MDL-009"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-009"^^bom:SarifRuleId ;
+    skos:definition "The characteristics of the specific model considered, such as the architecture of the model in the case of parametric models. May contain several sub-elements with more specific model information."@en ;
+    skos:example "Parametric (neural networks) vs non-parametric (clustering, KNN); number of parameters / model size; architecture (encoder-decoder, encoder-only, decoder-only; transformer, CNN, decision tree, RNN, LSTM); popular architectures (ResNet, VGG, GPT); hyper-parameters of the model."@en ;
+    skos:exactMatch bom:ai-model-prop ;
+    skos:narrower g7ai2026:model-type , g7ai2026:model-architecture , g7ai2026:model-parameter-count , g7ai2026:model-hyperparameter ;
+    bom:aggregation bom:AnyOf ;
+    skos:narrowMatch bom:ai-model-type , bom:ai-model-architecture , bom:ai-model-size , bom:ai-hyperparameter .
+
+g7ai2026:model-type
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-prop ;
+    skos:prefLabel "Model type"@en ;
+    skos:notation "G7AI-MDL-009.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-009.1"^^bom:SarifRuleId ;
+    skos:definition "The broad class of the model."@en ;
+    skos:example "Parametric (neural networks) vs non-parametric (clustering, KNN)."@en ;
+    skos:exactMatch bom:ai-model-type .
+
+g7ai2026:model-architecture
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-prop ;
+    skos:prefLabel "Model architecture"@en ;
+    skos:notation "G7AI-MDL-009.2"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-009.2"^^bom:SarifRuleId ;
+    skos:definition "The architecture of the model."@en ;
+    skos:example "Encoder-decoder, encoder-only, decoder-only; transformer, CNN, decision tree, RNN, LSTM; popular architectures such as ResNet, VGG, GPT."@en ;
+    skos:exactMatch bom:ai-model-architecture .
+
+g7ai2026:model-parameter-count
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-prop ;
+    skos:prefLabel "Model parameter count"@en ;
+    skos:altLabel "Model size"@en ;
+    skos:notation "G7AI-MDL-009.3"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-009.3"^^bom:SarifRuleId ;
+    skos:definition "The number of parameters of the model, or its size."@en ;
+    skos:example "Number of parameters; model size."@en ;
+    skos:exactMatch bom:ai-model-size .
+
+g7ai2026:model-hyperparameter
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-prop ;
+    skos:prefLabel "Model hyperparameters"@en ;
+    skos:notation "G7AI-MDL-009.4"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-009.4"^^bom:SarifRuleId ;
+    skos:definition "The hyper-parameters of the model."@en ;
+    skos:example "Number of layers, hidden size, learning rate, batch size, optimiser."@en ;
+    skos:exactMatch bom:ai-hyperparameter .
+
+g7ai2026:model-input-output-prop
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model input/output properties"@en ;
+    skos:notation "G7AI-MDL-010"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-010"^^bom:SarifRuleId ;
+    skos:definition "The properties of the input and the output of the AI model."@en ;
+    skos:example "Type of input and output data handled; the context length; the modality (text, audio, image, video); input preprocessing (tokenizer type for LLMs, vision language or multimodal models)."@en ;
+    skos:exactMatch bom:ai-io-prop ;
+    skos:narrower g7ai2026:model-input-modality , g7ai2026:model-output-modality , g7ai2026:model-context-length , g7ai2026:model-input-preprocessing ;
+    bom:aggregation bom:AnyOf ;
+    skos:narrowMatch bom:ai-input-modality , bom:ai-output-modality , bom:ai-context-length , bom:ai-input-preprocessing .
+
+g7ai2026:model-input-modality
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-input-output-prop ;
+    skos:prefLabel "Model input modality"@en ;
+    skos:notation "G7AI-MDL-010.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-010.1"^^bom:SarifRuleId ;
+    skos:definition "The modality or modalities and data types the AI model accepts as input."@en ;
+    skos:example "Text, audio, image, video; vision-language or multimodal input."@en ;
+    skos:exactMatch bom:ai-input-modality .
+
+g7ai2026:model-output-modality
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-input-output-prop ;
+    skos:prefLabel "Model output modality"@en ;
+    skos:notation "G7AI-MDL-010.2"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-010.2"^^bom:SarifRuleId ;
+    skos:definition "The modality or modalities and data types the AI model produces as output."@en ;
+    skos:example "Text, audio, image, video."@en ;
+    skos:exactMatch bom:ai-output-modality .
+
+g7ai2026:model-context-length
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-input-output-prop ;
+    skos:prefLabel "Model context length"@en ;
+    skos:altLabel "Context window"@en ;
+    skos:notation "G7AI-MDL-010.3"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-010.3"^^bom:SarifRuleId ;
+    skos:definition "The context length (maximum input length) the model can process."@en ;
+    skos:example "Context window in tokens."@en ;
+    skos:exactMatch bom:ai-context-length .
+
+g7ai2026:model-input-preprocessing
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-input-output-prop ;
+    skos:prefLabel "Model input preprocessing"@en ;
+    skos:altLabel "Tokenizer"@en ;
+    skos:notation "G7AI-MDL-010.4"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-010.4"^^bom:SarifRuleId ;
+    skos:definition "The pre-processing applied to the model input before inference."@en ;
+    skos:example "Tokenizer type for LLMs, vision language or multimodal models."@en ;
+    skos:exactMatch bom:ai-input-preprocessing .
+
+g7ai2026:model-training-prop
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model training properties"@en ;
+    skos:notation "G7AI-MDL-011"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-011"^^bom:SarifRuleId ;
+    skos:definition "The different training techniques that have been used for the AI system models, including all types of training (pre-training, post-training/fine tuning, continual learning)."@en ;
+    skos:example "Link/URL to documentation (e.g. model cards) describing the type of learning (unsupervised, supervised, self-supervised) and post-training characteristics (continual learning, fine tuning stages, RLHF, instruction tuning, RL optimisation type such as DPO, PPO, GRPO)."@en ;
+    skos:exactMatch bom:ai-training-prop ;
+    skos:narrower g7ai2026:model-learning-type , g7ai2026:model-post-training-technique ;
+    bom:aggregation bom:AnyOf ;
+    skos:narrowMatch bom:ai-learning-type , bom:ai-post-training-technique ;
+    skos:relatedMatch bom:rel-trained-on .
+
+g7ai2026:model-learning-type
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-training-prop ;
+    skos:prefLabel "Model learning type"@en ;
+    skos:altLabel "Type of learning"@en ;
+    skos:notation "G7AI-MDL-011.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-011.1"^^bom:SarifRuleId ;
+    skos:definition "The type of learning used to train the model."@en ;
+    skos:example "Unsupervised, supervised, self-supervised, reinforcement learning."@en ;
+    skos:exactMatch bom:ai-learning-type .
+
+g7ai2026:model-post-training-technique
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-training-prop ;
+    skos:prefLabel "Model post-training technique"@en ;
+    skos:altLabel "Fine-tuning method"@en ;
+    skos:notation "G7AI-MDL-011.2"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-011.2"^^bom:SarifRuleId ;
+    skos:definition "The post-training and continual-learning techniques applied to the model."@en ;
+    skos:example "Continual learning; fine tuning stages; RLHF; instruction tuning; RL optimisation type such as DPO, PPO, GRPO."@en ;
+    skos:exactMatch bom:ai-post-training-technique .
+
+g7ai2026:model-license
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model license"@en ;
+    skos:notation "G7AI-MDL-012"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-012"^^bom:SarifRuleId ;
+    skos:definition "The license type of the AI model."@en ;
+    skos:example "Link/URL to the model licensing document (open source licences such as EUPL, GPL, Apache) or to the corresponding fields in SPDX/CDX files; whether the AI model is open weight, open architecture, open data or open training."@en ;
+    skos:scopeNote "The licence itself (link or identifier) is the element; the openness category (open weight / architecture / data / training) is a refining sub-element. bom:aggregation bom:SelfOnly: the element is satisfied by its own licence match, the sub-element is recommended in addition and reported separately."@en ;
+    bom:aggregation bom:SelfOnly ;
+    skos:exactMatch bom:component-license ;
+    skos:narrower g7ai2026:model-openness-category ;
+    skos:narrowMatch bom:ai-openness-category .
+
+
+g7ai2026:model-openness-category
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:model-license ;
+    skos:prefLabel "Model openness category"@en ;
+    skos:notation "G7AI-MDL-012.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-012.1"^^bom:SarifRuleId ;
+    skos:definition "Which parts of the model are open: weights, architecture, data, training."@en ;
+    skos:example "Whether the AI model is open weight, open architecture, open data or open training."@en ;
+    skos:scopeNote "The Model Openness Framework (docs/req/mof2024) classes I-III are a formalisation of this sub-element."@en ;
+    skos:exactMatch bom:ai-openness-category .
+
+g7ai2026:model-external-ref
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:models ;
+    skos:prefLabel "Model external references"@en ;
+    skos:notation "G7AI-MDL-013"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-MDL-013"^^bom:SarifRuleId ;
+    skos:definition "Link/URL to external references related to the model."@en ;
+    skos:example "Link/URL to any framework related to the model or system card from editors; JSON schema of the model card itself; public documentation; research paper."@en ;
+    skos:exactMatch bom:component-external-ref ;
+    skos:closeMatch bom:ai-model-card .
+
+# -- G7AI Dataset Properties elements (DP-001 ... DP-010) ------------------------
+
+g7ai2026:dataset-name
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset name"@en ;
+    skos:notation "G7AI-DP-001"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-001"^^bom:SarifRuleId ;
+    skos:definition "The name assigned to the dataset by the dataset creator."@en ;
+    skos:example "String to publicly identify the dataset; equivalent to component name."@en ;
+    skos:exactMatch bom:component-name .
+
+g7ai2026:dataset-description
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset description"@en ;
+    skos:notation "G7AI-DP-002"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-002"^^bom:SarifRuleId ;
+    skos:definition "A description of the dataset, such as its primary intended use with regards to AI model training (for example, fine-tuning, benchmark, context extension)."@en ;
+    skos:example "Dataset used for pre-training, fine tuning, or model/system evaluation; whether the dataset is private or public."@en ;
+    skos:closeMatch bom:component-description ;
+    skos:narrower g7ai2026:dataset-lifecycle-role , g7ai2026:dataset-availability , g7ai2026:dataset-confidentiality-level ;
+    bom:aggregation bom:AnyOf ;
+    skos:narrowMatch bom:dataset-lifecycle-role , bom:dataset-availability , bom:dataset-confidentiality-level .
+
+g7ai2026:dataset-lifecycle-role
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-description ;
+    skos:prefLabel "Dataset lifecycle role"@en ;
+    skos:altLabel "Dataset intended use"@en ;
+    skos:altLabel "Dataset purpose"@en ;
+    skos:notation "G7AI-DP-002.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-002.1"^^bom:SarifRuleId ;
+    skos:definition "The role of the dataset in the AI model lifecycle: its primary intended use with regards to AI model training, evaluation or operation."@en ;
+    skos:example "Pre-training, fine tuning, model/system evaluation, benchmark, context extension."@en ;
+    skos:exactMatch bom:dataset-lifecycle-role ;
+    skos:related bom:rel-trained-on .
+
+g7ai2026:dataset-availability
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-description ;
+    skos:prefLabel "Dataset availability"@en ;
+    skos:altLabel "Public or private dataset"@en ;
+    skos:notation "G7AI-DP-002.2"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-002.2"^^bom:SarifRuleId ;
+    skos:definition "Whether the dataset is public or private in the sense of access: whether and how it can be obtained by others."@en ;
+    skos:example "Publicly downloadable; available on registration or click-through; private."@en ;
+    skos:scopeNote "One of the two readings of 'whether the dataset is private or public' in the G7 example text; the other is the confidentiality level (DP-002.3)."@en ;
+    skos:exactMatch bom:dataset-availability .
+
+g7ai2026:dataset-confidentiality-level
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-description ;
+    skos:prefLabel "Dataset confidentiality level"@en ;
+    skos:notation "G7AI-DP-002.3"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-002.3"^^bom:SarifRuleId ;
+    skos:definition "Whether the dataset is public or private in the sense of confidentiality: how widely its content may be shared."@en ;
+    skos:example "Traffic Light Protocol level (clear, green, amber, amber+strict, red)."@en ;
+    skos:scopeNote "Second reading of 'private or public' in the G7 example text; also a sub-aspect of DP-008 Dataset sensitivity."@en ;
+    skos:exactMatch bom:dataset-confidentiality-level .
+
+g7ai2026:dataset-content
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset content"@en ;
+    skos:notation "G7AI-DP-003"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-003"^^bom:SarifRuleId ;
+    skos:definition "The content of the dataset."@en ;
+    skos:example "Description of the content (e.g. financial data, medical records); the format of the dataset (data structure, encoding like JSON or XML); the data format (image, audio, video, 3D)."@en ;
+    skos:narrower g7ai2026:dataset-domain , g7ai2026:dataset-format , g7ai2026:dataset-modality ;
+    bom:aggregation bom:AnyOf ;
+    skos:narrowMatch bom:dataset-domain , bom:dataset-format , bom:dataset-modality .
+
+g7ai2026:dataset-domain
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-content ;
+    skos:prefLabel "Dataset domain"@en ;
+    skos:altLabel "Dataset content description"@en ;
+    skos:notation "G7AI-DP-003.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-003.1"^^bom:SarifRuleId ;
+    skos:definition "The subject domain of the content of the dataset."@en ;
+    skos:example "Financial data, medical records, legal text, satellite imagery."@en ;
+    skos:exactMatch bom:dataset-domain .
+
+g7ai2026:dataset-format
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-content ;
+    skos:prefLabel "Dataset format"@en ;
+    skos:altLabel "Dataset serialisation format"@en ;
+    skos:notation "G7AI-DP-003.2"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-003.2"^^bom:SarifRuleId ;
+    skos:definition "The data structure, encoding or serialisation format of the dataset."@en ;
+    skos:example "JSON, XML, CSV, Parquet, TFRecord."@en ;
+    skos:exactMatch bom:dataset-format .
+
+g7ai2026:dataset-modality
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-content ;
+    skos:prefLabel "Dataset modality"@en ;
+    skos:altLabel "Data format"@en ;
+    skos:altLabel "Dataset type"@en ;
+    skos:notation "G7AI-DP-003.3"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-003.3"^^bom:SarifRuleId ;
+    skos:definition "The modality of the data in the dataset."@en ;
+    skos:example "Image, audio, video, 3D, text, tabular."@en ;
+    skos:exactMatch bom:dataset-modality .
+
+g7ai2026:dataset-identifier
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset identifier"@en ;
+    skos:notation "G7AI-DP-004"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-004"^^bom:SarifRuleId ;
+    skos:definition "Information that allows univocal identification of the dataset."@en ;
+    skos:example "Dataset URL, URI, etc."@en ;
+    skos:exactMatch bom:component-identifier .
+
+g7ai2026:dataset-hash
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset hash"@en ;
+    skos:notation "G7AI-DP-005"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-005"^^bom:SarifRuleId ;
+    skos:definition "The cryptographic value generated from taking the hash of the dataset."@en ;
+    skos:example "The hash over the dataset file."@en ;
+    skos:exactMatch bom:component-hash .
+
+g7ai2026:dataset-provenance
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset provenance"@en ;
+    skos:notation "G7AI-DP-006"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-006"^^bom:SarifRuleId ;
+    skos:definition "Information used to track dataset provenance: the origin (sources or organizations contributing to the dataset), the data collection methods (e.g. web crawling, commercial agreements), the post-processing, preprocessing/curation and labelling steps; the creator; and, for synthetic data, the methods used to create it."@en ;
+    skos:exactMatch bom:dataset-provenance ;
+    skos:narrower g7ai2026:dataset-source , g7ai2026:dataset-collection-method , g7ai2026:dataset-preprocessing , g7ai2026:dataset-synthetic-method ;
+    bom:aggregation bom:AnyOf ;
+    skos:narrowMatch bom:dataset-source , bom:dataset-collection-method , bom:dataset-preprocessing , bom:dataset-synthetic-method .
+
+g7ai2026:dataset-source
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-provenance ;
+    skos:prefLabel "Dataset source"@en ;
+    skos:altLabel "Dataset origin"@en ;
+    skos:altLabel "Dataset creator"@en ;
+    skos:notation "G7AI-DP-006.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-006.1"^^bom:SarifRuleId ;
+    skos:definition "The origin of the dataset: the sources, organisations or individuals contributing to it, and its creator."@en ;
+    skos:example "Contributing organisations; upstream datasets; the dataset creator."@en ;
+    skos:exactMatch bom:dataset-source .
+
+g7ai2026:dataset-collection-method
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-provenance ;
+    skos:prefLabel "Dataset collection method"@en ;
+    skos:notation "G7AI-DP-006.2"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-006.2"^^bom:SarifRuleId ;
+    skos:definition "The methods used to collect the data."@en ;
+    skos:example "Web crawling; commercial agreements; user contributions; sensors."@en ;
+    skos:exactMatch bom:dataset-collection-method .
+
+g7ai2026:dataset-preprocessing
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-provenance ;
+    skos:prefLabel "Dataset preprocessing"@en ;
+    skos:altLabel "Dataset curation"@en ;
+    skos:notation "G7AI-DP-006.3"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-006.3"^^bom:SarifRuleId ;
+    skos:definition "The post-processing, preprocessing, curation and labelling steps applied to the data."@en ;
+    skos:example "Filtering, de-duplication, cleaning, annotation and labelling."@en ;
+    skos:exactMatch bom:dataset-preprocessing .
+
+g7ai2026:dataset-synthetic-method
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-provenance ;
+    skos:prefLabel "Dataset synthetic data method"@en ;
+    skos:notation "G7AI-DP-006.4"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-006.4"^^bom:SarifRuleId ;
+    skos:definition "For synthetic data, the methods used to create it."@en ;
+    skos:example "Generated by a named model; simulation; data augmentation."@en ;
+    skos:exactMatch bom:dataset-synthetic-method .
+
+g7ai2026:dataset-statistical-prop
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset statistical properties"@en ;
+    skos:notation "G7AI-DP-007"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-007"^^bom:SarifRuleId ;
+    skos:definition "Statistical characteristics associated with the dataset throughout its lifecycle."@en ;
+    skos:example "Statistical metrics, when relevant, of the dataset (e.g. mean, variance, median, mode, range, skewness)."@en ;
+    skos:exactMatch bom:dataset-statistical-prop .
+
+g7ai2026:dataset-sensitivity
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset sensitivity"@en ;
+    skos:notation "G7AI-DP-008"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-008"^^bom:SarifRuleId ;
+    skos:definition "The type of data present inside the dataset, where type is related to the sensitivity level of the data."@en ;
+    skos:example "Whether the dataset includes PII data, freely accessible data, copyright protected data, sensitive data (financial or medical records) or national security related data."@en ;
+    skos:exactMatch bom:dataset-sensitivity ;
+    skos:narrower g7ai2026:dataset-personal-information , g7ai2026:dataset-copyright-status , g7ai2026:dataset-sensitive-category ;
+    bom:aggregation bom:AnyOf ;
+    skos:narrowMatch bom:dataset-personal-information , bom:dataset-copyright-status , bom:dataset-sensitive-category .
+
+g7ai2026:dataset-personal-information
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-sensitivity ;
+    skos:prefLabel "Dataset personal information"@en ;
+    skos:altLabel "Contains PII"@en ;
+    skos:notation "G7AI-DP-008.1"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-008.1"^^bom:SarifRuleId ;
+    skos:definition "Whether the dataset includes personal data or personally identifiable information."@en ;
+    skos:example "PII data; anonymisation applied."@en ;
+    skos:exactMatch bom:dataset-personal-information .
+
+g7ai2026:dataset-copyright-status
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-sensitivity ;
+    skos:prefLabel "Dataset copyright status"@en ;
+    skos:notation "G7AI-DP-008.2"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-008.2"^^bom:SarifRuleId ;
+    skos:definition "Whether the dataset includes copyright-protected data."@en ;
+    skos:example "Third-party copyright protected data; public-domain or openly licensed data."@en ;
+    skos:exactMatch bom:dataset-copyright-status .
+
+g7ai2026:dataset-sensitive-category
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-sensitivity ;
+    skos:prefLabel "Dataset sensitive data category"@en ;
+    skos:notation "G7AI-DP-008.3"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-008.3"^^bom:SarifRuleId ;
+    skos:definition "The categories of sensitive or protected data present in the dataset."@en ;
+    skos:example "Sensitive data such as financial or medical records; national security related data."@en ;
+    skos:exactMatch bom:dataset-sensitive-category ;
+    skos:closeMatch bom:dataset-confidentiality-level .
+
+g7ai2026:dataset-dependency-relationship
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset dependency relationship"@en ;
+    skos:notation "G7AI-DP-009"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-009"^^bom:SarifRuleId ;
+    skos:definition "List of software used to create, modify and maintain the dataset during its lifecycle. The dependency relationship should reflect how a given dataset may be largely derived from another dataset."@en ;
+    skos:example "Management of datasets, labeling tools, filtering tools."@en ;
+    skos:closeMatch bom:MetadataRelationship ;
+    skos:closeMatch bom:rel-depends-on ;
+    skos:closeMatch bom:rel-derived-from ;
+    skos:relatedMatch bom:rel-trained-on .
+
+g7ai2026:dataset-license
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:dataset-prop ;
+    skos:prefLabel "Dataset license"@en ;
+    skos:notation "G7AI-DP-010"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-DP-010"^^bom:SarifRuleId ;
+    skos:definition "The license type of the datasets."@en ;
+    skos:example "Link/URL to the dataset licensing document."@en ;
+    skos:exactMatch bom:component-license .
+
+# -- G7AI Infrastructure elements (INF-001 ... INF-002) ---------------------------
+
+g7ai2026:infrastructure-software
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:infrastructure ;
+    skos:prefLabel "Infrastructure software"@en ;
+    skos:notation "G7AI-INF-001"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-INF-001"^^bom:SarifRuleId ;
+    skos:definition "Dependencies to software components specifically required to deliver and run an AI system."@en ;
+    skos:example "List of dependencies to firmware, package managers, third party libraries, frameworks, runtime environments, tools used by the AI system."@en ;
+    skos:exactMatch bom:infra-software .
+
+g7ai2026:infrastructure-hardware
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:infrastructure ;
+    skos:prefLabel "Infrastructure hardware"@en ;
+    skos:notation "G7AI-INF-002"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-INF-002"^^bom:SarifRuleId ;
+    skos:definition "A link to an existing HBOM as dependencies, which contains the hardware components on which the AI system is deployed."@en ;
+    skos:example "Link to an existing HBOM."@en ;
+    skos:exactMatch bom:infra-hardware .
+
+# -- G7AI Security Properties elements (SP-001 ... SP-004) ------------------------
+
+g7ai2026:security-controls
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:security-prop ;
+    skos:prefLabel "Security controls"@en ;
+    skos:notation "G7AI-SP-001"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SP-001"^^bom:SarifRuleId ;
+    skos:definition "The implemented AI specific and general cybersecurity controls; may include a link to a specific framework or guideline used as reference for the implementation."@en ;
+    skos:example "General: encryption, data minimization, differential privacy, access controls, API authentication, I/O anomaly detection and filters, physical/technical/system-level controls, administrative measures, references to applied security guidelines. AI specific: adversarial robustness training, prompt injection controls for LLMs/agents, input/output filters, data-level controls to curate training data."@en ;
+    skos:exactMatch bom:security-controls .
+
+g7ai2026:security-compliance
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:security-prop ;
+    skos:prefLabel "Security compliance"@en ;
+    skos:notation "G7AI-SP-002"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SP-002"^^bom:SarifRuleId ;
+    skos:definition "The cybersecurity standards and certifications related to the AI model/system, if obtained by the producer."@en ;
+    skos:example "Cybersecurity certification schemes, standards or frameworks to which the AI model/system is compliant."@en ;
+    skos:exactMatch bom:security-compliance .
+
+g7ai2026:cybersecurity-policy
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:security-prop ;
+    skos:prefLabel "Cybersecurity policy information"@en ;
+    skos:notation "G7AI-SP-003"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SP-003"^^bom:SarifRuleId ;
+    skos:definition "A link/URL to documentation regarding the AI model/system producer's published security.txt file."@en ;
+    skos:exactMatch bom:security-policy .
+
+g7ai2026:vulnerability-referencing
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:security-prop ;
+    skos:prefLabel "Vulnerability referencing"@en ;
+    skos:notation "G7AI-SP-004"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-SP-004"^^bom:SarifRuleId ;
+    skos:definition "Links to databases/repositories that provide exploitability of known vulnerabilities in the AI model/system, to help users decide whether to deploy a model in contexts where there is known risk."@en ;
+    skos:example "A static link/URL to the security repository of the system provider of the AI model."@en ;
+    skos:closeMatch bom:security-vuln-ref .
+
+# -- G7AI Key Performance Indicators elements (KPI-001 ... KPI-002) --------------
+
+g7ai2026:security-metric
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:key-perf-indicators ;
+    skos:prefLabel "Security metrics"@en ;
+    skos:notation "G7AI-KPI-001"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-KPI-001"^^bom:SarifRuleId ;
+    skos:definition "Metrics to evaluate the security characteristics of the AI models integrated in the AI system or the system itself."@en ;
+    skos:example "Security related benchmarks and metrics, e.g. robustness (resilience against third-party manipulation)."@en ;
+    skos:exactMatch bom:security-metric .
+
+g7ai2026:operational-perf-kpi
+    a skos:Concept ;
+    skos:inScheme g7ai2026:scheme ;
+    skos:broader g7ai2026:key-perf-indicators ;
+    skos:prefLabel "Operational performance KPIs"@en ;
+    skos:notation "G7AI-KPI-002"^^bom:ElementCode ;
+    skos:notation "BOM-G7AI2026-KPI-002"^^bom:SarifRuleId ;
+    skos:definition "KPIs related to the operational condition or other threat indicators of the AI system."@en ;
+    skos:example "System uptime, incident resolution time, system latency, request throughput, and load balancing."@en ;
+    skos:exactMatch bom:ai-perf-metric ;
+    skos:relatedMatch bom:component-environmental-impact .
+
+
+# ============================================================================
+# OBLIGATION ASSERTIONS
+# ============================================================================
+# Recorded as bom:Requirement in the sense of this project: every element is
+# required for an SBOM for AI to conform to the G7 minimum-element set (the
+# same reading applied to NTIA 2021 and CISA 2026). The G7 document itself
+# states the elements "are not mandatory; do not create requirements, standards,
+# or legislation" -- see the scheme's dcterms:description.
+
+# -- Metadata (MD-001 ... MD-010) -----------------------------------------------
+g7ai2026:sbom-author                  bom:provisionType bom:Requirement .
+g7ai2026:sbom-version                 bom:provisionType bom:Requirement .
+g7ai2026:sbom-data-format-name        bom:provisionType bom:Requirement .
+g7ai2026:sbom-data-format-version     bom:provisionType bom:Requirement .
+g7ai2026:sbom-author-signature        bom:provisionType bom:Requirement .
+g7ai2026:sbom-tool-name               bom:provisionType bom:Requirement .
+g7ai2026:sbom-tool-version            bom:provisionType bom:Requirement .
+g7ai2026:sbom-generation-context      bom:provisionType bom:Requirement .
+g7ai2026:sbom-timestamp               bom:provisionType bom:Requirement .
+g7ai2026:sbom-dependency-relationship bom:provisionType bom:Requirement .
+
+# -- System Level Properties (SLP-001 ... SLP-009) ------------------------------
+g7ai2026:system-name                  bom:provisionType bom:Requirement .
+g7ai2026:system-components            bom:provisionType bom:Requirement .
+g7ai2026:system-producer              bom:provisionType bom:Requirement .
+g7ai2026:system-version               bom:provisionType bom:Requirement .
+g7ai2026:system-timestamp             bom:provisionType bom:Requirement .
+g7ai2026:system-data-flow             bom:provisionType bom:Requirement .
+g7ai2026:system-data-usage            bom:provisionType bom:Requirement .
+g7ai2026:system-input-output-prop     bom:provisionType bom:Requirement .
+g7ai2026:system-intended-application-area bom:provisionType bom:Requirement .
+
+# -- Models (MDL-001 ... MDL-013) -----------------------------------------------
+g7ai2026:model-name                   bom:provisionType bom:Requirement .
+g7ai2026:model-identifier             bom:provisionType bom:Requirement .
+g7ai2026:model-version                bom:provisionType bom:Requirement .
+g7ai2026:model-timestamp              bom:provisionType bom:Requirement .
+g7ai2026:model-producer               bom:provisionType bom:Requirement .
+g7ai2026:model-description            bom:provisionType bom:Requirement .
+g7ai2026:model-hash-value             bom:provisionType bom:Requirement .
+g7ai2026:model-hash-algorithm         bom:provisionType bom:Requirement .
+g7ai2026:model-prop                   bom:provisionType bom:Requirement .
+g7ai2026:model-input-output-prop      bom:provisionType bom:Requirement .
+g7ai2026:model-training-prop          bom:provisionType bom:Requirement .
+g7ai2026:model-license                bom:provisionType bom:Requirement .
+g7ai2026:model-external-ref           bom:provisionType bom:Requirement .
+
+# -- Dataset Properties (DP-001 ... DP-010) -------------------------------------
+g7ai2026:dataset-name                 bom:provisionType bom:Requirement .
+g7ai2026:dataset-description          bom:provisionType bom:Requirement .
+g7ai2026:dataset-content              bom:provisionType bom:Requirement .
+g7ai2026:dataset-identifier           bom:provisionType bom:Requirement .
+g7ai2026:dataset-hash                 bom:provisionType bom:Requirement .
+g7ai2026:dataset-provenance           bom:provisionType bom:Requirement .
+g7ai2026:dataset-statistical-prop     bom:provisionType bom:Requirement .
+g7ai2026:dataset-sensitivity          bom:provisionType bom:Requirement .
+g7ai2026:dataset-dependency-relationship bom:provisionType bom:Requirement .
+g7ai2026:dataset-license              bom:provisionType bom:Requirement .
+
+# -- Infrastructure (INF-001 ... INF-002) ---------------------------------------
+g7ai2026:infrastructure-software      bom:provisionType bom:Requirement .
+g7ai2026:infrastructure-hardware      bom:provisionType bom:Requirement .
+
+# -- Security Properties (SP-001 ... SP-004) ------------------------------------
+g7ai2026:security-controls            bom:provisionType bom:Requirement .
+g7ai2026:security-compliance          bom:provisionType bom:Requirement .
+g7ai2026:cybersecurity-policy         bom:provisionType bom:Requirement .
+g7ai2026:vulnerability-referencing    bom:provisionType bom:Requirement .
+
+# -- Key Performance Indicators (KPI-001 ... KPI-002) ---------------------------
+g7ai2026:security-metric              bom:provisionType bom:Requirement .
+g7ai2026:operational-perf-kpi         bom:provisionType bom:Requirement .
+
+# -- Atomic sub-elements (XX-NNN.M) ---------------------------------------------
+# Each sub-element is one kind of information bundled in a composite G7 element.
+# The composite element is a bom:Requirement satisfied by bom:AnyOf its
+# sub-elements; each sub-element on its own is recorded as a bom:Recommendation
+# (the G7 text lists them as examples of what the element may contain, not as
+# mandatory parts).
+g7ai2026:system-input-modality                    bom:provisionType bom:Recommendation .
+g7ai2026:system-output-modality                   bom:provisionType bom:Recommendation .
+g7ai2026:system-input-preprocessing               bom:provisionType bom:Recommendation .
+g7ai2026:model-capability                         bom:provisionType bom:Recommendation .
+g7ai2026:model-limitation                         bom:provisionType bom:Recommendation .
+g7ai2026:model-lineage                            bom:provisionType bom:Recommendation .
+g7ai2026:model-intended-use                      bom:provisionType bom:Recommendation .
+g7ai2026:model-type                               bom:provisionType bom:Recommendation .
+g7ai2026:model-architecture                       bom:provisionType bom:Recommendation .
+g7ai2026:model-parameter-count                    bom:provisionType bom:Recommendation .
+g7ai2026:model-hyperparameter                     bom:provisionType bom:Recommendation .
+g7ai2026:model-input-modality                     bom:provisionType bom:Recommendation .
+g7ai2026:model-output-modality                    bom:provisionType bom:Recommendation .
+g7ai2026:model-context-length                     bom:provisionType bom:Recommendation .
+g7ai2026:model-input-preprocessing                bom:provisionType bom:Recommendation .
+g7ai2026:model-learning-type                      bom:provisionType bom:Recommendation .
+g7ai2026:model-post-training-technique            bom:provisionType bom:Recommendation .
+g7ai2026:model-openness-category                  bom:provisionType bom:Recommendation .
+g7ai2026:dataset-lifecycle-role                     bom:provisionType bom:Recommendation .
+g7ai2026:dataset-availability                     bom:provisionType bom:Recommendation .
+g7ai2026:dataset-confidentiality-level            bom:provisionType bom:Recommendation .
+g7ai2026:dataset-domain                           bom:provisionType bom:Recommendation .
+g7ai2026:dataset-format                           bom:provisionType bom:Recommendation .
+g7ai2026:dataset-modality                         bom:provisionType bom:Recommendation .
+g7ai2026:dataset-source                           bom:provisionType bom:Recommendation .
+g7ai2026:dataset-collection-method                bom:provisionType bom:Recommendation .
+g7ai2026:dataset-preprocessing                    bom:provisionType bom:Recommendation .
+g7ai2026:dataset-synthetic-method                 bom:provisionType bom:Recommendation .
+g7ai2026:dataset-personal-information             bom:provisionType bom:Recommendation .
+g7ai2026:dataset-copyright-status                 bom:provisionType bom:Recommendation .
+g7ai2026:dataset-sensitive-category               bom:provisionType bom:Recommendation .

@@ -1,0 +1,212 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/prithivMLmods/Gender-Classifier-Mini@4855356b698e88ba57996836bb35091f81932667",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/prithivMLmods/Gender-Classifier-Mini/tree/4855356b698e88ba57996836bb35091f81932667"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/prithivMLmods/Gender-Classifier-Mini",
+    "name": "prithivMLmods/Gender-Classifier-Mini",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "prithivMLmods",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "prithivMLmods/Gender-Classifier-Mini",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[13]",
+        "format_validity": "noncanonical",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "14ad3e27349aeca11d9a623ae12d7f7b32d9caa798ef7d2801f29e7cac57cc8c",
+    "retrieved_at": "2026-11-09T08:54:55Z",
+    "source_url": "https://huggingface.co/api/models/prithivMLmods/Gender-Classifier-Mini/revision/4855356b698e88ba57996836bb35091f81932667",
+    "version": "4855356b698e88ba57996836bb35091f81932667"
+  },
+  "rank": 25,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_spdx_noncanonical"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:tags[13]",
+            "hf_card:cardData.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_api:tags[13]",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_card:cardData.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "Gender-Classifier-Mini",
+              "prithivMLmods/Gender-Classifier-Mini"
+            ],
+            "canonical_key": "prithivmlmods/gender-classifier-mini",
+            "name": "Gender-Classifier-Mini"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "prithivMLmods",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "checkpoint-157/model.safetensors",
+        "checkpoint-157/optimizer.pt",
+        "checkpoint-157/rng_state.pth",
+        "checkpoint-157/scheduler.pt",
+        "checkpoint-314/model.safetensors",
+        "checkpoint-314/optimizer.pt",
+        "checkpoint-314/rng_state.pth",
+        "checkpoint-314/scheduler.pt",
+        "model.safetensors"
+      ],
+      "files_count": 9,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "noncanonical",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

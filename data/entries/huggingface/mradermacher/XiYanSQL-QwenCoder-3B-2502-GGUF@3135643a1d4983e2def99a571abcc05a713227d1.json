@@ -1,0 +1,215 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/mradermacher/XiYanSQL-QwenCoder-3B-2502-GGUF@3135643a1d4983e2def99a571abcc05a713227d1",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/mradermacher/XiYanSQL-QwenCoder-3B-2502-GGUF/tree/3135643a1d4983e2def99a571abcc05a713227d1"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/mradermacher/XiYanSQL-QwenCoder-3B-2502-GGUF",
+    "name": "mradermacher/XiYanSQL-QwenCoder-3B-2502-GGUF",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "mradermacher",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "mradermacher/XiYanSQL-QwenCoder-3B-2502-GGUF",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[8]",
+        "format_validity": "noncanonical",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "e2964f593f72aa31c9be4f00ec806a45fb0bdca58c40615d93208169b1485072",
+    "retrieved_at": "2026-11-09T08:55:05Z",
+    "source_url": "https://huggingface.co/api/models/mradermacher/XiYanSQL-QwenCoder-3B-2502-GGUF/revision/3135643a1d4983e2def99a571abcc05a713227d1",
+    "version": "3135643a1d4983e2def99a571abcc05a713227d1"
+  },
+  "rank": 5889,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_spdx_noncanonical"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:tags[8]",
+            "hf_card:cardData.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_api:tags[8]",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_card:cardData.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "XiYanSQL-QwenCoder-3B-2502-GGUF",
+              "mradermacher/XiYanSQL-QwenCoder-3B-2502-GGUF"
+            ],
+            "canonical_key": "mradermacher/xiyansql-qwencoder-3b-2502-gguf",
+            "name": "XiYanSQL-QwenCoder-3B-2502-GGUF"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "mradermacher",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "XiYanSQL-QwenCoder-3B-2502.IQ4_XS.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q2_K.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q3_K_L.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q3_K_M.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q3_K_S.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q4_K_M.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q4_K_S.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q5_K_M.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q5_K_S.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q6_K.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.Q8_0.gguf",
+        "XiYanSQL-QwenCoder-3B-2502.f16.gguf"
+      ],
+      "files_count": 12,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "noncanonical",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": "gguf",
+      "size_bytes": null
+    }
+  ]
+}

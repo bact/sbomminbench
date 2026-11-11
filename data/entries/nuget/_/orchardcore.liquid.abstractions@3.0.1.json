@@ -1,0 +1,308 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "nuget",
+  "id": "pkg:nuget/orchardcore.liquid.abstractions@3.0.1",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512:w8LGU88n2D7O6+PqS9tC2d9PtBxJ2/MQWZ+zgfRq6zDnaudJ5yZUiORRMwtEeNDHzALr9ck4LQCoMV/5D3V08w==",
+        "fetched": false,
+        "filename": "orchardcore.liquid.abstractions.3.0.1.nupkg",
+        "kind": "nupkg",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://api.nuget.org/v3-flatcontainer/orchardcore.liquid.abstractions/3.0.1/orchardcore.liquid.abstractions.3.0.1.nupkg"
+      }
+    ],
+    "ecosystem": "nuget",
+    "html_url": "https://www.nuget.org/packages/orchardcore.liquid.abstractions/3.0.1",
+    "name": "orchardcore.liquid.abstractions",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "authors",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Orchard Core Community and Contributors",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "OrchardCore.Liquid.Abstractions",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseExpression",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "BSD-3-Clause",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseUrl",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "https://licenses.nuget.org/BSD-3-Clause",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "nuget_license_url",
+        "source": "nuget_catalog"
+      }
+    ],
+    "response_sha256": "dec233f45b1ffc7915dfb0dc8b49299a7c45c1e724b94d06d8e02c6de6f64249",
+    "retrieved_at": "2026-11-09T08:55:40Z",
+    "source_url": "https://api.nuget.org/v3/catalog0/data/2026.07.09.23.52.29/orchardcore.liquid.abstractions.3.0.1.json",
+    "version": "3.0.1"
+  },
+  "rank": 8241,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_multi_in_one_string",
+        "license_is_url",
+        "name_case_differs"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:licenseExpression",
+            "nuget_catalog:licenseUrl",
+            "nuspec:metadata.license",
+            "nuspec:metadata.licenseUrl"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "BSD-3-Clause",
+              "input": "BSD-3-Clause",
+              "key": "nuget_catalog:licenseExpression",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "BSD-3-Clause",
+              "input": "BSD-3-Clause",
+              "key": "nuget_catalog:licenseUrl",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "BSD-3-Clause",
+              "input": "BSD-3-Clause",
+              "key": "nuspec:metadata.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "BSD-3-Clause",
+              "input": "BSD-3-Clause",
+              "key": "nuspec:metadata.licenseUrl",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "BSD-3-Clause"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:id",
+            "nuspec:metadata.id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "OrchardCore.Liquid.Abstractions"
+            ],
+            "canonical_key": "orchardcore.liquid.abstractions",
+            "name": "OrchardCore.Liquid.Abstractions"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:authors",
+            "nuspec:metadata.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Orchard Core Community",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": true
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "orchardcore.liquid.abstractions.nuspec"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "metadata.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Orchard Core Community and Contributors",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "metadata.id",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "OrchardCore.Liquid.Abstractions",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "BSD-3-Clause",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.license@type",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "expression",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "empty",
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.licenseUrl",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://licenses.nuget.org/BSD-3-Clause",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "nuget_license_url",
+          "source": "nuspec"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

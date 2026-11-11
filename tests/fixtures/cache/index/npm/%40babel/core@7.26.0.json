@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "declared_digest": "sha512-i1SLeK+DzNnQ3LL/CswPCa/E5u4lh1k6IAEphON8F+cXt0t9euTshDru0q7/IqMa1PMPz5RnHuHscF8/ZJsStg==",
+    "fetched": true,
+    "filename": "core-7.26.0.tgz",
+    "kind": "npm_tarball",
+    "sha256": "df5e87bbc944acb59f2bd311f8451e77ae1ed7e425ca97bffd8a70a0e7ca8c49",
+    "size_bytes": 189077,
+    "skip_reason": null,
+    "url": "https://registry.npmjs.org/@babel/core/-/core-7.26.0.tgz"
+  },
+  "ecosystem": "npm",
+  "fetched_at": "2026-11-08T23:01:22Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "package.json": "package/package.json"
+  },
+  "members_dir": "members/df5e87bbc944acb59f2bd311f8451e77ae1ed7e425ca97bffd8a70a0e7ca8c49",
+  "model_members": [],
+  "name": "@babel/core",
+  "purl": "pkg:npm/%40babel/core@7.26.0",
+  "rank": null,
+  "responses": {
+    "platform": "https://registry.npmjs.org/@babel%2Fcore/7.26.0"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "7.26.0"
+}

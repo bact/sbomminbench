@@ -1,0 +1,251 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.jboss.spec/jboss-javaee-7.0@1.1.1.Final",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "jboss-javaee-7.0-1.1.1.Final.pom",
+        "kind": "pom",
+        "sha256": "ab5076b878c95eca5e5e5f31239f563913c1cfb8c1021c5a62aade8c128e6605",
+        "size_bytes": 17197,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/jboss/spec/jboss-javaee-7.0/1.1.1.Final/jboss-javaee-7.0-1.1.1.Final.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.jboss.spec/jboss-javaee-7.0/1.1.1.Final",
+    "name": "org.jboss.spec:jboss-javaee-7.0",
+    "observations": [],
+    "response_sha256": "ab5076b878c95eca5e5e5f31239f563913c1cfb8c1021c5a62aade8c128e6605",
+    "retrieved_at": "2026-11-11T08:15:03Z",
+    "source_url": "https://repo1.maven.org/maven2/org/jboss/spec/jboss-javaee-7.0/1.1.1.Final/jboss-javaee-7.0-1.1.1.Final.pom",
+    "version": "1.1.1.Final"
+  },
+  "rank": 4406,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_prose",
+        "license_unresolved_value",
+        "maven_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "GNU Lesser General Public License, Version 2.1",
+              "key": "pom.xml:licenses.license[0].name",
+              "reason": "not found: GNU Lesser General Public License, Version 2.1",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://www.gnu.org/licenses/lgpl-2.1.txt",
+              "key": "pom.xml:licenses.license[0].url",
+              "reason": "not found: http://www.gnu.org/licenses/lgpl-2.1.txt",
+              "trust": "none"
+            }
+          ],
+          "note": "'GNU Lesser General Public License, Version 2.1': unresolved (not found: GNU Lesser General Public License, Version 2.1)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "jboss-javaee-7.0",
+              "org.jboss.spec:jboss-javaee-7.0"
+            ],
+            "canonical_key": "org.jboss.spec:jboss-javaee-7.0",
+            "name": "jboss-javaee-7.0"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[1].developers.developer[0].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "JBoss.org Community",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "jboss-javaee-7.0-1.1.1.Final.pom",
+        "jboss-parent-25.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "jboss-javaee-7.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "GNU Lesser General Public License, Version 2.1",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "http://www.gnu.org/licenses/lgpl-2.1.txt",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "JBoss Java EE 7 Specification APIs",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.jboss/jboss-parent@25",
+          "native_type": "string",
+          "present": true,
+          "raw": "JBoss.org Community",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[0].organization",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.jboss/jboss-parent@25",
+          "native_type": "string",
+          "present": true,
+          "raw": "JBoss.org",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "parent[1].organization.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.jboss/jboss-parent@25",
+          "native_type": "string",
+          "present": true,
+          "raw": "JBoss by Red Hat",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

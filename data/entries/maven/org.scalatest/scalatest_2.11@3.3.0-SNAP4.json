@@ -1,0 +1,278 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.scalatest/scalatest_2.11@3.3.0-SNAP4",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "scalatest_2.11-3.3.0-SNAP4.pom",
+        "kind": "pom",
+        "sha256": "dd1e2648ca3cdf1cf7593305f6af4293425f979416a5183a688a3999eb8b026d",
+        "size_bytes": 4753,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.3.0-SNAP4/scalatest_2.11-3.3.0-SNAP4.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.scalatest/scalatest_2.11/3.3.0-SNAP4",
+    "name": "org.scalatest:scalatest_2.11",
+    "observations": [],
+    "response_sha256": "dd1e2648ca3cdf1cf7593305f6af4293425f979416a5183a688a3999eb8b026d",
+    "retrieved_at": "2026-11-09T08:55:14Z",
+    "source_url": "https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.3.0-SNAP4/scalatest_2.11-3.3.0-SNAP4.pom",
+    "version": "3.3.0-SNAP4"
+  },
+  "rank": 39,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_prose",
+        "license_unresolved_value"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:licenses.license[0].url"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "the Apache License, ASL Version 2.0",
+              "key": "pom.xml:licenses.license[0].name",
+              "reason": "not found: the Apache License, ASL Version 2.0",
+              "trust": "none"
+            },
+            {
+              "category": "license_url",
+              "expression": "Apache-2.0",
+              "input": "http://www.apache.org/licenses/LICENSE-2.0",
+              "key": "pom.xml:licenses.license[0].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": "'the Apache License, ASL Version 2.0': unresolved (not found: the Apache License, ASL Version 2.0)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "scalatest_2.11",
+              "org.scalatest:scalatest_2.11"
+            ],
+            "canonical_key": "org.scalatest:scalatest_2.11",
+            "name": "scalatest_2.11"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:developers.developer[0].name",
+            "pom.xml:developers.developer[1].name",
+            "pom.xml:developers.developer[2].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Bill Venners",
+                "role": "author"
+              },
+              {
+                "name": "George Berger",
+                "role": "author"
+              },
+              {
+                "name": "Chua Chee Seng",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "scalatest_2.11-3.3.0-SNAP4.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "scalatest_2.11",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Bill Venners",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "developers.developer[1].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "George Berger",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "developers.developer[2].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Chua Chee Seng",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "the Apache License, ASL Version 2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "http://www.apache.org/licenses/LICENSE-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "scalatest",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "organization.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "org.scalatest",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

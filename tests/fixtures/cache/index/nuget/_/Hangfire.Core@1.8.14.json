@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "declared_digest": "sha512:NJFqvIvCpNSmvUKihn1HOzZbxZrS+cad1y4hKMhW9y9O78Qc0DphvpZCjLTG05+WaCc952iPiEdFbvKzr53mzQ==",
+    "fetched": false,
+    "filename": "hangfire.core.1.8.14.nupkg",
+    "kind": "nupkg",
+    "sha256": null,
+    "size_bytes": null,
+    "skip_reason": "not_needed",
+    "url": "https://api.nuget.org/v3-flatcontainer/hangfire.core/1.8.14/hangfire.core.1.8.14.nupkg"
+  },
+  "ecosystem": "nuget",
+  "fetched_at": "2026-11-08T23:01:53Z",
+  "files": [],
+  "files_count": 0,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "Hangfire.Core",
+  "purl": "pkg:nuget/Hangfire.Core@1.8.14",
+  "rank": null,
+  "responses": {
+    "leaf": "https://api.nuget.org/v3/registration5-gz-semver2/hangfire.core/1.8.14.json",
+    "nuspec": "https://api.nuget.org/v3-flatcontainer/hangfire.core/1.8.14/hangfire.core.nuspec",
+    "platform": "https://api.nuget.org/v3/catalog0/data/2024.06.11.06.54.44/hangfire.core.1.8.14.json"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "1.8.14"
+}

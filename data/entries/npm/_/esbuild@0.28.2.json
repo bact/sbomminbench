@@ -1,0 +1,272 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/esbuild@0.28.2",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-HKVLS8dvII+xoKW9kmqxbRKrnWEXfJJr/FZhhJmiqIB0e053QNYFqOBouTMO/k5sID4MvCiUCvv8b9M4h32wIA==",
+        "fetched": true,
+        "filename": "esbuild-0.28.2.tgz",
+        "kind": "npm_tarball",
+        "sha256": "e045f94c235c7adc50e77ba2a579c7bec41b496b6b47c3a7845f7c1e19959a88",
+        "size_bytes": 34207,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/esbuild/-/esbuild-0.28.2.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/esbuild/v/0.28.2",
+    "name": "esbuild",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "GitHub Actions",
+          "trustedPublisher": {
+            "id": "github",
+            "oidcConfigId": "oidc:b0cf120c-134e-4e78-a95a-6cbbb5de631f"
+          }
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "absent",
+        "present": false,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "esbuild"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "esbuild",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "7a6838097b106ef5d8877fd543a1e25c46e5eb1730945fb7e57bc467c12c7c8c",
+    "retrieved_at": "2026-11-11T08:15:05Z",
+    "source_url": "https://registry.npmjs.org/esbuild/0.28.2",
+    "version": "0.28.2"
+  },
+  "rank": 49,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_absent_maintainer_only"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:license",
+            "package.json:license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "npm_registry:license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "package.json:license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "esbuild"
+            ],
+            "canonical_key": "esbuild",
+            "name": "esbuild"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "package/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "esbuild",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

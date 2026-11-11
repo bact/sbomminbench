@@ -1,0 +1,358 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/mapbox-gl@3.34.2",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-SfuzpqjokSjv4C9/JEjxAfqVHY37B7Kky/AOFpc+9D0Sx0KuIoV3keSlvvuHuM/jxw84iQ/Nh7yIK1VxuDBBHA==",
+        "fetched": true,
+        "filename": "mapbox-gl-3.34.2.tgz",
+        "kind": "npm_tarball",
+        "sha256": "03237fd337b9a6d98df8a2a0ea3eec3cf4017f9673bd6521951c61b99487353a",
+        "size_bytes": 15160886,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/mapbox-gl/-/mapbox-gl-3.34.2.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/mapbox-gl/v/3.34.2",
+    "name": "mapbox-gl",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "GitHub Actions",
+          "trustedPublisher": {
+            "id": "github",
+            "oidcConfigId": "0956c7e0-9718-4a3a-8db8-fa8293250fa9"
+          }
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "absent",
+        "present": false,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "SEE LICENSE IN LICENSE.txt",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "file_ref",
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-01"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-02"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-07"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-03"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-04"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-09"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-05"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-06"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-08"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-advanced-actions"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm-ci"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-npm"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-admin"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mapbox-machine-user"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-ci-staging"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-ci-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-01-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-02-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-03-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-04-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-05-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-06-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-07-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-08-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-09-production"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-02-staging"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-advanced-actions-staging"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mbx-npm-advanced-actions-production"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "mapbox-gl",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "6e526f1a405c92c1f67cd1f05fdb82cd3ca15d73829ae6a4ec3d9b421d02dfa5",
+    "retrieved_at": "2026-11-09T08:55:22Z",
+    "source_url": "https://registry.npmjs.org/mapbox-gl/3.34.2",
+    "version": "3.34.2"
+  },
+  "rank": 5805,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_absent_maintainer_only",
+        "license_file_only"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": "only URL / file / text / ambiguous trove",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "mapbox-gl"
+            ],
+            "canonical_key": "mapbox-gl",
+            "name": "mapbox-gl"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "package/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "SEE LICENSE IN LICENSE.txt",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "file_ref",
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "mapbox-gl",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+name	version	stratum	rank	note
+junit:junit	4.13.2	edge		own Eclipse Public License 1.0; developers
+org.apache.commons:commons-lang3	3.17.0	edge		licence inherited from the parent chain; developer organizations
+com.fasterxml.jackson.core:jackson-databind	2.18.0	edge		prose licence name plus .txt URL
+org.slf4j:slf4j-api	2.0.16	edge		parent with relativePath; nothing in the child
+com.google.guava:guava	33.3.1-jre	edge		licence in guava-parent

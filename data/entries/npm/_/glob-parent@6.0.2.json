@@ -1,0 +1,346 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/glob-parent@6.0.2",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==",
+        "fetched": true,
+        "filename": "glob-parent-6.0.2.tgz",
+        "kind": "npm_tarball",
+        "sha256": "345bb942f3be1fe234cab09ddc1df2c443cb2e84aaf5743c1862cf2b4e8d5066",
+        "size_bytes": 3449,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/glob-parent/-/glob-parent-6.0.2.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/glob-parent/v/6.0.2",
+    "name": "glob-parent",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "phated"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "Gulp Team",
+          "url": "https://gulpjs.com/"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "contributor",
+        "element": "provider",
+        "field_path": "contributors",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "name": "Elan Shanker",
+            "url": "https://github.com/es128"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Blaine Bublitz"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "contributor",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "ISC",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "phated"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "contra"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "es128"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "jonschlinkert"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "doowb"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "glob-parent",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "7cfe05e5905594e835fc7c5450eaca5f3f794b528ddc28e94558484831d26ea7",
+    "retrieved_at": "2026-11-11T08:15:05Z",
+    "source_url": "https://registry.npmjs.org/glob-parent/6.0.2",
+    "version": "6.0.2"
+  },
+  "rank": 41,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_contains_collective",
+        "author_object_form"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:license",
+            "package.json:license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "ISC",
+              "input": "ISC",
+              "key": "npm_registry:license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "ISC",
+              "input": "ISC",
+              "key": "package.json:license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "ISC"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "glob-parent"
+            ],
+            "canonical_key": "glob-parent",
+            "name": "glob-parent"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:author",
+            "package.json:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Gulp Team",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "package/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Gulp Team <email.redacted@example.com> (https://gulpjs.com/)",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "contributor",
+          "element": "provider",
+          "field_path": "contributors",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "list_of_strings",
+          "present": true,
+          "raw": [
+            "Elan Shanker (https://github.com/es128)",
+            "Blaine Bublitz <email.redacted@example.com>"
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "contributor",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "ISC",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "glob-parent",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

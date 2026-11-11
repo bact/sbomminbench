@@ -1,0 +1,223 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/unsloth/Qwen3.8-27B-GGUF@4ca720788d1e01f1bff70c033e0d0028fd02e502",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/tree/4ca720788d1e01f1bff70c033e0d0028fd02e502"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+    "name": "unsloth/Qwen3.8-27B-GGUF",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "unsloth",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "unsloth/Qwen3.8-27B-GGUF",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[5]",
+        "format_validity": "noncanonical",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "287e308ded8fa5d6216bf6233b77b7bb09f8737521042d55b2466b1e3f1c5cda",
+    "retrieved_at": "2026-11-09T08:54:59Z",
+    "source_url": "https://huggingface.co/api/models/unsloth/Qwen3.8-27B-GGUF/revision/4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "version": "4ca720788d1e01f1bff70c033e0d0028fd02e502"
+  },
+  "rank": 45,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_spdx_noncanonical"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:tags[5]",
+            "hf_card:cardData.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_api:tags[5]",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_card:cardData.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "Qwen3.8-27B-GGUF",
+              "unsloth/Qwen3.8-27B-GGUF"
+            ],
+            "canonical_key": "unsloth/qwen3.8-27b-gguf",
+            "name": "Qwen3.8-27B-GGUF"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "unsloth",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "BF16/Qwen3.8-27B-BF16-00001-of-00002.gguf",
+        "BF16/Qwen3.8-27B-BF16-00002-of-00002.gguf",
+        "MTP/mtp-Qwen3.8-27B-Q4_0.gguf",
+        "Qwen3.8-27B-Q4_0.gguf",
+        "Qwen3.8-27B-Q4_1.gguf",
+        "Qwen3.8-27B-Q8_0.gguf",
+        "Qwen3.8-27B-UD-IQ1_M.gguf",
+        "Qwen3.8-27B-UD-IQ1_S.gguf",
+        "Qwen3.8-27B-UD-IQ2_S.gguf",
+        "Qwen3.8-27B-UD-IQ2_XXS.gguf",
+        "Qwen3.8-27B-UD-IQ3_S.gguf",
+        "Qwen3.8-27B-UD-IQ3_XXS.gguf",
+        "Qwen3.8-27B-UD-IQ4_XS.gguf",
+        "Qwen3.8-27B-UD-Q2_K_XL.gguf",
+        "Qwen3.8-27B-UD-Q3_K_XL.gguf",
+        "Qwen3.8-27B-UD-Q4_K_M.gguf",
+        "Qwen3.8-27B-UD-Q4_K_S.gguf",
+        "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+        "Qwen3.8-27B-UD-Q5_K_M.gguf",
+        "Qwen3.8-27B-UD-Q5_K_S.gguf"
+      ],
+      "files_count": 30,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "noncanonical",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

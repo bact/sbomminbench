@@ -1,0 +1,460 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "pypi",
+  "id": "pkg:pypi/collate-sqlfluff@3.5.3",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:feed770a232250b66f77d34aa1c1471a09e4f77b78f1824aca6d2400a06ec9ca",
+        "fetched": true,
+        "filename": "collate_sqlfluff-3.5.3.tar.gz",
+        "kind": "sdist",
+        "sha256": "feed770a232250b66f77d34aa1c1471a09e4f77b78f1824aca6d2400a06ec9ca",
+        "size_bytes": 919496,
+        "skip_reason": null,
+        "url": "https://files.pythonhosted.org/packages/8c/08/2a666ccaf1fe9d5722b1be5f7e3086b6581d9a71ab245432fb54605c06b5/collate_sqlfluff-3.5.3.tar.gz"
+      }
+    ],
+    "ecosystem": "pypi",
+    "html_url": "https://pypi.org/project/collate-sqlfluff/3.5.3/",
+    "name": "collate-sqlfluff",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "open-metadata",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author_email",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.classifiers[3]",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "License :: OSI Approved :: MIT License",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "trove_classifier",
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT License\n        \n        Copyright (c) 2023 Alan Cruickshank\n        \n        Permission is hereby granted, free of charge, to any person obtaining a copy\n        of this software and associated documentation files (the \"Software\"), to deal\n        in the Software without restriction, including without limitation the rights\n        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n        copies of the Software, and to permit persons to whom the Software is\n        furnished to do so, subject to the following conditions:\n        \n        The above copyright notice and this permission notice shall be included in all\n        copies or substantial portions of the Software.\n        \n        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n        SOFTWARE.\n        ",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "license_text",
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license_expression",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer_email",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "info.name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "collate-sqlfluff",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      }
+    ],
+    "response_sha256": "cf38a3745dc9256a2747fa01a6f8927dff2671015f2547069fda5119bd3ea5ce",
+    "retrieved_at": "2026-11-09T08:55:50Z",
+    "source_url": "https://pypi.org/pypi/collate-sqlfluff/3.5.3/json",
+    "version": "3.5.3"
+  },
+  "rank": 6610,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_object_form",
+        "license_text_in_field"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Classifier[3]",
+            "pypi_json:info.classifiers[3]",
+            "pyproject.toml:project.classifiers[3]"
+          ],
+          "candidates": [],
+          "independent_origins": 2,
+          "licenseid": [
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "PKG-INFO:Classifier[3]",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "pypi_json:info.classifiers[3]",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "pyproject.toml:project.classifiers[3]",
+              "reason": null,
+              "trust": "list_data"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Name",
+            "pypi_json:info.name",
+            "pyproject.toml:project.name"
+          ],
+          "candidates": [],
+          "independent_origins": 2,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "collate-sqlfluff"
+            ],
+            "canonical_key": "collate-sqlfluff",
+            "name": "collate-sqlfluff"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Author",
+            "pypi_json:info.author",
+            "pyproject.toml:project.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 2,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "open-metadata",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "PKG-INFO",
+        "pyproject.toml"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "open-metadata",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author-email",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "Classifier[3]",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "License :: OSI Approved :: MIT License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "trove_classifier",
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT License\n        \n        Copyright (c) 2023 Alan Cruickshank\n        \n        Permission is hereby granted, free of charge, to any person obtaining a copy\n        of this software and associated documentation files (the \"Software\"), to deal\n        in the Software without restriction, including without limitation the rights\n        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n        copies of the Software, and to permit persons to whom the Software is\n        furnished to do so, subject to the following conditions:\n        \n        The above copyright notice and this permission notice shall be included in all\n        copies or substantial portions of the Software.\n        \n        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n        SOFTWARE.\n        ",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "license_text",
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License-Expression",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "Name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "collate-sqlfluff",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "project.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "list_of_objects",
+          "present": true,
+          "raw": [
+            {
+              "name": "open-metadata"
+            }
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pyproject.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "project.classifiers[3]",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "License :: OSI Approved :: MIT License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "trove_classifier",
+          "source": "pyproject.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "project.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "object",
+          "present": true,
+          "raw": {
+            "file": "LICENSE.md"
+          },
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pyproject.toml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "project.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "collate-sqlfluff",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pyproject.toml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

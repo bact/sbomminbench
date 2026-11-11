@@ -1,0 +1,272 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "cargo",
+  "id": "pkg:cargo/p3-util@0.8.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:b2deb6b0e30be32c696ab3cd443cc6f10b2ffce0faa31d37bd59e58789dd6df1",
+        "fetched": true,
+        "filename": "p3-util-0.8.0.crate",
+        "kind": "crate",
+        "sha256": "b2deb6b0e30be32c696ab3cd443cc6f10b2ffce0faa31d37bd59e58789dd6df1",
+        "size_bytes": 52747,
+        "skip_reason": null,
+        "url": "https://static.crates.io/crates/p3-util/p3-util-0.8.0.crate"
+      }
+    ],
+    "ecosystem": "cargo",
+    "html_url": "https://crates.io/crates/p3-util/0.8.0",
+    "name": "p3-util",
+    "observations": [
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "version.crate",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "p3-util",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "crates_api"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "version.license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT OR Apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "expression_shaped",
+        "source": "crates_api"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "version.published_by",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "avatar": "https://avatars.githubusercontent.com/u/7939279?v=4",
+          "created_at": "2014-06-20T02:53:05Z",
+          "github_username_matches": true,
+          "id": 179071,
+          "login": "BGluth",
+          "name": null,
+          "url": "https://github.com/BGluth"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "crates_api"
+      }
+    ],
+    "response_sha256": "dd7a5a5acdda7a9271c28f7eeedc2b8daea19f1a42ef9d0dbdc697f5cc20ba61",
+    "retrieved_at": "2026-11-09T08:54:30Z",
+    "source_url": "https://crates.io/api/v1/crates/p3-util/0.8.0",
+    "version": "0.8.0"
+  },
+  "rank": 5894,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_compound",
+        "workspace_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml:package.license",
+            "crates_api:version.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT OR Apache-2.0",
+              "key": "Cargo.toml:package.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT OR Apache-2.0",
+              "key": "crates_api:version.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0 OR MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml:package.name",
+            "crates_api:version.crate"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "p3-util"
+            ],
+            "canonical_key": "p3-util",
+            "name": "p3-util"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "p3-util-0.8.0/Cargo.toml",
+        "p3-util-0.8.0/Cargo.toml.orig"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "package.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT OR Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "expression_shaped",
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "p3-util",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "object",
+          "present": true,
+          "raw": {
+            "workspace": true
+          },
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml.orig"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "p3-util",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml.orig"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

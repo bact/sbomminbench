@@ -1,0 +1,375 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "pypi",
+  "id": "pkg:pypi/executable-application@0.3.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:0ef8c5ddd28649503c6e4a9f55be17e5b3bd0685df7b83ff7c260b481025f261",
+        "fetched": true,
+        "filename": "executable_application-0.3.0.tar.gz",
+        "kind": "sdist",
+        "sha256": "0ef8c5ddd28649503c6e4a9f55be17e5b3bd0685df7b83ff7c260b481025f261",
+        "size_bytes": 914,
+        "skip_reason": null,
+        "url": "https://files.pythonhosted.org/packages/9a/36/e803315469274d62f2dab543e3916c0b5b65730074d295f7d48711aa9e36/executable_application-0.3.0.tar.gz"
+      }
+    ],
+    "ecosystem": "pypi",
+    "html_url": "https://pypi.org/project/executable-application/0.3.0/",
+    "name": "executable-application",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author_email",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Charlie Marsh <email.redacted@example.com>",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license_expression",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer_email",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "info.name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "executable-application",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      }
+    ],
+    "response_sha256": "3c412595abfb36f7d959a4ae52239538c07ac1124f4f99ca3b0503ce7c332103",
+    "retrieved_at": "2026-11-09T08:55:50Z",
+    "source_url": "https://pypi.org/pypi/executable-application/0.3.0/json",
+    "version": "0.3.0"
+  },
+  "rank": 6689,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_object_form"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Name",
+            "pypi_json:info.name",
+            "pyproject.toml:project.name"
+          ],
+          "candidates": [],
+          "independent_origins": 2,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "executable-application"
+            ],
+            "canonical_key": "executable-application",
+            "name": "executable-application"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Author-email",
+            "pypi_json:info.author_email",
+            "pyproject.toml:project.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 2,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Charlie Marsh",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "PKG-INFO",
+        "pyproject.toml"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author-email",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Charlie Marsh <email.redacted@example.com>",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License-Expression",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "Name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "executable-application",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "project.authors",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "list_of_objects",
+          "present": true,
+          "raw": [
+            {
+              "email": "email.redacted@example.com",
+              "name": "Charlie Marsh"
+            }
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pyproject.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "project.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pyproject.toml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "project.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "executable-application",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pyproject.toml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

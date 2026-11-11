@@ -1,0 +1,223 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/hexgrad/Kokoro-82M@f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/hexgrad/Kokoro-82M/tree/f3ff3571791e39611d31c381e3a41a3af07b4987"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "name": "hexgrad/Kokoro-82M",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "hexgrad",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "hexgrad/Kokoro-82M",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[7]",
+        "format_validity": "noncanonical",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "e2364ba3958cdb4e9b7eca7148631bb974c97ad0c7ee2f8280bcb8dd27a398ad",
+    "retrieved_at": "2026-11-09T08:54:53Z",
+    "source_url": "https://huggingface.co/api/models/hexgrad/Kokoro-82M/revision/f3ff3571791e39611d31c381e3a41a3af07b4987",
+    "version": "f3ff3571791e39611d31c381e3a41a3af07b4987"
+  },
+  "rank": 18,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_spdx_noncanonical"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:tags[7]",
+            "hf_card:cardData.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_api:tags[7]",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_card:cardData.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "Kokoro-82M",
+              "hexgrad/Kokoro-82M"
+            ],
+            "canonical_key": "hexgrad/kokoro-82m",
+            "name": "Kokoro-82M"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "hexgrad",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "kokoro-v1_0.pth",
+        "voices/af_alloy.pt",
+        "voices/af_aoede.pt",
+        "voices/af_bella.pt",
+        "voices/af_heart.pt",
+        "voices/af_jessica.pt",
+        "voices/af_kore.pt",
+        "voices/af_nicole.pt",
+        "voices/af_nova.pt",
+        "voices/af_river.pt",
+        "voices/af_sarah.pt",
+        "voices/af_sky.pt",
+        "voices/am_adam.pt",
+        "voices/am_echo.pt",
+        "voices/am_eric.pt",
+        "voices/am_fenrir.pt",
+        "voices/am_liam.pt",
+        "voices/am_michael.pt",
+        "voices/am_onyx.pt",
+        "voices/am_puck.pt"
+      ],
+      "files_count": 55,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "noncanonical",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

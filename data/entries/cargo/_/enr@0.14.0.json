@@ -1,0 +1,308 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "cargo",
+  "id": "pkg:cargo/enr@0.14.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:d7401327556f645a74cbcde3f95916ec8f989a46da39152d9cfe89d5ff036b8f",
+        "fetched": true,
+        "filename": "enr-0.14.0.crate",
+        "kind": "crate",
+        "sha256": "d7401327556f645a74cbcde3f95916ec8f989a46da39152d9cfe89d5ff036b8f",
+        "size_bytes": 33778,
+        "skip_reason": null,
+        "url": "https://static.crates.io/crates/enr/enr-0.14.0.crate"
+      }
+    ],
+    "ecosystem": "cargo",
+    "html_url": "https://crates.io/crates/enr/0.14.0",
+    "name": "enr",
+    "observations": [
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "version.crate",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "enr",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "crates_api"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "version.license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "crates_api"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "version.published_by",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "avatar": "https://avatars.githubusercontent.com/u/4452260?v=4",
+          "created_at": "2013-05-17T00:03:06Z",
+          "github_username_matches": true,
+          "id": 98,
+          "login": "michaelsproul",
+          "name": "Michael Sproul",
+          "url": "https://github.com/michaelsproul"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "crates_api"
+      }
+    ],
+    "response_sha256": "7276b3219d4cf2e5d8407d42b77d3aafe6d78c1a8ade3b05e51e2676d80a7cc3",
+    "retrieved_at": "2026-11-11T08:14:46Z",
+    "source_url": "https://crates.io/api/v1/crates/enr/0.14.0",
+    "version": "0.14.0"
+  },
+  "rank": 3041,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml.orig:package.license",
+            "Cargo.toml:package.license",
+            "crates_api:version.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "Cargo.toml.orig:package.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "Cargo.toml:package.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "crates_api:version.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml:package.name",
+            "crates_api:version.crate"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "enr"
+            ],
+            "canonical_key": "enr",
+            "name": "enr"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml.orig:package.authors",
+            "Cargo.toml:package.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Age Manning",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "enr-0.14.0/Cargo.toml",
+        "enr-0.14.0/Cargo.toml.orig"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "package.authors",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "list_of_strings",
+          "present": true,
+          "raw": [
+            "Age Manning <email.redacted@example.com>"
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "enr",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "package.authors",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "list_of_strings",
+          "present": true,
+          "raw": [
+            "Age Manning <email.redacted@example.com>"
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "Cargo.toml.orig"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "Cargo.toml.orig"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "enr",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml.orig"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

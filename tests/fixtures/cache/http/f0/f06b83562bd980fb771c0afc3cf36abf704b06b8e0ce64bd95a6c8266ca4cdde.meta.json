@@ -1,0 +1,8 @@
+{
+  "content_type": "application/json; charset=utf-8",
+  "fetched_at": "2026-11-08T22:48:13Z",
+  "final_url": "https://huggingface.co/api/models/openai-community/gpt2/revision/607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "has_body": true,
+  "status": 200,
+  "url": "https://huggingface.co/api/models/gpt2/revision/607a30d783dfa663caf39e06633721c8d4cfcd7e"
+}

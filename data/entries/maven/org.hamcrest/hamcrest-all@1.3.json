@@ -1,0 +1,309 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.hamcrest/hamcrest-all@1.3",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "hamcrest-all-1.3.pom",
+        "kind": "pom",
+        "sha256": "5bff685d8d3093bb6d02e0575af804562d3be709409bcc719d9e34bad65339b0",
+        "size_bytes": 650,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.hamcrest/hamcrest-all/1.3",
+    "name": "org.hamcrest:hamcrest-all",
+    "observations": [],
+    "response_sha256": "5bff685d8d3093bb6d02e0575af804562d3be709409bcc719d9e34bad65339b0",
+    "retrieved_at": "2026-11-11T08:15:01Z",
+    "source_url": "https://repo1.maven.org/maven2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.pom",
+    "version": "1.3"
+  },
+  "rank": 50,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_prose",
+        "maven_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[1].licenses.license[0].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "alias_name",
+              "expression": "BSD-3-Clause",
+              "input": "New BSD License",
+              "key": "pom.xml:parent[1].licenses.license[0].name",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://www.opensource.org/licenses/bsd-license.php",
+              "key": "pom.xml:parent[1].licenses.license[0].url",
+              "reason": "not found: http://www.opensource.org/licenses/bsd-license.php",
+              "trust": "none"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "BSD-3-Clause"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "hamcrest-all",
+              "org.hamcrest:hamcrest-all"
+            ],
+            "canonical_key": "org.hamcrest:hamcrest-all",
+            "name": "hamcrest-all"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[1].developers.developer[0].name",
+            "pom.xml:parent[1].developers.developer[1].name",
+            "pom.xml:parent[1].developers.developer[2].name",
+            "pom.xml:parent[1].developers.developer[3].name",
+            "pom.xml:parent[1].developers.developer[4].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Joe Walnes",
+                "role": "author"
+              },
+              {
+                "name": "Nat Pryce",
+                "role": "author"
+              },
+              {
+                "name": "Steve Freeman",
+                "role": "author"
+              },
+              {
+                "name": "Neil Dunn",
+                "role": "author"
+              },
+              {
+                "name": "Tom Denley",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "hamcrest-all-1.3.pom",
+        "hamcrest-parent-1.3.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "hamcrest-all",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Hamcrest All",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.hamcrest/hamcrest-parent@1.3",
+          "native_type": "string",
+          "present": true,
+          "raw": "Joe Walnes",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[1].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.hamcrest/hamcrest-parent@1.3",
+          "native_type": "string",
+          "present": true,
+          "raw": "Nat Pryce",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[2].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.hamcrest/hamcrest-parent@1.3",
+          "native_type": "string",
+          "present": true,
+          "raw": "Steve Freeman",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[3].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.hamcrest/hamcrest-parent@1.3",
+          "native_type": "string",
+          "present": true,
+          "raw": "Neil Dunn",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[4].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.hamcrest/hamcrest-parent@1.3",
+          "native_type": "string",
+          "present": true,
+          "raw": "Tom Denley",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[0].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.hamcrest/hamcrest-parent@1.3",
+          "native_type": "string",
+          "present": true,
+          "raw": "New BSD License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.hamcrest/hamcrest-parent@1.3",
+          "native_type": "string",
+          "present": true,
+          "raw": "http://www.opensource.org/licenses/bsd-license.php",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "osi_url",
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

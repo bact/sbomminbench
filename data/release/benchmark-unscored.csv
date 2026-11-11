@@ -1,0 +1,22 @@
+id,subject,ecosystem,kind,name_input,expected_name,expected_provider,provider_has_unnamed_group,expected_license,name_status,provider_status,license_status,reason
+pkg:nuget/Microsoft.Bcl.Build@1.0.21,root,nuget,package,Microsoft.Bcl.Build,Microsoft.Bcl.Build,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/microsoft.applicationinsights.persistencechannel@1.2.3,root,nuget,package,microsoft.applicationinsights.persistencechannel,Microsoft.ApplicationInsights.PersistenceChannel,Microsoft,false,,auto_unanimous,auto_unanimous,auto_unresolved,license=auto_unresolved
+pkg:nuget/ravendb.bundles.authorization@3.5.9,root,nuget,package,ravendb.bundles.authorization,RavenDB.Bundles.Authorization,Hibernating Rhinos,false,,auto_unanimous,auto_unanimous,auto_unresolved,license=auto_unresolved
+pkg:nuget/system.collections@4.3.0,root,nuget,package,system.collections,System.Collections,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.diagnostics.debug@4.3.0,root,nuget,package,system.diagnostics.debug,System.Diagnostics.Debug,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.globalization@4.3.0,root,nuget,package,system.globalization,System.Globalization,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.io@4.3.0,root,nuget,package,system.io,System.IO,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.linq@4.3.0,root,nuget,package,system.linq,System.Linq,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.net.ping@4.3.0,root,nuget,package,system.net.ping,System.Net.Ping,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.reflection.primitives@4.3.0,root,nuget,package,system.reflection.primitives,System.Reflection.Primitives,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.reflection@4.3.0,root,nuget,package,system.reflection,System.Reflection,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.resources.resourcemanager@4.3.0,root,nuget,package,system.resources.resourcemanager,System.Resources.ResourceManager,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.runtime.extensions@4.3.1,root,nuget,package,system.runtime.extensions,System.Runtime.Extensions,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.runtime@4.3.1,root,nuget,package,system.runtime,System.Runtime,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.text.encoding@4.3.0,root,nuget,package,system.text.encoding,System.Text.Encoding,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.threading.tasks@4.3.0,root,nuget,package,system.threading.tasks,System.Threading.Tasks,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:nuget/system.threading@4.3.0,root,nuget,package,system.threading,System.Threading,Microsoft,false,,auto_unanimous,auto_unanimous,excluded,license=excluded
+pkg:pypi/magika@0.6.1,model:1,pypi,model,magika,,,false,,not_assessed,not_assessed,not_assessed,name=not_assessed; provider=not_assessed; license=not_assessed
+pkg:pypi/pytest@9.2.0,root,pypi,package,pytest,pytest,,false,MIT,auto_unanimous,auto_unresolved,auto_unanimous,provider=auto_unresolved
+pkg:pypi/silero-vad@5.1.2,model:1,pypi,model,silero-vad,,,false,,not_assessed,not_assessed,not_assessed,name=not_assessed; provider=not_assessed; license=not_assessed
+pkg:pypi/silero-vad@5.1.2,model:2,pypi,model,silero-vad,,,false,,not_assessed,not_assessed,not_assessed,name=not_assessed; provider=not_assessed; license=not_assessed

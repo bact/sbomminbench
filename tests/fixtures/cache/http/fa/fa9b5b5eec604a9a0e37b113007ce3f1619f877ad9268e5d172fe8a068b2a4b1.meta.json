@@ -1,0 +1,8 @@
+{
+  "content_type": "application/json; charset=utf-8",
+  "fetched_at": "2026-11-08T22:48:12Z",
+  "final_url": "https://huggingface.co/api/models/Qwen/Qwen2.5-72B-Instruct/revision/495f39366efef23836d0cfae4fbe635880d2be31",
+  "has_body": true,
+  "status": 200,
+  "url": "https://huggingface.co/api/models/Qwen/Qwen2.5-72B-Instruct/revision/495f39366efef23836d0cfae4fbe635880d2be31"
+}

@@ -1,0 +1,393 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "pypi",
+  "id": "pkg:pypi/jmespath@1.1.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:472c87d80f36026ae83c6ddd0f1d05d4e510134ed462851fd5f754c8c3cbb88d",
+        "fetched": true,
+        "filename": "jmespath-1.1.0.tar.gz",
+        "kind": "sdist",
+        "sha256": "472c87d80f36026ae83c6ddd0f1d05d4e510134ed462851fd5f754c8c3cbb88d",
+        "size_bytes": 27377,
+        "skip_reason": null,
+        "url": "https://files.pythonhosted.org/packages/d3/59/322338183ecda247fb5d1763a6cbe46eff7222eaeebafd9fa65d4bf5cb11/jmespath-1.1.0.tar.gz"
+      }
+    ],
+    "ecosystem": "pypi",
+    "html_url": "https://pypi.org/project/jmespath/1.1.0/",
+    "name": "jmespath",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "James Saryerwinnie",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author_email",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "email.redacted@example.com",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.classifiers[2]",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "License :: OSI Approved :: MIT License",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "trove_classifier",
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license_expression",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer_email",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "info.name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "jmespath",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      }
+    ],
+    "response_sha256": "de5bfed61841dea8dd10c05206276a42f526f10cd96a57717e24fa8d94f98111",
+    "retrieved_at": "2026-11-11T08:15:17Z",
+    "source_url": "https://pypi.org/pypi/jmespath/1.1.0/json",
+    "version": "1.1.0"
+  },
+  "rank": 43,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_email_only"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Classifier[3]",
+            "PKG-INFO:License",
+            "pypi_json:info.classifiers[2]",
+            "pypi_json:info.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "PKG-INFO:Classifier[3]",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "PKG-INFO:License",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "pypi_json:info.classifiers[2]",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "pypi_json:info.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Name",
+            "pypi_json:info.name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "jmespath"
+            ],
+            "canonical_key": "jmespath",
+            "name": "jmespath"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Author",
+            "PKG-INFO:Author-email",
+            "pypi_json:info.author",
+            "pypi_json:info.author_email"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "James Saryerwinnie",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "PKG-INFO"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "James Saryerwinnie",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author-email",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "email.redacted@example.com",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "Classifier[3]",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "License :: OSI Approved :: MIT License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "trove_classifier",
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License-Expression",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "Name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "jmespath",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

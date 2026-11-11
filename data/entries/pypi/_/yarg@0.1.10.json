@@ -1,0 +1,427 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "pypi",
+  "id": "pkg:pypi/yarg@0.1.10",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:1fbc94af89d5ebc2d2dfe46a5006a570de549c43e78f0913ce8390a1c5848b7e",
+        "fetched": true,
+        "filename": "yarg-0.1.10.tar.gz",
+        "kind": "sdist",
+        "sha256": "1fbc94af89d5ebc2d2dfe46a5006a570de549c43e78f0913ce8390a1c5848b7e",
+        "size_bytes": 12869,
+        "skip_reason": null,
+        "url": "https://files.pythonhosted.org/packages/5f/f4/86a394ac2c74268c0281d27b6ca9a37bb595d19601bf4de920584e581eb6/yarg-0.1.10.tar.gz"
+      }
+    ],
+    "ecosystem": "pypi",
+    "html_url": "https://pypi.org/project/yarg/0.1.10/",
+    "name": "yarg",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Kura",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author_email",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "email.redacted@example.com",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.classifiers[2]",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "License :: OSI Approved :: MIT License",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "trove_classifier",
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license_expression",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Kura",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer_email",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "email.redacted@example.com",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "info.name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "yarg",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      }
+    ],
+    "response_sha256": "595b39e6aaf845a83d63989aa55f2741dcec20f552b0d74c35d14ef570abc0a4",
+    "retrieved_at": "2026-11-11T08:15:20Z",
+    "source_url": "https://pypi.org/pypi/yarg/0.1.10/json",
+    "version": "0.1.10"
+  },
+  "rank": 4461,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_email_only"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Classifier[3]",
+            "PKG-INFO:License",
+            "pypi_json:info.classifiers[2]",
+            "pypi_json:info.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "PKG-INFO:Classifier[3]",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "PKG-INFO:License",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "License :: OSI Approved :: MIT License",
+              "key": "pypi_json:info.classifiers[2]",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "pypi_json:info.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Name",
+            "pypi_json:info.name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "yarg"
+            ],
+            "canonical_key": "yarg",
+            "name": "yarg"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "PKG-INFO:Author",
+            "PKG-INFO:Author-email",
+            "pypi_json:info.author",
+            "pypi_json:info.author_email"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Kura",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "PKG-INFO"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Kura",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author-email",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "email.redacted@example.com",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "Classifier[3]",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "License :: OSI Approved :: MIT License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "trove_classifier",
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License-Expression",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "maintainer",
+          "element": "provider",
+          "field_path": "Maintainer",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Kura",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "maintainer",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "maintainer",
+          "element": "provider",
+          "field_path": "Maintainer-email",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "email.redacted@example.com",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "maintainer",
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "Name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "yarg",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "PKG-INFO"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

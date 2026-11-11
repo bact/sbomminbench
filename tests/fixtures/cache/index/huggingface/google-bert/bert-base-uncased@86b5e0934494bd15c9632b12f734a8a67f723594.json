@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "declared_digest": null,
+    "fetched": false,
+    "filename": null,
+    "kind": "hf_repo",
+    "sha256": null,
+    "size_bytes": null,
+    "skip_reason": "not_needed",
+    "url": "https://huggingface.co/google-bert/bert-base-uncased/tree/86b5e0934494bd15c9632b12f734a8a67f723594"
+  },
+  "ecosystem": "huggingface",
+  "fetched_at": "2026-11-08T22:48:11Z",
+  "files": [
+    "model.onnx",
+    "model.safetensors"
+  ],
+  "files_count": 2,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "google-bert/bert-base-uncased",
+  "purl": "pkg:huggingface/google-bert/bert-base-uncased@86b5e0934494bd15c9632b12f734a8a67f723594",
+  "rank": null,
+  "responses": {
+    "platform": "https://huggingface.co/api/models/google-bert/bert-base-uncased/revision/86b5e0934494bd15c9632b12f734a8a67f723594"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "86b5e0934494bd15c9632b12f734a8a67f723594"
+}

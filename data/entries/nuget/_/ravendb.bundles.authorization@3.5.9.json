@@ -1,0 +1,283 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "nuget",
+  "id": "pkg:nuget/ravendb.bundles.authorization@3.5.9",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512:TD4rs5bfM9SiA/hCIfnM/eyWuNc429oRjZVNdmlOea87AlDSSPEKfxrbbVE/IRqZJbFy5l72IxHm3CxW0a3g/g==",
+        "fetched": false,
+        "filename": "ravendb.bundles.authorization.3.5.9.nupkg",
+        "kind": "nupkg",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://api.nuget.org/v3-flatcontainer/ravendb.bundles.authorization/3.5.9/ravendb.bundles.authorization.3.5.9.nupkg"
+      }
+    ],
+    "ecosystem": "nuget",
+    "html_url": "https://www.nuget.org/packages/ravendb.bundles.authorization/3.5.9",
+    "name": "ravendb.bundles.authorization",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "authors",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Hibernating Rhinos",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "RavenDB.Bundles.Authorization",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseExpression",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "absent",
+        "present": false,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseUrl",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "http://www.ravendb.net/licensing",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "other_url",
+        "source": "nuget_catalog"
+      }
+    ],
+    "response_sha256": "ce2a4e15f76a15333dbce695ae995f7cdaa76c0bdee31747c4ebf53e34e42815",
+    "retrieved_at": "2026-11-09T08:55:39Z",
+    "source_url": "https://api.nuget.org/v3/catalog0/data/2019.04.10.10.37.10/ravendb.bundles.authorization.3.5.9.json",
+    "version": "3.5.9"
+  },
+  "rank": 6676,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_is_url",
+        "name_case_differs"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://www.ravendb.net/licensing",
+              "key": "nuget_catalog:licenseUrl",
+              "reason": "not found: http://www.ravendb.net/licensing",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://www.ravendb.net/licensing",
+              "key": "nuspec:metadata.licenseUrl",
+              "reason": "not found: http://www.ravendb.net/licensing",
+              "trust": "none"
+            }
+          ],
+          "note": "only URL / file / text / ambiguous trove",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:id",
+            "nuspec:metadata.id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "RavenDB.Bundles.Authorization"
+            ],
+            "canonical_key": "ravendb.bundles.authorization",
+            "name": "RavenDB.Bundles.Authorization"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:authors",
+            "nuspec:metadata.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Hibernating Rhinos",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "ravendb.bundles.authorization.nuspec"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "metadata.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Hibernating Rhinos",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "metadata.id",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "RavenDB.Bundles.Authorization",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.licenseUrl",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "http://www.ravendb.net/licensing",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "nuspec"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "metadata.owners",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Hibernating Rhinos",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "owner",
+          "semantic_format": null,
+          "source": "nuspec"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

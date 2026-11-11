@@ -1,0 +1,282 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/eslint-merge-processors@2.0.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-sUuhSf3IrJdGooquEUB5TNpGNpBoQccbnaLHsb1XkBLUPPqCNivCpY05ZcpCOiV9uHwO2yxXEWVczVclzMxYlA==",
+        "fetched": true,
+        "filename": "eslint-merge-processors-2.0.0.tgz",
+        "kind": "npm_tarball",
+        "sha256": "c9efae55a578143b742abb44fde27b2e4cf15970e7e7cd7284b173b83eefd85b",
+        "size_bytes": 2935,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/eslint-merge-processors/-/eslint-merge-processors-2.0.0.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/eslint-merge-processors/v/2.0.0",
+    "name": "eslint-merge-processors",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "antfu"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "Anthony Fu"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "antfu"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "eslint-merge-processors",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "f76f2143c4202cbd92981e5d64ecf04960f71089f319d0945d4500ba5159ac43",
+    "retrieved_at": "2026-11-09T08:55:25Z",
+    "source_url": "https://registry.npmjs.org/eslint-merge-processors/2.0.0",
+    "version": "2.0.0"
+  },
+  "rank": 9424,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_object_form"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:license",
+            "package.json:license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "npm_registry:license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "package.json:license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "eslint-merge-processors"
+            ],
+            "canonical_key": "eslint-merge-processors",
+            "name": "eslint-merge-processors"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:author",
+            "package.json:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Anthony Fu",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "package/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Anthony Fu <email.redacted@example.com>",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "eslint-merge-processors",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

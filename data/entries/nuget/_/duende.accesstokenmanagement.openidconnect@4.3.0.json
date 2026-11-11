@@ -1,0 +1,307 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "nuget",
+  "id": "pkg:nuget/duende.accesstokenmanagement.openidconnect@4.3.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512:3OrV0msfarOH7Js4Gq/K6r1bfX3Mm71Ra21wnjH511wtuygbqtC1Lv/CU0jxIzrL7IoPvv8HHKRTzqDmhhgRdg==",
+        "fetched": false,
+        "filename": "duende.accesstokenmanagement.openidconnect.4.3.0.nupkg",
+        "kind": "nupkg",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://api.nuget.org/v3-flatcontainer/duende.accesstokenmanagement.openidconnect/4.3.0/duende.accesstokenmanagement.openidconnect.4.3.0.nupkg"
+      }
+    ],
+    "ecosystem": "nuget",
+    "html_url": "https://www.nuget.org/packages/duende.accesstokenmanagement.openidconnect/4.3.0",
+    "name": "duende.accesstokenmanagement.openidconnect",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "authors",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Duende Software",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Duende.AccessTokenManagement.OpenIdConnect",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseExpression",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseUrl",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "https://licenses.nuget.org/Apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "nuget_license_url",
+        "source": "nuget_catalog"
+      }
+    ],
+    "response_sha256": "37542e01435ab588c347ab411670aba055d20a23c7850a6de3d5e99e7fd50554",
+    "retrieved_at": "2026-11-11T08:15:13Z",
+    "source_url": "https://api.nuget.org/v3/catalog0/data/2026.10.16.13.45.08/duende.accesstokenmanagement.openidconnect.4.3.0.json",
+    "version": "4.3.0"
+  },
+  "rank": 3087,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_is_url",
+        "name_case_differs"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:licenseExpression",
+            "nuget_catalog:licenseUrl",
+            "nuspec:metadata.license",
+            "nuspec:metadata.licenseUrl"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "Apache-2.0",
+              "input": "Apache-2.0",
+              "key": "nuget_catalog:licenseExpression",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "Apache-2.0",
+              "input": "Apache-2.0",
+              "key": "nuget_catalog:licenseUrl",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "Apache-2.0",
+              "input": "Apache-2.0",
+              "key": "nuspec:metadata.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "Apache-2.0",
+              "input": "Apache-2.0",
+              "key": "nuspec:metadata.licenseUrl",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:id",
+            "nuspec:metadata.id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "Duende.AccessTokenManagement.OpenIdConnect"
+            ],
+            "canonical_key": "duende.accesstokenmanagement.openidconnect",
+            "name": "Duende.AccessTokenManagement.OpenIdConnect"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:authors",
+            "nuspec:metadata.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Duende Software",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "duende.accesstokenmanagement.openidconnect.nuspec"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "metadata.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Duende Software",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "metadata.id",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Duende.AccessTokenManagement.OpenIdConnect",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.license@type",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "expression",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "empty",
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.licenseUrl",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://licenses.nuget.org/Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "nuget_license_url",
+          "source": "nuspec"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "content_type": "text/xml",
+  "fetched_at": "2026-11-08T23:01:50Z",
+  "final_url": "https://api.nuget.org/v3-flatcontainer/log4net/3.0.1/log4net.nuspec",
+  "has_body": true,
+  "status": 200,
+  "url": "https://api.nuget.org/v3-flatcontainer/log4net/3.0.1/log4net.nuspec"
+}

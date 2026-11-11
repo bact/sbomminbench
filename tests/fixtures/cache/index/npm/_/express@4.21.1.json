@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "declared_digest": "sha512-YSFlK1Ee0/GC8QaO91tHcDxJiE/X4FbpAyQWkxAvG6AXCuR65YzK8ua6D9hvi/TzUfZMpc+BwuM1IPw8fmQBiQ==",
+    "fetched": true,
+    "filename": "express-4.21.1.tgz",
+    "kind": "npm_tarball",
+    "sha256": "4097da0999b7078263460df02b0990244794d84e79e185e6d4ff50ce06d79462",
+    "size_bytes": 57941,
+    "skip_reason": null,
+    "url": "https://registry.npmjs.org/express/-/express-4.21.1.tgz"
+  },
+  "ecosystem": "npm",
+  "fetched_at": "2026-11-08T23:01:21Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "package.json": "package/package.json"
+  },
+  "members_dir": "members/4097da0999b7078263460df02b0990244794d84e79e185e6d4ff50ce06d79462",
+  "model_members": [],
+  "name": "express",
+  "purl": "pkg:npm/express@4.21.1",
+  "rank": null,
+  "responses": {
+    "platform": "https://registry.npmjs.org/express/4.21.1"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "4.21.1"
+}

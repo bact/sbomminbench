@@ -1,0 +1,51 @@
+{
+  "artifact": {
+    "declared_digest": null,
+    "fetched": false,
+    "filename": null,
+    "kind": "hf_repo",
+    "sha256": null,
+    "size_bytes": null,
+    "skip_reason": "not_needed",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/tree/495f39366efef23836d0cfae4fbe635880d2be31"
+  },
+  "ecosystem": "huggingface",
+  "fetched_at": "2026-11-08T22:48:12Z",
+  "files": [
+    "model-00001-of-00037.safetensors",
+    "model-00002-of-00037.safetensors",
+    "model-00003-of-00037.safetensors",
+    "model-00004-of-00037.safetensors",
+    "model-00005-of-00037.safetensors",
+    "model-00006-of-00037.safetensors",
+    "model-00007-of-00037.safetensors",
+    "model-00008-of-00037.safetensors",
+    "model-00009-of-00037.safetensors",
+    "model-00010-of-00037.safetensors",
+    "model-00011-of-00037.safetensors",
+    "model-00012-of-00037.safetensors",
+    "model-00013-of-00037.safetensors",
+    "model-00014-of-00037.safetensors",
+    "model-00015-of-00037.safetensors",
+    "model-00016-of-00037.safetensors",
+    "model-00017-of-00037.safetensors",
+    "model-00018-of-00037.safetensors",
+    "model-00019-of-00037.safetensors",
+    "model-00020-of-00037.safetensors"
+  ],
+  "files_count": 37,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "Qwen/Qwen2.5-72B-Instruct",
+  "purl": "pkg:huggingface/Qwen/Qwen2.5-72B-Instruct@495f39366efef23836d0cfae4fbe635880d2be31",
+  "rank": null,
+  "responses": {
+    "platform": "https://huggingface.co/api/models/Qwen/Qwen2.5-72B-Instruct/revision/495f39366efef23836d0cfae4fbe635880d2be31"
+  },
+  "stratum": "edge",
+  "tags": [
+    "hf_license_other"
+  ],
+  "version": "495f39366efef23836d0cfae4fbe635880d2be31"
+}

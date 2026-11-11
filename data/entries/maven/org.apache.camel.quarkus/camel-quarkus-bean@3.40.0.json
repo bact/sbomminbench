@@ -1,0 +1,173 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.apache.camel.quarkus/camel-quarkus-bean@3.40.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "camel-quarkus-bean-3.40.0.pom",
+        "kind": "pom",
+        "sha256": "d468717811676d70915f63325650dd7c99f388be6232f01fd82090b1ef659fb8",
+        "size_bytes": 3265,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/apache/camel/quarkus/camel-quarkus-bean/3.40.0/camel-quarkus-bean-3.40.0.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.apache.camel.quarkus/camel-quarkus-bean/3.40.0",
+    "name": "org.apache.camel.quarkus:camel-quarkus-bean",
+    "observations": [],
+    "response_sha256": "d468717811676d70915f63325650dd7c99f388be6232f01fd82090b1ef659fb8",
+    "retrieved_at": "2026-11-09T08:55:14Z",
+    "source_url": "https://repo1.maven.org/maven2/org/apache/camel/quarkus/camel-quarkus-bean/3.40.0/camel-quarkus-bean-3.40.0.pom",
+    "version": "3.40.0"
+  },
+  "rank": 5840,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_absent"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "camel-quarkus-bean",
+              "org.apache.camel.quarkus:camel-quarkus-bean"
+            ],
+            "canonical_key": "org.apache.camel.quarkus:camel-quarkus-bean",
+            "name": "camel-quarkus-bean"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "camel-quarkus-bean-3.40.0.pom",
+        "camel-quarkus-bean-parent-3.40.0.pom",
+        "camel-quarkus-build-parent-3.40.0.pom",
+        "camel-quarkus-extensions-3.40.0.pom",
+        "camel-quarkus-poms-3.40.0.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "camel-quarkus-bean",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "developers.developer",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Camel Quarkus :: Bean :: Runtime",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

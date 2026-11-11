@@ -1,0 +1,310 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "cargo",
+  "id": "pkg:cargo/winapi@0.3.9",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:5c839a674fcd7a98952e593242ea400abe93992746761e38641405d28b00f419",
+        "fetched": true,
+        "filename": "winapi-0.3.9.crate",
+        "kind": "crate",
+        "sha256": "5c839a674fcd7a98952e593242ea400abe93992746761e38641405d28b00f419",
+        "size_bytes": 1200382,
+        "skip_reason": null,
+        "url": "https://static.crates.io/crates/winapi/winapi-0.3.9.crate"
+      }
+    ],
+    "ecosystem": "cargo",
+    "html_url": "https://crates.io/crates/winapi/0.3.9",
+    "name": "winapi",
+    "observations": [
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "version.crate",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "winapi",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "crates_api"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "version.license",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT/Apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "nonstandard_compound",
+        "source": "crates_api"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "version.published_by",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "avatar": "https://avatars.githubusercontent.com/u/666308?v=4",
+          "created_at": "2011-03-12T23:22:07Z",
+          "github_username_matches": true,
+          "id": 63,
+          "login": "retep998",
+          "name": "Peter Atashian",
+          "url": "https://github.com/retep998"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "crates_api"
+      }
+    ],
+    "response_sha256": "3e23f2f2da9a6f4ef1b10a28bb95d996fa5c0058a18620df7f8d6db897792c4d",
+    "retrieved_at": "2026-11-08T23:01:25Z",
+    "source_url": "https://crates.io/api/v1/crates/winapi/0.3.9",
+    "version": "0.3.9"
+  },
+  "rank": null,
+  "schema_version": "0.1",
+  "stratum": "edge",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_nonstandard_compound"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml.orig:package.license",
+            "Cargo.toml:package.license",
+            "crates_api:version.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "separator",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT/Apache-2.0",
+              "key": "Cargo.toml.orig:package.license",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "separator",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT/Apache-2.0",
+              "key": "Cargo.toml:package.license",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "separator",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT/Apache-2.0",
+              "key": "crates_api:version.license",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0 OR MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml:package.name",
+            "crates_api:version.crate"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "winapi"
+            ],
+            "canonical_key": "winapi",
+            "name": "winapi"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml.orig:package.authors",
+            "Cargo.toml:package.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Peter Atashian",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "winapi-0.3.9/Cargo.toml",
+        "winapi-0.3.9/Cargo.toml.orig"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "package.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "list_of_strings",
+          "present": true,
+          "raw": [
+            "Peter Atashian <email.redacted@example.com>"
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT/Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "nonstandard_compound",
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "winapi",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "package.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "list_of_strings",
+          "present": true,
+          "raw": [
+            "Peter Atashian <email.redacted@example.com>"
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "Cargo.toml.orig"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT/Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "nonstandard_compound",
+          "source": "Cargo.toml.orig"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "winapi",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml.orig"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

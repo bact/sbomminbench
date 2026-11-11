@@ -1,0 +1,10 @@
+name	version	stratum	rank	note
+requests	2.32.3	edge		legacy Author/Author-email pair; unresolvable trove
+Flask	3.0.3	edge		maintainers only
+python-dateutil	2.9.0.post0	edge		prose Dual License plus two troves
+pytest	8.3.3	edge		7 names in one string plus Others (See AUTHORS)
+numpy	2.1.2	edge		46 KB licence text in License; et al.
+silero-vad	5.1.2	edge		trove only; 2 embedded .onnx plus a .jit
+packaging	26.3	edge		PEP 639 licence expression
+magika	0.6.1	edge		embedded onnx; [project.license] table
+torch	2.5.0	edge		wheels only, over the cap: PEP 658 path

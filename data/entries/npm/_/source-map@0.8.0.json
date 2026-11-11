@@ -1,0 +1,594 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/source-map@0.8.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-d8EqvL+k/SOXCreS/SUzg2ciyHqBBLcN/yuRjFsbvVhHTE2pgei7oAhmPM7kWFbkX6OSMQfUq4KbkF3au9lhYQ==",
+        "fetched": true,
+        "filename": "source-map-0.8.0.tgz",
+        "kind": "npm_tarball",
+        "sha256": "a4c6ad3393004545f55638f13e1c33a202310002dbd4b806c04743f924e3d882",
+        "size_bytes": 51991,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/source-map/-/source-map-0.8.0.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/source-map/v/0.8.0",
+    "name": "source-map",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "hmanilla"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "Nick Fitzgerald"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "contributor",
+        "element": "provider",
+        "field_path": "contributors",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "Tobias Koppers"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Duncan Beevers"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Stephen Crane"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Ryan Seddon"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Miles Elam"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Mihai Bazon"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Michael Ficarra"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Todd Wolfson"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Alexander Solovyov"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Felix Gnass"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Conrad Irwin"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "usrbincc"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "David Glasser"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Chase Douglas"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Evan Wallace"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Heather Arthur"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Hugh Kennedy"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "David Glasser"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Simon Lydell"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Jmeas Smith"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Michael Z Goddard"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "azu"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "John Gozde"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Adam Kirkton"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Chris Montgomery"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "J. Ryan Stinnett"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Jack Herrington"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Chris Truter"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Daniel Espeset"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Jamie Wong"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Eddy Bruël"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Hawken Rives"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Gilad Peleg"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "djchie"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Gary Ye"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "Nicolas Lalevée"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "contributor",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "BSD-3-Clause",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "mozilla-npm"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mythmon"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "jkratzer"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "factorui.npm"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "project-nimbus-publishing"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "gijs"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "brizental"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "aplacitelli"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mozrhelmer"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "knowtheory"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "nbaumgardner"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "tigleym"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "eemeli"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "hmanilla"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "jdescottes-mozilla-npm"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "ahanot"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mlifshin"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "llisi-moz"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "jdarcangelo-mozilla"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "nchevobbe"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mozilla-devtools"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "nickfitzgerald"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "loganfsmyth"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "ejpbruel"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "tromey"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "source-map",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "b82fa2ca0f1c59b01acb730ac5aa18fc02faf672045c1ab7b69eacf41e92a7dd",
+    "retrieved_at": "2026-11-09T08:55:21Z",
+    "source_url": "https://registry.npmjs.org/source-map/0.8.0",
+    "version": "0.8.0"
+  },
+  "rank": 34,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_object_form"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:license",
+            "package.json:license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "BSD-3-Clause",
+              "input": "BSD-3-Clause",
+              "key": "npm_registry:license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "BSD-3-Clause",
+              "input": "BSD-3-Clause",
+              "key": "package.json:license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "BSD-3-Clause"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "source-map"
+            ],
+            "canonical_key": "source-map",
+            "name": "source-map"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:author",
+            "package.json:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Nick Fitzgerald",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "package/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Nick Fitzgerald <email.redacted@example.com>",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "contributor",
+          "element": "provider",
+          "field_path": "contributors",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "list_of_strings",
+          "present": true,
+          "raw": [
+            "Tobias Koppers <email.redacted@example.com>",
+            "Duncan Beevers <email.redacted@example.com>",
+            "Stephen Crane <email.redacted@example.com>",
+            "Ryan Seddon <email.redacted@example.com>",
+            "Miles Elam <email.redacted@example.com>",
+            "Mihai Bazon <email.redacted@example.com>",
+            "Michael Ficarra <email.redacted@example.com>",
+            "Todd Wolfson <email.redacted@example.com>",
+            "Alexander Solovyov <email.redacted@example.com>",
+            "Felix Gnass <email.redacted@example.com>",
+            "Conrad Irwin <email.redacted@example.com>",
+            "usrbincc <email.redacted@example.com>",
+            "David Glasser <email.redacted@example.com>",
+            "Chase Douglas <email.redacted@example.com>",
+            "Evan Wallace <email.redacted@example.com>",
+            "Heather Arthur <email.redacted@example.com>",
+            "Hugh Kennedy <email.redacted@example.com>",
+            "David Glasser <email.redacted@example.com>",
+            "Simon Lydell <email.redacted@example.com>",
+            "Jmeas Smith <email.redacted@example.com>",
+            "Michael Z Goddard <email.redacted@example.com>",
+            "azu <email.redacted@example.com>",
+            "John Gozde <email.redacted@example.com>",
+            "Adam Kirkton <email.redacted@example.com>",
+            "Chris Montgomery <email.redacted@example.com>",
+            "J. Ryan Stinnett <email.redacted@example.com>",
+            "Jack Herrington <email.redacted@example.com>",
+            "Chris Truter <email.redacted@example.com>",
+            "Daniel Espeset <email.redacted@example.com>",
+            "Jamie Wong <email.redacted@example.com>",
+            "Eddy Bruël <email.redacted@example.com>",
+            "Hawken Rives <email.redacted@example.com>",
+            "Gilad Peleg <email.redacted@example.com>",
+            "djchie <email.redacted@example.com>",
+            "Gary Ye <email.redacted@example.com>",
+            "Nicolas Lalevée <email.redacted@example.com>"
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "contributor",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "BSD-3-Clause",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "source-map",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

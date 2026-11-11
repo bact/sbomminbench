@@ -1,0 +1,266 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "nuget",
+  "id": "pkg:nuget/servicestack.redis.core@8.10.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512:sfWSI0nyvTQqUnUvXwuw2yuPCgVccvt6Cu354gOGsCWbxLM1pxScU9JVPmO6XcDpcnrlt3lRoFON/pFTYd3F7Q==",
+        "fetched": false,
+        "filename": "servicestack.redis.core.8.10.0.nupkg",
+        "kind": "nupkg",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://api.nuget.org/v3-flatcontainer/servicestack.redis.core/8.10.0/servicestack.redis.core.8.10.0.nupkg"
+      }
+    ],
+    "ecosystem": "nuget",
+    "html_url": "https://www.nuget.org/packages/servicestack.redis.core/8.10.0",
+    "name": "servicestack.redis.core",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "authors",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "ServiceStack",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "ServiceStack.Redis.Core",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseExpression",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "absent",
+        "present": false,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseUrl",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "https://servicestack.net/terms",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "other_url",
+        "source": "nuget_catalog"
+      }
+    ],
+    "response_sha256": "727b966d38bf71a649ee3cb1c575c0ac1807da84b32ca122e6035aa984f2ea23",
+    "retrieved_at": "2026-11-11T08:15:15Z",
+    "source_url": "https://api.nuget.org/v3/catalog0/data/2025.11.12.06.31.14/servicestack.redis.core.8.10.0.json",
+    "version": "8.10.0"
+  },
+  "rank": 5435,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_is_url",
+        "name_case_differs"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "https://servicestack.net/terms",
+              "key": "nuget_catalog:licenseUrl",
+              "reason": "not found: https://servicestack.net/terms",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "https://servicestack.net/terms",
+              "key": "nuspec:metadata.licenseUrl",
+              "reason": "not found: https://servicestack.net/terms",
+              "trust": "none"
+            }
+          ],
+          "note": "only URL / file / text / ambiguous trove",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:id",
+            "nuspec:metadata.id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "ServiceStack.Redis.Core"
+            ],
+            "canonical_key": "servicestack.redis.core",
+            "name": "ServiceStack.Redis.Core"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:authors",
+            "nuspec:metadata.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "ServiceStack",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "servicestack.redis.core.nuspec"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "metadata.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "ServiceStack",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "metadata.id",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "ServiceStack.Redis.Core",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.licenseUrl",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://servicestack.net/terms",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "nuspec"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

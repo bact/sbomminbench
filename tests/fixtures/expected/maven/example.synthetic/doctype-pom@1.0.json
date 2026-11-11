@@ -1,0 +1,78 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/example.synthetic/doctype-pom@1.0",
+  "platform": {
+    "artifacts": [],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/example.synthetic/doctype-pom/1.0",
+    "name": "example.synthetic:doctype-pom",
+    "observations": [],
+    "response_sha256": "e21cec6fd55a8d1d295135a0bcb4ac7f72e3d4b79d528e8d45fc197e413e11b5",
+    "retrieved_at": "2026-11-08T22:48:16Z",
+    "source_url": "https://repo1.maven.org/maven2/example/synthetic/doctype-pom/1.0/doctype-pom-1.0.pom",
+    "version": "1.0"
+  },
+  "rank": null,
+  "schema_version": "0.1",
+  "stratum": "edge",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_absent"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [],
+      "manifest_observations": [],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

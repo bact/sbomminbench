@@ -1,0 +1,247 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/bartowski/Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF@876ebfffa80d443367f647bb6e6b2aa2d33a4001",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/bartowski/Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF/tree/876ebfffa80d443367f647bb6e6b2aa2d33a4001"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/bartowski/Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF",
+    "name": "bartowski/Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "bartowski",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "bartowski/Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[10]",
+        "format_validity": "noncanonical",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "ede93e3c8c5fe19ddc6b69b614bf2bc9ba3b153de3f57bf17e7be695e8e3e8f0",
+    "retrieved_at": "2026-11-09T08:55:05Z",
+    "source_url": "https://huggingface.co/api/models/bartowski/Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF/revision/876ebfffa80d443367f647bb6e6b2aa2d33a4001",
+    "version": "876ebfffa80d443367f647bb6e6b2aa2d33a4001"
+  },
+  "rank": 5878,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_is_url",
+        "license_spdx_noncanonical"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:tags[10]",
+            "hf_card:cardData.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_api:tags[10]",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_card:cardData.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "https://huggingface.co/huihui-ai/Qwen2.5-Coder-0.5-Instruct-abliterate/blob/main/LICENSE",
+              "key": "hf_card:cardData.license_link",
+              "reason": "not found: https://huggingface.co/huihui-ai/Qwen2.5-Coder-0.5-Instruct-...",
+              "trust": "none"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF",
+              "bartowski/Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF"
+            ],
+            "canonical_key": "bartowski/qwen2.5-coder-0.5b-instruct-abliterated-gguf",
+            "name": "Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "bartowski",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-IQ3_M.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-IQ4_XS.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q3_K_L.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q3_K_XL.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q4_0.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q4_0_4_4.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q4_0_4_8.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q4_0_8_8.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q4_K_L.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q4_K_M.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q4_K_S.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q5_K_L.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q5_K_M.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q5_K_S.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q6_K.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q6_K_L.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-Q8_0.gguf",
+        "Qwen2.5-Coder-0.5B-Instruct-abliterated-f16.gguf"
+      ],
+      "files_count": 18,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "noncanonical",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        },
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license_link",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://huggingface.co/huihui-ai/Qwen2.5-Coder-0.5-Instruct-abliterate/blob/main/LICENSE",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": "gguf",
+      "size_bytes": null
+    }
+  ]
+}

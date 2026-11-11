@@ -1,0 +1,201 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/audio-cpp/audio.cpp-gguf@57de533382ad47d5527e7562d1f80c41f769553b",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/audio-cpp/audio.cpp-gguf/tree/57de533382ad47d5527e7562d1f80c41f769553b"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/audio-cpp/audio.cpp-gguf",
+    "name": "audio-cpp/audio.cpp-gguf",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "audio-cpp",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "audio-cpp/audio.cpp-gguf",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[13]",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:other",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "placeholder",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "f20f5895d36aa1d9cc9ca8bc630737fabf86e4e76983426fc02647a6f1bab5e4",
+    "retrieved_at": "2026-11-09T08:54:55Z",
+    "source_url": "https://huggingface.co/api/models/audio-cpp/audio.cpp-gguf/revision/57de533382ad47d5527e7562d1f80c41f769553b",
+    "version": "57de533382ad47d5527e7562d1f80c41f769553b"
+  },
+  "rank": 27,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "hf_license_other",
+        "license_placeholder"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "audio.cpp-gguf",
+              "audio-cpp/audio.cpp-gguf"
+            ],
+            "canonical_key": "audio-cpp/audio.cpp-gguf",
+            "name": "audio.cpp-gguf"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "audio-cpp",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "ACE-Step1.5-GGUF/base/ace-step-1.5-base-bf16.gguf",
+        "ACE-Step1.5-GGUF/base/ace-step-1.5-base-q8_0.gguf",
+        "ACE-Step1.5-GGUF/turbo/ace-step-1.5-turbo-bf16.gguf",
+        "ACE-Step1.5-GGUF/turbo/ace-step-1.5-turbo-q8_0.gguf",
+        "AST-AudioSet-GGUF/ast-audioset-f32.gguf",
+        "Apollo-GGUF/apollo-orig.gguf",
+        "AudioSR-GGUF/audiosr-basic-f32.gguf",
+        "BS-RoFormer-ep368-GGUF/bs-roformer-ep368-q8_0.gguf",
+        "Breeze-TTS-2-GGUF/breeze-tts-2-bf16.gguf",
+        "Breeze-TTS-2-GGUF/breeze-tts-2-q4_0.gguf",
+        "Breeze-TTS-2-GGUF/breeze-tts-2-q4_k.gguf",
+        "Breeze-TTS-2-GGUF/breeze-tts-2-q8_0.gguf",
+        "CED-GGUF/ced-base-f32.gguf",
+        "CED-GGUF/ced-mini-f32.gguf",
+        "CED-GGUF/ced-small-f32.gguf",
+        "CED-GGUF/ced-tiny-f32.gguf",
+        "Canary-180M-Flash-GGUF/canary-180m-flash-f32.gguf",
+        "Canary-180M-Flash-GGUF/canary-180m-flash-q8_0.gguf",
+        "Chatterbox-GGUF/chatterbox-f16.gguf",
+        "Chatterbox-GGUF/chatterbox-q8_0.gguf"
+      ],
+      "files_count": 423,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "other",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "placeholder",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "nuget",
+  "id": "pkg:nuget/system.security.accesscontrol@6.0.1",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512:4b66cLRfjMWuBv3s82Xwu1tYua9tfHmsz+8VtafHu+9l4Qz58plBjrQTqshv/vqg6rnZFlDOd8w5jTkPBZftQg==",
+        "fetched": false,
+        "filename": "system.security.accesscontrol.6.0.1.nupkg",
+        "kind": "nupkg",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://api.nuget.org/v3-flatcontainer/system.security.accesscontrol/6.0.1/system.security.accesscontrol.6.0.1.nupkg"
+      }
+    ],
+    "ecosystem": "nuget",
+    "html_url": "https://www.nuget.org/packages/system.security.accesscontrol/6.0.1",
+    "name": "system.security.accesscontrol",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "authors",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Microsoft",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "System.Security.AccessControl",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseExpression",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "nuget_catalog"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenseUrl",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "https://licenses.nuget.org/MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "nuget_license_url",
+        "source": "nuget_catalog"
+      }
+    ],
+    "response_sha256": "7844b846975d46184c286e5ad7990edcf9239cfc2a77a872595a0e8a828d2a31",
+    "retrieved_at": "2026-11-09T08:55:35Z",
+    "source_url": "https://api.nuget.org/v3/catalog0/data/2026.04.10.00.14.45/system.security.accesscontrol.6.0.1.json",
+    "version": "6.0.1"
+  },
+  "rank": 32,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_is_url",
+        "name_case_differs"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:licenseExpression",
+            "nuget_catalog:licenseUrl",
+            "nuspec:metadata.license",
+            "nuspec:metadata.licenseUrl"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "nuget_catalog:licenseExpression",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "nuget_catalog:licenseUrl",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "nuspec:metadata.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "nuspec:metadata.licenseUrl",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:id",
+            "nuspec:metadata.id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "System.Security.AccessControl"
+            ],
+            "canonical_key": "system.security.accesscontrol",
+            "name": "System.Security.AccessControl"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "nuget_catalog:authors",
+            "nuspec:metadata.authors"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Microsoft",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "system.security.accesscontrol.nuspec"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "metadata.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Microsoft",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "metadata.id",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "System.Security.AccessControl",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.license@type",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "expression",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "empty",
+          "source": "nuspec"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "metadata.licenseUrl",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://licenses.nuget.org/MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "nuget_license_url",
+          "source": "nuspec"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

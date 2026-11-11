@@ -1,0 +1,192 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.webjars.bowergithub.vaadin/license-checker@2.1.2",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "license-checker-2.1.2.pom",
+        "kind": "pom",
+        "sha256": "08ed20ff3fdd86a870a54844ade6e42244931b2bab37e979218aa579d3e25e9c",
+        "size_bytes": 1783,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/webjars/bowergithub/vaadin/license-checker/2.1.2/license-checker-2.1.2.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.webjars.bowergithub.vaadin/license-checker/2.1.2",
+    "name": "org.webjars.bowergithub.vaadin:license-checker",
+    "observations": [],
+    "response_sha256": "08ed20ff3fdd86a870a54844ade6e42244931b2bab37e979218aa579d3e25e9c",
+    "retrieved_at": "2026-11-09T08:55:17Z",
+    "source_url": "https://repo1.maven.org/maven2/org/webjars/bowergithub/vaadin/license-checker/2.1.2/license-checker-2.1.2.pom",
+    "version": "2.1.2"
+  },
+  "rank": 9424,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:licenses.license[0].name",
+            "pom.xml:licenses.license[0].url"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "Apache-2.0",
+              "input": "Apache-2.0",
+              "key": "pom.xml:licenses.license[0].name",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "license_url",
+              "expression": "Apache-2.0",
+              "input": "https://spdx.org/licenses/Apache-2.0#licenseText",
+              "key": "pom.xml:licenses.license[0].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "license-checker",
+              "org.webjars.bowergithub.vaadin:license-checker"
+            ],
+            "canonical_key": "org.webjars.bowergithub.vaadin:license-checker",
+            "name": "license-checker"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "license-checker-2.1.2.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "license-checker",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].name",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://spdx.org/licenses/Apache-2.0#licenseText",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "spdx_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "vaadin-license-checker",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

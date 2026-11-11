@@ -218,3 +218,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SBOM-MinBench
+.pilot/
+*.tmp
+review-queue*.csv
+.~lock.*
+.DS_Store
+
+# Dataset entries and test fixtures are never ignored (a Maven group id such
+# as org.jboss.spec matches the PyInstaller rule above).
+!data/entries/**
+!tests/fixtures/**
+.ruff_cache/
+__pycache__/

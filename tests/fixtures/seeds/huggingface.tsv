@@ -1,0 +1,6 @@
+name	version	stratum	rank	note
+google-bert/bert-base-uncased	86b5e0934494bd15c9632b12f734a8a67f723594	edge		apache-2.0 lexical
+meta-llama/Llama-3.1-8B	d04e592bb4f6aa9cfee91e2e20afa771667e1d4b	edge		gated; llama3.1 not an SPDX id
+Qwen/Qwen2.5-72B-Instruct	495f39366efef23836d0cfae4fbe635880d2be31	edge		other plus license_name/license_link
+stabilityai/stable-diffusion-xl-base-1.0	462165984030d82259a11f4367a4eed129e94a7b	edge		openrail++
+gpt2	607a30d783dfa663caf39e06633721c8d4cfcd7e	edge		legacy id redirects: hf_renamed

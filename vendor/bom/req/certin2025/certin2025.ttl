@@ -1,0 +1,497 @@
+# SPDX-FileContributor: Arthit Suriyawongkul
+# SPDX-FileCopyrightText: 2026-present Arthit Suriyawongkul
+# SPDX-FileType: SOURCE
+# SPDX-License-Identifier: CC0-1.0
+# India CERT-In SBOM Technical Guidelines (Version 2.0 Dated 09.07.2025)
+# Source: Technical Guidelines on SBOM | QBOM & CBOM | AIBOM | HBOM (Version 2.0)
+# CERT-In, Ministry of Electronics and Information Technology, Government of India
+
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:<http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix certin2025: <https://w3id.org/bom/req/certin2025/> .
+@prefix bom:    <https://w3id.org/bom/> .
+
+<https://w3id.org/bom/req/certin2025/>
+    a owl:Ontology ;
+    owl:imports <https://w3id.org/bom/> ;
+    owl:versionInfo "0.1.0" ;
+    dcterms:title "India CERT-In SBOM & AIBOM Guidelines v2.0 Mapping"@en ;
+    dcterms:description """SKOS concept scheme for the Indian Computer Emergency Response Team (CERT-In)
+Technical Guidelines on Software Bill of Materials (SBOM) and Artificial Intelligence
+Bill of Materials (AIBOM) Version 2.0 (Dated 09.07.2025).
+
+Covers 21 SBOM Data Fields (Chapter 4, Table 5) and 19 AIBOM Elements (Chapter 9, Table 10)."""@en ;
+    dcterms:issued "2025-07-09"^^xsd:date ;
+    dcterms:creator <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:created "2026-07-26"^^xsd:date ;
+    dcterms:source <https://cert-in.org.in/PDF/TechnicalGuidelines-on-SBOM,QBOM&CBOM,AIBOM_and_HBOM_ver2.0.pdf> ;
+    dcterms:publisher <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:rights "Copyright 2026-present Arthit Suriyawongkul. Dedicated to the public domain under CC0 1.0 Universal."@en ;
+    dcterms:bibliographicCitation "Suriyawongkul, A. (2026). India CERT-In SBOM & AIBOM Guidelines v2.0 Mapping. https://w3id.org/bom/req/certin2025/"@en ;
+    dcterms:conformsTo <http://www.w3.org/2004/02/skos/core> ;
+    vann:preferredNamespacePrefix "certin2025" ;
+    vann:preferredNamespaceUri "https://w3id.org/bom/req/certin2025/"^^xsd:anyURI ;
+    dcterms:modified "2026-10-16"^^xsd:date .
+
+
+# ============================================================================
+# CONCEPT SCHEME AND DEFINITIONS
+# ============================================================================
+
+certin2025:scheme
+    a skos:ConceptScheme, bom:InfoRequirementSpec ;
+    skos:prefLabel "CERT-In SBOM & AIBOM Guidelines v2.0"@en ;
+    dcterms:title "CERT-In Technical Guidelines on SBOM (Version 2.0 Dated 09.07.2025)" ;
+    dcterms:hasVersion "2.0" ;
+    dcterms:source <https://cert-in.org.in/PDF/TechnicalGuidelines-on-SBOM,QBOM&CBOM,AIBOM_and_HBOM_ver2.0.pdf> ;
+    dcterms:creator "Indian Computer Emergency Response Team (CERT-In)" ;
+    dcterms:issued "2025-07-09"^^xsd:date ;
+    dcterms:created "2026-07-26"^^xsd:date ;
+    skos:hasTopConcept
+        # 21 SBOM Data Fields
+        certin2025:component-name , certin2025:component-version , certin2025:component-description ,
+        certin2025:component-supplier , certin2025:component-license , certin2025:component-origin ,
+        certin2025:component-dependencies , certin2025:vulnerabilities , certin2025:patch-status ,
+        certin2025:release-date , certin2025:eol-date , certin2025:criticality ,
+        certin2025:usage-restrictions , certin2025:checksums-or-hashes , certin2025:comments-or-notes ,
+        certin2025:author-of-sbom-data , certin2025:timestamp , certin2025:executable-property ,
+        certin2025:archive-property , certin2025:structured-property , certin2025:unique-identifier ,
+        # 19 AIBOM Elements
+        certin2025:model-name , certin2025:model-version , certin2025:model-type ,
+        certin2025:model-developer , certin2025:model-licensing-information , certin2025:software-dependencies ,
+        certin2025:ml-models-and-algorithms , certin2025:model-performance-metrics , certin2025:data-source ,
+        certin2025:data-sets , certin2025:hardware , certin2025:security-requirements ,
+        certin2025:input , certin2025:output , certin2025:intended-usage ,
+        certin2025:out-of-scope-usage , certin2025:environmental-impact , certin2025:aibom-vulnerabilities ,
+        certin2025:attestations .
+
+
+# ============================================================================
+# SBOM DATA FIELDS (21 Elements, Chapter 4 Table 5 & Section 4.2)
+# ============================================================================
+
+certin2025:component-name
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Component Name"@en ;
+    skos:definition "The name of the software component or library included in the SBOM."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-001"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-name .
+
+certin2025:component-version
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Component Version"@en ;
+    skos:definition "The version number or identifier of the software component."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-002"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-version .
+
+certin2025:component-description
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Component Description"@en ;
+    skos:definition "A brief description or summary of the functionality and purpose of the software component."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-003"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-description .
+
+certin2025:component-supplier
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Component Supplier"@en ;
+    skos:definition "The entity or organization that supplied the software component, such as a vendor, third-party supplier, or open-source project."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-004"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-supplier .
+
+certin2025:component-license
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Component License"@en ;
+    skos:definition "The license under which the software component is distributed, including details such as license type, terms, and restrictions."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-005"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-license .
+
+certin2025:component-origin
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Component Origin"@en ;
+    skos:definition "The source or origin of the software component, such as whether it is proprietary, open-source, or obtained from a third-party vendor."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-006"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-origin .
+
+certin2025:component-dependencies
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Component Dependencies"@en ;
+    skos:definition "Any other software components or libraries that the current component depends on, including their names and versions."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-007"^^bom:SarifRuleId ;
+    skos:closeMatch bom:MetadataRelationship ;
+    skos:exactMatch bom:rel-depends-on .
+
+certin2025:vulnerabilities
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Vulnerabilities"@en ;
+    skos:definition "Information about known security vulnerabilities or weaknesses associated with the software component."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-008"^^bom:SarifRuleId ;
+    skos:exactMatch bom:security-vuln-ref .
+
+certin2025:patch-status
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Patch Status"@en ;
+    skos:definition "Details on whether patches or updates have been applied to address known vulnerabilities in the component."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-009"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-patch-status .
+
+certin2025:release-date
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Release Date"@en ;
+    skos:definition "The date when the specific version of the software component was officially released by the supplier."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-010"^^bom:SarifRuleId ;
+    skos:closeMatch bom:component-timestamp .
+
+certin2025:eol-date
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "End-of-Life (EOL) Date"@en ;
+    skos:definition "The date when the software component is no longer supported or maintained by the supplier."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-011"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-eol-date .
+
+certin2025:criticality
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Criticality"@en ;
+    skos:definition "An assessment of how critical the component is to the overall software system's functionality and security."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-012"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-criticality .
+
+certin2025:usage-restrictions
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Usage Restrictions"@en ;
+    skos:definition "Any restrictions or limitations on how the component can be used within the organization or software system."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-013"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-usage-restriction .
+
+certin2025:checksums-or-hashes
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Checksums or Hashes"@en ;
+    skos:definition "Cryptographic hashes (e.g. SHA-256) used to verify the integrity and authenticity of the software component."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-014"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-hash .
+
+certin2025:comments-or-notes
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Comments or Notes"@en ;
+    skos:definition "Additional information or context regarding the component, such as internal notes, configuration details, or special handling instructions."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-015"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-comment .
+
+certin2025:author-of-sbom-data
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Author of SBOM Data"@en ;
+    skos:definition "The entity or tool responsible for creating or generating the SBOM data for the component."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-016"^^bom:SarifRuleId ;
+    skos:exactMatch bom:doc-author .
+
+certin2025:timestamp
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Timestamp"@en ;
+    skos:definition "The date and time when the SBOM data was generated or last updated."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-017"^^bom:SarifRuleId ;
+    skos:exactMatch bom:doc-timestamp .
+
+certin2025:executable-property
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Executable Property"@en ;
+    skos:definition "Indicates whether the software component is an executable binary or compiled code."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-018"^^bom:SarifRuleId ;
+    skos:exactMatch bom:is-executable .
+
+certin2025:archive-property
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Archive Property"@en ;
+    skos:definition "Indicates whether the component is delivered as an archive file containing multiple sub-components or artifacts."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-019"^^bom:SarifRuleId ;
+    skos:exactMatch bom:is-archive .
+
+certin2025:structured-property
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Structured Property"@en ;
+    skos:definition "Indicates whether the component has structured internal metadata that can be extracted and parsed."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-020"^^bom:SarifRuleId ;
+    skos:exactMatch bom:is-structured .
+
+certin2025:unique-identifier
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Unique Identifier"@en ;
+    skos:definition "A unique identifier (such as PURL or CPE) that globally identifies the component across systems and databases."@en ;
+    skos:notation "BOM-CERTIN2025-SBOM-021"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-identifier .
+
+
+# ============================================================================
+# AIBOM ELEMENTS (19 Elements, Chapter 9 Table 10 & Section 9.3)
+# ============================================================================
+
+certin2025:model-name
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Model Name"@en ;
+    skos:definition "The official name of the AI model, serving as a unique identifier for tracking, referencing, and discussion."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-001"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-name .
+
+certin2025:model-version
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Model Version"@en ;
+    skos:definition "The specific version of the AI model, ensuring that any changes, updates, and version control are documented."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-002"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-version .
+
+certin2025:model-type
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Model Type"@en ;
+    skos:definition "The type of the model (e.g., text-generation, image-processing, or image-classifier)."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-003"^^bom:SarifRuleId ;
+    skos:exactMatch bom:ai-model-type .
+
+certin2025:model-developer
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Model Developer"@en ;
+    skos:definition "The name of the developer or organization responsible for developing the model."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-004"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-producer .
+
+certin2025:model-licensing-information
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Model Licensing Information"@en ;
+    skos:definition "Details of the licenses for the model and any components used (e.g., Apache 2.0, GPL 3.0)."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-005"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-license .
+
+certin2025:software-dependencies
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Software Dependencies"@en ;
+    skos:definition "All software elements required to run the model, including third-party libraries, frameworks, OS requirements, and proprietary software."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-006"^^bom:SarifRuleId ;
+    skos:exactMatch bom:infra-software .
+
+certin2025:ml-models-and-algorithms
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "ML Models and Algorithms"@en ;
+    skos:definition "The specific machine learning models and algorithms used in the AI system, documenting decision-making processes, input handling, and learning mechanisms."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-007"^^bom:SarifRuleId ;
+    skos:closeMatch bom:ai-hyperparameter ;
+    skos:closeMatch bom:ai-model-architecture ;
+    skos:closeMatch bom:ai-model-type ;
+    skos:closeMatch bom:ai-learning-type .
+
+certin2025:model-performance-metrics
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Model Performance Metrics"@en ;
+    skos:definition "Metrics for evaluating the performance of the AI model, such as accuracy, precision, recall, F1 score, etc."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-008"^^bom:SarifRuleId ;
+    skos:exactMatch bom:ai-perf-metric .
+
+certin2025:data-source
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Data Source"@en ;
+    skos:definition "The origin or source of the data used to train the model (e.g., proprietary datasets, publicly available datasets, real-time data, synthetic data)."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-009"^^bom:SarifRuleId ;
+    skos:exactMatch bom:dataset-source ;
+    skos:closeMatch bom:dataset-collection-method .
+
+certin2025:data-sets
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Data Sets"@en ;
+    skos:definition "Information about the datasets used to train the model, including names, versions, formats, and limitations. Ensures compliance with privacy and licensing regulations."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-010"^^bom:SarifRuleId ;
+    skos:closeMatch bom:MetadataRelationship ;
+    skos:exactMatch bom:rel-trained-on .
+
+certin2025:hardware
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Hardware"@en ;
+    skos:definition "The hardware or computing resources required to run the model, including processors (e.g., GPUs, TPUs), storage, and memory."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-011"^^bom:SarifRuleId ;
+    skos:exactMatch bom:infra-hardware .
+
+certin2025:security-requirements
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Security Requirements"@en ;
+    skos:definition "Encryption methods and access control mechanisms used to protect model data and user information."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-012"^^bom:SarifRuleId ;
+    skos:exactMatch bom:security-controls .
+
+certin2025:input
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Input"@en ;
+    skos:definition "The type of input the model accepts, such as text, images, or other data."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-013"^^bom:SarifRuleId ;
+    skos:exactMatch bom:ai-input-modality .
+
+certin2025:output
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Output"@en ;
+    skos:definition "The type of output the model generates, such as text, images, or other data."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-014"^^bom:SarifRuleId ;
+    skos:exactMatch bom:ai-output-modality .
+
+certin2025:intended-usage
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Intended Usage"@en ;
+    skos:definition "The specific use cases or scenarios for which the AI model is designed and intended to be used."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-015"^^bom:SarifRuleId ;
+    skos:exactMatch bom:ai-intended-use ;
+    skos:relatedMatch bom:ai-application-domain .
+
+certin2025:out-of-scope-usage
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Out of Scope Usage"@en ;
+    skos:definition "Uses or scenarios that the AI model is not intended for and should be avoided to prevent misuse or unintended consequences."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-016"^^bom:SarifRuleId ;
+    skos:exactMatch bom:ai-out-of-scope-usage .
+
+certin2025:environmental-impact
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Environmental Impact"@en ;
+    skos:definition "The potential environmental impact of training and deploying the AI model, including energy consumption, resource use, and carbon footprint."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-017"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-environmental-impact .
+
+certin2025:aibom-vulnerabilities
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Vulnerabilities"@en ;
+    skos:definition "Known security vulnerabilities or weaknesses in the components, including severity ratings and references to security advisories or CVE identifiers."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-018"^^bom:SarifRuleId ;
+    skos:exactMatch bom:security-vuln-ref .
+
+certin2025:attestations
+    a skos:Concept ;
+    skos:topConceptOf certin2025:scheme ;
+    skos:inScheme certin2025:scheme ;
+    skos:prefLabel "Attestations"@en ;
+    skos:definition "Digital signature for the model or AIBOM to ensure authenticity and integrity."@en ;
+    skos:notation "BOM-CERTIN2025-AIBOM-019"^^bom:SarifRuleId ;
+    skos:exactMatch bom:doc-integrity .
+
+
+# ============================================================================
+# OBLIGATION ASSERTIONS
+# ============================================================================
+
+# 21 SBOM Data Fields
+certin2025:component-name          bom:provisionType bom:Requirement .
+certin2025:component-version       bom:provisionType bom:Requirement .
+certin2025:component-description   bom:provisionType bom:Requirement .
+certin2025:component-supplier      bom:provisionType bom:Requirement .
+certin2025:component-license       bom:provisionType bom:Requirement .
+certin2025:component-origin        bom:provisionType bom:Requirement .
+certin2025:component-dependencies  bom:provisionType bom:Requirement .
+certin2025:vulnerabilities         bom:provisionType bom:Requirement .
+certin2025:patch-status            bom:provisionType bom:Requirement .
+certin2025:release-date            bom:provisionType bom:Requirement .
+certin2025:eol-date                bom:provisionType bom:Requirement .
+certin2025:criticality             bom:provisionType bom:Requirement .
+certin2025:usage-restrictions      bom:provisionType bom:Requirement .
+certin2025:checksums-or-hashes     bom:provisionType bom:Requirement .
+certin2025:comments-or-notes       bom:provisionType bom:Requirement .
+certin2025:author-of-sbom-data     bom:provisionType bom:Requirement .
+certin2025:timestamp               bom:provisionType bom:Requirement .
+certin2025:executable-property     bom:provisionType bom:Requirement .
+certin2025:archive-property        bom:provisionType bom:Requirement .
+certin2025:structured-property     bom:provisionType bom:Requirement .
+certin2025:unique-identifier       bom:provisionType bom:Requirement .
+
+# 19 AIBOM Elements
+certin2025:model-name              bom:provisionType bom:Requirement .
+certin2025:model-version           bom:provisionType bom:Requirement .
+certin2025:model-type              bom:provisionType bom:Requirement .
+certin2025:model-developer         bom:provisionType bom:Requirement .
+certin2025:model-licensing-information bom:provisionType bom:Requirement .
+certin2025:software-dependencies   bom:provisionType bom:Requirement .
+certin2025:ml-models-and-algorithms bom:provisionType bom:Requirement .
+certin2025:model-performance-metrics bom:provisionType bom:Requirement .
+certin2025:data-source             bom:provisionType bom:Requirement .
+certin2025:data-sets               bom:provisionType bom:Requirement .
+certin2025:hardware                bom:provisionType bom:Requirement .
+certin2025:security-requirements   bom:provisionType bom:Requirement .
+certin2025:input                   bom:provisionType bom:Requirement .
+certin2025:output                  bom:provisionType bom:Requirement .
+certin2025:intended-usage          bom:provisionType bom:Requirement .
+certin2025:out-of-scope-usage      bom:provisionType bom:Requirement .
+certin2025:environmental-impact    bom:provisionType bom:Requirement .
+certin2025:aibom-vulnerabilities   bom:provisionType bom:Requirement .
+certin2025:attestations            bom:provisionType bom:Requirement .

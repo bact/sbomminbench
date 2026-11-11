@@ -1,0 +1,126 @@
+# SPDX-FileContributor: Arthit Suriyawongkul
+# SPDX-FileCopyrightText: 2026-present Arthit Suriyawongkul
+# SPDX-FileType: SOURCE
+# SPDX-License-Identifier: CC0-1.0
+# NTIA 2021 SBOM Minimum Elements
+# 'The Minimum Elements For a Software Bill of Materials (SBOM)'
+# NTIA, November 2021
+# Source: https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
+
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix ntia2021:   <https://w3id.org/bom/req/ntia2021/> .
+@prefix bom:    <https://w3id.org/bom/> .
+
+# NTIA sub-vocabulary; imports the SBOM bridge ontology
+<https://w3id.org/bom/req/ntia2021/>
+    a owl:Ontology ;
+    owl:imports <https://w3id.org/bom/> ;
+    owl:versionInfo "0.1.0" ;
+    dcterms:creator <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:title "NTIA 2021 SBOM Minimum Elements Concept Scheme"@en ;
+    dcterms:description "SKOS concept scheme of the NTIA 2021 SBOM Minimum Elements, with each element linked to the bridge concepts of the BOM ontology (https://w3id.org/bom/)."@en ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:created "2026-06-18"^^xsd:date ;
+    dcterms:source <https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom> ;
+    dcterms:issued "2021-11"^^xsd:gYearMonth ;
+    dcterms:publisher <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:rights "Copyright 2026-present Arthit Suriyawongkul. Dedicated to the public domain under CC0 1.0 Universal."@en ;
+    dcterms:bibliographicCitation "Suriyawongkul, A. (2026). NTIA 2021 SBOM Minimum Elements Concept Scheme. https://w3id.org/bom/req/ntia2021/"@en ;
+    dcterms:conformsTo <http://www.w3.org/2004/02/skos/core> ;
+    vann:preferredNamespacePrefix "ntia2021" ;
+    vann:preferredNamespaceUri "https://w3id.org/bom/req/ntia2021/"^^xsd:anyURI ;
+    dcterms:modified "2026-10-16"^^xsd:date .
+
+
+# ============================================================================
+# CONCEPT SCHEME AND DEFINITIONS
+# ============================================================================
+
+ntia2021:scheme
+    a skos:ConceptScheme, bom:InfoRequirementSpec ;
+    skos:prefLabel "NTIA 2021 SBOM Minimum Elements"@en ;
+    dcterms:title "NTIA 2021 SBOM Minimum Elements Concept Scheme" ;
+    dcterms:creator "National Telecommunications and Information Administration (NTIA)" ;
+    dcterms:issued "2021-11"^^xsd:gYearMonth ;
+    dcterms:created "2026-06-18"^^xsd:date ;
+    dcterms:source <https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom> ;
+    skos:hasTopConcept ntia2021:supplier , ntia2021:name , ntia2021:version ,
+                       ntia2021:unique-identifier , ntia2021:dependency-relationship ,
+                       ntia2021:author , ntia2021:timestamp .
+
+ntia2021:supplier
+    a skos:Concept ;
+    skos:topConceptOf ntia2021:scheme ;
+    skos:inScheme ntia2021:scheme ;
+    skos:prefLabel "Supplier Name"@en ;
+    skos:notation "BOM-NTIA2021-DF-001"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-supplier ;
+    skos:closeMatch bom:component-producer .
+
+ntia2021:name
+    a skos:Concept ;
+    skos:topConceptOf ntia2021:scheme ;
+    skos:inScheme ntia2021:scheme ;
+    skos:prefLabel "Component Name"@en ;
+    skos:notation "BOM-NTIA2021-DF-002"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-name .
+
+ntia2021:version
+    a skos:Concept ;
+    skos:topConceptOf ntia2021:scheme ;
+    skos:inScheme ntia2021:scheme ;
+    skos:prefLabel "Version of the Component"@en ;
+    skos:notation "BOM-NTIA2021-DF-003"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-version .
+
+ntia2021:unique-identifier
+    a skos:Concept ;
+    skos:topConceptOf ntia2021:scheme ;
+    skos:inScheme ntia2021:scheme ;
+    skos:prefLabel "Unique Identifier"@en ;
+    skos:notation "BOM-NTIA2021-DF-004"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-identifier .
+
+ntia2021:dependency-relationship
+    a skos:Concept ;
+    skos:topConceptOf ntia2021:scheme ;
+    skos:inScheme ntia2021:scheme ;
+    skos:prefLabel "Dependency Relationship"@en ;
+    skos:notation "BOM-NTIA2021-DF-005"^^bom:SarifRuleId ;
+    skos:closeMatch bom:MetadataRelationship ;
+    skos:exactMatch bom:rel-depends-on ;
+    skos:closeMatch bom:rel-contains .
+
+ntia2021:author
+    a skos:Concept ;
+    skos:topConceptOf ntia2021:scheme ;
+    skos:inScheme ntia2021:scheme ;
+    skos:prefLabel "Author of SBOM Data"@en ;
+    skos:notation "BOM-NTIA2021-DF-006"^^bom:SarifRuleId ;
+    skos:exactMatch bom:doc-author .
+
+ntia2021:timestamp
+    a skos:Concept ;
+    skos:topConceptOf ntia2021:scheme ;
+    skos:inScheme ntia2021:scheme ;
+    skos:prefLabel "Timestamp"@en ;
+    skos:notation "BOM-NTIA2021-DF-007"^^bom:SarifRuleId ;
+    skos:exactMatch bom:doc-timestamp .
+
+
+# ============================================================================
+# OBLIGATION ASSERTIONS
+# ============================================================================
+
+ntia2021:supplier               bom:provisionType bom:Requirement .
+ntia2021:name                   bom:provisionType bom:Requirement .
+ntia2021:version                bom:provisionType bom:Requirement .
+ntia2021:unique-identifier      bom:provisionType bom:Requirement .
+ntia2021:dependency-relationship bom:provisionType bom:Requirement .
+ntia2021:author                 bom:provisionType bom:Requirement .
+ntia2021:timestamp              bom:provisionType bom:Requirement .

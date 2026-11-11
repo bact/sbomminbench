@@ -1,0 +1,316 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/%40storybook/addon-onboarding@10.6.6",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-C2DEDMI1hK/fYy/Fxvqx85qwHFjmjMe0xabwpjEDQtv98UjQiUxCg4HZIENKlKWJ9o0daYkyrtZTcyqj4zQ3+A==",
+        "fetched": true,
+        "filename": "addon-onboarding-10.6.6.tgz",
+        "kind": "npm_tarball",
+        "sha256": "22c8aa1162ac3c152e5598d78fb6234fa390cdbf41cee2bfe0f20591bdd1baf1",
+        "size_bytes": 77172,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/@storybook/addon-onboarding/-/addon-onboarding-10.6.6.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/@storybook/addon-onboarding/v/10.6.6",
+    "name": "@storybook/addon-onboarding",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "GitHub Actions",
+          "trustedPublisher": {
+            "id": "github",
+            "oidcConfigId": "14cc9047-89dc-4043-8b8a-e4d7de19a229"
+          }
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "absent",
+        "present": false,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "ndelangen"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "shilman"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "tmeasday"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "winkervsbecks"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "kylegach"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "jreinhold"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "kasperpeulen"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "valentinpalkovic"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "domyen"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "storybook-bot"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "vanessayuenn"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "huang-julien"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "@storybook/addon-onboarding",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "278939ff4fbf731ce29183b044220004b60cf301c97736a7a4e85e4535a378c0",
+    "retrieved_at": "2026-11-09T08:55:22Z",
+    "source_url": "https://registry.npmjs.org/@storybook%2Faddon-onboarding/10.6.6",
+    "version": "10.6.6"
+  },
+  "rank": 5894,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_absent_maintainer_only"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:license",
+            "package.json:license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "npm_registry:license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "package.json:license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "@storybook/addon-onboarding"
+            ],
+            "canonical_key": "@storybook/addon-onboarding",
+            "name": "@storybook/addon-onboarding"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "package/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "@storybook/addon-onboarding",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

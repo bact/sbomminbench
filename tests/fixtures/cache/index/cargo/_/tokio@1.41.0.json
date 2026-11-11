@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "declared_digest": "sha256:145f3413504347a2be84393cc8a7d2fb4d863b375909ea59f2158261aa258bbb",
+    "fetched": true,
+    "filename": "tokio-1.41.0.crate",
+    "kind": "crate",
+    "sha256": "145f3413504347a2be84393cc8a7d2fb4d863b375909ea59f2158261aa258bbb",
+    "size_bytes": 805168,
+    "skip_reason": null,
+    "url": "https://static.crates.io/crates/tokio/tokio-1.41.0.crate"
+  },
+  "ecosystem": "cargo",
+  "fetched_at": "2026-11-08T23:01:28Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "Cargo.toml": "tokio-1.41.0/Cargo.toml",
+    "Cargo.toml.orig": "tokio-1.41.0/Cargo.toml.orig"
+  },
+  "members_dir": "members/145f3413504347a2be84393cc8a7d2fb4d863b375909ea59f2158261aa258bbb",
+  "model_members": [],
+  "name": "tokio",
+  "purl": "pkg:cargo/tokio@1.41.0",
+  "rank": null,
+  "responses": {
+    "platform": "https://crates.io/api/v1/crates/tokio/1.41.0"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "1.41.0"
+}

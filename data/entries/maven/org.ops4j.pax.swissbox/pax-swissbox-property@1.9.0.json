@@ -1,0 +1,298 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.ops4j.pax.swissbox/pax-swissbox-property@1.9.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "pax-swissbox-property-1.9.0.pom",
+        "kind": "pom",
+        "sha256": "ecf93006a9dbd07a038e0999b8fd88560d3f8fcf1abb0f3dcde4b5b4459f573a",
+        "size_bytes": 1781,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/ops4j/pax/swissbox/pax-swissbox-property/1.9.0/pax-swissbox-property-1.9.0.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.ops4j.pax.swissbox/pax-swissbox-property/1.9.0",
+    "name": "org.ops4j.pax.swissbox:pax-swissbox-property",
+    "observations": [],
+    "response_sha256": "ecf93006a9dbd07a038e0999b8fd88560d3f8fcf1abb0f3dcde4b5b4459f573a",
+    "retrieved_at": "2026-11-09T08:55:15Z",
+    "source_url": "https://repo1.maven.org/maven2/org/ops4j/pax/swissbox/pax-swissbox-property/1.9.0/pax-swissbox-property-1.9.0.pom",
+    "version": "1.9.0"
+  },
+  "rank": 8209,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_spdx_invalid",
+        "license_unresolved_value",
+        "maven_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[2].licenses.license[0].url"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "ALv2",
+              "key": "pom.xml:parent[2].licenses.license[0].name",
+              "reason": "not found: ALv2",
+              "trust": "none"
+            },
+            {
+              "category": "license_url",
+              "expression": "Apache-2.0",
+              "input": "http://www.apache.org/licenses/LICENSE-2.0.html",
+              "key": "pom.xml:parent[2].licenses.license[0].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": "'ALv2': unresolved (not found: ALv2)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "pax-swissbox-property",
+              "org.ops4j.pax.swissbox:pax-swissbox-property"
+            ],
+            "canonical_key": "org.ops4j.pax.swissbox:pax-swissbox-property",
+            "name": "pax-swissbox-property"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[1].developers.developer[0].name",
+            "pom.xml:parent[1].developers.developer[1].name",
+            "pom.xml:parent[1].developers.developer[2].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Alin Dreghiciu",
+                "role": "author"
+              },
+              {
+                "name": "Toni Menzel",
+                "role": "author"
+              },
+              {
+                "name": "Harald Wellmann",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "master-4.3.0.pom",
+        "pax-swissbox-property-1.9.0.pom",
+        "swissbox-1.9.0.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "pax-swissbox-property",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "OPS4J Pax Swissbox :: Property",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ops4j.pax/swissbox@1.9.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "Alin Dreghiciu",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[1].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ops4j.pax/swissbox@1.9.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "Toni Menzel",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[1].organization",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ops4j.pax/swissbox@1.9.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "independent software developer",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[2].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ops4j.pax/swissbox@1.9.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "Harald Wellmann",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[0].name",
+          "format_validity": "unknown_id",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ops4j/master@4.3.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "ALv2",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ops4j/master@4.3.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "http://www.apache.org/licenses/LICENSE-2.0.html",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "parent[2].organization.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ops4j/master@4.3.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "OPS4J - Open Participation Software for Java",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

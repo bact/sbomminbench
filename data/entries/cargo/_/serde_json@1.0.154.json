@@ -1,0 +1,278 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "cargo",
+  "id": "pkg:cargo/serde_json@1.0.154",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6",
+        "fetched": true,
+        "filename": "serde_json-1.0.154.crate",
+        "kind": "crate",
+        "sha256": "e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6",
+        "size_bytes": 158079,
+        "skip_reason": null,
+        "url": "https://static.crates.io/crates/serde_json/serde_json-1.0.154.crate"
+      }
+    ],
+    "ecosystem": "cargo",
+    "html_url": "https://crates.io/crates/serde_json/1.0.154",
+    "name": "serde_json",
+    "observations": [
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "version.crate",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "serde_json",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "crates_api"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "version.license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT OR Apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "expression_shaped",
+        "source": "crates_api"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "version.published_by",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "avatar": "https://avatars.githubusercontent.com/u/1940490?v=4",
+          "created_at": "2012-07-09T03:55:40Z",
+          "github_username_matches": true,
+          "id": 3618,
+          "login": "dtolnay",
+          "name": "David Tolnay",
+          "url": "https://github.com/dtolnay"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "crates_api"
+      }
+    ],
+    "response_sha256": "e293087fcb37cbb8a926ec1853ec96b03440da72d970d92c9fe569ea674be16f",
+    "retrieved_at": "2026-11-09T08:54:11Z",
+    "source_url": "https://crates.io/api/v1/crates/serde_json/1.0.154",
+    "version": "1.0.154"
+  },
+  "rank": 24,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_compound"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml.orig:package.license",
+            "Cargo.toml:package.license",
+            "crates_api:version.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT OR Apache-2.0",
+              "key": "Cargo.toml.orig:package.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT OR Apache-2.0",
+              "key": "Cargo.toml:package.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT OR Apache-2.0",
+              "key": "crates_api:version.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0 OR MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml:package.name",
+            "crates_api:version.crate"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "serde_json"
+            ],
+            "canonical_key": "serde-json",
+            "name": "serde_json"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "serde_json-1.0.154/Cargo.toml",
+        "serde_json-1.0.154/Cargo.toml.orig"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "package.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT OR Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "expression_shaped",
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "serde_json",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT OR Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "expression_shaped",
+          "source": "Cargo.toml.orig"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "serde_json",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml.orig"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

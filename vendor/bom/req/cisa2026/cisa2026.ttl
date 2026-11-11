@@ -1,0 +1,450 @@
+# SPDX-FileContributor: Arthit Suriyawongkul
+# SPDX-FileCopyrightText: 2026-present Arthit Suriyawongkul
+# SPDX-FileType: SOURCE
+# SPDX-License-Identifier: CC0-1.0
+# 2026 Minimum Elements for a Software Bill of Materials (SBOM), version 2.1
+# CISA and 17 co-authoring organizations (NSA, FBI, ASD's ACSC, Cyber Centre,
+# NUKIB, ANSSI, BSI, CERT-In, ACN, METI, NCO, NIS/NCSC, KISA, NCSC-NL, NCSC-NZ,
+# NASK, NBU), with contribution from DG CONNECT (European Commission).
+# Published 2026-07-29. Updates and replaces NTIA 2021 SBOM Minimum Elements (2021).
+# Source: https://www.cisa.gov/sites/default/files/2026-07/2026_cisa_sbom_minimum_elements_508c.pdf
+
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix cisa2026: <https://w3id.org/bom/req/cisa2026/> .
+@prefix bom:      <https://w3id.org/bom/> .
+
+# CISA 2026 sub-vocabulary; imports the SBOM bridge ontology
+<https://w3id.org/bom/req/cisa2026/>
+    a owl:Ontology ;
+    owl:imports <https://w3id.org/bom/> ;
+    dcterms:title "CISA 2026 Minimum Elements for a Software Bill of Materials (SBOM)" ;
+    dcterms:description """SKOS concept scheme for the 2026 Minimum Elements for a
+Software Bill of Materials (SBOM), version 2.1, published 2026-07-29 by CISA and
+17 co-authoring organizations. Two categories of Data Fields (SBOM Metadata,
+Component Data) with 17 elements, plus 6 Practices and Processes elements.
+Replaces the NTIA 2021 Minimum Elements."""@en ;
+    dcterms:source <https://www.cisa.gov/sites/default/files/2026-07/2026_cisa_sbom_minimum_elements_508c.pdf> ;
+    dcterms:creator <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:created "2026-10-12"^^xsd:date ;
+    owl:versionInfo "0.1.0" ;
+    rdfs:seeAlso <https://www.cisa.gov/sbom> ;
+    rdfs:seeAlso <https://w3id.org/bom/req/ntia2021/> ;
+    rdfs:seeAlso <https://w3id.org/bom/req/g7ai2026/> ;
+    dcterms:issued "2026-07-29"^^xsd:date ;
+    dcterms:publisher <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:rights "Copyright 2026-present Arthit Suriyawongkul. Dedicated to the public domain under CC0 1.0 Universal."@en ;
+    dcterms:bibliographicCitation "Suriyawongkul, A. (2026). CISA 2026 Minimum Elements for a Software Bill of Materials (SBOM). https://w3id.org/bom/req/cisa2026/"@en ;
+    dcterms:conformsTo <http://www.w3.org/2004/02/skos/core> ;
+    vann:preferredNamespacePrefix "cisa2026" ;
+    vann:preferredNamespaceUri "https://w3id.org/bom/req/cisa2026/"^^xsd:anyURI ;
+    dcterms:modified "2026-10-27"^^xsd:date .
+
+
+# ============================================================================
+# CONCEPT SCHEME AND DEFINITIONS
+# ============================================================================
+
+cisa2026:scheme
+    a skos:ConceptScheme, bom:InfoRequirementSpec ;
+    skos:prefLabel "CISA 2026 SBOM Minimum Elements"@en ;
+    dcterms:title "2026 Minimum Elements for a Software Bill of Materials (SBOM), v2.1" ;
+    dcterms:creator "Cybersecurity and Infrastructure Security Agency (CISA) and co-authoring organizations" ;
+    dcterms:issued "2026-07-29"^^xsd:date ;
+    dcterms:hasVersion "2.1" ;
+    dcterms:replaces <https://w3id.org/bom/req/ntia2021/scheme> ;
+    dcterms:source <https://www.cisa.gov/sites/default/files/2026-07/2026_cisa_sbom_minimum_elements_508c.pdf> ;
+    skos:scopeNote """The minimum elements apply to SBOMs for all software, including
+open source software, AI software and SaaS. Each Data Fields element need not
+correlate directly with a particular data field in an SBOM data format; one
+implemented field may satisfy more than one element. The SBOM Metadata elements
+are shared verbatim with the G7 2026 SBOM for AI Minimum Elements (2026-05-12), which
+CISA co-authored."""@en ;
+    skos:hasTopConcept
+        cisa2026:sbom-metadata ,
+        cisa2026:component-data ,
+        cisa2026:practices-and-processes .
+
+# -- Top-level categories ------------------------------------------------------
+
+cisa2026:sbom-metadata
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:topConceptOf cisa2026:scheme ;
+    skos:prefLabel "SBOM Metadata"@en ;
+    skos:notation "CISA2026-META"^^bom:ElementCode ;
+    skos:definition "Data field elements that capture information about the SBOM document itself. The data supports SBOM management; SBOM analysis tools leverage these fields to improve usability of the SBOM data."@en ;
+    skos:narrower
+        cisa2026:sbom-author ,
+        cisa2026:sbom-author-signature ,
+        cisa2026:sbom-data-format-name ,
+        cisa2026:sbom-data-format-version ,
+        cisa2026:sbom-generation-context ,
+        cisa2026:sbom-timestamp ,
+        cisa2026:sbom-tool-name ,
+        cisa2026:sbom-tool-version ,
+        cisa2026:sbom-version .
+
+cisa2026:component-data
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:topConceptOf cisa2026:scheme ;
+    skos:prefLabel "Component Data"@en ;
+    skos:notation "CISA2026-COMP"^^bom:ElementCode ;
+    skos:definition "Data field elements that capture information about the target component (the component for which the SBOM is generated) and all enumerated subcomponents."@en ;
+    skos:narrower
+        cisa2026:component-producer ,
+        cisa2026:component-dependency-relationship ,
+        cisa2026:component-hash-value ,
+        cisa2026:component-hash-algorithm ,
+        cisa2026:component-identifiers ,
+        cisa2026:component-license ,
+        cisa2026:component-name ,
+        cisa2026:component-version .
+
+cisa2026:practices-and-processes
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:topConceptOf cisa2026:scheme ;
+    skos:prefLabel "Practices and Processes"@en ;
+    skos:notation "CISA2026-PP"^^bom:ElementCode ;
+    skos:definition "Elements that outline principles guiding SBOM operations across the software lifecycle: how an entity engages with and documents the SBOM data. Not data fields; not mapped to exchange-format fields except where a format construct supports the practice."@en ;
+    skos:narrower
+        cisa2026:accommodation-of-updates ,
+        cisa2026:coverage ,
+        cisa2026:distribution-and-delivery ,
+        cisa2026:explicitly-identifying-unknown-information ,
+        cisa2026:frequency ,
+        cisa2026:machine-processable-data .
+
+# -- SBOM Metadata (META-001 ... META-009) ------------------------------------
+
+cisa2026:sbom-author
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:sbom-metadata ;
+    skos:prefLabel "SBOM Author"@en ;
+    skos:altLabel "Author of SBOM Data"@en ;          # NTIA 2021 label
+    skos:notation "BOM-CISA2026-META-001"^^bom:SarifRuleId ;
+    skos:definition "The name of the entity that creates the SBOM data for the target component."@en ;
+    skos:scopeNote """Major Update from NTIA 2021 'Author of SBOM Data'. Captures the
+entity operating the tool to generate the SBOM, not the tool itself. Use full
+names, not acronyms. Distinct from Component Producer; the two may be identical
+when the same entity created the target component and generated the SBOM."""@en ;
+    skos:exactMatch bom:doc-author .
+
+cisa2026:sbom-author-signature
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:sbom-metadata ;
+    skos:prefLabel "SBOM Author Signature"@en ;
+    skos:notation "BOM-CISA2026-META-002"^^bom:SarifRuleId ;
+    skos:definition "A digital signature attributable to the SBOM author."@en ;
+    skos:scopeNote """New in 2026. Provides assurance that the claimed signatory signed the
+information and that the information was not modified after signature generation.
+Signature algorithms should be approved for secure use (e.g. NIST DSS,
+ISO/IEC 14888-4:2024, ENISA Agreed Cryptographic Mechanisms). Implementation
+should use existing software signing infrastructure, tools and key management."""@en ;
+    skos:exactMatch bom:doc-integrity .
+
+cisa2026:sbom-data-format-name
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:sbom-metadata ;
+    skos:prefLabel "SBOM Data Format Name"@en ;
+    skos:notation "BOM-CISA2026-META-003"^^bom:SarifRuleId ;
+    skos:definition "The name of the data format used to represent the SBOM data."@en ;
+    skos:scopeNote "New in 2026. Identifies the data format (data model, e.g. SPDX or CycloneDX) used to generate and consume the SBOM, as opposed to the serialization media type. See Machine-Processable Data."@en ;
+    skos:closeMatch bom:doc-spec-version .
+
+cisa2026:sbom-data-format-version
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:sbom-metadata ;
+    skos:prefLabel "SBOM Data Format Version"@en ;
+    skos:notation "BOM-CISA2026-META-004"^^bom:SarifRuleId ;
+    skos:definition "Identifier designated by the SBOM data format to specify the version of the data format."@en ;
+    skos:scopeNote "New in 2026. Identifies the version of the data format indicated in the SBOM Data Format Name element. Versions declared deprecated by the format maintainers should not be used."@en ;
+    skos:exactMatch bom:doc-spec-version .
+
+cisa2026:sbom-generation-context
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:sbom-metadata ;
+    skos:prefLabel "SBOM Generation Context"@en ;
+    skos:altLabel "SBOM Type"@en ;                     # FSCT (3rd Ed.), SPDX 3 label
+    skos:notation "BOM-CISA2026-META-005"^^bom:SarifRuleId ;
+    skos:definition "The relative software lifecycle phase and data available at the time the SBOM author generated the SBOM."@en ;
+    skos:scopeNote """New in 2026. Component data may differ based on the lifecycle phase
+during which the SBOM was generated. General references such as 'before build',
+'build' and 'after build', as well as more specific identifiers, can satisfy this
+element; e.g. an SBOM generated from source code is 'before build', one from a
+binary analysis tool is 'after build'. 'Build' refers to compilation,
+interpretation, or another process that makes source code executable."""@en ;
+    skos:exactMatch bom:doc-lifecycle-stage .
+
+cisa2026:sbom-timestamp
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:sbom-metadata ;
+    skos:prefLabel "SBOM Timestamp"@en ;
+    skos:altLabel "Timestamp"@en ;                     # NTIA 2021 label
+    skos:notation "BOM-CISA2026-META-006"^^bom:SarifRuleId ;
+    skos:definition "Record of the date and time of the most recent update to the SBOM data."@en ;
+    skos:scopeNote "Minor Update from NTIA 2021. Identifies when the SBOM author last changed the SBOM data, manually or using a tool. Each version of an SBOM will have a new timestamp. Content should adhere to RFC 9557."@en ;
+    skos:exactMatch bom:doc-timestamp .
+
+cisa2026:sbom-tool-name
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:sbom-metadata ;
+    skos:prefLabel "SBOM Tool Name"@en ;
+    skos:notation "BOM-CISA2026-META-007"^^bom:SarifRuleId ;
+    skos:definition "The name of the tool used by the SBOM author to generate or amend the SBOM."@en ;
+    skos:scopeNote "New in 2026. A string identifying the software tool used by the SBOM author. Use full names, not acronyms."@en ;
+    skos:exactMatch bom:doc-tool-name .
+
+cisa2026:sbom-tool-version
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:sbom-metadata ;
+    skos:prefLabel "SBOM Tool Version"@en ;
+    skos:notation "BOM-CISA2026-META-008"^^bom:SarifRuleId ;
+    skos:definition "Identifier for the version of the tool identified in the SBOM Tool Name element."@en ;
+    skos:scopeNote "New in 2026. Allows an organization to identify a specific code delivery of the tool. If no version identifier is available, the SBOM author should indicate that the information is unknown."@en ;
+    skos:exactMatch bom:doc-tool-version .
+
+cisa2026:sbom-version
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:sbom-metadata ;
+    skos:prefLabel "SBOM Version"@en ;
+    skos:notation "BOM-CISA2026-META-009"^^bom:SarifRuleId ;
+    skos:definition "Identifier designated by the SBOM author to specify a change in the SBOM document from a previously identified version or to indicate that it is the first version."@en ;
+    skos:scopeNote """New in 2026. Indicates a relationship with earlier iterations of an
+SBOM. The SBOM version is tracked per component-name/component-version pair.
+Semantic Versioning may be used (major version '1' for SBOMs following these
+minimum elements; minor/patch for content changes). A serial number such as an
+RFC 9562 UUID may also be used."""@en ;
+    skos:exactMatch bom:doc-version .
+
+# -- Component Data (COMP-001 ... COMP-008) -----------------------------------
+
+cisa2026:component-producer
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:component-data ;
+    skos:prefLabel "Component Producer"@en ;
+    skos:altLabel "Supplier Name"@en ;                 # NTIA 2021 label (replaced)
+    skos:notation "BOM-CISA2026-COMP-001"^^bom:SarifRuleId ;
+    skos:definition "The name of an entity that creates, defines, and identifies components."@en ;
+    skos:scopeNote """Major Update: replaces NTIA 2021 'Supplier Name', which proved
+ambiguous around distributors. A human-readable string identifying the entity
+that created or developed the target component; only one organization should be
+identified per component. For open source, use the package-manager naming
+convention or the original project / maintaining organization. If no clear
+producer, explicitly indicate unknown provenance. 'Producer' is not the EU CRA
+term of art 'manufacturer' (all manufacturers are producers, not vice versa)."""@en ;
+    skos:exactMatch bom:component-producer .
+
+cisa2026:component-dependency-relationship
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:component-data ;
+    skos:prefLabel "Component Dependency Relationship"@en ;
+    skos:altLabel "Dependency Relationship"@en ;       # NTIA 2021 label
+    skos:notation "BOM-CISA2026-COMP-002"^^bom:SarifRuleId ;
+    skos:definition "The relationship between two components, where one component is necessary for the operation of the other."@en ;
+    skos:scopeNote """Minor Update. Reflects that a component includes another component,
+specifying the relationship between the target component and one of its
+subcomponents and supporting a dependency graph. Subcomponents may be embedded in
+the SBOM or linked as separate SBOM documents. Borrowed (copied) code should be
+tracked as a local fork with a dependency relationship."""@en ;
+    skos:exactMatch bom:rel-depends-on ;
+    skos:closeMatch bom:MetadataRelationship ;
+    skos:closeMatch bom:rel-derived-from ;
+    skos:closeMatch bom:rel-contains .
+
+cisa2026:component-hash-value
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:component-data ;
+    skos:prefLabel "Component Hash Value"@en ;
+    skos:notation "BOM-CISA2026-COMP-003"^^bom:SarifRuleId ;
+    skos:definition "The output generated from applying a cryptographic hash algorithm to an executable component artifact."@en ;
+    skos:scopeNote "New in 2026. An ASCII hexadecimal encoded value computed over the executable component artifact. If the SBOM author has no access to the artifact, the value should be indicated as unknown. Alternative encodings, if allowed by the format, must be machine-processable."@en ;
+    skos:closeMatch bom:component-hash .
+
+cisa2026:component-hash-algorithm
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:component-data ;
+    skos:prefLabel "Component Hash Algorithm"@en ;
+    skos:notation "BOM-CISA2026-COMP-004"^^bom:SarifRuleId ;
+    skos:definition "The cryptographic algorithm used to compute the Component Hash Value of the software component."@en ;
+    skos:scopeNote "New in 2026. Identify the algorithm using IANA Hash Function Textual Names. The algorithm should be approved by a relevant authority such as NIST."@en ;
+    skos:closeMatch bom:component-hash .
+
+cisa2026:component-identifiers
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:component-data ;
+    skos:prefLabel "Component Identifiers"@en ;
+    skos:altLabel "Other Unique Identifiers"@en ;      # NTIA 2021 label
+    skos:notation "BOM-CISA2026-COMP-005"^^bom:SarifRuleId ;
+    skos:definition "Identifiers used to identify a component or serve as a look-up key for relevant databases."@en ;
+    skos:scopeNote """Major Update. Contains at least one software identifier associated
+with the target component. Use common software identifiers such as CPE and
+Package-URL (PURL, ECMA-427); may also include UUIDs, organization-specific
+identifiers, commit hashes and intrinsic identifiers such as OmniBOR and SWHID
+(ISO/IEC 18670:2025). If there are multiple identifiers, include all of them."""@en ;
+    skos:exactMatch bom:component-identifier .
+
+cisa2026:component-license
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:component-data ;
+    skos:prefLabel "Component License"@en ;
+    skos:notation "BOM-CISA2026-COMP-006"^^bom:SarifRuleId ;
+    skos:definition "The identifier(s) for the license(s) under which the software component is available."@en ;
+    skos:scopeNote """New in 2026. License identifiers should let the recipient find the
+full license details; machine-processable SPDX license identifiers preferred,
+otherwise indicate where full details are available (e.g. a URL). Should also
+include information about the existence of proprietary license conditions.
+If unknown, state that license information is unknown."""@en ;
+    skos:exactMatch bom:component-license .
+
+cisa2026:component-name
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:component-data ;
+    skos:prefLabel "Component Name"@en ;
+    skos:notation "BOM-CISA2026-COMP-007"^^bom:SarifRuleId ;
+    skos:definition "The name assigned by the component producer to a software component."@en ;
+    skos:scopeNote "Minor Update. Human-readable; determined by the component producer; distinct from Component Identifiers. Data formats should allow multiple entries to capture alternate names. Use full names, not acronyms."@en ;
+    skos:exactMatch bom:component-name .
+
+cisa2026:component-version
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:component-data ;
+    skos:prefLabel "Component Version"@en ;
+    skos:altLabel "Version of the Component"@en ;      # NTIA 2021 label
+    skos:notation "BOM-CISA2026-COMP-008"^^bom:SarifRuleId ;
+    skos:definition "Identifier used by the component producer to specify a change in a software component from a previously identified version or to indicate that it is the first version."@en ;
+    skos:scopeNote "Major Update. Allows an organization to identify a specific code delivery. If the component producer does not provide a version, the SBOM author should indicate that the information is unknown."@en ;
+    skos:exactMatch bom:component-version .
+
+# -- Practices and Processes (not data fields) --------------------------------
+
+cisa2026:accommodation-of-updates
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:practices-and-processes ;
+    skos:prefLabel "Accommodation of Updates to SBOM Data"@en ;
+    skos:altLabel "Accommodation of Mistakes"@en ;     # NTIA 2021 label
+    skos:notation "CISA2026-PP-001"^^bom:ElementCode ;
+    skos:definition "Organizations should accommodate updates to SBOM data, including corrections. SBOM authors should correct errors promptly."@en ;
+    skos:scopeNote "Major Update from NTIA 2021 'Accommodation of Mistakes'. Supported in exchange formats by the SBOM Version element and amendment relationships (SPDX amendedBy; CycloneDX version + serialNumber)."@en ;
+    skos:related cisa2026:sbom-version ;
+    skos:relatedMatch bom:doc-version .
+
+cisa2026:coverage
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:practices-and-processes ;
+    skos:prefLabel "Coverage"@en ;
+    skos:altLabel "Depth"@en ;                         # NTIA 2021 label
+    skos:notation "CISA2026-PP-002"^^bom:ElementCode ;
+    skos:definition "An SBOM should include information for all components that make up the target software, including transitive dependencies; there is no minimum depth. Multiple instances of a component with differing metadata are listed separately. Non-code files may be excluded; security-relevant files such as configuration may be included. Linking to other SBOM documents can satisfy coverage if the recipient has access to them."@en ;
+    skos:scopeNote "Major Update: replaces NTIA 2021 'Depth' (top-level dependencies only) with horizontal and vertical breadth. Exchange formats express completeness via SPDX Relationship.completeness and CycloneDX compositions."@en ;
+    skos:related cisa2026:component-dependency-relationship ;
+    skos:relatedMatch bom:rel-depends-on .
+
+cisa2026:distribution-and-delivery
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:practices-and-processes ;
+    skos:prefLabel "Distribution and Delivery"@en ;
+    skos:notation "CISA2026-PP-003"^^bom:ElementCode ;
+    skos:definition "SBOMs should be available promptly to those who need them. Access controls may limit sharing with unauthorized parties but should not prevent sharing between authorized parties or integration into trusted security tools. Delivery may accompany installation or be via a version-specific URL, an API or a public repository."@en ;
+    skos:scopeNote "Minor Update. Absorbs the removed NTIA 2021 'Access Control' element."@en ;
+    skos:relatedMatch bom:MetadataDocument .
+
+cisa2026:explicitly-identifying-unknown-information
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:practices-and-processes ;
+    skos:prefLabel "Explicitly Identifying Unknown Information"@en ;
+    skos:altLabel "Known Unknowns"@en ;                # NTIA 2021 label
+    skos:notation "CISA2026-PP-004"^^bom:ElementCode ;
+    skos:definition "If information required for any data field is not provided, the SBOM author should explicitly state whether the information is unknown to the author or is being withheld. The author should have a process for recipients to ask about redacted security-related information."@en ;
+    skos:scopeNote "Major Update from NTIA 2021 'Known Unknowns': a practice throughout the SBOM lifecycle rather than a data field. SPDX supports it via NoAssertion/None values and Relationship.completeness; CycloneDX via compositions aggregate 'unknown'."@en ;
+    skos:relatedMatch bom:MetadataDocument .
+
+cisa2026:frequency
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:practices-and-processes ;
+    skos:prefLabel "Frequency"@en ;
+    skos:notation "CISA2026-PP-005"^^bom:ElementCode ;
+    skos:definition "Each software version or update should have an associated SBOM. A new build or release, including builds that integrate updated components, warrants a new SBOM; newly discovered details or corrections warrant a revised SBOM."@en ;
+    skos:scopeNote "Minor Update (terminology)."@en ;
+    skos:related cisa2026:sbom-version ;
+    skos:relatedMatch bom:doc-version, bom:doc-timestamp .
+
+cisa2026:machine-processable-data
+    a skos:Concept ;
+    skos:inScheme cisa2026:scheme ;
+    skos:broader cisa2026:practices-and-processes ;
+    skos:prefLabel "Machine-Processable Data"@en ;
+    skos:altLabel "Automation Support"@en ;            # NTIA 2021 label
+    skos:notation "CISA2026-PP-006"^^bom:ElementCode ;
+    skos:definition "SBOM implementations should be compatible with each other to support automation. The two widely used data formats are SPDX (ISO/IEC 5962:2021) and CycloneDX (ECMA-424). Organizations should accept any widely used, interoperable, machine-processable format and avoid deprecated format versions for new software."@en ;
+    skos:scopeNote "Major Update from NTIA 2021 'Automation Support': SWID tags removed from the list of data formats; element moved under Practices and Processes."@en ;
+    skos:related cisa2026:sbom-data-format-name ;
+    skos:related cisa2026:sbom-data-format-version ;
+    skos:relatedMatch bom:MetadataDocument, bom:doc-spec-version .
+
+
+# ============================================================================
+# OBLIGATION ASSERTIONS
+# ============================================================================
+# The document states the minimum elements as the baseline expectation for an
+# SBOM ("should"); conformance with the specification requires every Data Field
+# element, so they are recorded as bom:Requirement. Practices and Processes are
+# operational recommendations.
+
+# -- SBOM Metadata ------------------------------------------------------------
+cisa2026:sbom-author                 bom:provisionType bom:Requirement .
+cisa2026:sbom-author-signature       bom:provisionType bom:Requirement .
+cisa2026:sbom-data-format-name       bom:provisionType bom:Requirement .
+cisa2026:sbom-data-format-version    bom:provisionType bom:Requirement .
+cisa2026:sbom-generation-context     bom:provisionType bom:Requirement .
+cisa2026:sbom-timestamp              bom:provisionType bom:Requirement .
+cisa2026:sbom-tool-name              bom:provisionType bom:Requirement .
+cisa2026:sbom-tool-version           bom:provisionType bom:Requirement .
+cisa2026:sbom-version                bom:provisionType bom:Requirement .
+
+# -- Component Data -----------------------------------------------------------
+cisa2026:component-producer                bom:provisionType bom:Requirement .
+cisa2026:component-dependency-relationship bom:provisionType bom:Requirement .
+cisa2026:component-hash-value              bom:provisionType bom:Requirement .
+cisa2026:component-hash-algorithm          bom:provisionType bom:Requirement .
+cisa2026:component-identifiers             bom:provisionType bom:Requirement .
+cisa2026:component-license                 bom:provisionType bom:Requirement .
+cisa2026:component-name                    bom:provisionType bom:Requirement .
+cisa2026:component-version                 bom:provisionType bom:Requirement .
+
+# -- Practices and Processes --------------------------------------------------
+cisa2026:accommodation-of-updates                     bom:provisionType bom:Recommendation .
+cisa2026:coverage                                     bom:provisionType bom:Recommendation .
+cisa2026:distribution-and-delivery                    bom:provisionType bom:Recommendation .
+cisa2026:explicitly-identifying-unknown-information   bom:provisionType bom:Recommendation .
+cisa2026:frequency                                    bom:provisionType bom:Recommendation .
+cisa2026:machine-processable-data                     bom:provisionType bom:Recommendation .

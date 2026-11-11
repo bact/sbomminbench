@@ -1,0 +1,8 @@
+{
+  "content_type": "application/json; charset=utf-8",
+  "fetched_at": "2026-11-08T22:48:12Z",
+  "final_url": "https://huggingface.co/api/models/meta-llama/Llama-3.1-8B/revision/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+  "has_body": true,
+  "status": 200,
+  "url": "https://huggingface.co/api/models/meta-llama/Llama-3.1-8B/revision/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b"
+}

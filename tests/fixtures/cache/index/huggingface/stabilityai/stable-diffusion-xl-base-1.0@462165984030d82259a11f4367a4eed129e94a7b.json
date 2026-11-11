@@ -1,0 +1,47 @@
+{
+  "artifact": {
+    "declared_digest": null,
+    "fetched": false,
+    "filename": null,
+    "kind": "hf_repo",
+    "sha256": null,
+    "size_bytes": null,
+    "skip_reason": "not_needed",
+    "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/462165984030d82259a11f4367a4eed129e94a7b"
+  },
+  "ecosystem": "huggingface",
+  "fetched_at": "2026-11-08T22:48:12Z",
+  "files": [
+    "sd_xl_base_1.0.safetensors",
+    "sd_xl_base_1.0_0.9vae.safetensors",
+    "sd_xl_offset_example-lora_1.0.safetensors",
+    "text_encoder/model.fp16.safetensors",
+    "text_encoder/model.onnx",
+    "text_encoder/model.safetensors",
+    "text_encoder_2/model.fp16.safetensors",
+    "text_encoder_2/model.onnx",
+    "text_encoder_2/model.safetensors",
+    "unet/diffusion_pytorch_model.fp16.safetensors",
+    "unet/diffusion_pytorch_model.safetensors",
+    "unet/model.onnx",
+    "vae/diffusion_pytorch_model.fp16.safetensors",
+    "vae/diffusion_pytorch_model.safetensors",
+    "vae_1_0/diffusion_pytorch_model.fp16.safetensors",
+    "vae_1_0/diffusion_pytorch_model.safetensors",
+    "vae_decoder/model.onnx",
+    "vae_encoder/model.onnx"
+  ],
+  "files_count": 18,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "stabilityai/stable-diffusion-xl-base-1.0",
+  "purl": "pkg:huggingface/stabilityai/stable-diffusion-xl-base-1.0@462165984030d82259a11f4367a4eed129e94a7b",
+  "rank": null,
+  "responses": {
+    "platform": "https://huggingface.co/api/models/stabilityai/stable-diffusion-xl-base-1.0/revision/462165984030d82259a11f4367a4eed129e94a7b"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "462165984030d82259a11f4367a4eed129e94a7b"
+}

@@ -1,0 +1,272 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "cargo",
+  "id": "pkg:cargo/clap@4.6.7",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:aa8876b300ab35ba921adea3dfd70157a46249b33f95c9084ae5709785478946",
+        "fetched": true,
+        "filename": "clap-4.6.7.crate",
+        "kind": "crate",
+        "sha256": "aa8876b300ab35ba921adea3dfd70157a46249b33f95c9084ae5709785478946",
+        "size_bytes": 65831,
+        "skip_reason": null,
+        "url": "https://static.crates.io/crates/clap/clap-4.6.7.crate"
+      }
+    ],
+    "ecosystem": "cargo",
+    "html_url": "https://crates.io/crates/clap/4.6.7",
+    "name": "clap",
+    "observations": [
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "version.crate",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "clap",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "crates_api"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "version.license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT OR Apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "expression_shaped",
+        "source": "crates_api"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "version.published_by",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "avatar": "https://avatars.githubusercontent.com/u/60961?v=4",
+          "created_at": "2009-03-07T01:41:56Z",
+          "github_username_matches": true,
+          "id": 6743,
+          "login": "epage",
+          "name": "Ed Page",
+          "url": "https://github.com/epage"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "crates_api"
+      }
+    ],
+    "response_sha256": "f18634aa96d2c2b7eeb449638639e8b912364238819b7d0c7f912eedd329b46c",
+    "retrieved_at": "2026-11-09T08:54:24Z",
+    "source_url": "https://crates.io/api/v1/crates/clap/4.6.7",
+    "version": "4.6.7"
+  },
+  "rank": 37,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_compound",
+        "workspace_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml:package.license",
+            "crates_api:version.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT OR Apache-2.0",
+              "key": "Cargo.toml:package.license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0 OR MIT",
+              "input": "MIT OR Apache-2.0",
+              "key": "crates_api:version.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0 OR MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "Cargo.toml:package.name",
+            "crates_api:version.crate"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "clap"
+            ],
+            "canonical_key": "clap",
+            "name": "clap"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "clap-4.6.7/Cargo.toml",
+        "clap-4.6.7/Cargo.toml.orig"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "package.authors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT OR Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "expression_shaped",
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "clap",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "package.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "object",
+          "present": true,
+          "raw": {
+            "workspace": true
+          },
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml.orig"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "package.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "clap",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "Cargo.toml.orig"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

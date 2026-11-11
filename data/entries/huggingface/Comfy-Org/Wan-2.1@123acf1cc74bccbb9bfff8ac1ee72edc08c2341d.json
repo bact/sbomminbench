@@ -1,0 +1,223 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/Comfy-Org/Wan-2.1@123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/Comfy-Org/Wan-2.1/tree/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/Comfy-Org/Wan-2.1",
+    "name": "Comfy-Org/Wan-2.1",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Comfy-Org",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Comfy-Org/Wan-2.1",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[4]",
+        "format_validity": "noncanonical",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "82fe7fd6e2b7282271ef51be94425211da9afd2cc1c5d111c89e351d66f8cce4",
+    "retrieved_at": "2026-11-09T08:55:03Z",
+    "source_url": "https://huggingface.co/api/models/Comfy-Org/Wan-2.1/revision/123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+    "version": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d"
+  },
+  "rank": 64,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_spdx_noncanonical"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:tags[4]",
+            "hf_card:cardData.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_api:tags[4]",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_card:cardData.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "Wan-2.1",
+              "Comfy-Org/Wan-2.1"
+            ],
+            "canonical_key": "comfy-org/wan-2.1",
+            "name": "Wan-2.1"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Comfy-Org",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "split_files/clip_vision/clip_vision_h.safetensors",
+        "split_files/diffusion_models/wan2.1_flf2v_720p_14B_fp16.safetensors",
+        "split_files/diffusion_models/wan2.1_flf2v_720p_14B_fp8_e4m3fn.safetensors",
+        "split_files/diffusion_models/wan2.1_fun_camera_v1.1_1.3B_bf16.safetensors",
+        "split_files/diffusion_models/wan2.1_fun_camera_v1.1_14B_bf16.safetensors",
+        "split_files/diffusion_models/wan2.1_fun_control_1.3B_bf16.safetensors",
+        "split_files/diffusion_models/wan2.1_fun_inp_1.3B_bf16.safetensors",
+        "split_files/diffusion_models/wan2.1_i2v_480p_14B_bf16.safetensors",
+        "split_files/diffusion_models/wan2.1_i2v_480p_14B_fp16.safetensors",
+        "split_files/diffusion_models/wan2.1_i2v_480p_14B_fp8_e4m3fn.safetensors",
+        "split_files/diffusion_models/wan2.1_i2v_480p_14B_fp8_scaled.safetensors",
+        "split_files/diffusion_models/wan2.1_i2v_720p_14B_bf16.safetensors",
+        "split_files/diffusion_models/wan2.1_i2v_720p_14B_fp16.safetensors",
+        "split_files/diffusion_models/wan2.1_i2v_720p_14B_fp8_e4m3fn.safetensors",
+        "split_files/diffusion_models/wan2.1_i2v_720p_14B_fp8_scaled.safetensors",
+        "split_files/diffusion_models/wan2.1_magref_14B_fp16.safetensors",
+        "split_files/diffusion_models/wan2.1_t2v_1.3B_bf16.safetensors",
+        "split_files/diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors",
+        "split_files/diffusion_models/wan2.1_t2v_14B_bf16.safetensors",
+        "split_files/diffusion_models/wan2.1_t2v_14B_fp16.safetensors"
+      ],
+      "files_count": 33,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "noncanonical",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

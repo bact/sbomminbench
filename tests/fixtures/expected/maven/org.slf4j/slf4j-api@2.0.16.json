@@ -1,0 +1,240 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.slf4j/slf4j-api@2.0.16",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "slf4j-api-2.0.16.pom",
+        "kind": "pom",
+        "sha256": "b1a00f5b1c4dbe62b805d65d23911a6f77063889d7cb1e86fe8389d6190473f7",
+        "size_bytes": 2826,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.slf4j/slf4j-api/2.0.16",
+    "name": "org.slf4j:slf4j-api",
+    "observations": [],
+    "response_sha256": "b1a00f5b1c4dbe62b805d65d23911a6f77063889d7cb1e86fe8389d6190473f7",
+    "retrieved_at": "2026-11-08T23:01:40Z",
+    "source_url": "https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.pom",
+    "version": "2.0.16"
+  },
+  "rank": null,
+  "schema_version": "0.1",
+  "stratum": "edge",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_prose",
+        "maven_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[2].licenses.license[0].name",
+            "pom.xml:parent[2].licenses.license[0].url"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "listed_name",
+              "expression": "MIT",
+              "input": "MIT License",
+              "key": "pom.xml:parent[2].licenses.license[0].name",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "license_url",
+              "expression": "MIT",
+              "input": "http://www.opensource.org/licenses/mit-license.php",
+              "key": "pom.xml:parent[2].licenses.license[0].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "slf4j-api",
+              "org.slf4j:slf4j-api"
+            ],
+            "canonical_key": "org.slf4j:slf4j-api",
+            "name": "slf4j-api"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[2].developers.developer[0].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Ceki Gulcu",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "slf4j-api-2.0.16.pom",
+        "slf4j-bom-2.0.16.pom",
+        "slf4j-parent-2.0.16.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "slf4j-api",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "SLF4J API Module",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "parent[1].organization.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.slf4j/slf4j-parent@2.0.16",
+          "native_type": "string",
+          "present": true,
+          "raw": "QOS.ch",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.slf4j/slf4j-bom@2.0.16",
+          "native_type": "string",
+          "present": true,
+          "raw": "Ceki Gulcu",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[0].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.slf4j/slf4j-bom@2.0.16",
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.slf4j/slf4j-bom@2.0.16",
+          "native_type": "string",
+          "present": true,
+          "raw": "http://www.opensource.org/licenses/mit-license.php",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "osi_url",
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "declared_digest": "sha256:6de1fd253e27e7f01f05cd7c37929ae521ca23ca4620cfc7c485299941679112",
+    "fetched": false,
+    "filename": "torch-2.5.0-cp312-none-macosx_11_0_arm64.whl",
+    "kind": "wheel_metadata",
+    "sha256": null,
+    "size_bytes": 64261171,
+    "skip_reason": "too_large",
+    "url": "https://files.pythonhosted.org/packages/56/88/f1ddffd642cf71777dca43621b170d50f13175cdd0b4179e04d6e025b5fb/torch-2.5.0-cp312-none-macosx_11_0_arm64.whl"
+  },
+  "ecosystem": "pypi",
+  "fetched_at": "2026-11-08T22:48:11Z",
+  "files": [],
+  "files_count": 0,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "torch",
+  "purl": "pkg:pypi/torch@2.5.0",
+  "rank": null,
+  "responses": {
+    "platform": "https://pypi.org/pypi/torch/2.5.0/json",
+    "wheel_metadata": "https://files.pythonhosted.org/packages/56/88/f1ddffd642cf71777dca43621b170d50f13175cdd0b4179e04d6e025b5fb/torch-2.5.0-cp312-none-macosx_11_0_arm64.whl.metadata"
+  },
+  "stratum": "edge",
+  "tags": [
+    "artifact_too_large"
+  ],
+  "version": "2.5.0"
+}

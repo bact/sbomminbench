@@ -1,0 +1,394 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "pypi",
+  "id": "pkg:pypi/genie-libs-parser@26.10",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha256:52f9881f3ddadb61ae23417d71bc1d7c09fc2a99640d05517f6430cd56cd82a2",
+        "fetched": true,
+        "filename": "genie_libs_parser-26.10-py3-none-any.whl",
+        "kind": "wheel",
+        "sha256": "52f9881f3ddadb61ae23417d71bc1d7c09fc2a99640d05517f6430cd56cd82a2",
+        "size_bytes": 13927723,
+        "skip_reason": null,
+        "url": "https://files.pythonhosted.org/packages/f7/ee/01e3fa29a49f6d1a35e75e817c8a583421d04a277bfece5393a5744115fe/genie_libs_parser-26.10-py3-none-any.whl"
+      }
+    ],
+    "ecosystem": "pypi",
+    "html_url": "https://pypi.org/project/genie.libs.parser/26.10/",
+    "name": "genie.libs.parser",
+    "observations": [
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Cisco Systems Inc.",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "info.author_email",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "email.redacted@example.com",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.classifiers[7]",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "License :: OSI Approved :: Apache Software License",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "trove_classifier",
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Apache 2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "prose",
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "info.license_expression",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "maintainer",
+        "element": "provider",
+        "field_path": "info.maintainer_email",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "null",
+        "present": true,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "pypi_json"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "info.name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "genie.libs.parser",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "pypi_json"
+      }
+    ],
+    "response_sha256": "f8e1ab957a112c3d0f4f13b0e7b019d8f7d8af2e85f46d9c32f1ba6d7b849273",
+    "retrieved_at": "2026-11-09T08:55:51Z",
+    "source_url": "https://pypi.org/pypi/genie.libs.parser/26.10/json",
+    "version": "26.10"
+  },
+  "rank": 9410,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_email_only",
+        "author_org_like",
+        "license_prose",
+        "license_trove_ambiguous"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "METADATA:License",
+            "pypi_json:info.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "License :: OSI Approved :: Apache Software License",
+              "key": "METADATA:Classifier[7]",
+              "reason": "not found: License :: OSI Approved :: Apache Software License",
+              "trust": "none"
+            },
+            {
+              "category": "separator",
+              "expression": "Apache-2.0",
+              "input": "Apache 2.0",
+              "key": "METADATA:License",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "License :: OSI Approved :: Apache Software License",
+              "key": "pypi_json:info.classifiers[7]",
+              "reason": "not found: License :: OSI Approved :: Apache Software License",
+              "trust": "none"
+            },
+            {
+              "category": "separator",
+              "expression": "Apache-2.0",
+              "input": "Apache 2.0",
+              "key": "pypi_json:info.license",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "METADATA:Name",
+            "pypi_json:info.name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "genie.libs.parser"
+            ],
+            "canonical_key": "genie-libs-parser",
+            "name": "genie.libs.parser"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "METADATA:Author",
+            "METADATA:Author-email",
+            "pypi_json:info.author",
+            "pypi_json:info.author_email"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Cisco Systems Inc.",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "METADATA"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Cisco Systems Inc.",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "METADATA"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "Author-email",
+          "format_validity": null,
+          "has_email": true,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "email.redacted@example.com",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "METADATA"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "Classifier[7]",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "License :: OSI Approved :: Apache Software License",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "trove_classifier",
+          "source": "METADATA"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Apache 2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "METADATA"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "License-Expression",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "METADATA"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "Name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "genie.libs.parser",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "METADATA"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

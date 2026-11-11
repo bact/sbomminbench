@@ -1,0 +1,8 @@
+{
+  "content_type": "application/json",
+  "fetched_at": "2026-11-08T23:01:29Z",
+  "final_url": "https://crates.io/api/v1/crates/clap/4.5.20",
+  "has_body": true,
+  "status": 200,
+  "url": "https://crates.io/api/v1/crates/clap/4.5.20"
+}

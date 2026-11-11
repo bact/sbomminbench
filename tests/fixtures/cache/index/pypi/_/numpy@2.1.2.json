@@ -1,0 +1,33 @@
+{
+  "artifact": {
+    "declared_digest": "sha256:13532a088217fa624c99b843eeb54640de23b3414b14aa66d023805eb731066c",
+    "fetched": true,
+    "filename": "numpy-2.1.2.tar.gz",
+    "kind": "sdist",
+    "sha256": "13532a088217fa624c99b843eeb54640de23b3414b14aa66d023805eb731066c",
+    "size_bytes": 18878063,
+    "skip_reason": null,
+    "url": "https://files.pythonhosted.org/packages/4b/d1/8a730ea07f4a37d94f9172f4ce1d81064b7a64766b460378be278952de75/numpy-2.1.2.tar.gz"
+  },
+  "ecosystem": "pypi",
+  "fetched_at": "2026-11-08T22:47:59Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "PKG-INFO": "numpy-2.1.2/PKG-INFO",
+    "pyproject.toml": "numpy-2.1.2/pyproject.toml"
+  },
+  "members_dir": "members/13532a088217fa624c99b843eeb54640de23b3414b14aa66d023805eb731066c",
+  "model_members": [],
+  "name": "numpy",
+  "purl": "pkg:pypi/numpy@2.1.2",
+  "rank": null,
+  "responses": {
+    "platform": "https://pypi.org/pypi/numpy/2.1.2/json"
+  },
+  "stratum": "edge",
+  "tags": [
+    "array_data_not_scanned"
+  ],
+  "version": "2.1.2"
+}

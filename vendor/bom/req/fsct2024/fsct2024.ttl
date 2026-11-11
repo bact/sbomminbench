@@ -1,0 +1,186 @@
+# SPDX-FileContributor: Arthit Suriyawongkul
+# SPDX-FileCopyrightText: 2026-present Arthit Suriyawongkul
+# SPDX-FileType: SOURCE
+# SPDX-License-Identifier: CC0-1.0
+# CISA 2024 Framing Software Component Transparency, 3rd Edition (FSCT)
+# Cybersecurity and Infrastructure Security Agency (CISA), 2024
+# Source: https://www.cisa.gov/resources-tools/resources/framing-software-component-transparency-2024
+
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix fsct2024:  <https://w3id.org/bom/req/fsct2024/> .
+@prefix bom:    <https://w3id.org/bom/> .
+
+# FSCT sub-vocabulary; imports the SBOM bridge ontology
+<https://w3id.org/bom/req/fsct2024/>
+    a owl:Ontology ;
+    owl:imports <https://w3id.org/bom/> ;
+    owl:versionInfo "0.1.0" ;
+    dcterms:creator <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:title "CISA 2024 Framing Software Component Transparency (3rd ed., 2024)"@en ;
+    dcterms:description "SKOS concept scheme of the CISA 2024 Framing Software Component Transparency, with each element linked to the bridge concepts of the BOM ontology (https://w3id.org/bom/)."@en ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:created "2026-10-12"^^xsd:date ;
+    dcterms:source <https://www.cisa.gov/resources-tools/resources/framing-software-component-transparency-2024> ;
+    dcterms:issued "2024"^^xsd:gYear ;
+    dcterms:publisher <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:rights "Copyright 2026-present Arthit Suriyawongkul. Dedicated to the public domain under CC0 1.0 Universal."@en ;
+    dcterms:bibliographicCitation "Suriyawongkul, A. (2026). CISA 2024 Framing Software Component Transparency (3rd ed., 2024). https://w3id.org/bom/req/fsct2024/"@en ;
+    dcterms:conformsTo <http://www.w3.org/2004/02/skos/core> ;
+    vann:preferredNamespacePrefix "fsct2024" ;
+    vann:preferredNamespaceUri "https://w3id.org/bom/req/fsct2024/"^^xsd:anyURI ;
+    dcterms:modified "2026-10-16"^^xsd:date .
+
+
+# ============================================================================
+# CONCEPT SCHEME AND DEFINITIONS
+# ============================================================================
+
+fsct2024:scheme
+    a skos:ConceptScheme, bom:InfoRequirementSpec ;
+    skos:prefLabel "CISA 2024 Framing Software Component Transparency"@en ;
+    dcterms:title "CISA 2024 Framing Software Component Transparency (3rd ed., 2024)" ;
+    dcterms:creator "Cybersecurity and Infrastructure Security Agency (CISA)" ;
+    dcterms:issued "2024"^^xsd:gYear ;
+    dcterms:created "2026-10-12"^^xsd:date ;
+    dcterms:hasVersion "3rd ed." ;
+    dcterms:source <https://www.cisa.gov/resources-tools/resources/framing-software-component-transparency-2024> ;
+    skos:hasTopConcept
+        fsct2024:author-name , fsct2024:timestamp , fsct2024:sbom-type ,
+        fsct2024:primary-component , fsct2024:dependency-relationship ,
+        fsct2024:name , fsct2024:version , fsct2024:supplier , fsct2024:unique-identifier ,
+        fsct2024:cryptographic-hash , fsct2024:relationship ,
+        fsct2024:concluded-license , fsct2024:copyright-notice .
+
+fsct2024:author-name
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Author Name"@en ;
+    skos:notation "BOM-FSCT2024-META-001"^^bom:SarifRuleId ;
+    skos:exactMatch bom:doc-author .
+
+fsct2024:timestamp
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Timestamp"@en ;
+    skos:notation "BOM-FSCT2024-META-002"^^bom:SarifRuleId ;
+    skos:exactMatch bom:doc-timestamp .
+
+fsct2024:sbom-type
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "SBOM Type"@en ;
+    skos:altLabel "SBOM generation context"@en ;
+    skos:notation "BOM-FSCT2024-META-003"^^bom:SarifRuleId ;
+    skos:scopeNote "The FSCT SBOM types (Design, Source, Build, Analyzed, Deployed, Runtime) are the SPDX 3 Software/SbomType vocabulary one-to-one; closeMatch to the broader bridge concept, which also covers other lifecycle statuses."@en ;
+    skos:closeMatch bom:doc-lifecycle-stage .
+
+fsct2024:primary-component
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Primary Component"@en ;
+    skos:notation "BOM-FSCT2024-META-004"^^bom:SarifRuleId ;
+    skos:exactMatch bom:doc-primary-component .
+
+fsct2024:dependency-relationship
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Dependency Relationship"@en ;
+    skos:notation "BOM-FSCT2024-META-005"^^bom:SarifRuleId ;
+    skos:closeMatch bom:MetadataRelationship ;
+    skos:exactMatch bom:rel-depends-on ;
+    skos:closeMatch bom:rel-contains .
+
+fsct2024:name
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Component Name"@en ;
+    skos:notation "BOM-FSCT2024-COMP-001"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-name .
+
+fsct2024:version
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Version"@en ;
+    skos:notation "BOM-FSCT2024-COMP-002"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-version .
+
+fsct2024:supplier
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Supplier"@en ;
+    skos:notation "BOM-FSCT2024-COMP-003"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-supplier .
+
+fsct2024:unique-identifier
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Unique Identifier"@en ;
+    skos:notation "BOM-FSCT2024-COMP-004"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-identifier .
+
+fsct2024:cryptographic-hash
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Cryptographic Hash"@en ;
+    skos:notation "BOM-FSCT2024-COMP-005"^^bom:SarifRuleId ;
+    skos:exactMatch bom:component-hash .
+
+fsct2024:relationship
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Relationship"@en ;
+    skos:notation "BOM-FSCT2024-COMP-006"^^bom:SarifRuleId ;
+    skos:exactMatch bom:MetadataRelationship .
+
+fsct2024:concluded-license
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Concluded License"@en ;
+    skos:notation "BOM-FSCT2024-COMP-007"^^bom:SarifRuleId ;
+    skos:scopeNote "The license the SBOM author concluded applies (SPDX hasConcludedLicense); bom:component-concluded-license, not the generic bom:component-license, which also covers the declared license."@en ;
+    skos:exactMatch bom:component-concluded-license .
+
+fsct2024:copyright-notice
+    a skos:Concept ;
+    skos:topConceptOf fsct2024:scheme ;
+    skos:inScheme fsct2024:scheme ;
+    skos:prefLabel "Copyright Notice"@en ;
+    skos:notation "BOM-FSCT2024-COMP-008"^^bom:SarifRuleId ;
+    skos:scopeNote "Copyright notice of a software component; closeMatch because the bridge concept also covers elements that have no copyright field in SPDX."@en ;
+    skos:closeMatch bom:component-copyright .
+
+
+# ============================================================================
+# OBLIGATION ASSERTIONS
+# ============================================================================
+
+fsct2024:author-name            bom:provisionType bom:Requirement .
+fsct2024:timestamp              bom:provisionType bom:Requirement .
+fsct2024:sbom-type              bom:provisionType bom:Requirement .
+fsct2024:primary-component      bom:provisionType bom:Requirement .
+fsct2024:dependency-relationship bom:provisionType bom:Requirement .
+fsct2024:name                   bom:provisionType bom:Requirement .
+fsct2024:version                bom:provisionType bom:Requirement .
+fsct2024:supplier               bom:provisionType bom:Requirement .
+fsct2024:unique-identifier      bom:provisionType bom:Requirement .
+fsct2024:cryptographic-hash     bom:provisionType bom:Requirement .
+fsct2024:relationship           bom:provisionType bom:Requirement .
+fsct2024:concluded-license      bom:provisionType bom:Requirement .
+fsct2024:copyright-notice       bom:provisionType bom:Requirement .

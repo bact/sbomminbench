@@ -1,0 +1,8 @@
+{
+  "content_type": "text/xml",
+  "fetched_at": "2026-11-08T23:01:45Z",
+  "final_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.7.1/jquery.nuspec",
+  "has_body": true,
+  "status": 200,
+  "url": "https://api.nuget.org/v3-flatcontainer/jquery/3.7.1/jquery.nuspec"
+}

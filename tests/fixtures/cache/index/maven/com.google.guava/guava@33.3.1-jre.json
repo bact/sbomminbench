@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "declared_digest": null,
+    "fetched": true,
+    "filename": "guava-33.3.1-jre.pom",
+    "kind": "pom",
+    "sha256": "313b67fc13eb3b0634eda715a1229971f5de9b8188bc280762815b83a275f193",
+    "size_bytes": 9304,
+    "skip_reason": null,
+    "url": "https://repo1.maven.org/maven2/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.pom"
+  },
+  "ecosystem": "maven",
+  "fetched_at": "2026-11-08T23:01:41Z",
+  "files": [],
+  "files_count": 0,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "com.google.guava:guava",
+  "purl": "pkg:maven/com.google.guava/guava@33.3.1-jre",
+  "rank": null,
+  "responses": {
+    "pom": "https://repo1.maven.org/maven2/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.pom",
+    "pom_parent1": "https://repo1.maven.org/maven2/com/google/guava/guava-parent/33.3.1-jre/guava-parent-33.3.1-jre.pom"
+  },
+  "stratum": "edge",
+  "tags": [
+    "artifact_not_scanned"
+  ],
+  "version": "33.3.1-jre"
+}

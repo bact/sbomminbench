@@ -1,0 +1,237 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.ojbc.bundles.shared/ojb-osgi-common@2.0.0",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "ojb-osgi-common-2.0.0.pom",
+        "kind": "pom",
+        "sha256": "abce5c5106bec76983edafc07d926260c423ba95e3150b3d5fb93c542a9f6521",
+        "size_bytes": 3686,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/ojbc/bundles/shared/ojb-osgi-common/2.0.0/ojb-osgi-common-2.0.0.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.ojbc.bundles.shared/ojb-osgi-common/2.0.0",
+    "name": "org.ojbc.bundles.shared:ojb-osgi-common",
+    "observations": [],
+    "response_sha256": "abce5c5106bec76983edafc07d926260c423ba95e3150b3d5fb93c542a9f6521",
+    "retrieved_at": "2026-11-09T08:55:16Z",
+    "source_url": "https://repo1.maven.org/maven2/org/ojbc/bundles/shared/ojb-osgi-common/2.0.0/ojb-osgi-common-2.0.0.pom",
+    "version": "2.0.0"
+  },
+  "rank": 8228,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_prose",
+        "license_unresolved_value",
+        "maven_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[2].licenses.license[0].url"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "RPL-1.5 - OJBC",
+              "key": "pom.xml:parent[2].licenses.license[0].name",
+              "reason": "not found: RPL-1.5 - OJBC",
+              "trust": "none"
+            },
+            {
+              "category": "license_url",
+              "expression": "RPL-1.5",
+              "input": "http://opensource.org/licenses/RPL-1.5",
+              "key": "pom.xml:parent[2].licenses.license[0].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": "'RPL-1.5 - OJBC': unresolved (not found: RPL-1.5 - OJBC)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "ojb-osgi-common",
+              "org.ojbc.bundles.shared:ojb-osgi-common"
+            ],
+            "canonical_key": "org.ojbc.bundles.shared:ojb-osgi-common",
+            "name": "ojb-osgi-common"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[2].developers.developer[0].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "OJBC Developers",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "ojb-main-aggregate-1.0.0.pom",
+        "ojb-osgi-common-2.0.0.pom",
+        "ojb-shared-aggregate-1.0.0.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "ojb-osgi-common",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "OJB :: ojb-osgi-common :: Shared",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ojbc.build/ojb-main-aggregate@1.0.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "OJBC Developers",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[0].organization",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ojbc.build/ojb-main-aggregate@1.0.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "OJBC",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[0].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ojbc.build/ojb-main-aggregate@1.0.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "RPL-1.5 - OJBC",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[2].licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.ojbc.build/ojb-main-aggregate@1.0.0",
+          "native_type": "string",
+          "present": true,
+          "raw": "http://opensource.org/licenses/RPL-1.5",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "osi_url",
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

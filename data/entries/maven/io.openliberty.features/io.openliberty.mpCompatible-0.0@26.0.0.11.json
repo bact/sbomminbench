@@ -1,0 +1,220 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/io.openliberty.features/io.openliberty.mpCompatible-0.0@26.0.0.11",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "io.openliberty.mpCompatible-0.0-26.0.0.11.pom",
+        "kind": "pom",
+        "sha256": "7453f39d3bb6c8504fc8c8ee1406c3c823be99580d1d6c812dd63526e0b63072",
+        "size_bytes": 1212,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/io/openliberty/features/io.openliberty.mpCompatible-0.0/26.0.0.11/io.openliberty.mpCompatible-0.0-26.0.0.11.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/io.openliberty.features/io.openliberty.mpCompatible-0.0/26.0.0.11",
+    "name": "io.openliberty.features:io.openliberty.mpCompatible-0.0",
+    "observations": [],
+    "response_sha256": "7453f39d3bb6c8504fc8c8ee1406c3c823be99580d1d6c812dd63526e0b63072",
+    "retrieved_at": "2026-11-11T08:15:03Z",
+    "source_url": "https://repo1.maven.org/maven2/io/openliberty/features/io.openliberty.mpCompatible-0.0/26.0.0.11/io.openliberty.mpCompatible-0.0-26.0.0.11.pom",
+    "version": "26.0.0.11"
+  },
+  "rank": 4497,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_prose"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:licenses.license[0].name",
+            "pom.xml:licenses.license[0].url"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "listed_name",
+              "expression": "EPL-2.0",
+              "input": "Eclipse Public License 2.0",
+              "key": "pom.xml:licenses.license[0].name",
+              "reason": null,
+              "trust": "list_data"
+            },
+            {
+              "category": "license_url",
+              "expression": "EPL-2.0",
+              "input": "https://www.eclipse.org/legal/epl-2.0/",
+              "key": "pom.xml:licenses.license[0].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "EPL-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "io.openliberty.mpCompatible-0.0",
+              "io.openliberty.features:io.openliberty.mpCompatible-0.0"
+            ],
+            "canonical_key": "io.openliberty.features:io.openliberty.mpCompatible-0.0",
+            "name": "io.openliberty.mpCompatible-0.0"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:developers.developer[0].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Eric Lau",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "io.openliberty.mpCompatible-0.0-26.0.0.11.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "io.openliberty.mpCompatible-0.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Eric Lau",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Eclipse Public License 2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://www.eclipse.org/legal/epl-2.0/",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "io.openliberty.mpCompatible-0.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

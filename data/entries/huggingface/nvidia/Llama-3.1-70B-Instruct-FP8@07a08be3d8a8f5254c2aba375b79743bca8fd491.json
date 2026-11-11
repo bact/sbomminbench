@@ -1,0 +1,214 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/nvidia/Llama-3.1-70B-Instruct-FP8@07a08be3d8a8f5254c2aba375b79743bca8fd491",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/nvidia/Llama-3.1-70B-Instruct-FP8/tree/07a08be3d8a8f5254c2aba375b79743bca8fd491"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/nvidia/Llama-3.1-70B-Instruct-FP8",
+    "name": "nvidia/Llama-3.1-70B-Instruct-FP8",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "nvidia",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "nvidia/Llama-3.1-70B-Instruct-FP8",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[7]",
+        "format_validity": "unknown_id",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:llama3.1",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "eca768120791f0c5dd73bce8fe15d9b9e1b10a244db9417829e3e0348a28966e",
+    "retrieved_at": "2026-11-09T08:55:05Z",
+    "source_url": "https://huggingface.co/api/models/nvidia/Llama-3.1-70B-Instruct-FP8/revision/07a08be3d8a8f5254c2aba375b79743bca8fd491",
+    "version": "07a08be3d8a8f5254c2aba375b79743bca8fd491"
+  },
+  "rank": 5832,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_ref_needed",
+        "license_spdx_invalid",
+        "license_unresolved_value"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "llama3.1",
+              "key": "hf_api:tags[7]",
+              "reason": "not found: llama3.1",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "llama3.1",
+              "key": "hf_card:cardData.license",
+              "reason": "not found: llama3.1",
+              "trust": "none"
+            }
+          ],
+          "note": "'llama3.1': unresolved (not found: llama3.1)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "Llama-3.1-70B-Instruct-FP8",
+              "nvidia/Llama-3.1-70B-Instruct-FP8"
+            ],
+            "canonical_key": "nvidia/llama-3.1-70b-instruct-fp8",
+            "name": "Llama-3.1-70B-Instruct-FP8"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "nvidia",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "model-00001-of-00015.safetensors",
+        "model-00002-of-00015.safetensors",
+        "model-00003-of-00015.safetensors",
+        "model-00004-of-00015.safetensors",
+        "model-00005-of-00015.safetensors",
+        "model-00006-of-00015.safetensors",
+        "model-00007-of-00015.safetensors",
+        "model-00008-of-00015.safetensors",
+        "model-00009-of-00015.safetensors",
+        "model-00010-of-00015.safetensors",
+        "model-00011-of-00015.safetensors",
+        "model-00012-of-00015.safetensors",
+        "model-00013-of-00015.safetensors",
+        "model-00014-of-00015.safetensors",
+        "model-00015-of-00015.safetensors"
+      ],
+      "files_count": 15,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "unknown_id",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "llama3.1",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": "safetensors",
+      "size_bytes": null
+    }
+  ]
+}

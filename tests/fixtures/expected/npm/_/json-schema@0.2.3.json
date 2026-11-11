@@ -1,0 +1,403 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/json-schema@0.2.3",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-a3xHnILGMtk+hDOqNwHzF6e2fNbiMrXZvxKQiEv2MlgQP+pjIOzqAmKYD2mDpXYE/44M7g+n9p2bKkYWDUcXCQ==",
+        "fetched": true,
+        "filename": "json-schema-0.2.3.tgz",
+        "kind": "npm_tarball",
+        "sha256": "e3163c53fbc030cb6ac9bd9652f20a62d3d0580e4eeafe9cb36571ca2bee933f",
+        "size_bytes": 33667,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/json-schema/-/json-schema-0.2.3.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/json-schema/v/0.2.3",
+    "name": "json-schema",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "kriszyp"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "name": "Kris Zyp"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "absent",
+        "present": false,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "licenses",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "type": "AFLv2.1",
+            "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43"
+          },
+          {
+            "type": "BSD",
+            "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "kriszyp"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "json-schema",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "7078e13b864c121b1f8983399c88c54980aba2673d8f8c3f669a0eaa384d6779",
+    "retrieved_at": "2026-11-08T23:01:22Z",
+    "source_url": "https://registry.npmjs.org/json-schema/0.2.3",
+    "version": "0.2.3"
+  },
+  "rank": null,
+  "schema_version": "0.1",
+  "stratum": "edge",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_object_form",
+        "license_is_url",
+        "license_multiple_values",
+        "license_unresolved_value"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:licenses",
+            "package.json:licenses"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "separator",
+              "expression": "AFL-2.1",
+              "input": "AFLv2.1",
+              "key": "npm_registry:licenses",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "BSD",
+              "key": "npm_registry:licenses",
+              "reason": "not found: BSD",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13",
+              "key": "npm_registry:licenses",
+              "reason": "not found: http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43",
+              "key": "npm_registry:licenses",
+              "reason": "not found: http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43",
+              "trust": "none"
+            },
+            {
+              "category": "separator",
+              "expression": "AFL-2.1",
+              "input": "AFLv2.1",
+              "key": "package.json:licenses",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "BSD",
+              "key": "package.json:licenses",
+              "reason": "not found: BSD",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13",
+              "key": "package.json:licenses",
+              "reason": "not found: http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43",
+              "key": "package.json:licenses",
+              "reason": "not found: http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43",
+              "trust": "none"
+            }
+          ],
+          "note": "'BSD': unresolved (not found: BSD)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "json-schema"
+            ],
+            "canonical_key": "json-schema",
+            "name": "json-schema"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:author",
+            "package.json:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Kris Zyp",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "package/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Kris Zyp",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "list_of_objects",
+          "present": true,
+          "raw": [
+            {
+              "type": "AFLv2.1",
+              "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43"
+            },
+            {
+              "type": "BSD",
+              "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13"
+            }
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "maintainers",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "list_of_objects",
+          "present": true,
+          "raw": [
+            {
+              "email": "email.redacted@example.com",
+              "name": "Kris Zyp"
+            }
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "maintainer",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "json-schema",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "artifact": {
+    "declared_digest": null,
+    "fetched": false,
+    "filename": null,
+    "kind": "hf_repo",
+    "sha256": null,
+    "size_bytes": null,
+    "skip_reason": "not_needed",
+    "url": "https://huggingface.co/meta-llama/Llama-3.1-8B/tree/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b"
+  },
+  "ecosystem": "huggingface",
+  "fetched_at": "2026-11-08T22:48:12Z",
+  "files": [
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "original/consolidated.00.pth"
+  ],
+  "files_count": 5,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "meta-llama/Llama-3.1-8B",
+  "purl": "pkg:huggingface/meta-llama/Llama-3.1-8B@d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+  "rank": null,
+  "responses": {
+    "platform": "https://huggingface.co/api/models/meta-llama/Llama-3.1-8B/revision/d04e592bb4f6aa9cfee91e2e20afa771667e1d4b"
+  },
+  "stratum": "edge",
+  "tags": [
+    "hf_gated"
+  ],
+  "version": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b"
+}

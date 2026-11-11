@@ -1,0 +1,7 @@
+name	version	stratum	rank	note
+Newtonsoft.Json	13.0.3	edge		expression plus generated licenses.nuget.org URL
+jQuery	3.7.1	edge		licenseUrl only; jQuery Foundation, Inc.
+Microsoft.Bcl.Build	1.0.21	edge		fwlink licenseUrl only
+System.Data.SQLite.Core	1.0.119	edge		4-part version normalisation
+log4net	3.0.1	edge		The Apache Software Foundation
+Hangfire.Core	1.8.14	edge		license type=file (found by sampling nuspecs)

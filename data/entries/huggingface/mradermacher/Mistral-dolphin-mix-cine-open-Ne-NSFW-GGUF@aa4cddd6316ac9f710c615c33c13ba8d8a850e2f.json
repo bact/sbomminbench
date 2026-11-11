@@ -1,0 +1,178 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/mradermacher/Mistral-dolphin-mix-cine-open-Ne-NSFW-GGUF@aa4cddd6316ac9f710c615c33c13ba8d8a850e2f",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/mradermacher/Mistral-dolphin-mix-cine-open-Ne-NSFW-GGUF/tree/aa4cddd6316ac9f710c615c33c13ba8d8a850e2f"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/mradermacher/Mistral-dolphin-mix-cine-open-Ne-NSFW-GGUF",
+    "name": "mradermacher/Mistral-dolphin-mix-cine-open-Ne-NSFW-GGUF",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "mradermacher",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "mradermacher/Mistral-dolphin-mix-cine-open-Ne-NSFW-GGUF",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "3c7d702c44d8218ec99e07f48fb04b665f7ccd3e31899f4d2708e5e436fd4e87",
+    "retrieved_at": "2026-11-09T08:55:05Z",
+    "source_url": "https://huggingface.co/api/models/mradermacher/Mistral-dolphin-mix-cine-open-Ne-NSFW-GGUF/revision/aa4cddd6316ac9f710c615c33c13ba8d8a850e2f",
+    "version": "aa4cddd6316ac9f710c615c33c13ba8d8a850e2f"
+  },
+  "rank": 5828,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_absent"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "Mistral-dolphin-mix-cine-open-Ne-NSFW-GGUF",
+              "mradermacher/Mistral-dolphin-mix-cine-open-Ne-NSFW-GGUF"
+            ],
+            "canonical_key": "mradermacher/mistral-dolphin-mix-cine-open-ne-nsfw-gguf",
+            "name": "Mistral-dolphin-mix-cine-open-Ne-NSFW-GGUF"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "mradermacher",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.IQ3_M.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.IQ3_S.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.IQ3_XS.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.IQ4_XS.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q2_K.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q3_K_L.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q3_K_M.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q3_K_S.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q4_K_M.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q4_K_S.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q5_K_M.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q5_K_S.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q6_K.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.Q8_0.gguf",
+        "Mistral-dolphin-mix-cine-open-Ne-NSFW.f16.gguf"
+      ],
+      "files_count": 15,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "hf_card"
+        }
+      ],
+      "model_format": "gguf",
+      "size_bytes": null
+    }
+  ]
+}

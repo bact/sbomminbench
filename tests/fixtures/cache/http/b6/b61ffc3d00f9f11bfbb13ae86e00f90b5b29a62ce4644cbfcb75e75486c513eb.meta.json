@@ -1,0 +1,8 @@
+{
+  "content_type": "application/json; charset=utf-8",
+  "fetched_at": "2026-11-08T22:48:11Z",
+  "final_url": "https://huggingface.co/api/models/google-bert/bert-base-uncased/revision/86b5e0934494bd15c9632b12f734a8a67f723594",
+  "has_body": true,
+  "status": 200,
+  "url": "https://huggingface.co/api/models/google-bert/bert-base-uncased/revision/86b5e0934494bd15c9632b12f734a8a67f723594"
+}

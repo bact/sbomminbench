@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "declared_digest": "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3",
+    "fetched": true,
+    "filename": "python-dateutil-2.9.0.post0.tar.gz",
+    "kind": "sdist",
+    "sha256": "37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3",
+    "size_bytes": 342432,
+    "skip_reason": null,
+    "url": "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz"
+  },
+  "ecosystem": "pypi",
+  "fetched_at": "2026-11-08T22:47:57Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "PKG-INFO": "python-dateutil-2.9.0.post0/PKG-INFO",
+    "pyproject.toml": "python-dateutil-2.9.0.post0/pyproject.toml"
+  },
+  "members_dir": "members/37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3",
+  "model_members": [],
+  "name": "python-dateutil",
+  "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+  "rank": null,
+  "responses": {
+    "platform": "https://pypi.org/pypi/python-dateutil/2.9.0.post0/json"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "2.9.0.post0"
+}

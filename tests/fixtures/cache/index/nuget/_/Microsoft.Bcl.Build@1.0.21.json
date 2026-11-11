@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "declared_digest": "sha512:OWKKenlT8tQsRi4/U0r05w9LPGi82LW5DwlwA+81M4VP/wD2+1TIoa2NAMcaIaj8RaZbhNjchA+QvgwZnnXxzg==",
+    "fetched": false,
+    "filename": "microsoft.bcl.build.1.0.21.nupkg",
+    "kind": "nupkg",
+    "sha256": null,
+    "size_bytes": null,
+    "skip_reason": "not_needed",
+    "url": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl.build/1.0.21/microsoft.bcl.build.1.0.21.nupkg"
+  },
+  "ecosystem": "nuget",
+  "fetched_at": "2026-11-08T23:01:47Z",
+  "files": [],
+  "files_count": 0,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "Microsoft.Bcl.Build",
+  "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.21",
+  "rank": null,
+  "responses": {
+    "leaf": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.bcl.build/1.0.21.json",
+    "nuspec": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl.build/1.0.21/microsoft.bcl.build.nuspec",
+    "platform": "https://api.nuget.org/v3/catalog0/data/2026.04.10.00.43.55/microsoft.bcl.build.1.0.21.json"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "1.0.21"
+}

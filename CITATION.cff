@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset or software, please cite it as below."
+title: "SBOM-MinBench"
+version: 0.1.0
+date-released: 2026-11-11
+type: dataset
+license: CC-BY-4.0
+authors:
+  - family-names: Suriyawongkul
+    given-names: Arthit
+    orcid: "https://orcid.org/0000-0002-9698-1899"
+repository-code: "https://github.com/bact/sbomminbench"
+keywords:
+  - SBOM
+  - software bill of materials
+  - AIBOM
+  - SPDX
+  - dataset

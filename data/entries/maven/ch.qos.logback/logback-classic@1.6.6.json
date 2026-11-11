@@ -1,0 +1,321 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/ch.qos.logback/logback-classic@1.6.6",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "logback-classic-1.6.6.pom",
+        "kind": "pom",
+        "sha256": "e3c14a0a5ab76cb0ffebd08ed19a5766964c52195ede15bdd5408707142d9cc1",
+        "size_bytes": 15383,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.6.6/logback-classic-1.6.6.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/ch.qos.logback/logback-classic/1.6.6",
+    "name": "ch.qos.logback:logback-classic",
+    "observations": [],
+    "response_sha256": "e3c14a0a5ab76cb0ffebd08ed19a5766964c52195ede15bdd5408707142d9cc1",
+    "retrieved_at": "2026-11-09T08:55:10Z",
+    "source_url": "https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.6.6/logback-classic-1.6.6.pom",
+    "version": "1.6.6"
+  },
+  "rank": 5,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_list_or",
+        "license_multiple_values",
+        "maven_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[1].licenses.license[0].name",
+            "pom.xml:parent[1].licenses.license[0].url",
+            "pom.xml:parent[1].licenses.license[1].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "EPL-2.0",
+              "input": "EPL-2.0",
+              "key": "pom.xml:parent[1].licenses.license[0].name",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "EPL-2.0 OR LGPL-2.1-only",
+              "input": "EPL-2.0 OR LGPL-2.1-only",
+              "key": "pom.xml:parent[1].licenses.license[0].name",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "license_url",
+              "expression": "EPL-2.0",
+              "input": "https://www.eclipse.org/legal/epl-v20.html",
+              "key": "pom.xml:parent[1].licenses.license[0].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "exact",
+              "expression": "LGPL-2.1-only",
+              "input": "LGPL-2.1-only",
+              "key": "pom.xml:parent[1].licenses.license[1].name",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "assumed_only",
+              "expression": "LGPL-2.1",
+              "input": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+              "key": "pom.xml:parent[1].licenses.license[1].url",
+              "reason": null,
+              "trust": "none"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "EPL-2.0 OR LGPL-2.1-only"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "logback-classic",
+              "ch.qos.logback:logback-classic"
+            ],
+            "canonical_key": "ch.qos.logback:logback-classic",
+            "name": "logback-classic"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[1].developers.developer[0].name",
+            "pom.xml:parent[1].developers.developer[1].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Ceki Gulcu",
+                "role": "author"
+              },
+              {
+                "name": "Joern Huxhorn",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "logback-classic-1.6.6.pom",
+        "logback-parent-1.6.6.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "logback-classic",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Logback Classic Module",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/ch.qos.logback/logback-parent@1.6.6",
+          "native_type": "string",
+          "present": true,
+          "raw": "Ceki Gulcu",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[1].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/ch.qos.logback/logback-parent@1.6.6",
+          "native_type": "string",
+          "present": true,
+          "raw": "Joern Huxhorn",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[0].name",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/ch.qos.logback/logback-parent@1.6.6",
+          "native_type": "string",
+          "present": true,
+          "raw": "EPL-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/ch.qos.logback/logback-parent@1.6.6",
+          "native_type": "string",
+          "present": true,
+          "raw": "https://www.eclipse.org/legal/epl-v20.html",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[1].name",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/ch.qos.logback/logback-parent@1.6.6",
+          "native_type": "string",
+          "present": true,
+          "raw": "LGPL-2.1-only",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[1].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/ch.qos.logback/logback-parent@1.6.6",
+          "native_type": "string",
+          "present": true,
+          "raw": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "parent[1].organization.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/ch.qos.logback/logback-parent@1.6.6",
+          "native_type": "string",
+          "present": true,
+          "raw": "QOS.ch",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

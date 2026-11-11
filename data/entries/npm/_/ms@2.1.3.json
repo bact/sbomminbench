@@ -1,0 +1,484 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/ms@2.1.3",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
+        "fetched": true,
+        "filename": "ms-2.1.3.tgz",
+        "kind": "npm_tarball",
+        "sha256": "f6616e15e530ed552f9daa2d3ce71963947c6bc7c98c9b64fd3e673fd02622c6",
+        "size_bytes": 2967,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/ms/v/2.1.3",
+    "name": "ms",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "styfle"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "absent",
+        "present": false,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "elsigh"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "leerobinson"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "hankvercel"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "okbel"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "samsisle"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "cleishm"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "nazarenooviedo"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "chibicode"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "gielcobben"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "jaredpalmer"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "jkrems"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "prateekbh"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "kikobeats"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "gmonaco"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "housseindjirdeh"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "developit"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "spanicker"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "keanulee"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "atcastle"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "janicklas-ralph"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "skllcrn"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "paco"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "guybedford"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "ragojose"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "williamli"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "msweeneydev"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "coetry"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "rabaut"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "lfades"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mfix22"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "ijjk"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "arzafran"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "umegaya"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "timer"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "anatrajkovska"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "paulogdm"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "andybitz"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "mglagola"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "lucleray"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "zeit-bot"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "styfle"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "juancampa"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "dav-is"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "quietshu"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "joecohens"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "codetheory"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "matheuss"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "igorklopov"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "leo"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "nkzawa"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "tootallnate"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "rauchg"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "timneutkens"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "javivelasco"
+          },
+          {
+            "email": "email.redacted@example.com",
+            "name": "iamevilrabbit"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "ms",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "9f31c78548e84f877cedb1e0f0652419777d0c036fbb72985da187e2a962b45d",
+    "retrieved_at": "2026-11-09T08:55:18Z",
+    "source_url": "https://registry.npmjs.org/ms/2.1.3",
+    "version": "2.1.3"
+  },
+  "rank": 7,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_absent_maintainer_only"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:license",
+            "package.json:license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "npm_registry:license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "package.json:license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "ms"
+            ],
+            "canonical_key": "ms",
+            "name": "ms"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "package/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "ms",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

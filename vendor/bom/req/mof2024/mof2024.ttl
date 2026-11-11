@@ -1,0 +1,457 @@
+# SPDX-FileContributor: Arthit Suriyawongkul
+# SPDX-FileCopyrightText: 2026-present Arthit Suriyawongkul
+# SPDX-FileType: SOURCE
+# SPDX-License-Identifier: CC0-1.0
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix cv:      <http://data.europa.eu/m8g/> .
+
+@prefix bom:    <https://w3id.org/bom/> .
+@prefix mof2024:     <https://w3id.org/bom/req/mof2024/> .
+
+
+# ============================================================================
+# Ontology declaration
+# ============================================================================
+
+<https://w3id.org/bom/req/mof2024/>
+    a owl:Ontology ;
+    owl:imports <https://w3id.org/bom/> ;
+    dcterms:title "Model Openness Framework (MOF) 1.0 - SBOM Mapping"@en ;
+    dcterms:description """SKOS concept scheme for the Model Openness Framework
+(MOF) Specification v1.0 (LF AI & Data Generative AI Commons, December 2024).
+
+MOF is a tiered assessment framework: if a model provides a required set of
+information elements under appropriate open licenses, it qualifies for a given
+tier (Class III: Open Model, Class II: Open Tooling Model, Class I: Open Science
+Model). Each tier specifies which of 17 components must be present and under
+which license category."""@en ;
+    dcterms:source <https://lfaidata.foundation/resources/whitepapers/#mof-specification> ;
+    dcterms:creator <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:created "2026-06-15"^^xsd:date ;
+    dcterms:modified "2026-10-27"^^xsd:date ;
+    owl:versionInfo "0.1.0" ;
+    rdfs:seeAlso <https://arxiv.org/abs/2403.13784> ;
+    dcterms:issued "2024"^^xsd:gYear ;
+    dcterms:publisher <https://orcid.org/0000-0002-9698-1899> ;
+    dcterms:rights "Copyright 2026-present Arthit Suriyawongkul. Dedicated to the public domain under CC0 1.0 Universal."@en ;
+    dcterms:bibliographicCitation "Suriyawongkul, A. (2026). Model Openness Framework (MOF) 1.0 - SBOM Mapping. https://w3id.org/bom/req/mof2024/"@en ;
+    dcterms:conformsTo <http://www.w3.org/2004/02/skos/core> ;
+    vann:preferredNamespacePrefix "mof2024" ;
+    vann:preferredNamespaceUri "https://w3id.org/bom/req/mof2024/"^^xsd:anyURI .
+
+
+# ============================================================================
+# Concept Scheme
+# ============================================================================
+
+mof2024:scheme
+    a skos:ConceptScheme, bom:InfoRequirementSpec ;
+    skos:prefLabel "Model Openness Framework v1.0"@en ;
+    dcterms:title "LF AI & Data Model Openness Framework Specification v1.0"@en ;
+    dcterms:issued "2024"^^xsd:gYear ;
+    dcterms:hasVersion "1.0" ;
+    dcterms:description """A ranked classification system rating ML models based
+on completeness and openness across 17 components in 3 classes."""@en ;
+    skos:hasTopConcept
+        mof2024:class-iii ,
+        mof2024:class-ii ,
+        mof2024:class-i .
+
+
+# ============================================================================
+# MOF Classes (tiers)
+# ============================================================================
+
+mof2024:class-iii
+    a skos:Concept ;
+    skos:topConceptOf mof2024:scheme ;
+    skos:inScheme mof2024:scheme ;
+    skos:prefLabel "Class III - Open Model"@en ;
+    skos:altLabel "Open Model"@en ;
+    skos:notation "III"^^bom:ElementCode ;
+    skos:definition """The base class of openness. Requires 6 components (plus
+optional sample outputs) to be present and released under type-appropriate
+open licenses. Enables unrestricted usage, study, modification and redistribution."""@en ;
+    skos:narrower
+        mof2024:model-architecture ,
+        mof2024:model-parameters ,
+        mof2024:technical-report ,
+        mof2024:evaluation-results ,
+        mof2024:model-card ,
+        mof2024:data-card ,
+        mof2024:sample-outputs .
+
+mof2024:class-ii
+    a skos:Concept ;
+    skos:topConceptOf mof2024:scheme ;
+    skos:inScheme mof2024:scheme ;
+    skos:prefLabel "Class II - Open Tooling Model"@en ;
+    skos:altLabel "Open Tooling Model"@en ;
+    skos:notation "II"^^bom:ElementCode ;
+    skos:definition """Builds on Class III. Adds 6 components enabling users
+to understand the training process, validate benchmarks and perform inference
+optimizations. All Class III + Class II components required."""@en ;
+    skos:broader mof2024:class-iii ;
+    skos:narrower
+        mof2024:training-code ,
+        mof2024:inference-code ,
+        mof2024:evaluation-code ,
+        mof2024:evaluation-data ,
+        mof2024:supporting-libraries ,
+        mof2024:mof-config-file .
+
+mof2024:class-i
+    a skos:Concept ;
+    skos:topConceptOf mof2024:scheme ;
+    skos:inScheme mof2024:scheme ;
+    skos:prefLabel "Class I - Open Science Model"@en ;
+    skos:altLabel "Open Science Model"@en ;
+    skos:notation "I"^^bom:ElementCode ;
+    skos:definition """The highest class of openness. Adds 4 components (plus
+optional model metadata) enabling end-to-end analysis, reproduction of a
+similar model, and data exploration. All Class I + II + III components required."""@en ;
+    skos:broader mof2024:class-ii ;
+    skos:narrower
+        mof2024:research-paper ,
+        mof2024:datasets ,
+        mof2024:data-preprocessing-code ,
+        mof2024:intermediate-parameters ,
+        mof2024:model-metadata .
+
+
+# ============================================================================
+# License value constraint sets
+# (referenced by bom:valueConstraint on components requiring open licenses)
+# ============================================================================
+
+mof2024:open-source-license-set
+    a skos:Collection ;
+    skos:prefLabel "Type-appropriate open source license (code components)"@en ;
+    skos:scopeNote """MOF requires code components to be released under an
+OSI-approved open source software license. Examples: Apache-2.0, MIT, GPL-3.0.
+See https://opensource.org/licenses for the canonical OSI-approved list."""@en ;
+    rdfs:seeAlso <https://opensource.org/licenses> .
+
+mof2024:open-data-license-set
+    a skos:Collection ;
+    skos:prefLabel "Type-appropriate open data license (data/parameter components)"@en ;
+    skos:scopeNote """MOF requires data and model parameter components to be
+released under an open data license. Recommended: CDLA-Permissive-2.0.
+Model parameters SHOULD NOT use Apache-2.0 or MIT as these are code licenses
+not well-suited for weights and biases."""@en ;
+    rdfs:seeAlso <https://cdla.dev/permissive-2-0/> .
+
+mof2024:open-content-license-set
+    a skos:Collection ;
+    skos:prefLabel "Type-appropriate open content license (documentation components)"@en ;
+    skos:scopeNote """MOF requires documentation components to be released under
+an open content license. Recommended: CC-BY-4.0."""@en ;
+    rdfs:seeAlso <https://creativecommons.org/licenses/by/4.0/> .
+
+
+# ============================================================================
+# Class III components (III.1 - III.7)
+# ============================================================================
+
+mof2024:model-architecture
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-iii ;
+    skos:notation "III.1"^^bom:ElementCode ;
+    skos:prefLabel "Model architecture"@en ;
+    skos:definition """The ML algorithms, neural network layout, connectivity
+patterns, activation functions and other architectural elements. MUST be
+distributed as open source code under an OSI-approved open source software
+license."""@en ;
+    skos:closeMatch bom:component-description ;
+    skos:closeMatch bom:component-source-code ;
+    skos:closeMatch bom:ai-model-prop ;
+    skos:closeMatch bom:ai-model-architecture .
+
+mof2024:model-architecture bom:provisionType bom:Requirement .
+mof2024:model-architecture bom:valueConstraint mof2024:open-source-license-set .
+
+
+mof2024:model-parameters
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-iii ;
+    skos:notation "III.2"^^bom:ElementCode ;
+    skos:prefLabel "Final model parameters (checkpoints and optimizer state)"@en ;
+    skos:definition """Trained model weights and biases. At minimum the final
+model parameters and optimizer state MUST be distributed, compressed or
+uncompressed, in a format compatible with popular deep learning frameworks.
+MUST be released under an open license; SHOULD use an open data license
+(e.g. CDLA-Permissive-2.0) rather than a code license."""@en ;
+    skos:exactMatch bom:ai-model-parameters .
+
+mof2024:model-parameters bom:provisionType bom:Requirement .
+mof2024:model-parameters bom:valueConstraint mof2024:open-data-license-set .
+
+
+mof2024:technical-report
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-iii ;
+    skos:notation "III.3"^^bom:ElementCode ;
+    skos:prefLabel "Technical report"@en ;
+    skos:altLabel "Research paper (if provided instead of technical report)"@en ;
+    skos:definition """Documentation providing performance, usage and implication
+information. MUST be included in the distribution or made available on a
+permanent open access platform (e.g. arXiv). MUST be distributed under an
+open license (SHOULD be CC-BY-4.0). MAY be omitted if a research paper is provided."""@en ;
+    skos:closeMatch bom:component-documentation .
+
+mof2024:technical-report bom:provisionType bom:Requirement .
+mof2024:technical-report bom:valueConstraint mof2024:open-content-license-set .
+
+
+mof2024:evaluation-results
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-iii ;
+    skos:notation "III.4"^^bom:ElementCode ;
+    skos:prefLabel "Evaluation results"@en ;
+    skos:definition """Detailed quantitative metrics and qualitative results from
+evaluating the model. MUST include benchmark test results (standard or custom).
+Raw outputs MUST be distributed under an open license (SHOULD be CC-BY-4.0)."""@en ;
+    skos:closeMatch bom:component-documentation ;
+    skos:closeMatch bom:ai-perf-metric .
+
+mof2024:evaluation-results bom:provisionType bom:Requirement .
+mof2024:evaluation-results bom:valueConstraint mof2024:open-content-license-set .
+
+
+mof2024:model-card
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-iii ;
+    skos:notation "III.5"^^bom:ElementCode ;
+    skos:prefLabel "Model card"@en ;
+    skos:definition """A document covering model details, intended uses, evaluation
+factors, risks and mitigations. MUST be distributed under an open license
+(SHOULD be CC-BY-4.0)."""@en ;
+    skos:exactMatch bom:ai-model-card ;
+    skos:closeMatch bom:component-description .
+
+mof2024:model-card bom:provisionType bom:Requirement .
+mof2024:model-card bom:valueConstraint mof2024:open-content-license-set .
+
+
+mof2024:data-card
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-iii ;
+    skos:notation "III.6"^^bom:ElementCode ;
+    skos:prefLabel "Data card"@en ;
+    skos:definition """Summary statistics and details about training datasets:
+features, instances, intended uses, motivation and collection process.
+MAY be combined with the model card. MUST be distributed under an open license
+(SHOULD be CC-BY-4.0)."""@en ;
+    skos:exactMatch bom:dataset-data-card ;
+    skos:closeMatch bom:dataset-provenance ;
+    skos:closeMatch bom:dataset-statistical-prop .
+
+mof2024:data-card bom:provisionType bom:Requirement .
+mof2024:data-card bom:valueConstraint mof2024:open-content-license-set .
+
+
+mof2024:sample-outputs
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-iii ;
+    skos:notation "III.7"^^bom:ElementCode ;
+    skos:prefLabel "Sample model outputs"@en ;
+    skos:definition """Text, image, audio, code or other outputs generated by the
+model. RECOMMENDED but not required. If included MUST be shared publicly without
+copyright or restrictions where legally permitted."""@en ;
+    skos:closeMatch bom:component-documentation .
+
+mof2024:sample-outputs bom:provisionType bom:Recommendation .
+
+
+# ============================================================================
+# Class II components (II.2 - II.6, II.x config)
+# ============================================================================
+
+mof2024:training-code
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-ii ;
+    skos:notation "II.2"^^bom:ElementCode ;
+    skos:prefLabel "Training, validation and testing code"@en ;
+    skos:definition """Full code for training, validating and testing the model:
+model construction, training loop, hyperparameter selection, checkpointing,
+fine-tuning, RLHF and adapter code. MUST be released under an OSI-approved
+open source software license."""@en ;
+    skos:closeMatch bom:component-source-code .
+
+mof2024:training-code bom:provisionType bom:Requirement .
+mof2024:training-code bom:valueConstraint mof2024:open-source-license-set .
+
+
+mof2024:inference-code
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-ii ;
+    skos:notation "II.3"^^bom:ElementCode ;
+    skos:prefLabel "Inference code"@en ;
+    skos:definition """Code for performing inference including preprocessing,
+postprocessing, model optimizations and dependencies. MUST include code
+required to fully replicate benchmark results. MUST be released under an
+OSI-approved open source software license."""@en ;
+    skos:closeMatch bom:component-source-code .
+
+mof2024:inference-code bom:provisionType bom:Requirement .
+mof2024:inference-code bom:valueConstraint mof2024:open-source-license-set .
+
+
+mof2024:evaluation-code
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-ii ;
+    skos:notation "II.4"^^bom:ElementCode ;
+    skos:prefLabel "Evaluation code"@en ;
+    skos:definition """Code for model evaluation and benchmarking.
+MUST be released under an OSI-approved open source software license."""@en ;
+    skos:closeMatch bom:component-source-code .
+
+mof2024:evaluation-code bom:provisionType bom:Requirement .
+mof2024:evaluation-code bom:valueConstraint mof2024:open-source-license-set .
+
+
+mof2024:evaluation-data
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-ii ;
+    skos:notation "II.5"^^bom:ElementCode ;
+    skos:prefLabel "Evaluation data"@en ;
+    skos:definition """Data used for model evaluation and benchmarking. MUST be
+included (standard benchmark datasets MAY be omitted if described in the report).
+MUST be released under a data or content appropriate open license
+(e.g. CDLA-Permissive-2.0 or CC-BY-4.0)."""@en ;
+    skos:closeMatch bom:dataset-provenance ;
+    skos:closeMatch bom:dataset-lifecycle-role .
+
+mof2024:evaluation-data bom:provisionType bom:Requirement .
+mof2024:evaluation-data bom:valueConstraint mof2024:open-data-license-set .
+
+
+mof2024:supporting-libraries
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-ii ;
+    skos:notation "II.6"^^bom:ElementCode ;
+    skos:prefLabel "Supporting libraries and tools"@en ;
+    skos:definition """Code libraries, utilities and tools developed in the course
+of the model. SHOULD be released under an OSI-approved open source software
+license. Includes tokenizers, data loaders, visualisation code, container
+definitions, hyperparameter search code, monitoring code, frontend code."""@en ;
+    skos:closeMatch bom:component-source-code .
+
+mof2024:supporting-libraries bom:provisionType bom:Recommendation .
+mof2024:supporting-libraries bom:valueConstraint mof2024:open-source-license-set .
+
+
+mof2024:mof-config-file
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-ii ;
+    skos:prefLabel "MOF configuration file"@en ;
+    skos:definition """A machine-readable configuration file declaring which MOF
+components are included in the distribution and their locations.
+SHOULD be included in every MOF-conformant distribution."""@en ;
+    skos:scopeNote "No direct bridge concept; closest is doc-identifier or component-external-ref."@en ;
+    skos:closeMatch bom:component-documentation .
+
+mof2024:mof-config-file bom:provisionType bom:Recommendation .
+
+
+# ============================================================================
+# Class I components (I.2 - I.6)
+# ============================================================================
+
+mof2024:research-paper
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-i ;
+    skos:notation "I.2"^^bom:ElementCode ;
+    skos:prefLabel "Research paper"@en ;
+    skos:definition """A peer-reviewed or preprint research paper detailing
+model methodology, results and analysis. MUST be available in the distribution
+or on a permanent open access platform. MUST be released under CC-BY-4.0 or
+equivalent open content license. MAY replace the technical report (III.3)."""@en ;
+    skos:closeMatch bom:component-documentation .
+
+mof2024:research-paper bom:provisionType bom:Requirement .
+mof2024:research-paper bom:valueConstraint mof2024:open-content-license-set .
+
+
+mof2024:datasets
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-i ;
+    skos:notation "I.3"^^bom:ElementCode ;
+    skos:prefLabel "Datasets (training, validation and testing)"@en ;
+    skos:definition """All data used for training, validation, fine-tuning,
+alignment (RLHF) and testing. Any media format. Includes tokenized datasets
+and any metadata (annotations, labels, bounding boxes, etc.). MUST be released
+under an appropriate open data or content license."""@en ;
+    skos:closeMatch bom:dataset-provenance ;
+    skos:closeMatch bom:rel-trained-on .
+
+mof2024:datasets bom:provisionType bom:Requirement .
+mof2024:datasets bom:valueConstraint mof2024:open-data-license-set .
+
+
+mof2024:data-preprocessing-code
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-i ;
+    skos:notation "I.4"^^bom:ElementCode ;
+    skos:prefLabel "Data preprocessing code"@en ;
+    skos:definition """All code for preprocessing, cleaning and formatting
+training/validation/test data, fine-tuning data transformations, data ingestion,
+feature engineering, data augmentation and tokenization. MUST be released under
+an OSI-approved open source software license."""@en ;
+    skos:closeMatch bom:dataset-provenance ;
+    skos:closeMatch bom:component-source-code .
+
+mof2024:data-preprocessing-code bom:provisionType bom:Requirement .
+mof2024:data-preprocessing-code bom:valueConstraint mof2024:open-source-license-set .
+
+
+mof2024:intermediate-parameters
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-i ;
+    skos:notation "I.5"^^bom:ElementCode ;
+    skos:prefLabel "Intermediate model parameters (checkpoints)"@en ;
+    skos:definition """Model parameter checkpoints from key intermediate stages
+of training, in addition to the final parameters required by III.2.
+SHOULD be included to enable reproduction and analysis of training dynamics."""@en ;
+    skos:closeMatch bom:ai-model-parameters .
+
+mof2024:intermediate-parameters bom:provisionType bom:Recommendation .
+mof2024:intermediate-parameters bom:valueConstraint mof2024:open-data-license-set .
+
+
+mof2024:model-metadata
+    a skos:Concept ;
+    skos:inScheme mof2024:scheme ;
+    skos:broader mof2024:class-i ;
+    skos:notation "I.6"^^bom:ElementCode ;
+    skos:prefLabel "Model metadata"@en ;
+    skos:definition """Structured metadata about the model distribution (optional
+component for Class I). Provides machine-readable information about model
+components, their locations and relationships."""@en ;
+    skos:closeMatch bom:component-description ;
+    skos:closeMatch bom:component-identifier .
+
+mof2024:model-metadata bom:provisionType bom:Permission .

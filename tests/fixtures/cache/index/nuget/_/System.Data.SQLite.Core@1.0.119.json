@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "declared_digest": "sha512:crsEBqUQbKt2/AV2ReF6+lZZgH0R0v9PyonHgNo7Omo4UbSpiybFC3pYK8szs1IJgrZtkSIjHW7dasKTTtbNiw==",
+    "fetched": false,
+    "filename": "system.data.sqlite.core.1.0.119.nupkg",
+    "kind": "nupkg",
+    "sha256": null,
+    "size_bytes": null,
+    "skip_reason": "not_needed",
+    "url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite.core/1.0.119/system.data.sqlite.core.1.0.119.nupkg"
+  },
+  "ecosystem": "nuget",
+  "fetched_at": "2026-11-08T23:01:49Z",
+  "files": [],
+  "files_count": 0,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "System.Data.SQLite.Core",
+  "purl": "pkg:nuget/System.Data.SQLite.Core@1.0.119",
+  "rank": null,
+  "responses": {
+    "leaf": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.sqlite.core/1.0.119.json",
+    "nuspec": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite.core/1.0.119/system.data.sqlite.core.nuspec",
+    "platform": "https://api.nuget.org/v3/catalog0/data/2024.09.29.21.45.53/system.data.sqlite.core.1.0.119.json"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "1.0.119"
+}

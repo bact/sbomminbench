@@ -1,0 +1,171 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/Xenova/jina-embeddings-v2-base-en@459a733e015d7c72b678de3611fc444a7853168a",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/Xenova/jina-embeddings-v2-base-en/tree/459a733e015d7c72b678de3611fc444a7853168a"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/Xenova/jina-embeddings-v2-base-en",
+    "name": "Xenova/jina-embeddings-v2-base-en",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Xenova",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Xenova/jina-embeddings-v2-base-en",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "47023e71296f205327bb2ae140100fdbe173e1cb0ff2b8f8375155b721f74297",
+    "retrieved_at": "2026-11-09T08:55:06Z",
+    "source_url": "https://huggingface.co/api/models/Xenova/jina-embeddings-v2-base-en/revision/459a733e015d7c72b678de3611fc444a7853168a",
+    "version": "459a733e015d7c72b678de3611fc444a7853168a"
+  },
+  "rank": 6672,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_absent"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "jina-embeddings-v2-base-en",
+              "Xenova/jina-embeddings-v2-base-en"
+            ],
+            "canonical_key": "xenova/jina-embeddings-v2-base-en",
+            "name": "jina-embeddings-v2-base-en"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Xenova",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "onnx/model.onnx",
+        "onnx/model_bnb4.onnx",
+        "onnx/model_fp16.onnx",
+        "onnx/model_int8.onnx",
+        "onnx/model_q4.onnx",
+        "onnx/model_q4f16.onnx",
+        "onnx/model_quantized.onnx",
+        "onnx/model_uint8.onnx"
+      ],
+      "files_count": 8,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "hf_card"
+        }
+      ],
+      "model_format": "onnx",
+      "size_bytes": null
+    }
+  ]
+}

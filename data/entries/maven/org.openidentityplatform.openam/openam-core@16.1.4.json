@@ -1,0 +1,318 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.openidentityplatform.openam/openam-core@16.1.4",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "openam-core-16.1.4.pom",
+        "kind": "pom",
+        "sha256": "5c3434094594343c4a10982a98e5adaf64a354abb8685b534b55106c5bc88ed5",
+        "size_bytes": 16464,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/openidentityplatform/openam/openam-core/16.1.4/openam-core-16.1.4.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.openidentityplatform.openam/openam-core/16.1.4",
+    "name": "org.openidentityplatform.openam:openam-core",
+    "observations": [],
+    "response_sha256": "5c3434094594343c4a10982a98e5adaf64a354abb8685b534b55106c5bc88ed5",
+    "retrieved_at": "2026-11-11T08:15:04Z",
+    "source_url": "https://repo1.maven.org/maven2/org/openidentityplatform/openam/openam-core/16.1.4/openam-core-16.1.4.pom",
+    "version": "16.1.4"
+  },
+  "rank": 6682,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "license_list_or",
+        "license_multiple_values",
+        "license_prose",
+        "maven_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[1].licenses.license[0].name",
+            "pom.xml:parent[1].licenses.license[0].url",
+            "pom.xml:parent[1].licenses.license[1].name",
+            "pom.xml:parent[1].licenses.license[1].url"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "CC-BY-NC-ND-3.0 OR CDDL-1.0",
+              "input": "CC-BY-NC-ND-3.0 OR CDDL-1.0",
+              "key": "pom.xml:parent[1].licenses.license[0].name",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "CDDL-1.0",
+              "input": "CDDL-1.0",
+              "key": "pom.xml:parent[1].licenses.license[0].name",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "license_url",
+              "expression": "CDDL-1.0",
+              "input": "http://www.opensource.org/licenses/CDDL-1.0",
+              "key": "pom.xml:parent[1].licenses.license[0].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "separator",
+              "expression": "CC-BY-NC-ND-3.0",
+              "input": "CC BY-NC-ND 3.0",
+              "key": "pom.xml:parent[1].licenses.license[1].name",
+              "reason": null,
+              "trust": "resolver_rule"
+            },
+            {
+              "category": "license_url",
+              "expression": "CC-BY-NC-ND-3.0",
+              "input": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+              "key": "pom.xml:parent[1].licenses.license[1].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "CC-BY-NC-ND-3.0 OR CDDL-1.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "openam-core",
+              "org.openidentityplatform.openam:openam-core"
+            ],
+            "canonical_key": "org.openidentityplatform.openam:openam-core",
+            "name": "openam-core"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[1].developers.developer[0].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Open Identity Platform Community",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "openam-16.1.4.pom",
+        "openam-core-16.1.4.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "openam-core",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "OpenAM Core",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.openidentityplatform.openam/openam@16.1.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "Open Identity Platform Community",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[1].developers.developer[0].organization",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.openidentityplatform.openam/openam@16.1.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "Open Identity Platform Community",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[0].name",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.openidentityplatform.openam/openam@16.1.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "CDDL-1.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.openidentityplatform.openam/openam@16.1.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "http://www.opensource.org/licenses/CDDL-1.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "osi_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[1].name",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.openidentityplatform.openam/openam@16.1.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "CC BY-NC-ND 3.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "prose",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "parent[1].licenses.license[1].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.openidentityplatform.openam/openam@16.1.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "parent[1].organization.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.openidentityplatform.openam/openam@16.1.4",
+          "native_type": "string",
+          "present": true,
+          "raw": "Open Identity Platform Community",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

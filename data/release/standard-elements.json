@@ -1,0 +1,370 @@
+{
+  "bom_release": "0.2.0",
+  "elements": [
+    {
+      "code": null,
+      "element": "license",
+      "element_id": "bsi2025:component-original-license",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/bsi2025/component-original-license",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Original licences",
+      "notation": "BOM-BSI2025-COMP-014",
+      "obligation": "ConditionalRequirement",
+      "spdx_target": "spdx3-core:RelationshipType/hasDeclaredLicense",
+      "standard": "bsi2025",
+      "standard_label": "BSI TR-03183-2"
+    },
+    {
+      "code": null,
+      "element": "name",
+      "element_id": "bsi2025:component-name",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/bsi2025/component-name",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Component name",
+      "notation": "BOM-BSI2025-COMP-002",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:name",
+      "standard": "bsi2025",
+      "standard_label": "BSI TR-03183-2"
+    },
+    {
+      "code": null,
+      "element": "provider",
+      "element_id": "bsi2025:component-creator",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/bsi2025/component-creator",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Component creator",
+      "notation": "BOM-BSI2025-COMP-001",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:originatedBy",
+      "standard": "bsi2025",
+      "standard_label": "BSI TR-03183-2"
+    },
+    {
+      "code": null,
+      "element": "license",
+      "element_id": "certin2025:component-license",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/certin2025/component-license",
+      "kinds": [
+        "package"
+      ],
+      "label": "Component License",
+      "notation": "BOM-CERTIN2025-SBOM-005",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:RelationshipType/hasDeclaredLicense",
+      "standard": "certin2025",
+      "standard_label": "CERT-In 2025"
+    },
+    {
+      "code": null,
+      "element": "license",
+      "element_id": "certin2025:model-licensing-information",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/certin2025/model-licensing-information",
+      "kinds": [
+        "model"
+      ],
+      "label": "Model Licensing Information",
+      "notation": "BOM-CERTIN2025-AIBOM-005",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:RelationshipType/hasDeclaredLicense",
+      "standard": "certin2025",
+      "standard_label": "CERT-In 2025"
+    },
+    {
+      "code": null,
+      "element": "name",
+      "element_id": "certin2025:component-name",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/certin2025/component-name",
+      "kinds": [
+        "package"
+      ],
+      "label": "Component Name",
+      "notation": "BOM-CERTIN2025-SBOM-001",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:name",
+      "standard": "certin2025",
+      "standard_label": "CERT-In 2025"
+    },
+    {
+      "code": null,
+      "element": "name",
+      "element_id": "certin2025:model-name",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/certin2025/model-name",
+      "kinds": [
+        "model"
+      ],
+      "label": "Model Name",
+      "notation": "BOM-CERTIN2025-AIBOM-001",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:name",
+      "standard": "certin2025",
+      "standard_label": "CERT-In 2025"
+    },
+    {
+      "code": null,
+      "element": "provider",
+      "element_id": "certin2025:model-developer",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/certin2025/model-developer",
+      "kinds": [
+        "model"
+      ],
+      "label": "Model Developer",
+      "notation": "BOM-CERTIN2025-AIBOM-004",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:originatedBy",
+      "standard": "certin2025",
+      "standard_label": "CERT-In 2025"
+    },
+    {
+      "code": null,
+      "element": "license",
+      "element_id": "cisa2026:component-license",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/cisa2026/component-license",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Component License",
+      "notation": "BOM-CISA2026-COMP-006",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:RelationshipType/hasDeclaredLicense",
+      "standard": "cisa2026",
+      "standard_label": "CISA 2026"
+    },
+    {
+      "code": null,
+      "element": "name",
+      "element_id": "cisa2026:component-name",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/cisa2026/component-name",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Component Name",
+      "notation": "BOM-CISA2026-COMP-007",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:name",
+      "standard": "cisa2026",
+      "standard_label": "CISA 2026"
+    },
+    {
+      "code": null,
+      "element": "provider",
+      "element_id": "cisa2026:component-producer",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/cisa2026/component-producer",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Component Producer",
+      "notation": "BOM-CISA2026-COMP-001",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:originatedBy",
+      "standard": "cisa2026",
+      "standard_label": "CISA 2026"
+    },
+    {
+      "code": null,
+      "element": "license",
+      "element_id": "fsct2024:concluded-license",
+      "fit": "close",
+      "iri": "https://w3id.org/bom/req/fsct2024/concluded-license",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Concluded License",
+      "notation": "BOM-FSCT2024-COMP-007",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:RelationshipType/hasConcludedLicense",
+      "standard": "fsct2024",
+      "standard_label": "FSCT 2024"
+    },
+    {
+      "code": null,
+      "element": "name",
+      "element_id": "fsct2024:name",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/fsct2024/name",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Component Name",
+      "notation": "BOM-FSCT2024-COMP-001",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:name",
+      "standard": "fsct2024",
+      "standard_label": "FSCT 2024"
+    },
+    {
+      "code": null,
+      "element": "provider",
+      "element_id": "fsct2024:supplier",
+      "fit": "close",
+      "iri": "https://w3id.org/bom/req/fsct2024/supplier",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Supplier",
+      "notation": "BOM-FSCT2024-COMP-003",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:suppliedBy",
+      "standard": "fsct2024",
+      "standard_label": "FSCT 2024"
+    },
+    {
+      "code": "G7AI-MDL-012",
+      "element": "license",
+      "element_id": "g7ai2026:model-license",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/g7ai2026/model-license",
+      "kinds": [
+        "model"
+      ],
+      "label": "Model license",
+      "notation": "BOM-G7AI2026-MDL-012",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:RelationshipType/hasDeclaredLicense",
+      "standard": "g7ai2026",
+      "standard_label": "G7 AI 2026"
+    },
+    {
+      "code": "G7AI-MDL-001",
+      "element": "name",
+      "element_id": "g7ai2026:model-name",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/g7ai2026/model-name",
+      "kinds": [
+        "model"
+      ],
+      "label": "Model name",
+      "notation": "BOM-G7AI2026-MDL-001",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:name",
+      "standard": "g7ai2026",
+      "standard_label": "G7 AI 2026"
+    },
+    {
+      "code": "G7AI-MDL-005",
+      "element": "provider",
+      "element_id": "g7ai2026:model-producer",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/g7ai2026/model-producer",
+      "kinds": [
+        "model"
+      ],
+      "label": "Model producer",
+      "notation": "BOM-G7AI2026-MDL-005",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:originatedBy",
+      "standard": "g7ai2026",
+      "standard_label": "G7 AI 2026"
+    },
+    {
+      "code": "MDF-016",
+      "element": "license",
+      "element_id": "gpaimdf2025:licence-link",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/gpaimdf2025/licence-link",
+      "kinds": [
+        "model"
+      ],
+      "label": "License",
+      "notation": "BOM-GPAIMDF2025-016",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:RelationshipType/hasDeclaredLicense",
+      "standard": "gpaimdf2025",
+      "standard_label": "GPAI MDF 2025"
+    },
+    {
+      "code": "MDF-004",
+      "element": "name",
+      "element_id": "gpaimdf2025:model-name",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/gpaimdf2025/model-name",
+      "kinds": [
+        "model"
+      ],
+      "label": "Model name",
+      "notation": "BOM-GPAIMDF2025-004",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:name",
+      "standard": "gpaimdf2025",
+      "standard_label": "GPAI MDF 2025"
+    },
+    {
+      "code": "MDF-003",
+      "element": "provider",
+      "element_id": "gpaimdf2025:provider-legal-name",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/gpaimdf2025/provider-legal-name",
+      "kinds": [
+        "model"
+      ],
+      "label": "Legal name for the model provider",
+      "notation": "BOM-GPAIMDF2025-003",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:originatedBy",
+      "standard": "gpaimdf2025",
+      "standard_label": "GPAI MDF 2025"
+    },
+    {
+      "code": null,
+      "element": "name",
+      "element_id": "ntia2021:name",
+      "fit": "exact",
+      "iri": "https://w3id.org/bom/req/ntia2021/name",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Component Name",
+      "notation": "BOM-NTIA2021-DF-002",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:name",
+      "standard": "ntia2021",
+      "standard_label": "NTIA 2021"
+    },
+    {
+      "code": null,
+      "element": "provider",
+      "element_id": "ntia2021:supplier",
+      "fit": "close",
+      "iri": "https://w3id.org/bom/req/ntia2021/supplier",
+      "kinds": [
+        "model",
+        "package"
+      ],
+      "label": "Supplier Name",
+      "notation": "BOM-NTIA2021-DF-001",
+      "obligation": "Requirement",
+      "spdx_target": "spdx3-core:suppliedBy",
+      "standard": "ntia2021",
+      "standard_label": "NTIA 2021"
+    }
+  ],
+  "namespace": "https://w3id.org/bom/",
+  "retrieved": "2026-11-09"
+}

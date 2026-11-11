@@ -1,0 +1,8 @@
+{
+  "content_type": "application/json",
+  "fetched_at": "2026-11-08T23:01:52Z",
+  "final_url": "https://api.nuget.org/v3/registration5-gz-semver2/hangfire.core/1.8.14.json",
+  "has_body": true,
+  "status": 200,
+  "url": "https://api.nuget.org/v3/registration5-gz-semver2/hangfire.core/1.8.14.json"
+}

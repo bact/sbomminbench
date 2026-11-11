@@ -1,0 +1,1099 @@
+{
+  "$defs": {
+    "Artifact": {
+      "additionalProperties": false,
+      "properties": {
+        "declared_digest": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Declared Digest"
+        },
+        "fetched": {
+          "title": "Fetched",
+          "type": "boolean"
+        },
+        "filename": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filename"
+        },
+        "kind": {
+          "enum": [
+            "sdist",
+            "wheel",
+            "wheel_metadata",
+            "npm_tarball",
+            "crate",
+            "pom",
+            "nupkg",
+            "hf_repo"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sha256"
+        },
+        "size_bytes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Size Bytes"
+        },
+        "skip_reason": {
+          "anyOf": [
+            {
+              "enum": [
+                "too_large",
+                "http_404",
+                "http_error",
+                "not_needed",
+                "archive_error"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Skip Reason"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "url",
+        "fetched"
+      ],
+      "title": "Artifact",
+      "type": "object"
+    },
+    "ExpectedLicense": {
+      "additionalProperties": false,
+      "properties": {
+        "auto_status": {
+          "anyOf": [
+            {
+              "enum": [
+                "auto_unanimous",
+                "auto_conflict",
+                "auto_unresolved",
+                "absent_in_source",
+                "not_assessed"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Auto Status"
+        },
+        "basis": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Basis",
+          "type": "array"
+        },
+        "candidates": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Candidates",
+          "type": "array"
+        },
+        "independent_origins": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Independent Origins",
+          "type": "integer"
+        },
+        "licenseid": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/LicenseidTrail"
+          },
+          "title": "Licenseid",
+          "type": "array"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        },
+        "reviewed_at": {
+          "anyOf": [
+            {
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewed At"
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewer"
+        },
+        "status": {
+          "enum": [
+            "auto_unanimous",
+            "auto_conflict",
+            "auto_unresolved",
+            "absent_in_source",
+            "not_assessed",
+            "human_confirmed",
+            "human_corrected",
+            "excluded"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LicenseValue"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "ExpectedLicense",
+      "type": "object"
+    },
+    "ExpectedName": {
+      "additionalProperties": false,
+      "properties": {
+        "auto_status": {
+          "anyOf": [
+            {
+              "enum": [
+                "auto_unanimous",
+                "auto_conflict",
+                "auto_unresolved",
+                "absent_in_source",
+                "not_assessed"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Auto Status"
+        },
+        "basis": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Basis",
+          "type": "array"
+        },
+        "candidates": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Candidates",
+          "type": "array"
+        },
+        "independent_origins": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Independent Origins",
+          "type": "integer"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        },
+        "reviewed_at": {
+          "anyOf": [
+            {
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewed At"
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewer"
+        },
+        "status": {
+          "enum": [
+            "auto_unanimous",
+            "auto_conflict",
+            "auto_unresolved",
+            "absent_in_source",
+            "not_assessed",
+            "human_confirmed",
+            "human_corrected",
+            "excluded"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NameValue"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "ExpectedName",
+      "type": "object"
+    },
+    "ExpectedProvider": {
+      "additionalProperties": false,
+      "properties": {
+        "auto_status": {
+          "anyOf": [
+            {
+              "enum": [
+                "auto_unanimous",
+                "auto_conflict",
+                "auto_unresolved",
+                "absent_in_source",
+                "not_assessed"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Auto Status"
+        },
+        "basis": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Basis",
+          "type": "array"
+        },
+        "candidates": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Candidates",
+          "type": "array"
+        },
+        "independent_origins": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Independent Origins",
+          "type": "integer"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        },
+        "reviewed_at": {
+          "anyOf": [
+            {
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewed At"
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reviewer"
+        },
+        "status": {
+          "enum": [
+            "auto_unanimous",
+            "auto_conflict",
+            "auto_unresolved",
+            "absent_in_source",
+            "not_assessed",
+            "human_confirmed",
+            "human_corrected",
+            "excluded"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProviderValue"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "ExpectedProvider",
+      "type": "object"
+    },
+    "ExpectedSet": {
+      "additionalProperties": false,
+      "properties": {
+        "license": {
+          "$ref": "#/$defs/ExpectedLicense"
+        },
+        "name": {
+          "$ref": "#/$defs/ExpectedName"
+        },
+        "provider": {
+          "$ref": "#/$defs/ExpectedProvider"
+        }
+      },
+      "required": [
+        "name",
+        "provider",
+        "license"
+      ],
+      "title": "ExpectedSet",
+      "type": "object"
+    },
+    "JsonValue": {},
+    "LicenseValue": {
+      "additionalProperties": false,
+      "properties": {
+        "has_license_ref": {
+          "default": false,
+          "title": "Has License Ref",
+          "type": "boolean"
+        },
+        "spdx_expression": {
+          "minLength": 1,
+          "title": "Spdx Expression",
+          "type": "string"
+        }
+      },
+      "required": [
+        "spdx_expression"
+      ],
+      "title": "LicenseValue",
+      "type": "object"
+    },
+    "LicenseidTrail": {
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "expression": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Expression"
+        },
+        "input": {
+          "maxLength": 500,
+          "title": "Input",
+          "type": "string"
+        },
+        "key": {
+          "title": "Key",
+          "type": "string"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        },
+        "trust": {
+          "title": "Trust",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "input",
+        "expression",
+        "category",
+        "trust"
+      ],
+      "title": "LicenseidTrail",
+      "type": "object"
+    },
+    "NameValue": {
+      "additionalProperties": false,
+      "properties": {
+        "accepted": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Accepted",
+          "type": "array"
+        },
+        "canonical_key": {
+          "minLength": 1,
+          "title": "Canonical Key",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "canonical_key",
+        "accepted"
+      ],
+      "title": "NameValue",
+      "type": "object"
+    },
+    "Observation": {
+      "additionalProperties": false,
+      "description": "One declared value exactly as the source stores it (e-mails redacted, long strings cut).",
+      "properties": {
+        "codemeta": {
+          "anyOf": [
+            {
+              "enum": [
+                "name",
+                "license",
+                "author",
+                "maintainer",
+                "contributor"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Codemeta"
+        },
+        "element": {
+          "enum": [
+            "name",
+            "provider",
+            "license"
+          ],
+          "title": "Element",
+          "type": "string"
+        },
+        "field_path": {
+          "minLength": 1,
+          "title": "Field Path",
+          "type": "string"
+        },
+        "format_validity": {
+          "anyOf": [
+            {
+              "enum": [
+                "valid",
+                "noncanonical",
+                "deprecated",
+                "unknown_id",
+                "malformed",
+                "not_applicable"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Format Validity"
+        },
+        "has_email": {
+          "default": false,
+          "title": "Has Email",
+          "type": "boolean"
+        },
+        "inherited_from": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Inherited From"
+        },
+        "native_type": {
+          "enum": [
+            "string",
+            "number",
+            "bool",
+            "null",
+            "absent",
+            "object",
+            "list_of_strings",
+            "list_of_objects",
+            "list_mixed",
+            "list_empty"
+          ],
+          "title": "Native Type",
+          "type": "string"
+        },
+        "present": {
+          "default": true,
+          "title": "Present",
+          "type": "boolean"
+        },
+        "raw": {
+          "$ref": "#/$defs/JsonValue",
+          "default": null
+        },
+        "raw_length": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Length"
+        },
+        "raw_sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Sha256"
+        },
+        "raw_truncated": {
+          "default": false,
+          "title": "Raw Truncated",
+          "type": "boolean"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "enum": [
+                "author",
+                "maintainer",
+                "contributor",
+                "owner",
+                "publisher",
+                "organization"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Role"
+        },
+        "semantic_format": {
+          "anyOf": [
+            {
+              "enum": [
+                "empty",
+                "placeholder",
+                "license_text",
+                "spdx_url",
+                "osi_url",
+                "nuget_license_url",
+                "other_url",
+                "trove_classifier",
+                "file_ref",
+                "id_shaped",
+                "expression_shaped",
+                "nonstandard_compound",
+                "prose"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Semantic Format"
+        },
+        "source": {
+          "enum": [
+            "pypi_json",
+            "METADATA",
+            "PKG-INFO",
+            "pyproject.toml",
+            "npm_registry",
+            "package.json",
+            "crates_api",
+            "Cargo.toml",
+            "Cargo.toml.orig",
+            "pom.xml",
+            "nuget_catalog",
+            "nuspec",
+            "hf_api",
+            "hf_card"
+          ],
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "element",
+        "source",
+        "field_path",
+        "native_type"
+      ],
+      "title": "Observation",
+      "type": "object"
+    },
+    "Platform": {
+      "additionalProperties": false,
+      "properties": {
+        "artifacts": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Artifact"
+          },
+          "title": "Artifacts",
+          "type": "array"
+        },
+        "ecosystem": {
+          "enum": [
+            "pypi",
+            "npm",
+            "cargo",
+            "maven",
+            "nuget",
+            "huggingface"
+          ],
+          "title": "Ecosystem",
+          "type": "string"
+        },
+        "html_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Html Url"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "observations": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Observation"
+          },
+          "title": "Observations",
+          "type": "array"
+        },
+        "response_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Response Sha256",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "source_url": {
+          "title": "Source Url",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ecosystem",
+        "source_url",
+        "retrieved_at",
+        "response_sha256",
+        "name",
+        "version"
+      ],
+      "title": "Platform",
+      "type": "object"
+    },
+    "ProviderEntity": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "role": {
+          "default": "author",
+          "enum": [
+            "author",
+            "maintainer",
+            "contributor",
+            "owner",
+            "publisher",
+            "organization"
+          ],
+          "title": "Role",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "ProviderEntity",
+      "type": "object"
+    },
+    "ProviderValue": {
+      "additionalProperties": false,
+      "properties": {
+        "entities": {
+          "items": {
+            "$ref": "#/$defs/ProviderEntity"
+          },
+          "title": "Entities",
+          "type": "array"
+        },
+        "has_unnamed_group": {
+          "default": false,
+          "title": "Has Unnamed Group",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "entities"
+      ],
+      "title": "ProviderValue",
+      "type": "object"
+    },
+    "Subject": {
+      "additionalProperties": false,
+      "properties": {
+        "challenge_tags": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Challenge Tags",
+          "type": "array"
+        },
+        "expected": {
+          "$ref": "#/$defs/ExpectedSet"
+        },
+        "files": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 20,
+          "title": "Files",
+          "type": "array"
+        },
+        "files_count": {
+          "default": 0,
+          "title": "Files Count",
+          "type": "integer"
+        },
+        "id": {
+          "pattern": "^(root|model:[1-9][0-9]*)$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "package",
+            "model"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "locator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Locator"
+        },
+        "manifest_files": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Manifest Files",
+          "type": "array"
+        },
+        "manifest_observations": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Observation"
+          },
+          "title": "Manifest Observations",
+          "type": "array"
+        },
+        "model_format": {
+          "anyOf": [
+            {
+              "enum": [
+                "onnx",
+                "gguf",
+                "safetensors",
+                "pytorch",
+                "pytorch_pt2",
+                "keras",
+                "fasttext",
+                "crfsuite",
+                "hdf5",
+                "numpy",
+                "unknown"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Format"
+        },
+        "size_bytes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Size Bytes"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "expected"
+      ],
+      "title": "Subject",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "collected_with": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Collected With",
+      "type": "object"
+    },
+    "ecosystem": {
+      "enum": [
+        "pypi",
+        "npm",
+        "cargo",
+        "maven",
+        "nuget",
+        "huggingface"
+      ],
+      "title": "Ecosystem",
+      "type": "string"
+    },
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "platform": {
+      "$ref": "#/$defs/Platform"
+    },
+    "rank": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Rank"
+    },
+    "schema_version": {
+      "const": "0.1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "stratum": {
+      "enum": [
+        "top",
+        "mid",
+        "edge"
+      ],
+      "title": "Stratum",
+      "type": "string"
+    },
+    "subjects": {
+      "items": {
+        "$ref": "#/$defs/Subject"
+      },
+      "minItems": 1,
+      "title": "Subjects",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "ecosystem",
+    "stratum",
+    "collected_with",
+    "platform",
+    "subjects"
+  ],
+  "title": "Entry",
+  "type": "object"
+}

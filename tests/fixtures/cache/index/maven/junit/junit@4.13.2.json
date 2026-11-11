@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "declared_digest": null,
+    "fetched": true,
+    "filename": "junit-4.13.2.pom",
+    "kind": "pom",
+    "sha256": "569b6977ee4603c965c1c46c3058fa6e969291b0160eb6964dd092cd89eadd94",
+    "size_bytes": 27018,
+    "skip_reason": null,
+    "url": "https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom"
+  },
+  "ecosystem": "maven",
+  "fetched_at": "2026-11-08T23:01:37Z",
+  "files": [],
+  "files_count": 0,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "junit:junit",
+  "purl": "pkg:maven/junit/junit@4.13.2",
+  "rank": null,
+  "responses": {
+    "pom": "https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom"
+  },
+  "stratum": "edge",
+  "tags": [
+    "artifact_not_scanned"
+  ],
+  "version": "4.13.2"
+}

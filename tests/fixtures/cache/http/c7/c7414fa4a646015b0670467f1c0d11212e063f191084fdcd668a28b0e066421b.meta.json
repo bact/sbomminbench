@@ -1,0 +1,8 @@
+{
+  "content_type": "application/json",
+  "fetched_at": "2026-11-08T23:01:50Z",
+  "final_url": "https://api.nuget.org/v3/catalog0/data/2026.04.14.01.02.52/log4net.3.0.1.json",
+  "has_body": true,
+  "status": 200,
+  "url": "https://api.nuget.org/v3/catalog0/data/2026.04.14.01.02.52/log4net.3.0.1.json"
+}

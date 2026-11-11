@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "declared_digest": "sha512-vuyHg81vvWA1Z1ELfvLko2c8f34gyA0zaic0+Rllc5lbCnbSyuvb2Oxpm6TAUAC/2xZN3QGqxBNggD1nNR2AfQ==",
+    "fetched": true,
+    "filename": "node-22.9.0.tgz",
+    "kind": "npm_tarball",
+    "sha256": "8c502db09acce005d8ed708c3be1bd4bf50255aab4ec47bcc38321c453ac01e4",
+    "size_bytes": 417163,
+    "skip_reason": null,
+    "url": "https://registry.npmjs.org/@types/node/-/node-22.9.0.tgz"
+  },
+  "ecosystem": "npm",
+  "fetched_at": "2026-11-08T23:01:23Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "package.json": "node/package.json"
+  },
+  "members_dir": "members/8c502db09acce005d8ed708c3be1bd4bf50255aab4ec47bcc38321c453ac01e4",
+  "model_members": [],
+  "name": "@types/node",
+  "purl": "pkg:npm/%40types/node@22.9.0",
+  "rank": null,
+  "responses": {
+    "platform": "https://registry.npmjs.org/@types%2Fnode/22.9.0"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "22.9.0"
+}

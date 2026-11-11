@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE project [<!ENTITY lic "Apache-2.0">]>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>example.synthetic</groupId>
+  <artifactId>doctype-pom</artifactId>
+  <version>1.0</version>
+  <licenses><license><name>&lic;</name></license></licenses>
+</project>

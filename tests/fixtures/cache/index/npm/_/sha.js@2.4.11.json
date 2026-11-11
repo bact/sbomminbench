@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "declared_digest": "sha512-QMEp5B7cftE7APOjk5Y6xgrbWu+WkLVQwk8JNjZ8nKRciZaByEW6MubieAiToS7+dwvrjGhH8jRXz3MVd0AYqQ==",
+    "fetched": true,
+    "filename": "sha.js-2.4.11.tgz",
+    "kind": "npm_tarball",
+    "sha256": "a3ccf27df7edd393c7526cf608620f50bec8ef284975e59adb24ff4eb8d36c49",
+    "size_bytes": 9975,
+    "skip_reason": null,
+    "url": "https://registry.npmjs.org/sha.js/-/sha.js-2.4.11.tgz"
+  },
+  "ecosystem": "npm",
+  "fetched_at": "2026-11-08T23:01:22Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "package.json": "package/package.json"
+  },
+  "members_dir": "members/a3ccf27df7edd393c7526cf608620f50bec8ef284975e59adb24ff4eb8d36c49",
+  "model_members": [],
+  "name": "sha.js",
+  "purl": "pkg:npm/sha.js@2.4.11",
+  "rank": null,
+  "responses": {
+    "platform": "https://registry.npmjs.org/sha.js/2.4.11"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "2.4.11"
+}

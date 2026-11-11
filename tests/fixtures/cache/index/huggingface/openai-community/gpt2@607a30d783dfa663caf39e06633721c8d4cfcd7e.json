@@ -1,0 +1,35 @@
+{
+  "artifact": {
+    "declared_digest": null,
+    "fetched": false,
+    "filename": null,
+    "kind": "hf_repo",
+    "sha256": null,
+    "size_bytes": null,
+    "skip_reason": "not_needed",
+    "url": "https://huggingface.co/openai-community/gpt2/tree/607a30d783dfa663caf39e06633721c8d4cfcd7e"
+  },
+  "ecosystem": "huggingface",
+  "fetched_at": "2026-11-08T22:48:13Z",
+  "files": [
+    "model.safetensors",
+    "onnx/decoder_model.onnx",
+    "onnx/decoder_model_merged.onnx",
+    "onnx/decoder_with_past_model.onnx"
+  ],
+  "files_count": 4,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "openai-community/gpt2",
+  "purl": "pkg:huggingface/openai-community/gpt2@607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "rank": null,
+  "responses": {
+    "platform": "https://huggingface.co/api/models/gpt2/revision/607a30d783dfa663caf39e06633721c8d4cfcd7e"
+  },
+  "stratum": "edge",
+  "tags": [
+    "hf_renamed"
+  ],
+  "version": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+}

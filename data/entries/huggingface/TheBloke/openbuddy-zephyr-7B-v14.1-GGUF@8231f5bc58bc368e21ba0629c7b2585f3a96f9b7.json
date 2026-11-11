@@ -1,0 +1,215 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/TheBloke/openbuddy-zephyr-7B-v14.1-GGUF@8231f5bc58bc368e21ba0629c7b2585f3a96f9b7",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/TheBloke/openbuddy-zephyr-7B-v14.1-GGUF/tree/8231f5bc58bc368e21ba0629c7b2585f3a96f9b7"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/TheBloke/openbuddy-zephyr-7B-v14.1-GGUF",
+    "name": "TheBloke/openbuddy-zephyr-7B-v14.1-GGUF",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "TheBloke",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "TheBloke/openbuddy-zephyr-7B-v14.1-GGUF",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[5]",
+        "format_validity": "noncanonical",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:apache-2.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "548916d274a91ca1f07c5af0e4680c7fa1abe21926d64357698ed5c71d0f213d",
+    "retrieved_at": "2026-11-09T08:55:05Z",
+    "source_url": "https://huggingface.co/api/models/TheBloke/openbuddy-zephyr-7B-v14.1-GGUF/revision/8231f5bc58bc368e21ba0629c7b2585f3a96f9b7",
+    "version": "8231f5bc58bc368e21ba0629c7b2585f3a96f9b7"
+  },
+  "rank": 5840,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_spdx_noncanonical"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:tags[5]",
+            "hf_card:cardData.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_api:tags[5]",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "Apache-2.0",
+              "input": "apache-2.0",
+              "key": "hf_card:cardData.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "openbuddy-zephyr-7B-v14.1-GGUF",
+              "TheBloke/openbuddy-zephyr-7B-v14.1-GGUF"
+            ],
+            "canonical_key": "thebloke/openbuddy-zephyr-7b-v14.1-gguf",
+            "name": "openbuddy-zephyr-7B-v14.1-GGUF"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "TheBloke",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "openbuddy-zephyr-7b-v14.1.Q2_K.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q3_K_L.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q3_K_M.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q3_K_S.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q4_0.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q4_K_M.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q4_K_S.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q5_0.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q5_K_M.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q5_K_S.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q6_K.gguf",
+        "openbuddy-zephyr-7b-v14.1.Q8_0.gguf"
+      ],
+      "files_count": 12,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "noncanonical",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": "gguf",
+      "size_bytes": null
+    }
+  ]
+}

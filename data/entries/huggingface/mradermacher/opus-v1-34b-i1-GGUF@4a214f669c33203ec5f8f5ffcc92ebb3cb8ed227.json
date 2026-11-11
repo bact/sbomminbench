@@ -1,0 +1,223 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/mradermacher/opus-v1-34b-i1-GGUF@4a214f669c33203ec5f8f5ffcc92ebb3cb8ed227",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/mradermacher/opus-v1-34b-i1-GGUF/tree/4a214f669c33203ec5f8f5ffcc92ebb3cb8ed227"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/mradermacher/opus-v1-34b-i1-GGUF",
+    "name": "mradermacher/opus-v1-34b-i1-GGUF",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "mradermacher",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "mradermacher/opus-v1-34b-i1-GGUF",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[7]",
+        "format_validity": "noncanonical",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:cc-by-nc-nd-4.0",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "3f1b73062b955f85d7007c2c41131303dce79ad09aebcf48ed819147399548d6",
+    "retrieved_at": "2026-11-09T08:55:07Z",
+    "source_url": "https://huggingface.co/api/models/mradermacher/opus-v1-34b-i1-GGUF/revision/4a214f669c33203ec5f8f5ffcc92ebb3cb8ed227",
+    "version": "4a214f669c33203ec5f8f5ffcc92ebb3cb8ed227"
+  },
+  "rank": 8243,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_spdx_noncanonical"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:tags[7]",
+            "hf_card:cardData.license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "lexical",
+              "expression": "CC-BY-NC-ND-4.0",
+              "input": "cc-by-nc-nd-4.0",
+              "key": "hf_api:tags[7]",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "lexical",
+              "expression": "CC-BY-NC-ND-4.0",
+              "input": "cc-by-nc-nd-4.0",
+              "key": "hf_card:cardData.license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "CC-BY-NC-ND-4.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "opus-v1-34b-i1-GGUF",
+              "mradermacher/opus-v1-34b-i1-GGUF"
+            ],
+            "canonical_key": "mradermacher/opus-v1-34b-i1-gguf",
+            "name": "opus-v1-34b-i1-GGUF"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "mradermacher",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "opus-v1-34b.i1-IQ1_M.gguf",
+        "opus-v1-34b.i1-IQ1_S.gguf",
+        "opus-v1-34b.i1-IQ2_M.gguf",
+        "opus-v1-34b.i1-IQ2_S.gguf",
+        "opus-v1-34b.i1-IQ2_XS.gguf",
+        "opus-v1-34b.i1-IQ2_XXS.gguf",
+        "opus-v1-34b.i1-IQ3_M.gguf",
+        "opus-v1-34b.i1-IQ3_S.gguf",
+        "opus-v1-34b.i1-IQ3_XS.gguf",
+        "opus-v1-34b.i1-IQ3_XXS.gguf",
+        "opus-v1-34b.i1-IQ4_XS.gguf",
+        "opus-v1-34b.i1-Q2_K.gguf",
+        "opus-v1-34b.i1-Q3_K_L.gguf",
+        "opus-v1-34b.i1-Q3_K_M.gguf",
+        "opus-v1-34b.i1-Q3_K_S.gguf",
+        "opus-v1-34b.i1-Q4_0.gguf",
+        "opus-v1-34b.i1-Q4_K_M.gguf",
+        "opus-v1-34b.i1-Q4_K_S.gguf",
+        "opus-v1-34b.i1-Q5_K_M.gguf",
+        "opus-v1-34b.i1-Q5_K_S.gguf"
+      ],
+      "files_count": 21,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "noncanonical",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "cc-by-nc-nd-4.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

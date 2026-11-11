@@ -1,0 +1,8 @@
+{
+  "content_type": "application/json; charset=utf-8",
+  "fetched_at": "2026-11-08T22:48:12Z",
+  "final_url": "https://huggingface.co/api/models/stabilityai/stable-diffusion-xl-base-1.0/revision/462165984030d82259a11f4367a4eed129e94a7b",
+  "has_body": true,
+  "status": 200,
+  "url": "https://huggingface.co/api/models/stabilityai/stable-diffusion-xl-base-1.0/revision/462165984030d82259a11f4367a4eed129e94a7b"
+}

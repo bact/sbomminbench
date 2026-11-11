@@ -1,0 +1,44 @@
+{
+  "artifact": {
+    "declared_digest": "sha256:c442971160026d2d7aa0ad83f0c7ee86c89797a65289fe625c8ea59fc6fb828d",
+    "fetched": true,
+    "filename": "silero_vad-5.1.2.tar.gz",
+    "kind": "sdist",
+    "sha256": "c442971160026d2d7aa0ad83f0c7ee86c89797a65289fe625c8ea59fc6fb828d",
+    "size_bytes": 5098526,
+    "skip_reason": null,
+    "url": "https://files.pythonhosted.org/packages/b1/b4/d0311b2e6220a11f8f4699f4a278cb088131573286cdfe804c87c7eb5123/silero_vad-5.1.2.tar.gz"
+  },
+  "ecosystem": "pypi",
+  "fetched_at": "2026-11-08T22:48:07Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "PKG-INFO": "silero_vad-5.1.2/PKG-INFO",
+    "pyproject.toml": "silero_vad-5.1.2/pyproject.toml"
+  },
+  "members_dir": "members/c442971160026d2d7aa0ad83f0c7ee86c89797a65289fe625c8ea59fc6fb828d",
+  "model_members": [
+    {
+      "format": "onnx",
+      "path": "silero_vad-5.1.2/src/silero_vad/data/silero_vad.onnx",
+      "size": 2327524
+    },
+    {
+      "format": "onnx",
+      "path": "silero_vad-5.1.2/src/silero_vad/data/silero_vad_half.onnx",
+      "size": 1280395
+    }
+  ],
+  "name": "silero-vad",
+  "purl": "pkg:pypi/silero-vad@5.1.2",
+  "rank": null,
+  "responses": {
+    "platform": "https://pypi.org/pypi/silero-vad/5.1.2/json"
+  },
+  "stratum": "edge",
+  "tags": [
+    "embedded_models"
+  ],
+  "version": "5.1.2"
+}

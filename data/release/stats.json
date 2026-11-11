@@ -1,0 +1,1866 @@
+{
+  "audit": {
+    "all": {
+      "excluded": 0,
+      "k": 0,
+      "n": 0,
+      "wilson_high": null,
+      "wilson_low": null
+    },
+    "by_origins": {
+      "1": {
+        "k": 0,
+        "n": 0,
+        "wilson_high": null,
+        "wilson_low": null
+      },
+      "2+": {
+        "k": 0,
+        "n": 0,
+        "wilson_high": null,
+        "wilson_low": null
+      }
+    },
+    "description": "precision of silver labels on root subjects, non-blind",
+    "license": {
+      "excluded": 0,
+      "k": 0,
+      "n": 0,
+      "wilson_high": null,
+      "wilson_low": null
+    },
+    "name": {
+      "excluded": 0,
+      "k": 0,
+      "n": 0,
+      "wilson_high": null,
+      "wilson_low": null
+    },
+    "provider": {
+      "excluded": 0,
+      "k": 0,
+      "n": 0,
+      "wilson_high": null,
+      "wilson_low": null
+    }
+  },
+  "collected_with": {
+    "license_list": [
+      "3.29.0"
+    ],
+    "license_list_format": [
+      "3.27.0"
+    ],
+    "licenseid": [
+      "0.8.4"
+    ],
+    "pitloom": [
+      "0.24.0"
+    ],
+    "sbomminbench": [
+      "0.1.0"
+    ]
+  },
+  "counts": {
+    "entries": 640,
+    "subjects": 643
+  },
+  "format_by_licenseid_category": {
+    "by_category": {
+      "empty": {
+        "no_trail": 77
+      },
+      "expression_shaped": {
+        "exact": 35,
+        "lexical": 188
+      },
+      "file_ref": {
+        "no_trail": 24
+      },
+      "id_shaped": {
+        "exact": 643,
+        "lexical": 80,
+        "no_trail": 86,
+        "unresolved": 16
+      },
+      "license_text": {
+        "no_trail": 8
+      },
+      "nonstandard_compound": {
+        "separator": 18
+      },
+      "nuget_license_url": {
+        "no_trail": 130
+      },
+      "osi_url": {
+        "license_url": 13,
+        "unresolved": 2
+      },
+      "other_url": {
+        "assumed_only": 2,
+        "deprecated_ambiguous": 1,
+        "license_url": 79,
+        "unresolved": 112
+      },
+      "placeholder": {
+        "no_trail": 18
+      },
+      "prose": {
+        "alias_name": 3,
+        "listed_name": 9,
+        "no_trail": 1,
+        "prose_form": 52,
+        "separator": 8,
+        "unresolved": 23,
+        "version_spelling": 2
+      },
+      "spdx_url": {
+        "license_url": 1
+      },
+      "trove_classifier": {
+        "listed_name": 65,
+        "no_trail": 4,
+        "unresolved": 33
+      }
+    },
+    "by_reading": {
+      "empty": {
+        "other": 77
+      },
+      "expression_shaped": {
+        "other": 223
+      },
+      "file_ref": {
+        "other": 24
+      },
+      "id_shaped": {
+        "other": 825
+      },
+      "license_text": {
+        "other": 8
+      },
+      "nonstandard_compound": {
+        "variant": 18
+      },
+      "nuget_license_url": {
+        "other": 130
+      },
+      "osi_url": {
+        "other": 15
+      },
+      "other_url": {
+        "other": 194
+      },
+      "placeholder": {
+        "other": 18
+      },
+      "prose": {
+        "full_name": 9,
+        "other": 24,
+        "variant": 65
+      },
+      "spdx_url": {
+        "other": 1
+      },
+      "trove_classifier": {
+        "full_name": 65,
+        "other": 37
+      }
+    }
+  },
+  "frame_dates": {
+    "cargo": [
+      "2026-11-09"
+    ],
+    "huggingface": [
+      "2026-11-09"
+    ],
+    "maven": [
+      "2026-11-09"
+    ],
+    "npm": [
+      "2026-11-09"
+    ],
+    "nuget": [
+      "2026-11-09"
+    ],
+    "pypi": [
+      "2026-11-09"
+    ]
+  },
+  "independent_origins": {
+    "all": {
+      "license": {
+        "0": 100,
+        "1": 473,
+        "2": 70
+      },
+      "name": {
+        "0": 3,
+        "1": 563,
+        "2": 77
+      },
+      "provider": {
+        "0": 83,
+        "1": 494,
+        "2": 66
+      }
+    },
+    "auto_unanimous": {
+      "license": {
+        "1": 465,
+        "2": 70
+      },
+      "name": {
+        "1": 563,
+        "2": 77
+      },
+      "provider": {
+        "1": 489,
+        "2": 61
+      }
+    }
+  },
+  "license_conformance": {
+    "cargo": {
+      "Cargo.toml.orig:package.license": {
+        "conforms": 86,
+        "lenient": 5,
+        "not_spdx": 0,
+        "violates": 1
+      },
+      "Cargo.toml:package.license": {
+        "conforms": 99,
+        "lenient": 5,
+        "not_spdx": 0,
+        "violates": 1
+      },
+      "crates_api:version.license": {
+        "conforms": 99,
+        "lenient": 5,
+        "not_spdx": 0,
+        "violates": 3
+      }
+    },
+    "huggingface": {
+      "hf_card:cardData.license_link": {
+        "conforms": 17,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 1
+      }
+    },
+    "maven": {
+      "pom.xml:licenses.license[].name": {
+        "conforms": 19,
+        "lenient": 0,
+        "not_spdx": 48,
+        "violates": 0
+      },
+      "pom.xml:licenses.license[].url": {
+        "conforms": 67,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      },
+      "pom.xml:parent[].licenses.license[].name": {
+        "conforms": 13,
+        "lenient": 0,
+        "not_spdx": 33,
+        "violates": 0
+      },
+      "pom.xml:parent[].licenses.license[].url": {
+        "conforms": 45,
+        "lenient": 1,
+        "not_spdx": 0,
+        "violates": 0
+      }
+    },
+    "npm": {
+      "npm_registry:license": {
+        "conforms": 105,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      },
+      "package.json:license": {
+        "conforms": 105,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      }
+    },
+    "nuget": {
+      "nuget_catalog:licenseExpression": {
+        "conforms": 65,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      },
+      "nuget_catalog:licenseUrl": {
+        "conforms": 105,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      },
+      "nuspec:metadata.license": {
+        "conforms": 65,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      },
+      "nuspec:metadata.licenseUrl": {
+        "conforms": 105,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      }
+    },
+    "pypi": {
+      "METADATA:License-Expression": {
+        "conforms": 1,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      },
+      "PKG-INFO:License-Expression": {
+        "conforms": 50,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      },
+      "pypi_json:info.license_expression": {
+        "conforms": 51,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      },
+      "pyproject.toml:project.license": {
+        "conforms": 51,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      },
+      "pyproject.toml:tool.poetry.license": {
+        "conforms": 2,
+        "lenient": 0,
+        "not_spdx": 0,
+        "violates": 0
+      }
+    }
+  },
+  "model_subjects_by_format": {
+    "gguf": 8,
+    "onnx": 5,
+    "pytorch": 1,
+    "safetensors": 41,
+    "unspecified": 50
+  },
+  "observation_counts": [
+    {
+      "field_path": "package.authors",
+      "format_validity": null,
+      "n": 24,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "Cargo.toml"
+    },
+    {
+      "field_path": "package.authors",
+      "format_validity": null,
+      "n": 83,
+      "native_type": "list_of_strings",
+      "semantic_format": null,
+      "source": "Cargo.toml"
+    },
+    {
+      "field_path": "package.license",
+      "format_validity": null,
+      "n": 2,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "Cargo.toml"
+    },
+    {
+      "field_path": "package.license",
+      "format_validity": "valid",
+      "n": 71,
+      "native_type": "string",
+      "semantic_format": "expression_shaped",
+      "source": "Cargo.toml"
+    },
+    {
+      "field_path": "package.license",
+      "format_validity": "valid",
+      "n": 28,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "Cargo.toml"
+    },
+    {
+      "field_path": "package.license",
+      "format_validity": "not_applicable",
+      "n": 6,
+      "native_type": "string",
+      "semantic_format": "nonstandard_compound",
+      "source": "Cargo.toml"
+    },
+    {
+      "field_path": "package.license-file",
+      "format_validity": "not_applicable",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "file_ref",
+      "source": "Cargo.toml"
+    },
+    {
+      "field_path": "package.name",
+      "format_validity": null,
+      "n": 107,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "Cargo.toml"
+    },
+    {
+      "field_path": "package.authors",
+      "format_validity": null,
+      "n": 75,
+      "native_type": "list_of_strings",
+      "semantic_format": null,
+      "source": "Cargo.toml.orig"
+    },
+    {
+      "field_path": "package.authors",
+      "format_validity": null,
+      "n": 7,
+      "native_type": "object",
+      "semantic_format": null,
+      "source": "Cargo.toml.orig"
+    },
+    {
+      "field_path": "package.license",
+      "format_validity": null,
+      "n": 12,
+      "native_type": "object",
+      "semantic_format": null,
+      "source": "Cargo.toml.orig"
+    },
+    {
+      "field_path": "package.license",
+      "format_validity": "valid",
+      "n": 65,
+      "native_type": "string",
+      "semantic_format": "expression_shaped",
+      "source": "Cargo.toml.orig"
+    },
+    {
+      "field_path": "package.license",
+      "format_validity": "valid",
+      "n": 21,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "Cargo.toml.orig"
+    },
+    {
+      "field_path": "package.license",
+      "format_validity": "not_applicable",
+      "n": 6,
+      "native_type": "string",
+      "semantic_format": "nonstandard_compound",
+      "source": "Cargo.toml.orig"
+    },
+    {
+      "field_path": "package.license-file",
+      "format_validity": "not_applicable",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "file_ref",
+      "source": "Cargo.toml.orig"
+    },
+    {
+      "field_path": "package.name",
+      "format_validity": null,
+      "n": 106,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "Cargo.toml.orig"
+    },
+    {
+      "field_path": "Author",
+      "format_validity": null,
+      "n": 1,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "METADATA"
+    },
+    {
+      "field_path": "Author",
+      "format_validity": null,
+      "n": 4,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "METADATA"
+    },
+    {
+      "field_path": "Author-email",
+      "format_validity": null,
+      "n": 5,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "METADATA"
+    },
+    {
+      "field_path": "Classifier[]",
+      "format_validity": "not_applicable",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "trove_classifier",
+      "source": "METADATA"
+    },
+    {
+      "field_path": "License",
+      "format_validity": null,
+      "n": 2,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "METADATA"
+    },
+    {
+      "field_path": "License",
+      "format_validity": "valid",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "METADATA"
+    },
+    {
+      "field_path": "License",
+      "format_validity": "not_applicable",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "prose",
+      "source": "METADATA"
+    },
+    {
+      "field_path": "License-Expression",
+      "format_validity": null,
+      "n": 4,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "METADATA"
+    },
+    {
+      "field_path": "License-Expression",
+      "format_validity": "valid",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "METADATA"
+    },
+    {
+      "field_path": "Maintainer-email",
+      "format_validity": null,
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "METADATA"
+    },
+    {
+      "field_path": "Name",
+      "format_validity": null,
+      "n": 5,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "METADATA"
+    },
+    {
+      "field_path": "Author",
+      "format_validity": null,
+      "n": 63,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "Author",
+      "format_validity": null,
+      "n": 42,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "Author-email",
+      "format_validity": null,
+      "n": 24,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "Author-email",
+      "format_validity": null,
+      "n": 81,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "Classifier[]",
+      "format_validity": "not_applicable",
+      "n": 39,
+      "native_type": "string",
+      "semantic_format": "trove_classifier",
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "License",
+      "format_validity": null,
+      "n": 62,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "License",
+      "format_validity": "unknown_id",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "License",
+      "format_validity": "valid",
+      "n": 28,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "License",
+      "format_validity": "not_applicable",
+      "n": 4,
+      "native_type": "string",
+      "semantic_format": "license_text",
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "License",
+      "format_validity": "not_applicable",
+      "n": 3,
+      "native_type": "string",
+      "semantic_format": "placeholder",
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "License",
+      "format_validity": "not_applicable",
+      "n": 6,
+      "native_type": "string",
+      "semantic_format": "prose",
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "License-Expression",
+      "format_validity": null,
+      "n": 55,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "License-Expression",
+      "format_validity": "valid",
+      "n": 4,
+      "native_type": "string",
+      "semantic_format": "expression_shaped",
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "License-Expression",
+      "format_validity": "valid",
+      "n": 46,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "Maintainer",
+      "format_validity": null,
+      "n": 10,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "Maintainer-email",
+      "format_validity": null,
+      "n": 30,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "Name",
+      "format_validity": null,
+      "n": 105,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "PKG-INFO"
+    },
+    {
+      "field_path": "version.crate",
+      "format_validity": null,
+      "n": 107,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "crates_api"
+    },
+    {
+      "field_path": "version.license",
+      "format_validity": "valid",
+      "n": 71,
+      "native_type": "string",
+      "semantic_format": "expression_shaped",
+      "source": "crates_api"
+    },
+    {
+      "field_path": "version.license",
+      "format_validity": "valid",
+      "n": 28,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "crates_api"
+    },
+    {
+      "field_path": "version.license",
+      "format_validity": "not_applicable",
+      "n": 6,
+      "native_type": "string",
+      "semantic_format": "nonstandard_compound",
+      "source": "crates_api"
+    },
+    {
+      "field_path": "version.license",
+      "format_validity": "not_applicable",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "placeholder",
+      "source": "crates_api"
+    },
+    {
+      "field_path": "version.published_by",
+      "format_validity": null,
+      "n": 17,
+      "native_type": "null",
+      "semantic_format": null,
+      "source": "crates_api"
+    },
+    {
+      "field_path": "version.published_by",
+      "format_validity": null,
+      "n": 90,
+      "native_type": "object",
+      "semantic_format": null,
+      "source": "crates_api"
+    },
+    {
+      "field_path": "author",
+      "format_validity": null,
+      "n": 102,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "hf_api"
+    },
+    {
+      "field_path": "id",
+      "format_validity": null,
+      "n": 102,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "hf_api"
+    },
+    {
+      "field_path": "tags[]",
+      "format_validity": "noncanonical",
+      "n": 80,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "hf_api"
+    },
+    {
+      "field_path": "tags[]",
+      "format_validity": "unknown_id",
+      "n": 5,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "hf_api"
+    },
+    {
+      "field_path": "tags[]",
+      "format_validity": "not_applicable",
+      "n": 6,
+      "native_type": "string",
+      "semantic_format": "placeholder",
+      "source": "hf_api"
+    },
+    {
+      "field_path": "tags[]",
+      "format_validity": "not_applicable",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "prose",
+      "source": "hf_api"
+    },
+    {
+      "field_path": "cardData.license",
+      "format_validity": null,
+      "n": 10,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "hf_card"
+    },
+    {
+      "field_path": "cardData.license",
+      "format_validity": "noncanonical",
+      "n": 80,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "hf_card"
+    },
+    {
+      "field_path": "cardData.license",
+      "format_validity": "unknown_id",
+      "n": 5,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "hf_card"
+    },
+    {
+      "field_path": "cardData.license",
+      "format_validity": "not_applicable",
+      "n": 6,
+      "native_type": "string",
+      "semantic_format": "placeholder",
+      "source": "hf_card"
+    },
+    {
+      "field_path": "cardData.license",
+      "format_validity": "not_applicable",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "prose",
+      "source": "hf_card"
+    },
+    {
+      "field_path": "cardData.license_link",
+      "format_validity": "not_applicable",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "file_ref",
+      "source": "hf_card"
+    },
+    {
+      "field_path": "cardData.license_link",
+      "format_validity": "valid",
+      "n": 17,
+      "native_type": "string",
+      "semantic_format": "other_url",
+      "source": "hf_card"
+    },
+    {
+      "field_path": "cardData.license_name",
+      "format_validity": "unknown_id",
+      "n": 5,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "hf_card"
+    },
+    {
+      "field_path": "_npmUser",
+      "format_validity": null,
+      "n": 107,
+      "native_type": "object",
+      "semantic_format": null,
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "author",
+      "format_validity": null,
+      "n": 27,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "author",
+      "format_validity": null,
+      "n": 77,
+      "native_type": "object",
+      "semantic_format": null,
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "author",
+      "format_validity": null,
+      "n": 3,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "contributors",
+      "format_validity": null,
+      "n": 18,
+      "native_type": "list_of_objects",
+      "semantic_format": null,
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "license",
+      "format_validity": null,
+      "n": 2,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "license",
+      "format_validity": "valid",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "expression_shaped",
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "license",
+      "format_validity": "not_applicable",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "file_ref",
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "license",
+      "format_validity": "valid",
+      "n": 102,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "licenses",
+      "format_validity": null,
+      "n": 2,
+      "native_type": "list_of_objects",
+      "semantic_format": null,
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "maintainers",
+      "format_validity": null,
+      "n": 107,
+      "native_type": "list_of_objects",
+      "semantic_format": null,
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "name",
+      "format_validity": null,
+      "n": 107,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "npm_registry"
+    },
+    {
+      "field_path": "authors",
+      "format_validity": null,
+      "n": 108,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "nuget_catalog"
+    },
+    {
+      "field_path": "id",
+      "format_validity": null,
+      "n": 108,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "nuget_catalog"
+    },
+    {
+      "field_path": "licenseExpression",
+      "format_validity": null,
+      "n": 43,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "nuget_catalog"
+    },
+    {
+      "field_path": "licenseExpression",
+      "format_validity": "valid",
+      "n": 65,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "nuget_catalog"
+    },
+    {
+      "field_path": "licenseFile",
+      "format_validity": "not_applicable",
+      "n": 8,
+      "native_type": "string",
+      "semantic_format": "file_ref",
+      "source": "nuget_catalog"
+    },
+    {
+      "field_path": "licenseFile",
+      "format_validity": "unknown_id",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "nuget_catalog"
+    },
+    {
+      "field_path": "licenseUrl",
+      "format_validity": "valid",
+      "n": 65,
+      "native_type": "string",
+      "semantic_format": "nuget_license_url",
+      "source": "nuget_catalog"
+    },
+    {
+      "field_path": "licenseUrl",
+      "format_validity": "valid",
+      "n": 40,
+      "native_type": "string",
+      "semantic_format": "other_url",
+      "source": "nuget_catalog"
+    },
+    {
+      "field_path": "metadata.authors",
+      "format_validity": null,
+      "n": 108,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "nuspec"
+    },
+    {
+      "field_path": "metadata.id",
+      "format_validity": null,
+      "n": 108,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "nuspec"
+    },
+    {
+      "field_path": "metadata.license",
+      "format_validity": null,
+      "n": 34,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "nuspec"
+    },
+    {
+      "field_path": "metadata.license",
+      "format_validity": "not_applicable",
+      "n": 9,
+      "native_type": "string",
+      "semantic_format": "file_ref",
+      "source": "nuspec"
+    },
+    {
+      "field_path": "metadata.license",
+      "format_validity": "valid",
+      "n": 65,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "nuspec"
+    },
+    {
+      "field_path": "metadata.license@type",
+      "format_validity": "not_applicable",
+      "n": 74,
+      "native_type": "string",
+      "semantic_format": "empty",
+      "source": "nuspec"
+    },
+    {
+      "field_path": "metadata.licenseUrl",
+      "format_validity": "valid",
+      "n": 65,
+      "native_type": "string",
+      "semantic_format": "nuget_license_url",
+      "source": "nuspec"
+    },
+    {
+      "field_path": "metadata.licenseUrl",
+      "format_validity": "valid",
+      "n": 40,
+      "native_type": "string",
+      "semantic_format": "other_url",
+      "source": "nuspec"
+    },
+    {
+      "field_path": "metadata.owners",
+      "format_validity": null,
+      "n": 42,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "nuspec"
+    },
+    {
+      "field_path": "author",
+      "format_validity": null,
+      "n": 27,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "package.json"
+    },
+    {
+      "field_path": "author",
+      "format_validity": null,
+      "n": 25,
+      "native_type": "object",
+      "semantic_format": null,
+      "source": "package.json"
+    },
+    {
+      "field_path": "author",
+      "format_validity": null,
+      "n": 55,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "package.json"
+    },
+    {
+      "field_path": "contributors",
+      "format_validity": null,
+      "n": 6,
+      "native_type": "list_of_objects",
+      "semantic_format": null,
+      "source": "package.json"
+    },
+    {
+      "field_path": "contributors",
+      "format_validity": null,
+      "n": 11,
+      "native_type": "list_of_strings",
+      "semantic_format": null,
+      "source": "package.json"
+    },
+    {
+      "field_path": "license",
+      "format_validity": null,
+      "n": 2,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "package.json"
+    },
+    {
+      "field_path": "license",
+      "format_validity": "valid",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "expression_shaped",
+      "source": "package.json"
+    },
+    {
+      "field_path": "license",
+      "format_validity": "not_applicable",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "file_ref",
+      "source": "package.json"
+    },
+    {
+      "field_path": "license",
+      "format_validity": "valid",
+      "n": 102,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "package.json"
+    },
+    {
+      "field_path": "licenses",
+      "format_validity": null,
+      "n": 2,
+      "native_type": "list_of_objects",
+      "semantic_format": null,
+      "source": "package.json"
+    },
+    {
+      "field_path": "maintainers",
+      "format_validity": null,
+      "n": 1,
+      "native_type": "list_of_objects",
+      "semantic_format": null,
+      "source": "package.json"
+    },
+    {
+      "field_path": "name",
+      "format_validity": null,
+      "n": 107,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "package.json"
+    },
+    {
+      "field_path": "artifactId",
+      "format_validity": null,
+      "n": 106,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "contributors.contributor[].name",
+      "format_validity": null,
+      "n": 423,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "developers.developer",
+      "format_validity": null,
+      "n": 11,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "developers.developer[].name",
+      "format_validity": null,
+      "n": 232,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "developers.developer[].organization",
+      "format_validity": null,
+      "n": 104,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "licenses.license",
+      "format_validity": null,
+      "n": 6,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "licenses.license[].name",
+      "format_validity": "unknown_id",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "licenses.license[].name",
+      "format_validity": "valid",
+      "n": 19,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "licenses.license[].name",
+      "format_validity": "not_applicable",
+      "n": 47,
+      "native_type": "string",
+      "semantic_format": "prose",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "licenses.license[].url",
+      "format_validity": "valid",
+      "n": 5,
+      "native_type": "string",
+      "semantic_format": "osi_url",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "licenses.license[].url",
+      "format_validity": "valid",
+      "n": 61,
+      "native_type": "string",
+      "semantic_format": "other_url",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "licenses.license[].url",
+      "format_validity": "valid",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "spdx_url",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "name",
+      "format_validity": null,
+      "n": 104,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "organization.name",
+      "format_validity": null,
+      "n": 28,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].contributors.contributor[].name",
+      "format_validity": null,
+      "n": 30,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].developers.developer[].name",
+      "format_validity": null,
+      "n": 240,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].developers.developer[].organization",
+      "format_validity": null,
+      "n": 83,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].licenses.license[].name",
+      "format_validity": "unknown_id",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].licenses.license[].name",
+      "format_validity": "valid",
+      "n": 13,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].licenses.license[].name",
+      "format_validity": "not_applicable",
+      "n": 32,
+      "native_type": "string",
+      "semantic_format": "prose",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].licenses.license[].url",
+      "format_validity": "valid",
+      "n": 10,
+      "native_type": "string",
+      "semantic_format": "osi_url",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].licenses.license[].url",
+      "format_validity": "noncanonical",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "other_url",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].licenses.license[].url",
+      "format_validity": "valid",
+      "n": 35,
+      "native_type": "string",
+      "semantic_format": "other_url",
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "parent[].organization.name",
+      "format_validity": null,
+      "n": 36,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pom.xml"
+    },
+    {
+      "field_path": "info.author",
+      "format_validity": null,
+      "n": 62,
+      "native_type": "null",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.author",
+      "format_validity": null,
+      "n": 48,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.author_email",
+      "format_validity": null,
+      "n": 22,
+      "native_type": "null",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.author_email",
+      "format_validity": null,
+      "n": 88,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.classifiers[]",
+      "format_validity": "not_applicable",
+      "n": 41,
+      "native_type": "string",
+      "semantic_format": "trove_classifier",
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license",
+      "format_validity": null,
+      "n": 63,
+      "native_type": "null",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license",
+      "format_validity": "not_applicable",
+      "n": 3,
+      "native_type": "string",
+      "semantic_format": "empty",
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license",
+      "format_validity": "unknown_id",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license",
+      "format_validity": "valid",
+      "n": 28,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license",
+      "format_validity": "not_applicable",
+      "n": 4,
+      "native_type": "string",
+      "semantic_format": "license_text",
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license",
+      "format_validity": "not_applicable",
+      "n": 1,
+      "native_type": "string",
+      "semantic_format": "placeholder",
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license",
+      "format_validity": "not_applicable",
+      "n": 9,
+      "native_type": "string",
+      "semantic_format": "prose",
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license_expression",
+      "format_validity": null,
+      "n": 59,
+      "native_type": "null",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license_expression",
+      "format_validity": "valid",
+      "n": 4,
+      "native_type": "string",
+      "semantic_format": "expression_shaped",
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.license_expression",
+      "format_validity": "valid",
+      "n": 47,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.maintainer",
+      "format_validity": null,
+      "n": 94,
+      "native_type": "null",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.maintainer",
+      "format_validity": null,
+      "n": 16,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.maintainer_email",
+      "format_validity": null,
+      "n": 72,
+      "native_type": "null",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.maintainer_email",
+      "format_validity": null,
+      "n": 38,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "info.name",
+      "format_validity": null,
+      "n": 110,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pypi_json"
+    },
+    {
+      "field_path": "project.authors",
+      "format_validity": null,
+      "n": 10,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "project.authors",
+      "format_validity": null,
+      "n": 65,
+      "native_type": "list_of_objects",
+      "semantic_format": null,
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "project.classifiers[]",
+      "format_validity": "not_applicable",
+      "n": 20,
+      "native_type": "string",
+      "semantic_format": "trove_classifier",
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "project.license",
+      "format_validity": null,
+      "n": 5,
+      "native_type": "absent",
+      "semantic_format": null,
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "project.license",
+      "format_validity": null,
+      "n": 19,
+      "native_type": "object",
+      "semantic_format": null,
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "project.license",
+      "format_validity": "valid",
+      "n": 4,
+      "native_type": "string",
+      "semantic_format": "expression_shaped",
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "project.license",
+      "format_validity": "valid",
+      "n": 47,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "project.maintainers",
+      "format_validity": null,
+      "n": 25,
+      "native_type": "list_of_objects",
+      "semantic_format": null,
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "project.name",
+      "format_validity": null,
+      "n": 75,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "tool.poetry.authors",
+      "format_validity": null,
+      "n": 2,
+      "native_type": "list_of_strings",
+      "semantic_format": null,
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "tool.poetry.license",
+      "format_validity": "valid",
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": "id_shaped",
+      "source": "pyproject.toml"
+    },
+    {
+      "field_path": "tool.poetry.name",
+      "format_validity": null,
+      "n": 2,
+      "native_type": "string",
+      "semantic_format": null,
+      "source": "pyproject.toml"
+    }
+  ],
+  "raw_form_agreement": {
+    "cargo": {
+      "license": {
+        "both": 107,
+        "equal": 93,
+        "overlap": 105
+      },
+      "name": {
+        "both": 107,
+        "equal": 107,
+        "overlap": 107
+      },
+      "provider": {
+        "both": 71,
+        "equal": 0,
+        "overlap": 0
+      }
+    },
+    "huggingface": {
+      "license": {
+        "both": 92,
+        "equal": 0,
+        "overlap": 0
+      }
+    },
+    "npm": {
+      "license": {
+        "both": 106,
+        "equal": 106,
+        "overlap": 106
+      },
+      "name": {
+        "both": 107,
+        "equal": 107,
+        "overlap": 107
+      },
+      "provider": {
+        "both": 88,
+        "equal": 0,
+        "overlap": 33
+      }
+    },
+    "nuget": {
+      "license": {
+        "both": 105,
+        "equal": 31,
+        "overlap": 105
+      },
+      "name": {
+        "both": 108,
+        "equal": 108,
+        "overlap": 108
+      },
+      "provider": {
+        "both": 108,
+        "equal": 81,
+        "overlap": 108
+      }
+    },
+    "pypi": {
+      "license": {
+        "both": 106,
+        "equal": 85,
+        "overlap": 102
+      },
+      "name": {
+        "both": 110,
+        "equal": 106,
+        "overlap": 106
+      },
+      "provider": {
+        "both": 109,
+        "equal": 26,
+        "overlap": 109
+      }
+    }
+  },
+  "status_counts": {
+    "cargo": {
+      "license": {
+        "auto_unanimous": 105,
+        "human_corrected": 2
+      },
+      "name": {
+        "auto_unanimous": 107
+      },
+      "provider": {
+        "absent_in_source": 24,
+        "auto_unanimous": 83
+      }
+    },
+    "huggingface": {
+      "license": {
+        "absent_in_source": 11,
+        "auto_unanimous": 80,
+        "human_corrected": 11
+      },
+      "name": {
+        "auto_unanimous": 102
+      },
+      "provider": {
+        "auto_unanimous": 102
+      }
+    },
+    "maven": {
+      "license": {
+        "absent_in_source": 6,
+        "auto_unanimous": 85,
+        "human_corrected": 15
+      },
+      "name": {
+        "auto_unanimous": 106
+      },
+      "provider": {
+        "absent_in_source": 15,
+        "auto_unanimous": 89,
+        "human_corrected": 2
+      }
+    },
+    "npm": {
+      "license": {
+        "absent_in_source": 1,
+        "auto_unanimous": 104,
+        "human_corrected": 2
+      },
+      "name": {
+        "auto_unanimous": 107
+      },
+      "provider": {
+        "absent_in_source": 27,
+        "auto_unanimous": 80
+      }
+    },
+    "nuget": {
+      "license": {
+        "absent_in_source": 3,
+        "auto_unanimous": 65,
+        "auto_unresolved": 2,
+        "excluded": 15,
+        "human_corrected": 23
+      },
+      "name": {
+        "auto_unanimous": 108
+      },
+      "provider": {
+        "absent_in_source": 1,
+        "auto_unanimous": 106,
+        "human_corrected": 1
+      }
+    },
+    "pypi": {
+      "license": {
+        "absent_in_source": 6,
+        "auto_unanimous": 96,
+        "human_corrected": 8,
+        "not_assessed": 3
+      },
+      "name": {
+        "auto_unanimous": 110,
+        "not_assessed": 3
+      },
+      "provider": {
+        "absent_in_source": 13,
+        "auto_unanimous": 90,
+        "auto_unresolved": 1,
+        "human_corrected": 6,
+        "not_assessed": 3
+      }
+    }
+  },
+  "tag_counts": {
+    "array_data_not_scanned": 4,
+    "artifact_not_scanned": 106,
+    "artifact_too_large": 1,
+    "author_absent_maintainer_only": 39,
+    "author_contains_collective": 19,
+    "author_email_only": 29,
+    "author_multi_in_one_string": 26,
+    "author_object_form": 149,
+    "author_org_like": 12,
+    "author_url_only": 1,
+    "embedded_models": 2,
+    "hf_gated": 4,
+    "hf_license_other": 6,
+    "hf_renamed": 1,
+    "license_absent": 20,
+    "license_compound": 77,
+    "license_file_only": 3,
+    "license_is_url": 224,
+    "license_list_or": 3,
+    "license_multiple_values": 6,
+    "license_nonstandard_compound": 6,
+    "license_placeholder": 11,
+    "license_prose": 78,
+    "license_ref_needed": 11,
+    "license_spdx_invalid": 15,
+    "license_spdx_noncanonical": 80,
+    "license_text_in_field": 4,
+    "license_trove_ambiguous": 13,
+    "license_trove_multiple": 1,
+    "license_trove_only": 8,
+    "license_unresolved_value": 31,
+    "maven_inherited": 46,
+    "maven_property_ref": 3,
+    "name_case_differs": 100,
+    "name_separator_differs": 4,
+    "version_normalized": 2,
+    "workspace_inherited": 13
+  }
+}

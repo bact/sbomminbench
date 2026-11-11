@@ -1,0 +1,181 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/RichardErkhov/01-ai_-_Yi-1.5-34B-32K-gguf@86c5df0ea500c7b43df3130a417f9c07725d2013",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/RichardErkhov/01-ai_-_Yi-1.5-34B-32K-gguf/tree/86c5df0ea500c7b43df3130a417f9c07725d2013"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/RichardErkhov/01-ai_-_Yi-1.5-34B-32K-gguf",
+    "name": "RichardErkhov/01-ai_-_Yi-1.5-34B-32K-gguf",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "RichardErkhov",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "RichardErkhov/01-ai_-_Yi-1.5-34B-32K-gguf",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "315644dfd516e4096e14e7adc9950acb0ab4d828f6e82d5d6bf7fe34285aeada",
+    "retrieved_at": "2026-11-09T08:55:08Z",
+    "source_url": "https://huggingface.co/api/models/RichardErkhov/01-ai_-_Yi-1.5-34B-32K-gguf/revision/86c5df0ea500c7b43df3130a417f9c07725d2013",
+    "version": "86c5df0ea500c7b43df3130a417f9c07725d2013"
+  },
+  "rank": 8231,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_absent"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "01-ai_-_Yi-1.5-34B-32K-gguf",
+              "RichardErkhov/01-ai_-_Yi-1.5-34B-32K-gguf"
+            ],
+            "canonical_key": "richarderkhov/01-ai_-_yi-1.5-34b-32k-gguf",
+            "name": "01-ai_-_Yi-1.5-34B-32K-gguf"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "RichardErkhov",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "Yi-1.5-34B-32K.IQ3_M.gguf",
+        "Yi-1.5-34B-32K.IQ3_S.gguf",
+        "Yi-1.5-34B-32K.IQ3_XS.gguf",
+        "Yi-1.5-34B-32K.IQ4_NL.gguf",
+        "Yi-1.5-34B-32K.IQ4_XS.gguf",
+        "Yi-1.5-34B-32K.Q2_K.gguf",
+        "Yi-1.5-34B-32K.Q3_K.gguf",
+        "Yi-1.5-34B-32K.Q3_K_L.gguf",
+        "Yi-1.5-34B-32K.Q3_K_M.gguf",
+        "Yi-1.5-34B-32K.Q3_K_S.gguf",
+        "Yi-1.5-34B-32K.Q4_0.gguf",
+        "Yi-1.5-34B-32K.Q4_1.gguf",
+        "Yi-1.5-34B-32K.Q4_K.gguf",
+        "Yi-1.5-34B-32K.Q4_K_M.gguf",
+        "Yi-1.5-34B-32K.Q4_K_S.gguf",
+        "Yi-1.5-34B-32K.Q5_0.gguf",
+        "Yi-1.5-34B-32K.Q5_1.gguf",
+        "Yi-1.5-34B-32K.Q5_K.gguf",
+        "Yi-1.5-34B-32K.Q5_K_M.gguf",
+        "Yi-1.5-34B-32K.Q5_K_S.gguf"
+      ],
+      "files_count": 22,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

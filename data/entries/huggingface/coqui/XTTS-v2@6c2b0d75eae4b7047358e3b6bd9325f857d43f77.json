@@ -1,0 +1,240 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/coqui/XTTS-v2@6c2b0d75eae4b7047358e3b6bd9325f857d43f77",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/coqui/XTTS-v2/tree/6c2b0d75eae4b7047358e3b6bd9325f857d43f77"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/coqui/XTTS-v2",
+    "name": "coqui/XTTS-v2",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "coqui",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "coqui/XTTS-v2",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[2]",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:other",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "placeholder",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "91df913ed779ee9265bc67329c3bc5f19fffdad228afcb4ab3f46d675300afc5",
+    "retrieved_at": "2026-11-09T08:55:00Z",
+    "source_url": "https://huggingface.co/api/models/coqui/XTTS-v2/revision/6c2b0d75eae4b7047358e3b6bd9325f857d43f77",
+    "version": "6c2b0d75eae4b7047358e3b6bd9325f857d43f77"
+  },
+  "rank": 52,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "hf_license_other",
+        "license_is_url",
+        "license_placeholder",
+        "license_ref_needed",
+        "license_spdx_invalid",
+        "license_unresolved_value"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "https://coqui.ai/cpml",
+              "key": "hf_card:cardData.license_link",
+              "reason": "not found: https://coqui.ai/cpml",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "coqui-public-model-license",
+              "key": "hf_card:cardData.license_name",
+              "reason": "not found: coqui-public-model-license",
+              "trust": "none"
+            }
+          ],
+          "note": "'coqui-public-model-license': unresolved (not found: coqui-public-model-license)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "XTTS-v2",
+              "coqui/XTTS-v2"
+            ],
+            "canonical_key": "coqui/xtts-v2",
+            "name": "XTTS-v2"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "coqui",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "dvae.pth",
+        "mel_stats.pth",
+        "model.pth",
+        "speakers_xtts.pth"
+      ],
+      "files_count": 4,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "other",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "placeholder",
+          "source": "hf_card"
+        },
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license_link",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://coqui.ai/cpml",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "hf_card"
+        },
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license_name",
+          "format_validity": "unknown_id",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "coqui-public-model-license",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": "pytorch",
+      "size_bytes": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "artifact": {
+    "declared_digest": "sha256:e3dd22c73936630b1cd79d0f412d6d9a53dc99ba5e3709b1ac53f56bc998e635",
+    "fetched": true,
+    "filename": "magika-0.6.1.tar.gz",
+    "kind": "sdist",
+    "sha256": "e3dd22c73936630b1cd79d0f412d6d9a53dc99ba5e3709b1ac53f56bc998e635",
+    "size_bytes": 3030234,
+    "skip_reason": null,
+    "url": "https://files.pythonhosted.org/packages/6d/18/ea70f6abd36f455037340f12c8125918c726d08cd6e01f0b76b6884e0c38/magika-0.6.1.tar.gz"
+  },
+  "ecosystem": "pypi",
+  "fetched_at": "2026-11-08T22:48:08Z",
+  "files": [],
+  "files_count": 0,
+  "members": {
+    "PKG-INFO": "magika-0.6.1/PKG-INFO",
+    "pyproject.toml": "magika-0.6.1/pyproject.toml"
+  },
+  "members_dir": "members/e3dd22c73936630b1cd79d0f412d6d9a53dc99ba5e3709b1ac53f56bc998e635",
+  "model_members": [
+    {
+      "format": "onnx",
+      "path": "magika-0.6.1/src/magika/models/standard_v3_2/model.onnx",
+      "size": 3163809
+    }
+  ],
+  "name": "magika",
+  "purl": "pkg:pypi/magika@0.6.1",
+  "rank": null,
+  "responses": {
+    "platform": "https://pypi.org/pypi/magika/0.6.1/json"
+  },
+  "stratum": "edge",
+  "tags": [
+    "embedded_models"
+  ],
+  "version": "0.6.1"
+}

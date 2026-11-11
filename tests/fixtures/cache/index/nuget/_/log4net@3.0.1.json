@@ -1,0 +1,30 @@
+{
+  "artifact": {
+    "declared_digest": "sha512:EIcyMjOU5bJFjlJGeWU56bTcAgVhSyrNyy3cpnxJYp8P+0gZa8XwDT95y4Bc20fSiHg9Qcz9/tmM5dhwa1rrcg==",
+    "fetched": false,
+    "filename": "log4net.3.0.1.nupkg",
+    "kind": "nupkg",
+    "sha256": null,
+    "size_bytes": null,
+    "skip_reason": "not_needed",
+    "url": "https://api.nuget.org/v3-flatcontainer/log4net/3.0.1/log4net.3.0.1.nupkg"
+  },
+  "ecosystem": "nuget",
+  "fetched_at": "2026-11-08T23:01:50Z",
+  "files": [],
+  "files_count": 0,
+  "members": {},
+  "members_dir": null,
+  "model_members": [],
+  "name": "log4net",
+  "purl": "pkg:nuget/log4net@3.0.1",
+  "rank": null,
+  "responses": {
+    "leaf": "https://api.nuget.org/v3/registration5-gz-semver2/log4net/3.0.1.json",
+    "nuspec": "https://api.nuget.org/v3-flatcontainer/log4net/3.0.1/log4net.nuspec",
+    "platform": "https://api.nuget.org/v3/catalog0/data/2026.04.14.01.02.52/log4net.3.0.1.json"
+  },
+  "stratum": "edge",
+  "tags": [],
+  "version": "3.0.1"
+}

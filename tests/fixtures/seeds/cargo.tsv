@@ -1,0 +1,6 @@
+name	version	stratum	rank	note
+serde	1.0.210	edge		MIT OR Apache-2.0 reordered
+winapi	0.3.9	edge		MIT/Apache-2.0
+ring	0.16.20	edge		platform non-standard plus license-file
+tokio	1.41.0	edge		authors probably Tokio Contributors
+clap	4.5.20	edge		license.workspace = true in .orig (UNVERIFIED)

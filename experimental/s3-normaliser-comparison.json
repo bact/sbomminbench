@@ -1,0 +1,143 @@
+{
+  "license-expression": {
+    "all": {
+      "answered": 435,
+      "correct": 433,
+      "subjects": 596
+    },
+    "auto_unanimous": {
+      "answered": 435,
+      "correct": 433,
+      "subjects": 535
+    },
+    "cargo": {
+      "answered": 99,
+      "correct": 99,
+      "subjects": 107
+    },
+    "huggingface": {
+      "answered": 80,
+      "correct": 80,
+      "subjects": 91
+    },
+    "human_corrected": {
+      "answered": 0,
+      "correct": 0,
+      "subjects": 61
+    },
+    "maven": {
+      "answered": 31,
+      "correct": 29,
+      "subjects": 100
+    },
+    "npm": {
+      "answered": 104,
+      "correct": 104,
+      "subjects": 106
+    },
+    "nuget": {
+      "answered": 65,
+      "correct": 65,
+      "subjects": 88
+    },
+    "pypi": {
+      "answered": 56,
+      "correct": 56,
+      "subjects": 104
+    }
+  },
+  "licenseid": {
+    "all": {
+      "answered": 527,
+      "correct": 522,
+      "subjects": 596
+    },
+    "auto_unanimous": {
+      "answered": 525,
+      "correct": 522,
+      "subjects": 535
+    },
+    "cargo": {
+      "answered": 105,
+      "correct": 105,
+      "subjects": 107
+    },
+    "huggingface": {
+      "answered": 80,
+      "correct": 80,
+      "subjects": 91
+    },
+    "human_corrected": {
+      "answered": 2,
+      "correct": 0,
+      "subjects": 61
+    },
+    "maven": {
+      "answered": 87,
+      "correct": 82,
+      "subjects": 100
+    },
+    "npm": {
+      "answered": 104,
+      "correct": 104,
+      "subjects": 106
+    },
+    "nuget": {
+      "answered": 65,
+      "correct": 65,
+      "subjects": 88
+    },
+    "pypi": {
+      "answered": 86,
+      "correct": 86,
+      "subjects": 104
+    }
+  },
+  "passthrough": {
+    "all": {
+      "answered": 594,
+      "correct": 433,
+      "subjects": 596
+    },
+    "auto_unanimous": {
+      "answered": 534,
+      "correct": 433,
+      "subjects": 535
+    },
+    "cargo": {
+      "answered": 107,
+      "correct": 99,
+      "subjects": 107
+    },
+    "huggingface": {
+      "answered": 91,
+      "correct": 80,
+      "subjects": 91
+    },
+    "human_corrected": {
+      "answered": 60,
+      "correct": 0,
+      "subjects": 61
+    },
+    "maven": {
+      "answered": 100,
+      "correct": 29,
+      "subjects": 100
+    },
+    "npm": {
+      "answered": 105,
+      "correct": 104,
+      "subjects": 106
+    },
+    "nuget": {
+      "answered": 88,
+      "correct": 65,
+      "subjects": 88
+    },
+    "pypi": {
+      "answered": 103,
+      "correct": 56,
+      "subjects": 104
+    }
+  }
+}

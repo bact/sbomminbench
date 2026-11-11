@@ -1,0 +1,593 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "maven",
+  "id": "pkg:maven/org.apache.logging.log4j/log4j-api@2.26.1",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": true,
+        "filename": "log4j-api-2.26.1.pom",
+        "kind": "pom",
+        "sha256": "c8ab868f9c532233bd12f311cea90a3f6de65ea07a7aa470c3e2bbf83b5c79fb",
+        "size_bytes": 4513,
+        "skip_reason": null,
+        "url": "https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.26.1/log4j-api-2.26.1.pom"
+      }
+    ],
+    "ecosystem": "maven",
+    "html_url": "https://central.sonatype.com/artifact/org.apache.logging.log4j/log4j-api/2.26.1",
+    "name": "org.apache.logging.log4j:log4j-api",
+    "observations": [],
+    "response_sha256": "c8ab868f9c532233bd12f311cea90a3f6de65ea07a7aa470c3e2bbf83b5c79fb",
+    "retrieved_at": "2026-11-11T08:15:00Z",
+    "source_url": "https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.26.1/log4j-api-2.26.1.pom",
+    "version": "2.26.1"
+  },
+  "rank": 43,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "artifact_not_scanned",
+        "license_is_url",
+        "maven_inherited"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:licenses.license[0].name",
+            "pom.xml:licenses.license[0].url"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "Apache-2.0",
+              "input": "Apache-2.0",
+              "key": "pom.xml:licenses.license[0].name",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "license_url",
+              "expression": "Apache-2.0",
+              "input": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+              "key": "pom.xml:licenses.license[0].url",
+              "reason": null,
+              "trust": "resolver_rule"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "Apache-2.0"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:artifactId"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "log4j-api",
+              "org.apache.logging.log4j:log4j-api"
+            ],
+            "canonical_key": "org.apache.logging.log4j:log4j-api",
+            "name": "log4j-api"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "pom.xml:parent[2].developers.developer[0].name",
+            "pom.xml:parent[2].developers.developer[10].name",
+            "pom.xml:parent[2].developers.developer[11].name",
+            "pom.xml:parent[2].developers.developer[12].name",
+            "pom.xml:parent[2].developers.developer[13].name",
+            "pom.xml:parent[2].developers.developer[1].name",
+            "pom.xml:parent[2].developers.developer[2].name",
+            "pom.xml:parent[2].developers.developer[3].name",
+            "pom.xml:parent[2].developers.developer[4].name",
+            "pom.xml:parent[2].developers.developer[5].name",
+            "pom.xml:parent[2].developers.developer[6].name",
+            "pom.xml:parent[2].developers.developer[7].name",
+            "pom.xml:parent[2].developers.developer[8].name",
+            "pom.xml:parent[2].developers.developer[9].name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Ralph Goers",
+                "role": "author"
+              },
+              {
+                "name": "Gary Gregory",
+                "role": "author"
+              },
+              {
+                "name": "Scott Deboy",
+                "role": "author"
+              },
+              {
+                "name": "Remko Popma",
+                "role": "author"
+              },
+              {
+                "name": "Nick Williams",
+                "role": "author"
+              },
+              {
+                "name": "Matt Sicker",
+                "role": "author"
+              },
+              {
+                "name": "Bruce Brouwer",
+                "role": "author"
+              },
+              {
+                "name": "Raman Gupta",
+                "role": "author"
+              },
+              {
+                "name": "Mikael Ståldal",
+                "role": "author"
+              },
+              {
+                "name": "Carter Kozak",
+                "role": "author"
+              },
+              {
+                "name": "Volkan Yazıcı",
+                "role": "author"
+              },
+              {
+                "name": "Ron Grabowski",
+                "role": "author"
+              },
+              {
+                "name": "Piotr P. Karwasz",
+                "role": "author"
+              },
+              {
+                "name": "Christian Grobmeier",
+                "role": "author"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "log4j-2.26.1.pom",
+        "log4j-api-2.26.1.pom",
+        "log4j-bom-2.26.1.pom"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "name",
+          "field_path": "artifactId",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "log4j-api",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].name",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Apache-2.0",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "licenses.license[0].url",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "Apache Log4j API",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[0].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Ralph Goers",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[0].organization",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Nextiva",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[10].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Volkan Yazıcı",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[11].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Ron Grabowski",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[12].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Piotr P. Karwasz",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[13].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Christian Grobmeier",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[1].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Gary Gregory",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[1].organization",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "The Apache Software Foundation",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[2].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Scott Deboy",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[3].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Remko Popma",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[4].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Nick Williams",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[5].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Matt Sicker",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[5].organization",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Apple",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[6].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Bruce Brouwer",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[7].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Raman Gupta",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[8].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Mikael Ståldal",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[8].organization",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Spotify",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "parent[2].developers.developer[9].name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "Carter Kozak",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "pom.xml"
+        },
+        {
+          "codemeta": null,
+          "element": "provider",
+          "field_path": "parent[2].organization.name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": "pkg:maven/org.apache.logging.log4j/log4j-bom@2.26.1",
+          "native_type": "string",
+          "present": true,
+          "raw": "The Apache Software Foundation",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "organization",
+          "semantic_format": null,
+          "source": "pom.xml"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

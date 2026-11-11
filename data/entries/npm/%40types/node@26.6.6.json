@@ -1,0 +1,514 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "npm",
+  "id": "pkg:npm/%40types/node@26.6.6",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": "sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog==",
+        "fetched": true,
+        "filename": "node-26.6.6.tgz",
+        "kind": "npm_tarball",
+        "sha256": "7ef006842f7a647868e9d53588148cb058008b107aea6a728143730bee020456",
+        "size_bytes": 480378,
+        "skip_reason": null,
+        "url": "https://registry.npmjs.org/@types/node/-/node-26.6.6.tgz"
+      }
+    ],
+    "ecosystem": "npm",
+    "html_url": "https://www.npmjs.com/package/@types/node/v/26.6.6",
+    "name": "@types/node",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "_npmUser",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "object",
+        "present": true,
+        "raw": {
+          "email": "email.redacted@example.com",
+          "name": "types"
+        },
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "publisher",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "author",
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "absent",
+        "present": false,
+        "raw": null,
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "author",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "contributor",
+        "element": "provider",
+        "field_path": "contributors",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "githubUsername": "Microsoft",
+            "name": "Microsoft TypeScript",
+            "url": "https://github.com/Microsoft"
+          },
+          {
+            "githubUsername": "jkomyno",
+            "name": "Alberto Schiabel",
+            "url": "https://github.com/jkomyno"
+          },
+          {
+            "githubUsername": "r3nya",
+            "name": "Andrew Makarov",
+            "url": "https://github.com/r3nya"
+          },
+          {
+            "githubUsername": "btoueg",
+            "name": "Benjamin Toueg",
+            "url": "https://github.com/btoueg"
+          },
+          {
+            "githubUsername": "touffy",
+            "name": "David Junger",
+            "url": "https://github.com/touffy"
+          },
+          {
+            "githubUsername": "mohsen1",
+            "name": "Mohsen Azimi",
+            "url": "https://github.com/mohsen1"
+          },
+          {
+            "githubUsername": "galkin",
+            "name": "Nikita Galkin",
+            "url": "https://github.com/galkin"
+          },
+          {
+            "githubUsername": "eps1lon",
+            "name": "Sebastian Silbermann",
+            "url": "https://github.com/eps1lon"
+          },
+          {
+            "githubUsername": "WilcoBakker",
+            "name": "Wilco Bakker",
+            "url": "https://github.com/WilcoBakker"
+          },
+          {
+            "githubUsername": "trivikr",
+            "name": "Trivikram Kamat",
+            "url": "https://github.com/trivikr"
+          },
+          {
+            "githubUsername": "yoursunny",
+            "name": "Junxiao Shi",
+            "url": "https://github.com/yoursunny"
+          },
+          {
+            "githubUsername": "ExE-Boss",
+            "name": "ExE Boss",
+            "url": "https://github.com/ExE-Boss"
+          },
+          {
+            "githubUsername": "peterblazejewicz",
+            "name": "Piotr Błażejewicz",
+            "url": "https://github.com/peterblazejewicz"
+          },
+          {
+            "githubUsername": "addaleax",
+            "name": "Anna Henningsen",
+            "url": "https://github.com/addaleax"
+          },
+          {
+            "githubUsername": "NodeJS",
+            "name": "NodeJS Contributors",
+            "url": "https://github.com/NodeJS"
+          },
+          {
+            "githubUsername": "LinusU",
+            "name": "Linus Unnebäck",
+            "url": "https://github.com/LinusU"
+          },
+          {
+            "githubUsername": "wafuwafu13",
+            "name": "wafuwafu13",
+            "url": "https://github.com/wafuwafu13"
+          },
+          {
+            "githubUsername": "mcollina",
+            "name": "Matteo Collina",
+            "url": "https://github.com/mcollina"
+          },
+          {
+            "githubUsername": "Semigradsky",
+            "name": "Dmitry Semigradsky",
+            "url": "https://github.com/Semigradsky"
+          },
+          {
+            "githubUsername": "Renegade334",
+            "name": "René",
+            "url": "https://github.com/Renegade334"
+          },
+          {
+            "githubUsername": "anonrig",
+            "name": "Yagiz Nizipli",
+            "url": "https://github.com/anonrig"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "contributor",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "license",
+        "element": "license",
+        "field_path": "license",
+        "format_validity": "valid",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "MIT",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "id_shaped",
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "maintainers",
+        "format_validity": null,
+        "has_email": true,
+        "inherited_from": null,
+        "native_type": "list_of_objects",
+        "present": true,
+        "raw": [
+          {
+            "email": "email.redacted@example.com",
+            "name": "types"
+          }
+        ],
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "maintainer",
+        "semantic_format": null,
+        "source": "npm_registry"
+      },
+      {
+        "codemeta": "name",
+        "element": "name",
+        "field_path": "name",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "@types/node",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "npm_registry"
+      }
+    ],
+    "response_sha256": "b1295e1ad30abafc4ed137319ebb5d472118e0e08b5725569edee4579df7da7a",
+    "retrieved_at": "2026-11-09T08:55:19Z",
+    "source_url": "https://registry.npmjs.org/@types%2Fnode/26.6.6",
+    "version": "26.6.6"
+  },
+  "rank": 18,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "author_absent_maintainer_only"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:license",
+            "package.json:license"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "licenseid": [
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "npm_registry:license",
+              "reason": null,
+              "trust": "identity"
+            },
+            {
+              "category": "exact",
+              "expression": "MIT",
+              "input": "MIT",
+              "key": "package.json:license",
+              "reason": null,
+              "trust": "identity"
+            }
+          ],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "has_license_ref": false,
+            "spdx_expression": "MIT"
+          }
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "npm_registry:name",
+            "package.json:name"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "@types/node"
+            ],
+            "canonical_key": "@types/node",
+            "name": "@types/node"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        }
+      },
+      "files": [],
+      "files_count": 0,
+      "id": "root",
+      "kind": "package",
+      "locator": null,
+      "manifest_files": [
+        "node/package.json"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": "author",
+          "element": "provider",
+          "field_path": "author",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "author",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "contributor",
+          "element": "provider",
+          "field_path": "contributors",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "list_of_objects",
+          "present": true,
+          "raw": [
+            {
+              "githubUsername": "Microsoft",
+              "name": "Microsoft TypeScript",
+              "url": "https://github.com/Microsoft"
+            },
+            {
+              "githubUsername": "jkomyno",
+              "name": "Alberto Schiabel",
+              "url": "https://github.com/jkomyno"
+            },
+            {
+              "githubUsername": "r3nya",
+              "name": "Andrew Makarov",
+              "url": "https://github.com/r3nya"
+            },
+            {
+              "githubUsername": "btoueg",
+              "name": "Benjamin Toueg",
+              "url": "https://github.com/btoueg"
+            },
+            {
+              "githubUsername": "touffy",
+              "name": "David Junger",
+              "url": "https://github.com/touffy"
+            },
+            {
+              "githubUsername": "mohsen1",
+              "name": "Mohsen Azimi",
+              "url": "https://github.com/mohsen1"
+            },
+            {
+              "githubUsername": "galkin",
+              "name": "Nikita Galkin",
+              "url": "https://github.com/galkin"
+            },
+            {
+              "githubUsername": "eps1lon",
+              "name": "Sebastian Silbermann",
+              "url": "https://github.com/eps1lon"
+            },
+            {
+              "githubUsername": "WilcoBakker",
+              "name": "Wilco Bakker",
+              "url": "https://github.com/WilcoBakker"
+            },
+            {
+              "githubUsername": "trivikr",
+              "name": "Trivikram Kamat",
+              "url": "https://github.com/trivikr"
+            },
+            {
+              "githubUsername": "yoursunny",
+              "name": "Junxiao Shi",
+              "url": "https://github.com/yoursunny"
+            },
+            {
+              "githubUsername": "ExE-Boss",
+              "name": "ExE Boss",
+              "url": "https://github.com/ExE-Boss"
+            },
+            {
+              "githubUsername": "peterblazejewicz",
+              "name": "Piotr Błażejewicz",
+              "url": "https://github.com/peterblazejewicz"
+            },
+            {
+              "githubUsername": "addaleax",
+              "name": "Anna Henningsen",
+              "url": "https://github.com/addaleax"
+            },
+            {
+              "githubUsername": "NodeJS",
+              "name": "NodeJS Contributors",
+              "url": "https://github.com/NodeJS"
+            },
+            {
+              "githubUsername": "LinusU",
+              "name": "Linus Unnebäck",
+              "url": "https://github.com/LinusU"
+            },
+            {
+              "githubUsername": "wafuwafu13",
+              "name": "wafuwafu13",
+              "url": "https://github.com/wafuwafu13"
+            },
+            {
+              "githubUsername": "mcollina",
+              "name": "Matteo Collina",
+              "url": "https://github.com/mcollina"
+            },
+            {
+              "githubUsername": "Semigradsky",
+              "name": "Dmitry Semigradsky",
+              "url": "https://github.com/Semigradsky"
+            },
+            {
+              "githubUsername": "Renegade334",
+              "name": "René",
+              "url": "https://github.com/Renegade334"
+            },
+            {
+              "githubUsername": "anonrig",
+              "name": "Yagiz Nizipli",
+              "url": "https://github.com/anonrig"
+            }
+          ],
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": "contributor",
+          "semantic_format": null,
+          "source": "package.json"
+        },
+        {
+          "codemeta": "license",
+          "element": "license",
+          "field_path": "license",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "MIT",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "package.json"
+        },
+        {
+          "codemeta": "name",
+          "element": "name",
+          "field_path": "name",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "@types/node",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "package.json"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

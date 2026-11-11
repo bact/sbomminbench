@@ -1,0 +1,181 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/RichardErkhov/stabilityai_-_japanese-stablelm-base-gamma-7b-gguf@67bbafb064ae0dda13eacf77fa8d36930c31cbc1",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/RichardErkhov/stabilityai_-_japanese-stablelm-base-gamma-7b-gguf/tree/67bbafb064ae0dda13eacf77fa8d36930c31cbc1"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/RichardErkhov/stabilityai_-_japanese-stablelm-base-gamma-7b-gguf",
+    "name": "RichardErkhov/stabilityai_-_japanese-stablelm-base-gamma-7b-gguf",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "RichardErkhov",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "RichardErkhov/stabilityai_-_japanese-stablelm-base-gamma-7b-gguf",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "780b2e09231df4dffc0d8fe6d8a40c6b58e77377d2c40590b7b37d81bb3efbed",
+    "retrieved_at": "2026-11-09T08:55:09Z",
+    "source_url": "https://huggingface.co/api/models/RichardErkhov/stabilityai_-_japanese-stablelm-base-gamma-7b-gguf/revision/67bbafb064ae0dda13eacf77fa8d36930c31cbc1",
+    "version": "67bbafb064ae0dda13eacf77fa8d36930c31cbc1"
+  },
+  "rank": 9484,
+  "schema_version": "0.1",
+  "stratum": "mid",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "license_absent"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [],
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "absent_in_source",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "stabilityai_-_japanese-stablelm-base-gamma-7b-gguf",
+              "RichardErkhov/stabilityai_-_japanese-stablelm-base-gamma-7b-gguf"
+            ],
+            "canonical_key": "richarderkhov/stabilityai_-_japanese-stablelm-base-gamma-7b-gguf",
+            "name": "stabilityai_-_japanese-stablelm-base-gamma-7b-gguf"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "RichardErkhov",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "japanese-stablelm-base-gamma-7b.IQ3_M.gguf",
+        "japanese-stablelm-base-gamma-7b.IQ3_S.gguf",
+        "japanese-stablelm-base-gamma-7b.IQ3_XS.gguf",
+        "japanese-stablelm-base-gamma-7b.IQ4_NL.gguf",
+        "japanese-stablelm-base-gamma-7b.IQ4_XS.gguf",
+        "japanese-stablelm-base-gamma-7b.Q2_K.gguf",
+        "japanese-stablelm-base-gamma-7b.Q3_K.gguf",
+        "japanese-stablelm-base-gamma-7b.Q3_K_L.gguf",
+        "japanese-stablelm-base-gamma-7b.Q3_K_M.gguf",
+        "japanese-stablelm-base-gamma-7b.Q3_K_S.gguf",
+        "japanese-stablelm-base-gamma-7b.Q4_0.gguf",
+        "japanese-stablelm-base-gamma-7b.Q4_1.gguf",
+        "japanese-stablelm-base-gamma-7b.Q4_K.gguf",
+        "japanese-stablelm-base-gamma-7b.Q4_K_M.gguf",
+        "japanese-stablelm-base-gamma-7b.Q4_K_S.gguf",
+        "japanese-stablelm-base-gamma-7b.Q5_0.gguf",
+        "japanese-stablelm-base-gamma-7b.Q5_1.gguf",
+        "japanese-stablelm-base-gamma-7b.Q5_K.gguf",
+        "japanese-stablelm-base-gamma-7b.Q5_K_M.gguf",
+        "japanese-stablelm-base-gamma-7b.Q5_K_S.gguf"
+      ],
+      "files_count": 22,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": null,
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "absent",
+          "present": false,
+          "raw": null,
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": null,
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

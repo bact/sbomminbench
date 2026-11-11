@@ -1,0 +1,256 @@
+{
+  "collected_with": {
+    "license_list": "3.29.0",
+    "license_list_format": "3.27.0",
+    "licenseid": "0.8.4",
+    "pitloom": "0.24.0",
+    "sbomminbench": "0.1.0"
+  },
+  "ecosystem": "huggingface",
+  "id": "pkg:huggingface/Comfy-Org/MiniMax-H3@54472221d27c695fca9621b0c3ed52f06c4af707",
+  "platform": {
+    "artifacts": [
+      {
+        "declared_digest": null,
+        "fetched": false,
+        "filename": null,
+        "kind": "hf_repo",
+        "sha256": null,
+        "size_bytes": null,
+        "skip_reason": "not_needed",
+        "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/tree/54472221d27c695fca9621b0c3ed52f06c4af707"
+      }
+    ],
+    "ecosystem": "huggingface",
+    "html_url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+    "name": "Comfy-Org/MiniMax-H3",
+    "observations": [
+      {
+        "codemeta": null,
+        "element": "provider",
+        "field_path": "author",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Comfy-Org",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": "owner",
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "name",
+        "field_path": "id",
+        "format_validity": null,
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "Comfy-Org/MiniMax-H3",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": null,
+        "source": "hf_api"
+      },
+      {
+        "codemeta": null,
+        "element": "license",
+        "field_path": "tags[4]",
+        "format_validity": "not_applicable",
+        "has_email": false,
+        "inherited_from": null,
+        "native_type": "string",
+        "present": true,
+        "raw": "license:other",
+        "raw_length": null,
+        "raw_sha256": null,
+        "raw_truncated": false,
+        "role": null,
+        "semantic_format": "placeholder",
+        "source": "hf_api"
+      }
+    ],
+    "response_sha256": "53b7fe4da85ce8607d178acca263de0975c9a8d9538be4c283730a3867a20989",
+    "retrieved_at": "2026-11-09T08:54:50Z",
+    "source_url": "https://huggingface.co/api/models/Comfy-Org/MiniMax-H3/revision/54472221d27c695fca9621b0c3ed52f06c4af707",
+    "version": "54472221d27c695fca9621b0c3ed52f06c4af707"
+  },
+  "rank": 4,
+  "schema_version": "0.1",
+  "stratum": "top",
+  "subjects": [
+    {
+      "challenge_tags": [
+        "hf_license_other",
+        "license_is_url",
+        "license_placeholder",
+        "license_ref_needed",
+        "license_spdx_invalid",
+        "license_unresolved_value"
+      ],
+      "expected": {
+        "license": {
+          "auto_status": null,
+          "basis": [],
+          "candidates": [],
+          "independent_origins": 0,
+          "licenseid": [
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE",
+              "key": "hf_card:cardData.license_link",
+              "reason": "not found: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENS...",
+              "trust": "none"
+            },
+            {
+              "category": "unresolved",
+              "expression": null,
+              "input": "minimax-h3-community-license-agreement",
+              "key": "hf_card:cardData.license_name",
+              "reason": "not found: minimax-h3-community-license-agreement",
+              "trust": "none"
+            }
+          ],
+          "note": "'minimax-h3-community-license-agreement': unresolved (not found: minimax-h3-community-license-agreement)",
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unresolved",
+          "value": null
+        },
+        "name": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:id"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "accepted": [
+              "MiniMax-H3",
+              "Comfy-Org/MiniMax-H3"
+            ],
+            "canonical_key": "comfy-org/minimax-h3",
+            "name": "MiniMax-H3"
+          }
+        },
+        "provider": {
+          "auto_status": null,
+          "basis": [
+            "hf_api:author"
+          ],
+          "candidates": [],
+          "independent_origins": 1,
+          "note": null,
+          "reviewed_at": null,
+          "reviewer": null,
+          "status": "auto_unanimous",
+          "value": {
+            "entities": [
+              {
+                "name": "Comfy-Org",
+                "role": "owner"
+              }
+            ],
+            "has_unnamed_group": false
+          }
+        }
+      },
+      "files": [
+        "diffusion_models/minimax_h3_fl2va_bf16.safetensors",
+        "diffusion_models/minimax_h3_fl2va_int8_convrot.safetensors",
+        "diffusion_models/minimax_h3_fl2va_pruned_bf16.safetensors",
+        "diffusion_models/minimax_h3_fl2va_pruned_fp8_scaled.safetensors",
+        "diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+        "diffusion_models/minimax_h3_fl2va_pruned_w6a8.safetensors",
+        "diffusion_models/minimax_h3_ref2va_bf16.safetensors",
+        "diffusion_models/minimax_h3_ref2va_int8_convrot.safetensors",
+        "diffusion_models/minimax_h3_ref2va_pruned_bf16.safetensors",
+        "diffusion_models/minimax_h3_ref2va_pruned_fp8_scaled.safetensors",
+        "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "diffusion_models/minimax_h3_ref2va_pruned_w6a8.safetensors",
+        "embeddings/minimaxh3_art_is_explosion.safetensors",
+        "embeddings/minimaxh3_blooming_flowers.safetensors",
+        "embeddings/minimaxh3_bullet_time.safetensors",
+        "embeddings/minimaxh3_dark_magic.safetensors",
+        "embeddings/minimaxh3_fire_breath.safetensors",
+        "embeddings/minimaxh3_four_seasons.safetensors",
+        "embeddings/minimaxh3_kiss_camera.safetensors",
+        "embeddings/minimaxh3_spiral_ascent.safetensors"
+      ],
+      "files_count": 39,
+      "id": "root",
+      "kind": "model",
+      "locator": null,
+      "manifest_files": [
+        "hf_card"
+      ],
+      "manifest_observations": [
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license",
+          "format_validity": "not_applicable",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "other",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "placeholder",
+          "source": "hf_card"
+        },
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license_link",
+          "format_validity": "valid",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "other_url",
+          "source": "hf_card"
+        },
+        {
+          "codemeta": null,
+          "element": "license",
+          "field_path": "cardData.license_name",
+          "format_validity": "unknown_id",
+          "has_email": false,
+          "inherited_from": null,
+          "native_type": "string",
+          "present": true,
+          "raw": "minimax-h3-community-license-agreement",
+          "raw_length": null,
+          "raw_sha256": null,
+          "raw_truncated": false,
+          "role": null,
+          "semantic_format": "id_shaped",
+          "source": "hf_card"
+        }
+      ],
+      "model_format": null,
+      "size_bytes": null
+    }
+  ]
+}

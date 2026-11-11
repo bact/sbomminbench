@@ -1,0 +1,56 @@
+# # SPDX-FileContributor: Arthit Suriyawongkul
+# # SPDX-FileCopyrightText: 2026-present Arthit Suriyawongkul
+# # SPDX-FileType: SOURCE
+# # SPDX-License-Identifier: CC0-1.0
+# curie_map:
+#   ntia2021: 'https://w3id.org/bom/req/ntia2021/'
+#   bom: 'https://w3id.org/bom/'
+#   spdx3-core: 'https://spdx.org/rdf/3.0.1/terms/Core/'
+#   spdx3-sw: 'https://spdx.org/rdf/3.0.1/terms/Software/'
+#   spdx3-ai: 'https://spdx.org/rdf/3.0.1/terms/AI/'
+#   spdx3-ds: 'https://spdx.org/rdf/3.0.1/terms/Dataset/'
+#   spdx3-sec: 'https://spdx.org/rdf/3.0.1/terms/Security/'
+#   spdx3-sl: 'https://spdx.org/rdf/3.0.1/terms/SimpleLicensing/'
+#   spdx3-build: 'https://spdx.org/rdf/3.0.1/terms/Build/'
+#   skos: 'http://www.w3.org/2004/02/skos/core#'
+#   semapv: 'https://w3id.org/semapv/vocab/'
+#   orcid: 'https://orcid.org/'
+# mapping_set_id: 'https://w3id.org/bom/mapping/ntia2021-to-spdx30'
+# mapping_set_version: '0.1.0'
+# mapping_set_title: 'NTIA 2021 SBOM Minimum Elements <-> SPDX 3.0.1'
+# mapping_set_description: 'Maps the 7 minimum-element concepts defined in The Minimum Elements For a Software Bill of Materials (SBOM) (NTIA, November 2021) to properties, classes and RelationshipType individuals of the SPDX 3.0.1 model. Component version -> Package.packageVersion, dependency relationship -> Relationship/dependsOn, supplier -> suppliedBy or originatedBy, spdxId as identifier. The bridge_concept column cites the neutral bridge concept from bom.ttl. Derived from the SPDX 3.1-dev mapping (tools/derive_spdx30.py): SPDX 3.1 is backward compatible with 3.0, so every target that exists in 3.0.1 is mapped the same way; targets added in 3.1 (Core/version, Core/intendedUse, isoAutomationLevel, byteSize, finetunedOn / pretrainedOn / validatedOn / evaluatedOn, conformsTo / Specification, SupportRelationship, ContactPointRelationship, InteractionTemplate, the Hardware profile) are replaced by the closest 3.0.1 carrier or recorded as GAP rows.'
+# license: 'https://creativecommons.org/publicdomain/zero/1.0/'
+# extension_definitions:
+#   - slot_name: object_property
+#     property: 'https://w3id.org/bom/objectProperty'
+#   - slot_name: object_class
+#     property: 'https://w3id.org/bom/objectClass'
+#   - slot_name: object_path
+#     property: 'https://w3id.org/bom/objectPath'
+#   - slot_name: bridge_concept
+#     property: 'https://w3id.org/bom/bridgeConcept'
+# creator_id:
+#   - 'orcid:0000-0002-9698-1899'
+# mapping_date: '2026-10-16'
+# subject_source: 'https://w3id.org/bom/req/ntia2021/'
+# object_source: 'https://spdx.github.io/spdx-spec/v3.0.1/'
+# see_also:
+#   - 'https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom'
+#   - 'https://w3id.org/bom/'
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	bridge_concept	comment	object_type	object_property	object_class	object_path
+ntia2021:supplier	Supplier Name	skos:exactMatch	spdx3-core:suppliedBy	suppliedBy	semapv:ManualMappingCuration	bom:component-supplier	NTIA 'Supplier Name' is the entity that creates, defines and identifies a component; Artifact.suppliedBy (-> Agent) is the supplying party. exactMatch via bom:component-supplier, which the bridge keeps for the NTIA / FSCT / BSI reading; the originator half is carried by originatedBy (next row).	owl object property		spdx3-core:Artifact	
+ntia2021:supplier	Supplier Name	skos:closeMatch	spdx3-core:originatedBy	originatedBy	semapv:ManualMappingCuration	bom:component-producer	Artifact.originatedBy (-> Agent) covers the originating author of the component, the reading CISA 2026 makes explicit as 'Component Producer'. closeMatch: populate originatedBy when the supplier is the producer, suppliedBy when it is a distributor.	owl object property		spdx3-core:Artifact	
+ntia2021:name	Component Name	skos:exactMatch	spdx3-core:name	name	semapv:ManualMappingCuration	bom:component-name	Element.name on a Package (or other Artifact) element carries the component name. Exact match.	owl data property		spdx3-core:Element	
+ntia2021:version	Version of the Component	skos:exactMatch	spdx3-sw:packageVersion	packageVersion	semapv:ManualMappingCuration	bom:component-version	Software/Package.packageVersion (0..1) carries the component version string. Exact match. (SPDX 3.1 deprecates it in favour of Core/version on Package.)	owl data property		spdx3-sw:Package	
+ntia2021:unique-identifier	Unique Identifier	skos:exactMatch	spdx3-sw:packageUrl	packageUrl	semapv:ManualMappingCuration	bom:component-identifier	PURL in Software/Package.packageUrl is the recommended globally unique identifier for components in SPDX 3.x. Exact match for the primary external-identifier use case described by NTIA.	owl data property		spdx3-sw:Package	
+ntia2021:unique-identifier	Unique Identifier	skos:closeMatch	spdx3-core:ExternalIdentifierType/cpe22	cpe22	semapv:ManualMappingCuration	bom:component-identifier	ExternalIdentifier with externalIdentifierType cpe22 (identifier = the CPE 2.2 string). closeMatch (one identifier kind).	owl named individual	spdx3-core:externalIdentifierType	spdx3-core:ExternalIdentifier	spdx3-core:externalIdentifier
+ntia2021:unique-identifier	Unique Identifier	skos:closeMatch	spdx3-core:ExternalIdentifierType/cpe23	cpe23	semapv:ManualMappingCuration	bom:component-identifier	ExternalIdentifier with externalIdentifierType cpe23. closeMatch (one identifier kind).	owl named individual	spdx3-core:externalIdentifierType	spdx3-core:ExternalIdentifier	spdx3-core:externalIdentifier
+ntia2021:unique-identifier	Unique Identifier	skos:closeMatch	spdx3-core:ExternalIdentifierType/swid	swid	semapv:ManualMappingCuration	bom:component-identifier	ExternalIdentifier with externalIdentifierType swid (SWID tag id). closeMatch (one identifier kind).	owl named individual	spdx3-core:externalIdentifierType	spdx3-core:ExternalIdentifier	spdx3-core:externalIdentifier
+ntia2021:unique-identifier	Unique Identifier	skos:closeMatch	spdx3-core:ExternalIdentifierType/swhid	swhid	semapv:ManualMappingCuration	bom:component-identifier	ExternalIdentifier with externalIdentifierType swhid (Software Heritage persistent identifier). closeMatch (one identifier kind).	owl named individual	spdx3-core:externalIdentifierType	spdx3-core:ExternalIdentifier	spdx3-core:externalIdentifier
+ntia2021:unique-identifier	Unique Identifier	skos:closeMatch	spdx3-core:ExternalIdentifierType/gitoid	gitoid	semapv:ManualMappingCuration	bom:component-identifier	ExternalIdentifier with externalIdentifierType gitoid (OmniBOR artifact or input-manifest identifier). closeMatch (one identifier kind).	owl named individual	spdx3-core:externalIdentifierType	spdx3-core:ExternalIdentifier	spdx3-core:externalIdentifier
+ntia2021:unique-identifier	Unique Identifier	skos:closeMatch	spdx3-core:spdxId	spdxId	semapv:ManualMappingCuration	bom:component-identifier	The element's spdxId IRI is globally unique and may serve as an identifier within and across SPDX documents, but does not replace a common external identifier. closeMatch.	owl data property		spdx3-core:Element	
+ntia2021:dependency-relationship	Dependency Relationship	skos:exactMatch	spdx3-core:RelationshipType/dependsOn	dependsOn	semapv:ManualMappingCuration	bom:rel-depends-on	An instance of Core/Relationship with relationshipType dependsOn: from = the dependent component, to = its dependencies. NTIA requires relationships to be present for each component (the primary component included); Relationship.completeness states whether the listed dependencies are complete. Exact match for the dependency reading. The model requires a LifecycleScopedRelationship for this type (scope: LifecycleScopeType).	owl named individual	spdx3-core:relationshipType	spdx3-core:LifecycleScopedRelationship	^spdx3-core:from
+ntia2021:dependency-relationship	Dependency Relationship	skos:closeMatch	spdx3-core:RelationshipType/contains	contains	semapv:ManualMappingCuration	bom:rel-contains	The 'includes' reading of NTIA's upstream relationship: relationshipType contains from the containing package to its subcomponents. closeMatch.	owl named individual	spdx3-core:relationshipType	spdx3-core:Relationship	^spdx3-core:from
+ntia2021:dependency-relationship	Dependency Relationship	skos:closeMatch	spdx3-core:Relationship	Relationship	semapv:ManualMappingCuration	bom:MetadataRelationship	Generic: all dependency relationships are Core/Relationship elements with from, to and relationshipType. closeMatch at class level.	owl class			^spdx3-core:from
+ntia2021:author	Author of SBOM Data	skos:exactMatch	spdx3-core:createdBy	createdBy	semapv:ManualMappingCuration	bom:doc-author	CreationInfo.createdBy (1..*) captures the Agent(s) -- Person, Organization or SoftwareAgent -- that authored the document; the generating tool belongs in createdUsing. Exact match.	owl object property		spdx3-core:CreationInfo	spdx3-core:creationInfo
+ntia2021:timestamp	Timestamp	skos:exactMatch	spdx3-core:created	created	semapv:ManualMappingCuration	bom:doc-timestamp	CreationInfo.created is a mandatory Core/DateTime (UTC, second resolution) recording when the document was created. Exact match.	owl data property		spdx3-core:CreationInfo	spdx3-core:creationInfo

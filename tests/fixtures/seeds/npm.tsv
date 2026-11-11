@@ -1,0 +1,6 @@
+name	version	stratum	rank	note
+express	4.21.1	edge		registry author object; contributors
+@babel/core	7.26.0	edge		scoped name; author string with (url)
+json-schema	0.2.3	edge		legacy licenses[] objects, non-SPDX types
+sha.js	2.4.11	edge		(MIT AND BSD-3-Clause) with parentheses
+@types/node	22.9.0	edge		no author, contributors only
