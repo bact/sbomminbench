@@ -4,23 +4,20 @@
 
 """Experimental S3: three ways to read one declared licence value.
 
-For each root subject with a scored licence, takes the first declared licence
-string (platform first, a ``license:`` hub prefix removed) and reads it with:
-
-* ``passthrough``: the string as it is;
-* ``license-expression``: strict SPDX validation, no answer when it fails;
-* ``licenseid``: ``resolve()`` against the packaged list, no answer unless the
-  category is one the dataset accepts.
-
-A reading is correct when it is equivalent to the expected expression. Writes
-``experimental/s3-normaliser-comparison.json``. Non-voting: ``build``,
-``validate`` and ``export`` never read it.
-
-The automatic labels were derived with LicenseID, so its rate on
-``auto_unanimous`` rows is not an independent measurement; the
-``human_corrected`` rows are the values no rule could settle.
-
-Usage: ``uv run python scripts/s3_normaliser_comparison.py``
+Input:    root subjects with a scored licence: the first declared licence
+          string (platform first, a ``license:`` hub prefix removed).
+Method:   read the string three ways and compare each reading with the
+          expected expression (equivalence):
+          ``passthrough``: the string as it is;
+          ``license-expression``: SPDX validation, no answer when it fails;
+          ``licenseid``: ``resolve()`` on the packaged list, no answer unless
+          the category is one the dataset accepts.
+Output:   ``experimental/s3-normaliser-comparison.json``.
+Network:  none.
+Voting:   none. ``build``, ``validate`` and ``export`` never read the output.
+Caveat:   the automatic labels were derived with LicenseID, so its rate on
+          ``auto_unanimous`` rows is not an independent measurement.
+Usage:    ``uv run python scripts/s3_normaliser_comparison.py``
 """
 
 import json

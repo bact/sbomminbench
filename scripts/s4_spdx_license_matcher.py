@@ -2,21 +2,20 @@
 # SPDX-FileType: SOURCE
 # SPDX-License-Identifier: Apache-2.0
 
-"""Experimental S4: SPDX License Matcher on the texts of the S2 cross-check.
+"""Experimental S4: SPDX License Matcher on the texts of S2.
 
-Runs ``spdx-license-matcher`` (package ``license-matcher``) on the same licence
-files and cached licence pages as ``s2_license_text_crosscheck.py`` and
-compares its match with the reviewer's value. Writes
-``experimental/s4-spdx-license-matcher.jsonl``. Non-voting: ``build``,
-``validate`` and ``export`` never read it.
-
-The matcher needs Java 11 or later and a Redis server on ``localhost:6379``
-that already holds its licence list (``spdx-license-matcher --build``). This
-script never builds or changes that database. It is offline: a page that S2
-did not cache is reported as ``not_cached``.
-
-Usage: ``uv run --with license-matcher==2.11.1 python
-scripts/s4_spdx_license_matcher.py``
+Input:    the licence files and cached licence pages that
+          ``s2_license_text_crosscheck.py`` reads.
+Method:   run ``spdx-license-matcher`` (package ``license-matcher``) on each
+          text; compare its match with the reviewer's value.
+Output:   ``experimental/s4-spdx-license-matcher.jsonl``.
+Network:  none; a page that S2 did not cache gives ``not_cached``.
+Voting:   none. ``build``, ``validate`` and ``export`` never read the output.
+Needs:    Java 11 or later, and a Redis server on ``localhost:6379`` that
+          holds the matcher's licence list (``spdx-license-matcher --build``).
+          This script never builds or changes that database.
+Usage:    ``uv run --with license-matcher==2.11.1 python
+          scripts/s4_spdx_license_matcher.py``
 """
 
 import json

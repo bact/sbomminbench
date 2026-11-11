@@ -2,27 +2,23 @@
 # SPDX-FileType: SOURCE
 # SPDX-License-Identifier: Apache-2.0
 
-"""Experimental S1 probe: model-file headers of the Hugging Face entries.
+"""Experimental S1: headers of model files on Hugging Face.
 
-For each Hugging Face entry, reads the header of a few model files (GGUF,
-Safetensors, ONNX) at the pinned revision with ranged requests, then runs
-Pitloom's reader on it. Writes ``experimental/s1-hf-model-headers.jsonl``.
-The output is non-voting: ``build``, ``validate`` and ``export`` never read it.
-
-Only the header bytes are fetched for GGUF and Safetensors. The reader gets a
-sparse file: the real header followed by a hole up to the declared size, so
-nothing that depends on tensor data is meaningful. An ONNX file is fetched
-whole, when it is within :data:`ONNX_MAX_BYTES`. No token is sent: a gated
-repository is recorded as ``gated``.
-
-With ``--repos N`` the probe goes beyond the dataset: the next repositories of
-the ecosyste.ms downloads ranking are added until N repositories are covered
-(``in_dataset`` is false for them; they are not entries of the dataset).
-
-Usage: ``uv run python scripts/s1_hf_model_headers.py [--repos 500]``
-(network; one request per ``--interval`` seconds, default 1; a 429 answer is
-waited out, and after repeated 429 the run stops and a rerun continues, since
-header bytes and results are cached under ``.cache/s1/``).
+Input:    the Hugging Face entries at their pinned revision; with
+          ``--repos N``, also the next repositories of the downloads ranking
+          until N are covered (``in_dataset`` false; not dataset entries).
+Method:   per repository, a few GGUF, Safetensors and ONNX files. GGUF and
+          Safetensors: fetch the header bytes by range request, pad the file
+          with a hole to its declared size, run Pitloom's reader (nothing
+          that depends on tensor data is meaningful). ONNX: fetch the whole
+          file when it is within :data:`ONNX_MAX_BYTES`.
+Output:   ``experimental/s1-hf-model-headers.jsonl``.
+Network:  one request per ``--interval`` seconds (default 1). No token is
+          sent; a gated repository gives ``gated``. A 429 answer is waited
+          out; after repeated 429 the run stops. A rerun continues from
+          ``.cache/s1/``.
+Voting:   none. ``build``, ``validate`` and ``export`` never read the output.
+Usage:    ``uv run python scripts/s1_hf_model_headers.py [--repos N]``
 """
 
 import argparse

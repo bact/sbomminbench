@@ -2,21 +2,22 @@
 # SPDX-FileType: SOURCE
 # SPDX-License-Identifier: Apache-2.0
 
-"""Experimental S2 cross-check: licence text detection against the review.
+"""Experimental S2: licence text detection against the review.
 
-For each root subject whose licence the automatic derivation could not settle,
-runs LicenseID's text detector on (a) the licence files of the cached package
-archive and (b) the text behind each licence URL of the metadata, and compares
-the top detection with the reviewer's value. Writes
-``experimental/s2-license-text-crosscheck.jsonl``.
-
-The output is non-voting: ``build``, ``validate`` and ``export`` never read
-it. A detection is a computed value, not a declared one.
-
-Usage: ``uv run python scripts/s2_license_text_crosscheck.py --db DB
-[--limit-urls N] [--no-network]``. ``DB`` is a LicenseID database
-(``licenseid --db DB update --source packaged``). Fetched pages are cached
-under ``.cache/s2/``; one request per second per run.
+Input:    root subjects whose licence the automatic derivation could not
+          settle: the licence files of the cached archive and the page behind
+          each licence URL of the metadata.
+Method:   run LicenseID's text detector on each text; compare the top
+          detection with the reviewer's value. A detection is a computed
+          value, not a declared one.
+Output:   ``experimental/s2-license-text-crosscheck.jsonl``.
+Network:  the licence URLs, one request per second, public hosts only;
+          pages are cached under ``.cache/s2/``. ``--no-network`` reads the
+          cache only.
+Voting:   none. ``build``, ``validate`` and ``export`` never read the output.
+Usage:    ``uv run python scripts/s2_license_text_crosscheck.py --db DB
+          [--limit-urls N] [--no-network]``; ``DB`` is a LicenseID database
+          (``licenseid --db DB update --source packaged``).
 """
 
 import argparse

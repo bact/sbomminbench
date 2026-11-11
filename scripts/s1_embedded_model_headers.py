@@ -2,16 +2,15 @@
 # SPDX-FileType: SOURCE
 # SPDX-License-Identifier: Apache-2.0
 
-"""Experimental S1 probe: what Pitloom's model readers state about embedded models.
+"""Experimental S1: headers of model files embedded in packages.
 
-Reads the model files already cached inside package archives (no network) and
-writes ``experimental/s1-embedded-model-headers.jsonl``. The output is
-non-voting: ``build``, ``validate`` and ``export`` never read it, so it cannot
-change a status or the review queue.
-
-Usage: ``uv run python scripts/s1_embedded_model_headers.py`` (needs the
-``pitloom[ai]`` extra, which the project pins; without a reader's library the
-row says ``library_missing``).
+Input:    model files inside the cached package archives.
+Method:   run Pitloom's model reader on each file; a reader without its
+          library gives ``library_missing``.
+Output:   ``experimental/s1-embedded-model-headers.jsonl``.
+Network:  none.
+Voting:   none. ``build``, ``validate`` and ``export`` never read the output.
+Usage:    ``uv run python scripts/s1_embedded_model_headers.py``
 """
 
 import dataclasses

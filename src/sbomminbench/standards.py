@@ -6,7 +6,8 @@
 
 The only reference is the BOM ontology v0.2.0 (vendored in ``vendor/bom/``).
 Ids, labels, notations, obligations and SPDX targets are copied from it;
-``tests/test_standards.py`` confirms every row against the vendored files. Nothing here reads the network or the vendored files at run time.
+``tests/test_standards.py`` confirms every row against the vendored files.
+Nothing here reads the network or the vendored files at run time.
 """
 
 from dataclasses import asdict, dataclass
