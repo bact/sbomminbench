@@ -9,6 +9,7 @@ authors:
   - family-names: Suriyawongkul
     given-names: Arthit
     orcid: "https://orcid.org/0000-0002-9698-1899"
+doi: 10.5281/zenodo.24132359
 repository-code: "https://github.com/bact/sbomminbench"
 keywords:
   - SBOM

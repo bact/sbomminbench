@@ -91,7 +91,7 @@ Candidate packages and models were selected from the rankings of [Ecosyste.ms: P
 
 ## Author
 
-Arthit Suriyawongkul (ORCID: [0000-0002-9698-1899](https://orcid.org/0000-0002-9698-1899)). To cite, see `CITATION.cff`.
+Arthit Suriyawongkul (ORCID: [0000-0002-9698-1899](https://orcid.org/0000-0002-9698-1899)). To cite, see `CITATION.cff`. Archived releases: [doi:10.5281/zenodo.24132359](https://doi.org/10.5281/zenodo.24132359) (all versions).
 
 ## Takedown contact
 
